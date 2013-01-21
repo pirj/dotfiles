@@ -1,0 +1,8 @@
+[user]
+  name = Phil Pirozhkov
+  email = pirjsuka@gmail.com
+[push]
+	default = current
+[color]
+  ui = true
+
