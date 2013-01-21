@@ -46,6 +46,9 @@
 .vim_colorv_cache
 .vim_colorv_cache_fav
 .viminfo
+.vim/.backup/
+.vim/.undo/
+.vim/bundle/
 .zcompdump
 .zsh-update
 .zsh_history
