@@ -38,7 +38,7 @@
 
 *saveLines: 65535
 *termName: xterm-color
-!*loginShell: true
+*loginShell: true
 *urgentOnBell: false 
 
 *cursorBlink: true
