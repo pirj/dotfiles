@@ -59,3 +59,4 @@ source/
 torrents/
 
 .vegas
+.psql_history
