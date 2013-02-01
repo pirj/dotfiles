@@ -54,6 +54,7 @@ findutils
 firefox
 flashplugin
 flex
+freeswitch
 gawk
 gcc
 gcc-libs
@@ -140,6 +141,7 @@ pkg-config
 pm-utils
 portaudio
 postgresql
+powertop
 ppp
 procinfo-ng
 procps-ng
@@ -161,6 +163,7 @@ skypetab-ng-git
 smartmontools
 sox
 sphinx
+sshpass
 sublime-text-dev
 sudo
 sysfsutils
@@ -178,6 +181,7 @@ ttf-dejavu
 ttf-droid
 ttf-inconsolata
 tumbler
+udiskie
 unclutter
 unixodbc
 unoconv

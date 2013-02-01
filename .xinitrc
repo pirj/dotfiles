@@ -30,6 +30,9 @@ redshift -l 60:30 &disown # adjust color temperature according to daytime
 
 skypetab-ng &
 
+# automount disks to /media
+udiskie &
+
 tmux new-session -d -s rtorrent rtorrent
 
 autocutsel -selection CLIPBOARD -fork
