@@ -21,4 +21,12 @@ nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
 nnoremap <leader>v <c-w>v<c-w>l
+nnoremap <leader>n <c-w>v<c-w>n
 
+" Resize panes
+nnoremap <leader>- <c-w>_
+nnoremap <leader>\ <c-w><Bar>
+nnoremap <leader>= <c-w>=
+
+" Select previously pasted text
+nnoremap gv `[v`]
