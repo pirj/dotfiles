@@ -61,3 +61,5 @@ torrents/
 .vegas
 .psql_history
 .pgadmin3
+.pgpass
+.config/inkscape/
