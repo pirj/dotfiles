@@ -14,6 +14,8 @@ aurget
 autoconf
 autocutsel
 automake
+avr-gcc
+avr-libc
 awesome
 bash
 binutils
@@ -92,6 +94,7 @@ jitsi
 less
 libedit
 libevent
+libpng12
 libreoffice-base
 libreoffice-calc
 libreoffice-common
