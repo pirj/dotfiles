@@ -8,8 +8,8 @@ set nocompatible " be iMproved
 " Color
 " ---------------
 "set background=dark
-colorscheme jellybeans
-"colorscheme darkblue
+"colorscheme jellybeans
+colorscheme desert256
 
 " -----------------------------
 " Backups, Tmp Files, and Undo
