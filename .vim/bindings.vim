@@ -5,9 +5,6 @@
 " Remap leader
 let mapleader = ","
 
-" Quicksave
-nmap <leader>w :w!<cr>
-
 " Use ; for : in normal and visual mode, less keystrokes
 nnoremap ; :
 vnoremap ; :
