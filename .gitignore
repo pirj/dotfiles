@@ -64,3 +64,4 @@ torrents/
 .pgpass
 .config/inkscape/
 .openvpn
+.teensy
