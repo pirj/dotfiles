@@ -29,7 +29,7 @@ Bundle 'Lokaltog/vim-powerline'
 Bundle 'nanotech/jellybeans.vim'
 " Commands
 Bundle 'tpope/vim-surround'
-"Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-fugitive'
 "Bundle 'godlygeek/tabular'
 Bundle 'mileszs/ack.vim'
 "Bundle 'milkypostman/vim-togglelist'
