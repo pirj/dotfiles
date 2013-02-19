@@ -27,3 +27,18 @@ nnoremap <leader>= <c-w>=
 
 " Select previously pasted text
 nnoremap gv `[v`]
+
+" Use Y to yank to the end of line
+nnoremap Y y$
+
+" Stopkeys
+map <Left> :echo 'damnit!'<cr>
+map <Right> :echo 'you suck!'<cr>
+map <Up> :echo 'this is why you fail'<cr>
+map <Down> :echo 'nooooo!'<cr>
+map <BS> :echo 'loser!'<cr>
+imap <Left> use-normal-mode-luke
+imap <Right> use-normal-mode-luke
+imap <Up> use-normal-mode-luke
+imap <Down> use-normal-mode-luke
+imap <BS> use-normal-mode-luke
