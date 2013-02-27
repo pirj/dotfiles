@@ -6,7 +6,7 @@ aisleriot
 alsa-oss
 alsa-utils
 amd-ucode
-arandr
+apache-ant
 asciidoc
 aspell-en
 aspell-ru
@@ -45,7 +45,7 @@ dkms
 dmidecode
 dnsutils
 e2fsprogs
-epdfview
+ekiga
 eventlog
 extundelete
 fakeroot
@@ -66,6 +66,8 @@ git
 git-flow-git
 glibc
 gnu-netcat
+gobi-firmware
+gobi-loader
 grep
 gstreamer0.10-bad
 gstreamer0.10-bad-plugins
@@ -74,6 +76,7 @@ gstreamer0.10-ffmpeg
 gtk
 gvim
 gzip
+hadoop
 hdparm
 heirloom-mailx
 help2man
@@ -116,6 +119,7 @@ m4
 make
 man-db
 man-pages
+maven
 mc
 mdadm
 memcached
@@ -168,6 +172,7 @@ sox
 sphinx
 sshpass
 sublime-text-dev
+subversion
 sudo
 sysfsutils
 syslinux
@@ -205,6 +210,7 @@ whois
 windowmaker
 wpa_actiond
 wpa_supplicant
+wvdial
 xclip
 xdotool
 xf86-input-keyboard
@@ -224,5 +230,7 @@ xorg-xinit
 xorg-xkbevd
 xsel
 xterm
+zathura
+zathura-pdf-mupdf
 zip
 zsh
