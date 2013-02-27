@@ -49,6 +49,7 @@ ekiga
 eventlog
 extundelete
 fakeroot
+fasd
 ffmpegthumbnailer
 file
 filesystem
@@ -63,6 +64,7 @@ gcc-libs
 gettext
 gimp
 git
+git-extras
 git-flow-git
 glibc
 gnu-netcat
