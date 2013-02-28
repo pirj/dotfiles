@@ -56,3 +56,9 @@ URxvt*scrollTtyKeypress: true
 !urxvt*font: xft:inconsolata:size=11
 urxvt*font: xft:Droid Sans Mono:size=9.5
 
+!urxvt*background:       rgba:0000/0000/0000/0000
+urxvt*transparent:      true
+urxvt*shading:          08
+!urxvt*depth:            32
+!urxvt*tint:             white 
+!urxvt*inheritPixmap:    true
