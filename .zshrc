@@ -49,3 +49,4 @@ alias la='ls -a'
 alias vi=vim
 alias view=vim
 
+alias tmux='tmux -2'

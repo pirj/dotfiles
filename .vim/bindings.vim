@@ -28,7 +28,10 @@ nnoremap <leader>= <c-w>=
 " Select previously pasted text
 nnoremap gv `[v`]
 
-" Use Y to yank to the end of line
+" Select all
+nnoremap <Leader>a ggVG
+
+" Yank to the end of line
 nnoremap Y y$
 
 " Stopkeys
@@ -42,3 +45,14 @@ imap <Right> use-normal-mode-luke
 imap <Up> use-normal-mode-luke
 imap <Down> use-normal-mode-luke
 imap <BS> use-normal-mode-luke
+
+" Jump to start and end of line using the home row keys
+noremap H ^
+noremap L $
+
+" Easier redo
+nnoremap U <C-r>
+
+" Send to tmux
+vmap <leader>c <Plug>SendSelectionToTmux
+nmap <leader>c <Plug>NormalModeSendToTmux

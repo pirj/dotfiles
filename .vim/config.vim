@@ -7,9 +7,9 @@ set nocompatible " be iMproved
 " ---------------
 " Color
 " ---------------
-"set background=dark
-"colorscheme jellybeans
-colorscheme desert256
+set t_Co=256
+colorscheme jellybeans
+"colorscheme desert256
 
 " -----------------------------
 " Backups, Tmp Files, and Undo
@@ -17,18 +17,20 @@ colorscheme desert256
 set backup
 set backupdir=~/.vim/.backup
 set directory=~/.vim/.tmp
+
 " Persistent Undo
 set undodir=~/.vim/.undo
 
 " ---------------
 " UI
 " ---------------
-set ruler          " Ruler on
+"set ruler          " Ruler on
 set number         " Line numbers on
 set nowrap         " Line wrapping off
 set encoding=utf-8
 set noshowmode     " Don't show the mode since Powerline shows it
 set title          " Set the title of the window in the terminal to the file
+set laststatus=2
 
 " ---------------
 " Behaviors
@@ -91,4 +93,3 @@ set t_vb=
 
 " Better complete options to speed it up
 set complete=.,w,b,u,U
-
