@@ -9,8 +9,9 @@ let mapleader = ","
 nnoremap ; :
 vnoremap ; :
 
-" Let's make escape better, together.
+" Escape in home row
 inoremap jj <Esc>
+vnoremap ll <Esc>
 
 " Navigate panes
 nnoremap <c-j> <c-w>j
