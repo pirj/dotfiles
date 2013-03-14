@@ -10,8 +10,6 @@ call vundle#rc()
 " let Vundle manage Vundle, required
 Bundle 'gmarik/vundle'
 
-Bundle 'kien/ctrlp.vim'
-
 " ---------------
 " Plugin Bundles
 " ---------------
@@ -21,12 +19,11 @@ Bundle 'kien/ctrlp.vim'
 " This fork is required due to remapping ; to :
 "Bundle 'christoomey/vim-space'
 "Bundle 'Lokaltog/vim-easymotion'
-"Bundle 'kien/ctrlp.vim'
+Bundle 'kien/ctrlp.vim'
 " UI Additions
 "Bundle 'mutewinter/vim-indent-guides'
 Bundle 'Lokaltog/vim-powerline'
 "Bundle 'Rykka/colorv.vim'
-Bundle 'nanotech/jellybeans.vim'
 " Commands
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-fugitive'
