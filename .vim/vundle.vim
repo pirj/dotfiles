@@ -60,3 +60,11 @@ Bundle 'tpope/vim-rails'
 
 Bundle 'teranex/tslime.vim'
 
+"Shougo/vimproc
+"thinca/vim-quickrun
+"http://www.vim.org/scripts/script.php?script_id=2337
+"http://www.vim.org/scripts/script.php?script_id=1590
+"https://github.com/kana/vim-scratch
+"https://github.com/mootoh/refe2-vim
+"https://github.com/t9md/vim-ruby_eval
+"https://github.com/t9md/vim-ruby-xmpfilter
