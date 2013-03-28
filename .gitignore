@@ -73,3 +73,5 @@ wallpaper.jpg
 .rediscli_history
 .sqlite_history
 .ivy2
+.cassandra.history
+.cqlsh_history
