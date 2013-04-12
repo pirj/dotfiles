@@ -53,6 +53,7 @@ Bundle 'mileszs/ack.vim'
 Bundle 'vim-ruby/vim-ruby'
 "Bundle 'tpope/vim-haml'
 Bundle 'tpope/vim-rails'
+Bundle 'slim-template/vim-slim'
 "Bundle 'tpope/vim-rake'
 " Libraries
 "Bundle 'L9'
