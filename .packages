@@ -25,6 +25,7 @@ bridge-utils
 busybox
 bwm-ng
 bzip2
+cassandra
 celt
 chromium
 cmake
@@ -78,7 +79,6 @@ gstreamer0.10-ffmpeg
 gtk
 gvim
 gzip
-hadoop
 hdparm
 heirloom-mailx
 help2man
@@ -131,11 +131,13 @@ mpg123
 mysql
 nano
 net-tools
+netbrake
 netcfg
 nethack
 netkit-bsd-finger
 nmap
 ntop
+openal
 openssh
 openvpn
 p7zip
@@ -156,6 +158,9 @@ procinfo-ng
 procps-ng
 psmisc
 pwgen
+python2-lxml
+python2-numpy
+qtwebkit
 redis
 redshift
 reiserfsprogs
@@ -163,6 +168,7 @@ rfkill
 ristretto
 rtorrent
 rxvt-unicode
+sbxkb
 scrot
 sdparm
 sed
