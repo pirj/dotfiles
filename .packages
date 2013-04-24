@@ -6,6 +6,8 @@ aisleriot
 alsa-oss
 alsa-utils
 amd-ucode
+android-sdk
+android-sdk-platform-tools
 apache-ant
 asciidoc
 aspell-en
@@ -182,6 +184,7 @@ sshpass
 sublime-text-dev
 subversion
 sudo
+swt
 sysfsutils
 syslinux
 syslog-ng
