@@ -96,6 +96,7 @@ iw
 jdk7-openjdk
 jfsutils
 jitsi
+jzmq-git
 less
 libedit
 libevent
@@ -168,7 +169,6 @@ rfkill
 ristretto
 rtorrent
 rxvt-unicode
-sbxkb
 scrot
 sdparm
 sed
@@ -193,6 +193,7 @@ terminus-font
 texinfo
 tk
 tmux
+tree
 ttf-dejavu
 ttf-droid
 ttf-inconsolata
@@ -240,5 +241,7 @@ xsel
 xterm
 zathura
 zathura-pdf-mupdf
+zeromq
 zip
+zookeeper
 zsh

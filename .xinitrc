@@ -15,7 +15,6 @@ xkbevd &
 setxkbmap -option caps:escape # use caps as esc (caps:swapescape to swap)
 setxkbmap -layout us,ru -option grp:toggle # change layout with ralt
 setxkbmap -model face -layout us,ru -option grp:toggle # secondary keyboard too
-sbxkb &disown
 
 xsetroot -cursor_name left_ptr
 
