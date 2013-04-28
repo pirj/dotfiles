@@ -25,6 +25,10 @@ nnoremap <leader>- <c-w>_
 nnoremap <leader>\ <c-w><Bar>
 nnoremap <leader>= <c-w>=
 
+" Navigate buffers
+nnoremap <leader>z :bp<CR>
+nnoremap <leader>x :bn<CR>
+
 " Select previously pasted text
 nnoremap gv `[v`]
 
