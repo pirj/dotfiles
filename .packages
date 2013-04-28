@@ -33,6 +33,7 @@ chromium
 cmake
 cmus
 commoncpp2
+conky
 coreutils
 cpio
 cpulimit
@@ -169,6 +170,7 @@ redshift
 reiserfsprogs
 rfkill
 ristretto
+rlwrap
 rtorrent
 rxvt-unicode
 scrot
@@ -194,6 +196,7 @@ tcl
 tcpdump
 terminus-font
 texinfo
+tig
 tk
 tmux
 tree
