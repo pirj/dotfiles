@@ -18,7 +18,8 @@ nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
-nnoremap <leader>v <c-w>v<c-w>l
+nnoremap <leader>v <c-w>v
+nnoremap <leader>s <c-w>s
 
 " Resize panes
 nnoremap <leader>- <c-w>_
