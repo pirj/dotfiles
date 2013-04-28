@@ -4,6 +4,7 @@ acpi
 acpid
 aisleriot
 alsa-oss
+alsa-plugins
 alsa-utils
 amd-ucode
 android-sdk
@@ -20,6 +21,7 @@ avr-gcc
 avr-libc
 awesome
 bash
+bc
 binutils
 bison
 boost
