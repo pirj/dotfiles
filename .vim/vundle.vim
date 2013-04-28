@@ -69,3 +69,6 @@ Bundle 'teranex/tslime.vim'
 "https://github.com/mootoh/refe2-vim
 "https://github.com/t9md/vim-ruby_eval
 "https://github.com/t9md/vim-ruby-xmpfilter
+
+" Layout assistant
+" Bundle 'vim-xkbswitch'

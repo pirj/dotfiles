@@ -93,3 +93,7 @@ set t_vb=
 
 " Better complete options to speed it up
 set complete=.,w,b,u,U
+
+" Layout assistant
+"let g:XkbSwitchEnabled = 1 
+"let g:XkbSwitchIMappings = ['ru']
