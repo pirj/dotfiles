@@ -61,3 +61,6 @@ nnoremap U <C-r>
 " Send to tmux
 vmap <leader>c <Plug>SendSelectionToTmux
 nmap <leader>c <Plug>NormalModeSendToTmux
+
+" Tab navigation
+nmap <leader>t :tabNext<CR>
