@@ -3,7 +3,7 @@
 " ----------------------------------------
 
 " Remap leader
-let mapleader = ","
+let mapleader = " "
 
 " Use ; for : in normal and visual mode, less keystrokes
 nnoremap ; :
@@ -64,3 +64,6 @@ nmap <leader>c <Plug>NormalModeSendToTmux
 
 " Tab navigation
 nmap <leader>t :tabNext<CR>
+
+" Autocomplete on Tab
+imap <tab> <c-p>
