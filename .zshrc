@@ -42,6 +42,8 @@ unsetopt correct
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
+export EDITOR=vim
+
 alias scr='sleep 2 && import -window root "screenshot `date`.jpg"'
 alias ll='ls -l'
 alias la='ls -a'
