@@ -3,7 +3,7 @@
 " ----------------------------------------
 
 " Remap leader
-let mapleader = " "
+let mapleader = ","
 
 " Use ; for : in normal and visual mode, less keystrokes
 nnoremap ; :
