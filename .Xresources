@@ -1,8 +1,8 @@
 !base16
-#define base00 #151515
-#define base01 #202020
-#define base02 #303030
-#define base03 #505050
+#define base00 #000000
+#define base01 #606060
+#define base02 #707070
+#define base03 #909090
 #define base04 #b0b0b0
 #define base05 #d0d0d0
 #define base06 #e0e0e0
