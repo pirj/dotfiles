@@ -38,7 +38,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
-unsetopt correct
+unsetopt correct_all
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
