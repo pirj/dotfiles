@@ -97,3 +97,6 @@ set complete=.,w,b,u,U
 " Layout assistant
 "let g:XkbSwitchEnabled = 1 
 "let g:XkbSwitchIMappings = ['ru']
+
+" Ack replacement
+let g:ackprg = 'ag --nogroup --nocolor --column'
