@@ -32,7 +32,7 @@ ZSH_THEME="philips"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git git-flow git-extras rvm vi-mode ssh-agent fasd history history-substring-search)
+plugins=(git git-flow git-extras rvm vi-mode ssh-agent fasd history history-substring-search colored-man sprunge)
 
 source $ZSH/oh-my-zsh.sh
 
