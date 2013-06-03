@@ -1,6 +1,7 @@
 abs
 acpi
 acpid
+aircrack-ng
 aisleriot
 alsa-oss
 alsa-plugins
@@ -25,7 +26,6 @@ bc
 binutils
 bison
 boost
-bridge-utils
 busybox
 bwm-ng
 bzip2
@@ -51,6 +51,7 @@ dmidecode
 dmon
 dnsutils
 e2fsprogs
+eagle
 eventlog
 extundelete
 fakeroot
@@ -91,7 +92,6 @@ httperf
 idnkit
 ifplugd
 inetutils
-initscripts
 inkscape
 iproute2
 iputils
@@ -105,6 +105,7 @@ jzmq-git
 less
 libedit
 libevent
+libmariadbclient
 libpng12
 libreoffice-base
 libreoffice-calc
@@ -127,17 +128,18 @@ m4
 make
 man-db
 man-pages
+mariadb
+mariadb-clients
 maven
 mc
 mdadm
 memcached
 mesa
 mpg123
-mysql
 nano
 net-tools
 netbrake
-netcfg
+netctl
 nethack
 netkit-bsd-finger
 nmap
@@ -163,6 +165,7 @@ procinfo-ng
 procps-ng
 psmisc
 pwgen
+python2-cairo
 python2-lxml
 python2-numpy
 qtwebkit
