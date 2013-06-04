@@ -38,6 +38,9 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
+# Powerline
+# . /usr/share/zsh/site-contrib/powerline.zsh
+
 unsetopt correct_all
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

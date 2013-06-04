@@ -22,7 +22,7 @@ Bundle 'gmarik/vundle'
 Bundle 'kien/ctrlp.vim'
 " UI Additions
 "Bundle 'mutewinter/vim-indent-guides'
-Bundle 'Lokaltog/vim-powerline'
+"Bundle 'Lokaltog/vim-powerline'
 "Bundle 'Rykka/colorv.vim'
 " Commands
 Bundle 'tpope/vim-surround'
