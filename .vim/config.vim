@@ -100,3 +100,6 @@ set complete=.,w,b,u,U
 
 " Ack replacement
 let g:ackprg = 'ag --nogroup --nocolor --column'
+
+" Avoid annoying mode switch lag
+set timeoutlen=1000 ttimeoutlen=0
