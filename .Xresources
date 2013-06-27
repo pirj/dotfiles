@@ -48,16 +48,16 @@
 !xterm
 xterm*renderFont: true
 xterm*faceName: inconsolata
-xterm*faceSize: 11
+xterm*faceSize: 12
 
 !urxvt
 URxvt*scrollTtyOutput: false
 URxvt*scrollTtyKeypress: true
-!urxvt*font: xft:inconsolata:size=11
-urxvt*font: xft:inconsolatalgc:size=9
+urxvt*font: xft:inconsolata:size=11
+!urxvt*font: xft:inconsolatalgc:size=9
 !urxvt*font: xft:Inconsolata-dz for Powerline:size=11
 !urxvt*font: xft:Droid Sans Mono for Powerline:size=9.5
-!URxvt.buffered:         true
+URxvt.buffered:         false
 !URxvt.cursorUnderline: true
 
 !urxvt*background:       rgba:0000/0000/0000/0000
