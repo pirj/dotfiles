@@ -102,7 +102,6 @@ iw
 jdk7-openjdk
 jfsutils
 jitsi
-jzmq-git
 less
 libedit
 libevent
@@ -131,6 +130,7 @@ man-db
 man-pages
 mariadb
 mariadb-clients
+markdown
 maven
 mc
 mdadm
@@ -257,7 +257,6 @@ xsel
 xterm
 zathura
 zathura-pdf-mupdf
-zeromq
 zip
 zookeeper
 zsh
