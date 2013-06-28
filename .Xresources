@@ -57,7 +57,7 @@ urxvt*font: xft:inconsolata:size=11,xft:Droid Sans Mono for Powerline:size=9.5
 !urxvt*font: xft:inconsolatalgc:size=9
 !urxvt*font: xft:Inconsolata-dz for Powerline:size=11
 !urxvt*font: xft:Droid Sans Mono for Powerline:size=9.5
-URxvt.buffered:         false
+URxvt.buffered:         true
 !URxvt.cursorUnderline: true
 
 !urxvt*background:       rgba:0000/0000/0000/0000
