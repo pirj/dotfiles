@@ -1,3 +1,4 @@
+6tunnel
 abs
 acpi
 acpid
@@ -6,10 +7,10 @@ aisleriot
 alsa-oss
 alsa-plugins
 alsa-utils
-amd-ucode
 android-sdk
 android-sdk-platform-tools
 apache-ant
+arch-wiki-lite
 asciidoc
 aspell-en
 aspell-ru
@@ -18,6 +19,7 @@ aurget
 autoconf
 autocutsel
 automake
+autossh
 avr-gcc
 avr-libc
 awesome
@@ -27,7 +29,6 @@ binutils
 bison
 boost
 busybox
-bwm-ng
 bzip2
 cassandra
 celt
@@ -64,6 +65,7 @@ firefox
 flashplugin
 flex
 freeswitch
+fuse
 gawk
 gcc
 gcc-libs
@@ -76,6 +78,7 @@ glibc
 gnu-netcat
 gobi-firmware
 gobi-loader
+google-translate-cli-git
 grep
 gstreamer0.10-bad
 gstreamer0.10-bad-plugins
@@ -136,8 +139,10 @@ mc
 mdadm
 memcached
 mesa
+mpd
 mpg123
 nano
+ncmpcpp
 net-tools
 netbrake
 netctl
@@ -159,6 +164,7 @@ perl
 pgadmin3
 pkg-config
 pm-utils
+polipo
 portaudio
 postgresql
 powertop
@@ -208,6 +214,7 @@ the_silver_searcher
 tig
 tk
 tmux
+tor
 tree
 ttf-dejavu
 ttf-droid
@@ -233,6 +240,7 @@ wget
 which
 whois
 windowmaker
+wit
 wpa_actiond
 wpa_supplicant
 wvdial
@@ -247,6 +255,7 @@ xinetd
 xmlto
 xorg-server
 xorg-server-utils
+xorg-server-xvfb
 xorg-twm
 xorg-util-macros
 xorg-utils
@@ -255,6 +264,7 @@ xorg-xinit
 xorg-xkbevd
 xsel
 xterm
+youtube-dl
 zathura
 zathura-pdf-mupdf
 zip
