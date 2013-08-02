@@ -28,7 +28,7 @@ set undodir=~/.vim/.undo
 set number         " Line numbers on
 set nowrap         " Line wrapping off
 set encoding=utf-8
-set noshowmode     " Don't show the mode since Powerline shows it
+set noshowmode     " Don't show the mode since Airline shows it
 set title          " Set the title of the window in the terminal to the file
 set laststatus=2
 
@@ -102,4 +102,14 @@ set complete=.,w,b,u,U
 let g:ackprg = 'ag --nogroup --nocolor --column'
 
 " Avoid annoying mode switch lag
-set timeoutlen=1000 ttimeoutlen=0
+set timeoutlen=1000 ttimeoutlen=50
+
+" Airline
+let g:airline_enable_branch=1
+let g:airline_enable_syntastic=1
+let g:airline_enable_bufferline=1
+
+let g:airline_left_sep = '▶'
+let g:airline_right_sep = '◀'
+let g:airline_linecolumn_prefix = '¶ '
+let g:airline_branch_prefix = '¬ '
