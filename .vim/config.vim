@@ -45,6 +45,11 @@ set iskeyword+=$,@     " Add extra characters that are valid parts of variables
 set nostartofline      " Don't go to the start of the line after some commands
 set scrolloff=3        " Keep three lines below the last line when scrolling
 
+" Tempfiles
+set nobackup
+set nowritebackup
+set noswapfile
+
 " ---------------
 " Text Format
 " ---------------
@@ -116,3 +121,7 @@ let g:airline_branch_prefix = '¬ '
 let g:airline_theme='dark'
 
 let g:airline_powerline_fonts = 1
+
+" Splits
+set splitbelow
+set splitright
