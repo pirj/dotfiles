@@ -71,10 +71,12 @@ set wildignore+=.git
 set showmatch   " Show matching brackets.
 set matchtime=2 " How many tenths of a second to blink
 
+" Show invisible whitespace
+set list
 " Reset the listchars
 set listchars=""
 " a tab should display as "  ", trailing whitespace as "."
-set listchars=tab:\ \  " Indentended trailing whitespace
+set listchars=tab:>- " Indentended trailing whitespace
 " show trailing spaces as dots
 set listchars+=trail:.
 " The character to show in the last column when wrap is off and the line
@@ -95,7 +97,7 @@ set t_vb=
 set complete=.,w,b,u,U
 
 " Layout assistant
-"let g:XkbSwitchEnabled = 1 
+"let g:XkbSwitchEnabled = 1
 "let g:XkbSwitchIMappings = ['ru']
 
 " Ack replacement
