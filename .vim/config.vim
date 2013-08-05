@@ -119,7 +119,7 @@ let g:airline_enable_bufferline=1
 
 let g:airline_branch_prefix = '¬ '
 
-let g:airline_theme='dark'
+let g:airline_theme='badwolf'
 
 let g:airline_powerline_fonts = 1
 
