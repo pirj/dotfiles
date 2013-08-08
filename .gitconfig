@@ -5,4 +5,7 @@
 	default = current
 [color]
   ui = true
-
+[core]
+  whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
+[github]
+  user = pirj
