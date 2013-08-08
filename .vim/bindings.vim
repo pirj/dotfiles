@@ -7,7 +7,9 @@ let mapleader = ","
 
 " Use ; for : in normal and visual mode, less keystrokes
 nnoremap ; :
+nnoremap : ;
 vnoremap ; :
+vnoremap : ;
 
 " Escape in home row
 inoremap jj <Esc>
