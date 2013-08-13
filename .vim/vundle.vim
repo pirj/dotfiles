@@ -72,3 +72,5 @@ Bundle 'teranex/tslime.vim'
 
 " Layout assistant
 " Bundle 'vim-xkbswitch'
+"
+Bundle 'nanotech/jellybeans.vim'
