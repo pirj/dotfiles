@@ -10,6 +10,8 @@ nnoremap ; :
 nnoremap : ;
 vnoremap ; :
 vnoremap : ;
+nnoremap q; q:
+vnoremap q; q:
 
 " Escape in home row
 inoremap jj <Esc>
