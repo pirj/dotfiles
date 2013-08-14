@@ -24,6 +24,7 @@ Bundle 'kien/ctrlp.vim'
 "Bundle 'mutewinter/vim-indent-guides'
 Bundle 'bling/vim-airline'
 "Bundle 'Rykka/colorv.vim'
+Bundle 'nanotech/jellybeans.vim'
 " Commands
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-fugitive'
@@ -73,4 +74,5 @@ Bundle 'teranex/tslime.vim'
 " Layout assistant
 " Bundle 'vim-xkbswitch'
 "
-Bundle 'nanotech/jellybeans.vim'
+" Other
+Bundle 'perl-support.vim'
