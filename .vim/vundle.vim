@@ -41,6 +41,7 @@ Bundle 'mileszs/ack.vim'
 "Bundle 'itspriddle/vim-marked'
 "Bundle 'mutewinter/UnconditionalPaste'
 "Bundle 'skalnik/vim-vroom'
+Bundle "tpope/vim-commentary"
 " Automatic Helpers
 "Bundle 'IndexedSearch'
 "Bundle 'xolox/vim-session'
