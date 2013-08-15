@@ -13,7 +13,7 @@ fi
 
 xkbevd &
 setxkbmap -option caps:escape # use caps as esc (caps:swapescape to swap)
-setxkbmap -layout us,ru -option grp:toggle # change layout with ralt
+setxkbmap -layout us,ru -option grp:toggle # change layout with AltGr
 setxkbmap -model face -layout us,ru -option grp:toggle # secondary keyboard too
 
 xmodmap -e "keycode 47 = colon semicolon Cyrillic_ZHE" # remap : and ; + still supports cyrillic
@@ -39,7 +39,7 @@ udiskie &
 tmux new-session -d -s rtorrent rtorrent
 
 autocutsel -selection CLIPBOARD -fork
-autocutsel -selection PRIMARY -fork 
+autocutsel -selection PRIMARY -fork
 
 #xrandr --output LVDS --auto --output HDMI-0 --off
 xrandr --output LVDS --mode 1280x720 --output HDMI-0 --mode 1600x1200
