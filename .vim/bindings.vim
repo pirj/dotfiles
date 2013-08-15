@@ -5,14 +5,6 @@
 " Remap leader
 let mapleader = ","
 
-" Use ; for : in normal and visual mode, less keystrokes
-nnoremap ; :
-nnoremap : ;
-vnoremap ; :
-vnoremap : ;
-nnoremap q; q:
-vnoremap q; q:
-
 " Escape in home row
 inoremap jj <Esc>
 vnoremap ll <Esc>
