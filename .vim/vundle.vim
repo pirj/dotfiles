@@ -25,6 +25,7 @@ Bundle 'kien/ctrlp.vim'
 Bundle 'bling/vim-airline'
 "Bundle 'Rykka/colorv.vim'
 Bundle 'nanotech/jellybeans.vim'
+Bundle 'justincampbell/vim-eighties' " Automatically resizes splits on switch
 " Commands
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-fugitive'
