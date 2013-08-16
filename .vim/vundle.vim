@@ -130,8 +130,7 @@ Bundle 'teranex/tslime.vim'
 "https://github.com/kana/vim-scratch
 "https://github.com/mootoh/refe2-vim
 "Shougo/unite.vim
-"mattn/webapi-vim 
-"
+"mattn/webapi-vim
 
 " Layout assistant
 " Bundle 'vim-xkbswitch'

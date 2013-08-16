@@ -33,6 +33,10 @@ set title          " Set the title of the window in the terminal to the file
 set laststatus=2
 "set cursorline
 
+" vim-eighties
+let g:eighties_extra_width = 10 " Increase this if you want some extra room
+let g:eighties_compute = 1 " Disable this if you just want the minimum + extra
+
 " ---------------
 " Behaviors
 " ---------------
