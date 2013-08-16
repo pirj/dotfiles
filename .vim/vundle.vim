@@ -83,7 +83,9 @@ Bundle "tpope/vim-commentary"
 "Bundle 'scrooloose/syntastic'
 "Bundle 'ervandew/supertab'
 "Bundle 'gregsexton/MatchTag'
+
 "Bundle 'Shougo/neocomplete.vim'
+"valloric/YouCompleteMe
 
 " SYNTAX SUPPORT
 " ---------------
