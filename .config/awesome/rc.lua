@@ -41,7 +41,7 @@ end
 beautiful.init("/usr/share/awesome/themes/default/theme.lua")
 theme.wallpaper = "/home/pirj/wallpaper.jpg"
 theme.font      = "Inconsolata Medium 10"
-theme.taglist_font = "Inconsolata Medium 11"
+theme.taglist_font = "Inconsolata Medium 14"
 
 -- This is used later as the default terminal and editor to run.
 terminal = "urxvt"
@@ -86,7 +86,7 @@ end
 tags = {}
 for s = 1, screen.count() do
     -- Each screen has its own tag table.
-    tags[s] = awful.tag({ 1, 2, 3, 4, 5, 6, 7, 8, 9 }, s, layouts[1])
+    tags[s] = awful.tag({"߄", "߃", "߇", "ߖ", "߆" }, s, layouts[1])
 end
 -- }}}
 
@@ -276,7 +276,7 @@ globalkeys = awful.util.table.join(
 )
 
 clientkeys = awful.util.table.join(
-    awful.key({ modkey,           }, "f",      function (c) c.fullscreen = not c.fullscreen  end),
+    awful.key({ modkey,           }, "e",      function (c) c.fullscreen = not c.fullscreen  end),
     awful.key({ modkey, "Shift"   }, "c",      function (c) c:kill()                         end),
     awful.key({ modkey, "Control" }, "space",  awful.client.floating.toggle                     ),
     awful.key({ modkey, "Control" }, "Return", function (c) c:swap(awful.client.getmaster()) end),
@@ -304,29 +304,30 @@ end
 -- Bind all key numbers to tags.
 -- Be careful: we use keycodes to make it works on any keyboard layout.
 -- This should map on the top row of your keyboard, usually 1 to 9.
+tagkeys = {"a", "s", "d", "f", "g"}
 for i = 1, keynumber do
     globalkeys = awful.util.table.join(globalkeys,
-        awful.key({ modkey }, "#" .. i + 9,
+        awful.key({ modkey }, tagkeys[i],
                   function ()
                         local screen = mouse.screen
                         if tags[screen][i] then
                             awful.tag.viewonly(tags[screen][i])
                         end
                   end),
-        awful.key({ modkey, "Control" }, "#" .. i + 9,
+        awful.key({ modkey, "Control" }, tagkeys[i],
                   function ()
                       local screen = mouse.screen
                       if tags[screen][i] then
                           awful.tag.viewtoggle(tags[screen][i])
                       end
                   end),
-        awful.key({ modkey, "Shift" }, "#" .. i + 9,
+        awful.key({ modkey, "Shift" }, tagkeys[i],
                   function ()
                       if client.focus and tags[client.focus.screen][i] then
                           awful.client.movetotag(tags[client.focus.screen][i])
                       end
                   end),
-        awful.key({ modkey, "Control", "Shift" }, "#" .. i + 9,
+        awful.key({ modkey, "Control", "Shift" }, tagkeys[i],
                   function ()
                       if client.focus and tags[client.focus.screen][i] then
                           awful.client.toggletag(tags[client.focus.screen][i])
