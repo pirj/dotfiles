@@ -46,4 +46,7 @@ xrandr --output LVDS --mode 1280x720 --output HDMI-0 --mode 1600x1200
 
 mpd &
 
+xset s 300 # idle is 5 min
+~/.config/xsidle.sh slock & # lock screen when idle
+
 /usr/bin/awesome
