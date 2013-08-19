@@ -378,6 +378,10 @@ awful.rules.rules = {
     --   properties = { tag = tags[1][2] } },
     { rule = { class = "SkypeTab" },
       properties = { tag = tags[1][3] } },
+    { rule = { instance = "plugin-container" },
+      properties = { floating = true } },
+    { rule = { instance = "exe" },
+      properties = { floating = true } },
 }
 -- }}}
 
