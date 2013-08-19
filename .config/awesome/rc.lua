@@ -43,6 +43,7 @@ beautiful.init("/usr/share/awesome/themes/default/theme.lua")
 theme.wallpaper = "/home/pirj/wallpaper.jpg"
 theme.font      = "Inconsolata Medium 10"
 theme.taglist_font = "Inconsolata Medium 14"
+theme.bg_focus = theme.bg_normal
 
 -- This is used later as the default terminal and editor to run.
 terminal = "urxvt"
