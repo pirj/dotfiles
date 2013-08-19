@@ -203,7 +203,7 @@ for s = 1, screen.count() do
 
     -- Widgets that are aligned to the right
     local right_layout = wibox.layout.fixed.horizontal()
-    if s == 1 then right_layout:add(wibox.widget.systray()) end
+    -- if s == 1 then right_layout:add(wibox.widget.systray()) end
     right_layout:add(mpdwidget)
     right_layout:add(datewidget)
     -- right_layout:add(mylayoutbox[s])
@@ -375,6 +375,8 @@ awful.rules.rules = {
     -- Set Firefox to always map on tags number 2 of screen 1.
     -- { rule = { class = "Firefox" },
     --   properties = { tag = tags[1][2] } },
+    { rule = { class = "SkypeTab" },
+      properties = { tag = tags[1][3] } },
 }
 -- }}}
 
