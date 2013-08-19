@@ -81,3 +81,11 @@ wallpaper.jpg
 .fasd-init-cache
 .gnupg
 books
+.ncmpcpp
+.mpd/database
+.mpd/log
+.mpd/mpd.db
+.mpd/mpd.pid
+.mpd/mpdstate
+.mpd/mpd.db
+.mpd/mpd.pid
