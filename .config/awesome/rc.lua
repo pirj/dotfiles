@@ -122,9 +122,9 @@ mpdwidget = wibox.widget.textbox()
 vicious.register(mpdwidget, vicious.widgets.mpd,
     function (mpdwidget, args)
         if args["{state}"] == "Stop" then
-            return "<span font='Inconsolata 10'>[ - ]</span>"
+            return "<span font='Inconsolata 10'>[ ■ ]</span>"
         else
-            return "<span font='Inconsolata 10'>[ "..args["{Artist}"]..' - '.. args["{Title}"] .." ]</span>"
+            return "<span font='Inconsolata 10'>[ ▶ "..args["{Artist}"]..' - '.. args["{Title}"] .." ]</span>"
         end
     end, 10)
 
