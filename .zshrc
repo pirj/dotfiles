@@ -56,6 +56,7 @@ alias edit=vim
 
 alias tmux='tmux -2'
 alias tat='tmux at -t'
+alias tls='tmux ls'
 
 # Google translate cli, en -> ru
 alias tru='trs {=ru}'
