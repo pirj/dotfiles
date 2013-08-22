@@ -44,6 +44,8 @@ theme.wallpaper = "/home/pirj/wallpaper.jpg"
 theme.font      = "Inconsolata Medium 10"
 theme.taglist_font = "Inconsolata Medium 14"
 theme.bg_focus = theme.bg_normal
+theme.taglist_squares_sel = "/usr/share/awesome/themes/zenburn/taglist/squarefz.png"
+theme.taglist_squares_unsel = "/usr/share/awesome/themes/zenburn/taglist/squarez.png"
 
 -- This is used later as the default terminal and editor to run.
 terminal = "urxvt"
