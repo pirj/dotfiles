@@ -60,3 +60,5 @@ alias tls='tmux ls'
 
 # Google translate cli, en -> ru
 alias tru='trs {=ru}'
+
+alias gc-='git checkout -'
