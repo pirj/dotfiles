@@ -66,3 +66,9 @@ URxvt.buffered:         true
 !urxvt*depth:            32
 !urxvt*tint:             white 
 !urxvt*inheritPixmap:    true
+
+Xft.dpi:        96
+Xft.antialias:  true
+!Xft.hinting:    true
+!Xft.rgba:       rgb
+!Xft.hintstyle:  hintslight
