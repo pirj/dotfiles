@@ -117,18 +117,29 @@ end
 
 -- {{{ Wibox
 
+--fontify = function (t) return "<span font='Inconsolata 10'>" .. t .. "</span>" end
+
+local datewidget, mpdwidget
+
 datewidget = wibox.widget.textbox()
-vicious.register(datewidget, vicious.widgets.date, "<span font='Inconsolata 10'>[ %a %d %b %R ]</span>", 60)
+
+vicious.register(datewidget, vicious.widgets.date, "[ %a %d %b %R ]", 60)
 
 mpdwidget = wibox.widget.textbox()
 vicious.register(mpdwidget, vicious.widgets.mpd,
     function (mpdwidget, args)
         if args["{state}"] == "Stop" then
-            return "<span font='Inconsolata 10'>[ ■ ]</span>"
+            return "[ ■ ]"
         else
-            return "<span font='Inconsolata 10'>[ ▶ "..args["{Artist}"]..' - '.. args["{Title}"] .." ]</span>"
+            return "[ ▶ "..args["{Artist}"]..' - '.. args["{Title}"] .." ]"
         end
     end, 10)
+
+local widgets = {mpdwidget, datewidget}
+
+for key, widget in pairs(widgets) do
+    widget:set_font('Inconsolata 10')
+end
 
 -- Create a wibox for each screen and add it
 mywibox = {}
@@ -207,8 +218,11 @@ for s = 1, screen.count() do
     -- Widgets that are aligned to the right
     local right_layout = wibox.layout.fixed.horizontal()
     -- if s == 1 then right_layout:add(wibox.widget.systray()) end
-    right_layout:add(mpdwidget)
-    right_layout:add(datewidget)
+
+    for key, widget in pairs(widgets) do
+      right_layout:add(widget)
+    end
+
     -- right_layout:add(mylayoutbox[s])
 
     -- Now bring it all together (with the tasklist in the middle)
