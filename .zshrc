@@ -47,9 +47,11 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 export EDITOR=vim
 
+# Shell aliases
 alias ll='ls -l'
 alias la='ls -a'
 
+# Use vim everywhere
 alias vi=vim
 alias view=vim -R
 alias edit=vim
@@ -57,7 +59,7 @@ alias edit=vim
 # Run tmux in 256 color mode
 alias tmux='tmux -2'
 
-# tmux shorthands
+# tmux aliases
 alias tat='tmux at -t'
 alias tls='tmux ls'
 
@@ -66,3 +68,8 @@ alias tru='trs {=ru}'
 
 # Faster branch switching
 alias gc-='git checkout -'
+
+# Handy aliases
+alias -g g='| grep'
+alias -g l='| less'
+alias -r tf='tail -f'
