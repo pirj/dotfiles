@@ -60,6 +60,7 @@ alias edit=vim
 alias tmux='tmux -2'
 
 # tmux aliases
+alias ta='tmux at'
 alias tat='tmux at -t'
 alias tls='tmux ls'
 
