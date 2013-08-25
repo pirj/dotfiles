@@ -33,6 +33,9 @@ set title          " Set the title of the window in the terminal to the file
 set laststatus=2
 "set cursorline
 
+set lazyredraw     " make plugins smoother
+set ttyfast        " Indicates a fast terminal connection... characters will be sent to the screen for redrawing, instead of using insert/delete line commands. Improves smoothness of redrawing when there are multiple windows and the terminal does not support a scrolling region.
+
 " vim-eighties
 let g:eighties_extra_width = 10 " Increase this if you want some extra room
 let g:eighties_compute = 1 " Disable this if you just want the minimum + extra
