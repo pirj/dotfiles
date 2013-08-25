@@ -54,11 +54,15 @@ alias vi=vim
 alias view=vim -R
 alias edit=vim
 
+# Run tmux in 256 color mode
 alias tmux='tmux -2'
+
+# tmux shorthands
 alias tat='tmux at -t'
 alias tls='tmux ls'
 
 # Google translate cli, en -> ru
 alias tru='trs {=ru}'
 
+# Faster branch switching
 alias gc-='git checkout -'
