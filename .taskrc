@@ -25,3 +25,4 @@ data.location=~/.task
 #include /usr/share/doc/task/rc/dark-yellow-green.theme
 #include /usr/share/doc/task/rc/dark-gray-256.theme
 
+search.case.sensitive=no
