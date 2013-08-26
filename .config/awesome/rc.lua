@@ -11,6 +11,7 @@ local beautiful = require("beautiful")
 local naughty = require("naughty")
 -- local menubar = require("menubar")
 local vicious = require("vicious")
+local taskwarrior = require("taskwarrior")
 
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
@@ -119,13 +120,11 @@ end
 
 --fontify = function (t) return "<span font='Inconsolata 10'>" .. t .. "</span>" end
 
-local datewidget, mpdwidget
-
-datewidget = wibox.widget.textbox()
+local datewidget = wibox.widget.textbox()
 
 vicious.register(datewidget, vicious.widgets.date, "[ %a %d %b %R ]", 60)
 
-mpdwidget = wibox.widget.textbox()
+local mpdwidget = wibox.widget.textbox()
 vicious.register(mpdwidget, vicious.widgets.mpd,
     function (mpdwidget, args)
         if args["{state}"] == "Stop" then
@@ -135,7 +134,13 @@ vicious.register(mpdwidget, vicious.widgets.mpd,
         end
     end, 10)
 
-local widgets = {mpdwidget, datewidget}
+local taskwidget = wibox.widget.textbox()
+vicious.register(taskwidget, taskwarrior,
+    function (mpdwidget, args)
+        return "[ <span color='red'>" .. args["{Now}"] .. '</span>/' .. args["{Today}"] .. "/" .. args["{All}"] .. " ]"
+    end, 60)
+
+local widgets = {taskwidget, mpdwidget, datewidget}
 
 for key, widget in pairs(widgets) do
     widget:set_font('Inconsolata 10')
