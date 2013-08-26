@@ -49,4 +49,7 @@ mpd &
 xset s 300 # idle is 5 min
 ~/.config/xsidle.sh slock & # lock screen when idle
 
+# Hotkey daemon
+sxhkd -c .config/sxhkdrc &disown
+
 /usr/bin/awesome

@@ -213,6 +213,7 @@ sshpass
 subversion
 sudo
 swt
+sxhkd
 sysfsutils
 syslinux
 syslog-ng

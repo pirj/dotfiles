@@ -1,0 +1,8 @@
+@XF86LaunchA
+    scrot
+
+XF86AudioPlay
+    ncmpcpp toggle
+
+XF86Audio{Prev,Next}
+    ncmpcpp {prev,next}
