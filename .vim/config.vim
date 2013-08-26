@@ -36,7 +36,7 @@ set laststatus=2
 set lazyredraw     " make plugins smoother
 set ttyfast        " Indicates a fast terminal connection... characters will be sent to the screen for redrawing, instead of using insert/delete line commands. Improves smoothness of redrawing when there are multiple windows and the terminal does not support a scrolling region.
 
-set synmaxcol=128  " Syntax coloring lines that are too long just slows down the world
+set synmaxcol=256  " Syntax coloring lines that are too long just slows down the world
 
 " vim-eighties
 let g:eighties_extra_width = 10 " Increase this if you want some extra room
