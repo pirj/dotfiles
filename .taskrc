@@ -26,3 +26,5 @@ data.location=~/.task
 #include /usr/share/doc/task/rc/dark-gray-256.theme
 
 search.case.sensitive=no
+dateformat=d.M.Y
+dateformat.report=d.M.Y
