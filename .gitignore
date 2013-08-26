@@ -90,3 +90,4 @@ books
 .mpd/mpd.db
 .mpd/mpd.pid
 .task
+.rubies
