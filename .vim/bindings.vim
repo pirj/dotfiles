@@ -63,3 +63,6 @@ nmap <leader>t :tabNext<CR>
 
 " Autocomplete on Tab
 imap <tab> <c-p>
+
+" No need to switch between layouts to use normal mode https://gist.github.com/sigsergv/5329459
+set langmap=ёйцукенгшщзхъфывапролджэячсмитьбюЁЙЦУКЕHГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ;`qwertyuiop[]asdfghjkl:'zxcvbnm\\,.~QWERTYUIOP{}ASDFGHJKL\\;\\"ZXCVBNM<>
