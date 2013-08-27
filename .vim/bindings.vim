@@ -57,3 +57,6 @@ set langmap=ёйцукенгшщзхъфывапролджэячсмитьбюЁ
 
 " Temporarily disable hard mode. Sign of weakness!
 nnoremap <leader>h <Esc>:call ToggleHardMode()<cr>
+
+" No highlight search
+nmap <Space> :nohlsearch<cr>
