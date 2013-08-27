@@ -4,6 +4,9 @@
 
 set nocompatible " be iMproved
 
+" Automatically detect file types. (must turn on after Vundle)
+filetype plugin indent on
+
 " ---------------
 " Color
 " ---------------

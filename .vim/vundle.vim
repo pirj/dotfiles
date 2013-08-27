@@ -24,7 +24,7 @@ Bundle 'gmarik/vundle'
 Bundle 'kien/ctrlp.vim'
 
 " No char-wise navigation, please
-"wikitopian/hardmode also remove my bindings
+Bundle 'wikitopian/hardmode'
 
 " UI ADDITIONS
 " ---------------

@@ -35,18 +35,6 @@ nnoremap <Leader>a ggVG
 " Yank to the end of line
 nnoremap Y y$
 
-" Stopkeys
-map <Left> :echo 'damnit!'<cr>
-map <Right> :echo 'you suck!'<cr>
-map <Up> :echo 'this is why you fail'<cr>
-map <Down> :echo 'nooooo!'<cr>
-map <BS> :echo 'loser!'<cr>
-imap <Left> use-normal-mode-luke
-imap <Right> use-normal-mode-luke
-imap <Up> use-normal-mode-luke
-imap <Down> use-normal-mode-luke
-imap <BS> use-normal-mode-luke
-
 " Jump to start and end of line using the home row keys
 noremap H ^
 noremap L $
@@ -66,3 +54,6 @@ imap <tab> <c-p>
 
 " No need to switch between layouts to use normal mode https://gist.github.com/sigsergv/5329459
 set langmap=ёйцукенгшщзхъфывапролджэячсмитьбюЁЙЦУКЕHГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ;`qwertyuiop[]asdfghjkl:'zxcvbnm\\,.~QWERTYUIOP{}ASDFGHJKL\\;\\"ZXCVBNM<>
+
+" Temporarily disable hard mode. Sign of weakness!
+nnoremap <leader>h <Esc>:call ToggleHardMode()<cr>
