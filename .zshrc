@@ -58,6 +58,7 @@ alias tmux='tmux -2'
 alias ta='tmux at'
 alias tat='tmux at -t'
 alias tls='tmux ls'
+alias tn='tmux new -s'
 
 # Google translate cli, en -> ru
 alias tru='trs {=ru}'
