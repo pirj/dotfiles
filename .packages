@@ -33,7 +33,6 @@ bzip2
 cassandra
 celt
 chromium
-clusterssh
 cmake
 cmus
 commoncpp2
@@ -182,6 +181,7 @@ ppp
 procinfo-ng
 procps-ng
 psmisc
+pssh
 pwgen
 python2-cairo
 python2-lxml
