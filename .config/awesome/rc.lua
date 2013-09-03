@@ -132,7 +132,7 @@ vicious.register(mpdwidget, vicious.widgets.mpd,
         else
             return "[ ▶ "..args["{Artist}"]..' - '.. args["{Title}"] .." ]"
         end
-    end, 10)
+    end, 1)
 
 local taskwidget = wibox.widget.textbox()
 vicious.register(taskwidget, taskwarrior,
