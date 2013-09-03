@@ -63,8 +63,10 @@ alias tn='tmux new -s'
 # Google translate cli, en -> ru
 alias tru='trs {=ru}'
 
+## git
 # Faster branch switching
 alias gc-='git checkout -'
+alias gs='git status'
 
 # Handy aliases
 alias -g g='| grep'
