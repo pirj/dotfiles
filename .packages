@@ -187,7 +187,6 @@ python2-cairo
 python2-lxml
 python2-numpy
 python2-setuptools
-qtwebkit
 redis
 redshift
 reiserfsprogs
@@ -245,6 +244,7 @@ usbutils
 util-linux
 vi
 vicious
+vimprobable2
 virtualbox
 virtualbox-guest-modules
 virtualbox-guest-utils
