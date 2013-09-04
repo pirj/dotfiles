@@ -46,7 +46,7 @@ theme.font      = "Inconsolata Medium 10"
 theme.bg_focus = theme.bg_normal
 theme.taglist_squares_sel = "/usr/share/awesome/themes/zenburn/taglist/squarefz.png"
 theme.taglist_squares_unsel = "/usr/share/awesome/themes/zenburn/taglist/squarez.png"
-theme.taglist_fg_focus      = "#00aa00"
+theme.taglist_bg_focus      = "#004400"
 
 -- This is used later as the default terminal and editor to run.
 terminal = "urxvt"
