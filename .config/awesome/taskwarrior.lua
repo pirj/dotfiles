@@ -20,14 +20,14 @@ local function worker(format, warg)
         ["{All}"]  = "N/A",
     }
 
-    local f = io.popen("task list due:now | tail -n +4 | head -n -2 | wc -l")
+    local f = io.popen("task list due.before:now | tail -n +4 | head -n -2 | wc -l")
 
     for line in f:lines() do
         tasks["{Now}"] = line
     end
     f:close()
 
-    local f = io.popen("task list due:today | tail -n +4 | head -n -2 | wc -l")
+    local f = io.popen("task list due.before:today | tail -n +4 | head -n -2 | wc -l")
 
     for line in f:lines() do
         tasks["{Today}"] = line
