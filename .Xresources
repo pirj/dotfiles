@@ -16,8 +16,11 @@
 #define base0E #aa759f
 #define base0F #8f5536
 
-*.foreground:   base05
-*.background:   base00
+#define corebg #080820
+#define corefg #c0c010
+
+*.foreground:   corefg
+*.background:   corebg
 *.cursorColor:  base05
 *.color0:       base00
 *.color1:       base08
