@@ -32,7 +32,7 @@ ZSH=$HOME/.oh-my-zsh
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git git-flow git-extras vi-mode ssh-agent fasd history history-substring-search colored-man rvm sprunge taskwarrior systemd)
+plugins=(git git-flow git-extras vi-mode fasd history history-substring-search colored-man rvm sprunge taskwarrior systemd)
 
 source $ZSH/oh-my-zsh.sh
 
