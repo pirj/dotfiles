@@ -92,3 +92,4 @@ books
 .task
 .rubies
 .config/tox/data
+.keychain
