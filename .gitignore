@@ -93,3 +93,5 @@ books
 .rubies
 .config/tox/data
 .keychain
+.config/fish/fish_history
+.config/fish/fishd.*
