@@ -64,7 +64,7 @@ firefox
 fish
 flashplugin
 flex
-freeradius
+freeradius-git
 freeswitch
 fuse
 gawk
@@ -107,6 +107,7 @@ iw
 jdk7-openjdk
 jfsutils
 jitsi
+keychain
 less
 libcl
 libedit
@@ -117,6 +118,7 @@ libreoffice-base
 libreoffice-calc
 libreoffice-common
 libreoffice-writer
+libsodium
 libstdc++5
 libtool
 libusb-compat
@@ -187,6 +189,7 @@ python2-cairo
 python2-lxml
 python2-numpy
 python2-setuptools
+qtwebkit
 redis
 redshift
 reiserfsprogs
@@ -227,6 +230,7 @@ tig
 tk
 tmux
 tor
+toxic-git
 tree
 ttf-dejavu
 ttf-droid
