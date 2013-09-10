@@ -91,3 +91,4 @@ books
 .mpd/mpd.pid
 .task
 .rubies
+.config/tox/data
