@@ -83,3 +83,6 @@ alias -g l='| less'
 alias -r tf='tail -f'
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+# Color scheme
+source ~/.colors.sh
