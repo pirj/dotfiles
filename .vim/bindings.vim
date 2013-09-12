@@ -5,6 +5,9 @@
 " Remap leader
 let mapleader = ","
 
+" No need to switch between layouts to use normal mode https://gist.github.com/sigsergv/5329459
+set langmap=ёйцукенгшщзхъфывапролджэячсмитьбюЁЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ;`qwertyuiop[]asdfghjkl:'zxcvbnm\\,.~QWERTYUIOP{}ASDFGHJKL\\;\\"ZXCVBNM<>
+
 " Escape in home row
 inoremap jj <Esc>
 vnoremap ll <Esc>
@@ -36,8 +39,8 @@ nnoremap <Leader>a ggVG
 nnoremap Y y$
 
 " Jump to start and end of line using the home row keys
-noremap H ^
-noremap L $
+nnoremap H 0
+nnoremap L $
 
 " Easier redo
 nnoremap U <C-r>
@@ -51,9 +54,6 @@ nmap <leader>t :tabNext<CR>
 
 " Autocomplete on Tab
 imap <tab> <c-p>
-
-" No need to switch between layouts to use normal mode https://gist.github.com/sigsergv/5329459
-set langmap=ёйцукенгшщзхъфывапролджэячсмитьбюЁЙЦУКЕHГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ;`qwertyuiop[]asdfghjkl:'zxcvbnm\\,.~QWERTYUIOP{}ASDFGHJKL\\;\\"ZXCVBNM<>
 
 " Temporarily disable hard mode. Sign of weakness!
 nnoremap <leader>h <Esc>:call ToggleHardMode()<cr>
