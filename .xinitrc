@@ -32,6 +32,8 @@ unclutter & # hide mouse cursor
 redshift -l 60:30 &disown # adjust color temperature according to daytime
 
 skypetab-ng &
+#cpulimit -l 3 -p `ps -C skype -o pid=` &disown
+#netbrake -r 300 skype
 
 # automount disks to /media
 udiskie &
