@@ -1,5 +1,6 @@
 set __fish_git_prompt_showdirtystate 1
 
+# only show hostname (highlighted) if connected to remote
 function fish_prompt -d "Write out the prompt"
   printf '%s@%s:%s%s%s%s%s%s $ ' (whoami) (hostname|cut -d . -f 1) (set_color $fish_color_cwd) (prompt_pwd) (set_color normal) (set_color $fish_color_quote) (__fish_git_prompt) (set_color normal)
 end
