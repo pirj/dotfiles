@@ -49,7 +49,8 @@ theme.taglist_squares_unsel = "/usr/share/awesome/themes/zenburn/taglist/squarez
 theme.taglist_bg_focus      = "#004400"
 
 -- This is used later as the default terminal and editor to run.
-terminal = "urxvt"
+-- terminal = "dwt -f 'Inconsolata 12'"
+terminal = "termite"
 editor = os.getenv("EDITOR") or "vim"
 editor_cmd = terminal .. " -e " .. editor
 

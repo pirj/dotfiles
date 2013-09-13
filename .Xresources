@@ -8,16 +8,16 @@
 *saveLines: 65535
 *termName: xterm-color
 *loginShell: true
-*urgentOnBell: false 
+*urgentOnBell: false
 
 *cursorBlink: true
 *scrollBar: false
 *secondaryScroll: false
 
 !xterm
-xterm*renderFont: true
-xterm*faceName: inconsolata
-xterm*faceSize: 12
+*renderFont: true
+*faceName: inconsolata
+*faceSize: 12
 
 !urxvt
 URxvt*scrollTtyOutput: false
@@ -33,11 +33,11 @@ URxvt.buffered:         true
 !urxvt*transparent:      true
 !urxvt*shading:          08
 !urxvt*depth:            32
-!urxvt*tint:             white 
+!urxvt*tint:             white
 !urxvt*inheritPixmap:    true
 
 Xft.dpi:        96
 Xft.antialias:  true
-!Xft.hinting:    true
-!Xft.rgba:       rgb
-!Xft.hintstyle:  hintslight
+Xft.hinting:    true
+Xft.rgba:       rgb
+Xft.hintstyle:  hintslight

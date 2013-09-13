@@ -36,6 +36,7 @@ chromium
 cmake
 cmus
 commoncpp2
+compton-git
 coreutils
 cpio
 cpulimit
@@ -51,6 +52,7 @@ dkms
 dmidecode
 dmon
 dnsutils
+dwt
 e2fsprogs
 eventlog
 extundelete
@@ -64,7 +66,7 @@ firefox
 fish
 flashplugin
 flex
-freeradius-git
+freeradius
 freeswitch
 fuse
 gawk
@@ -118,7 +120,6 @@ libreoffice-base
 libreoffice-calc
 libreoffice-common
 libreoffice-writer
-libsodium
 libstdc++5
 libtool
 libusb-compat
@@ -224,18 +225,17 @@ task
 tcl
 tcpdump
 terminus-font
+termite-git
 texinfo
 the_silver_searcher
 tig
 tk
 tmux
 tor
-toxic-git
 tree
 ttf-dejavu
 ttf-droid
 ttf-inconsolata
-ttf-inconsolata-lgc-git
 tumbler
 udiskie
 unclutter
