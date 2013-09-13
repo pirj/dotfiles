@@ -39,7 +39,7 @@ nnoremap <Leader>a ggVG
 nnoremap Y y$
 
 " Jump to start and end of line using the home row keys
-nnoremap H 0
+nnoremap H _
 nnoremap L $
 
 " Easier redo
