@@ -97,6 +97,7 @@ htop
 httperf
 idnkit
 ifplugd
+iftop
 imagemagick-doc
 inetutils
 inkscape
@@ -276,7 +277,6 @@ xorg-server-xvfb
 xorg-twm
 xorg-util-macros
 xorg-utils
-xorg-xclock
 xorg-xinit
 xorg-xkbevd
 xsel
