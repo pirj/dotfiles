@@ -1,10 +1,10 @@
 set __fish_git_prompt_showdirtystate 1
 
-. ~/.config/fish/vi-mode.fish
-
-function fish_user_key_bindings
-  vi_mode_insert
-end
+# . ~/.config/fish/vi-mode.fish
+#
+# function fish_user_key_bindings
+#   vi_mode_insert
+# end
 
 # only show hostname (highlighted) if connected to remote
 function fish_prompt -d "Write out the prompt"
