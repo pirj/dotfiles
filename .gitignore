@@ -96,3 +96,5 @@ books
 .config/fish/fish_history
 .config/fish/fishd.*
 .crawl
+.yard
+.yardoc
