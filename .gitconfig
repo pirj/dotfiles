@@ -2,7 +2,7 @@
   name = Phil Pirozhkov
   email = pirjsuka@gmail.com
 [push]
-	default = current
+  default = current
 [color]
   ui = true
 [core]
