@@ -95,3 +95,4 @@ books
 .keychain
 .config/fish/fish_history
 .config/fish/fishd.*
+.crawl

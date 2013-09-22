@@ -43,6 +43,7 @@ cpulimit
 crda
 cronie
 cryptsetup
+dash
 device-mapper
 dhclient
 dhcpcd
@@ -87,6 +88,7 @@ gstreamer0.10-bad
 gstreamer0.10-bad-plugins
 gstreamer0.10-base-plugins
 gstreamer0.10-ffmpeg
+gstreamer0.10-good-plugins
 gtk
 gvim
 gzip
@@ -212,6 +214,7 @@ smartmontools
 sox
 sphinx
 sshpass
+stone-soup
 subversion
 sudo
 swt
