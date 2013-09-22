@@ -51,7 +51,6 @@ Bundle 'justincampbell/vim-eighties'
 " ---------------
 
 Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-fugitive'
 "Bundle 'godlygeek/tabular'
 
 Bundle 'mileszs/ack.vim'
@@ -86,6 +85,12 @@ Bundle "tpope/vim-commentary"
 
 "Bundle 'Shougo/neocomplete.vim'
 "valloric/YouCompleteMe
+
+
+" VERSION CONTROL
+" ---------------
+Bundle 'tpope/vim-fugitive'
+Bundle 'airblade/vim-gitgutter'
 
 " SYNTAX SUPPORT
 " ---------------
