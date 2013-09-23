@@ -82,6 +82,9 @@ alias -g g='| grep'
 alias -g l='| less'
 alias -r tf='tail -f'
 
+# Password generation. Just one. Print and put to clipboard
+alias pwgen='pwgen -1cnsB 12 >&2 | xclip'
+
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 # Color scheme
