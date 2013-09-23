@@ -90,7 +90,7 @@ Bundle "tpope/vim-commentary"
 " VERSION CONTROL
 " ---------------
 Bundle 'tpope/vim-fugitive'
-Bundle 'airblade/vim-gitgutter'
+Bundle 'mhinz/vim-signify'
 
 " SYNTAX SUPPORT
 " ---------------
