@@ -9,8 +9,8 @@ let mapleader = ","
 set langmap=ёйцукенгшщзхъфывапролджэячсмитьбюЁЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ;`qwertyuiop[]asdfghjkl:'zxcvbnm\\,.~QWERTYUIOP{}ASDFGHJKL\\;\\"ZXCVBNM<>
 
 " Escape in home row
-inoremap jj <Esc>
-vnoremap ll <Esc>
+" inoremap jj <Esc>
+" vnoremap ll <Esc>
 
 " Navigate panes
 nnoremap <c-j> <c-w>j
