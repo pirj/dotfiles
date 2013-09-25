@@ -75,11 +75,11 @@ alias tru='trs {=ru}'
 ## git
 # Faster branch switching
 alias gc-='git checkout -'
-alias gs='git status'
 
 # Handy aliases
 alias -g g='| grep'
 alias -g l='| less'
+alias -g w='| wc -l'
 alias -r tf='tail -f'
 
 # Password generation. Just one. Print and put to clipboard
