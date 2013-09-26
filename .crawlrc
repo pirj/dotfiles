@@ -1,0 +1,4 @@
+view_lock = false
+scroll_margin = 5
+view_max_width = 80
+view_max_height = 30
