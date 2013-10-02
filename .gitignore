@@ -49,7 +49,7 @@
 .vim/.backup/
 .vim/.undo/
 .vim/bundle/
-.zcompdump
+.zcompdump*
 .zsh-update
 .zsh_history
 Downloads/
