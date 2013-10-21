@@ -44,7 +44,8 @@ autocutsel -fork &
 autocutsel -selection PRIMARY -fork &
 
 #xrandr --output LVDS --auto --output HDMI-0 --off
-xrandr --output LVDS --mode 1280x720 --output HDMI-0 --mode 1600x1200
+#xrandr --output LVDS --mode 1280x720 --output HDMI-0 --mode 1600x1200
+xrandr --output LVDS --off --output HDMI-0 --mode 1600x1200
 
 mpd &
 

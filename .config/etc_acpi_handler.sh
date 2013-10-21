@@ -25,7 +25,7 @@ case "$1" in
     video/switchmode)
         VIDEO=`cat /var/tmp/video_out`
         if [[ "$VIDEO" == IN ]]; then
-            xrandr --output LVDS --mode 1280x720 --output HDMI-0 --mode 1600x1200
+            xrandr --output LVDS --off --output HDMI-0 --mode 1600x1200
             echo "EX" > /var/tmp/video_out
         else
             xrandr --output LVDS --auto --output HDMI-0 --off
