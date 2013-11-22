@@ -4,6 +4,7 @@ acpi
 acpid
 aircrack-ng
 aisleriot
+alsa-firmware
 alsa-oss
 alsa-plugins
 alsa-utils
@@ -52,7 +53,9 @@ diffutils
 dkms
 dmidecode
 dmon
+dnsmasq
 dnsutils
+dumb
 dwt
 e2fsprogs
 eventlog
@@ -67,7 +70,7 @@ firefox
 fish
 flashplugin
 flex
-freeradius
+freeradius-git
 freeswitch
 fuse
 gawk
@@ -93,7 +96,6 @@ gtk
 gvim
 gzip
 hdparm
-heirloom-mailx
 help2man
 htop
 httperf
@@ -109,9 +111,11 @@ iputils
 ipw2200-fw
 irssi
 iw
+jack2
 jdk7-openjdk
 jfsutils
 jitsi
+jnettop
 keychain
 less
 libcl
@@ -151,6 +155,7 @@ mdadm
 memcached
 mesa
 mesa-libgl
+mosh
 mpd
 mpg123
 nano
@@ -176,6 +181,7 @@ pcmciautils
 perl
 perl-json
 perl-lwp-protocol-https
+perl-yaml-syck
 pgadmin3
 pkg-config
 pm-utils
@@ -203,6 +209,7 @@ rlwrap
 rtorrent
 ruby-install-git
 rxvt-unicode
+s-nail
 scrot
 sdparm
 sed
@@ -256,6 +263,7 @@ vimprobable2
 virtualbox
 virtualbox-guest-modules
 virtualbox-guest-utils
+vit
 vlc
 wget
 which
@@ -273,7 +281,6 @@ xf86-input-synaptics
 xf86-video-ati
 xfsprogs
 xinetd
-xmlto
 xorg-server
 xorg-server-utils
 xorg-server-xvfb
