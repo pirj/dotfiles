@@ -12,6 +12,7 @@ local naughty = require("naughty")
 -- local menubar = require("menubar")
 local vicious = require("vicious")
 local taskwarrior = require("taskwarrior")
+local pomodoro = require("pomodoro")
 
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
@@ -229,6 +230,8 @@ for s = 1, screen.count() do
     for key, widget in pairs(widgets) do
       right_layout:add(widget)
     end
+
+    right_layout:add(pomodoro)
 
     -- right_layout:add(mylayoutbox[s])
 
