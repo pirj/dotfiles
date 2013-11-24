@@ -14,6 +14,9 @@ local vicious = require("vicious")
 local taskwarrior = require("taskwarrior")
 local pomodoro = require("pomodoro")
 
+pomodoro.pre_text = ""
+pomodoro.init()
+
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
 -- another config (This code will only ever execute for the fallback config)
@@ -231,7 +234,9 @@ for s = 1, screen.count() do
       right_layout:add(widget)
     end
 
-    right_layout:add(pomodoro)
+    right_layout:add(pomodoro.icon_widget)
+    pomodoro.widget:set_font('Inconsolata 10')
+    right_layout:add(pomodoro.widget)
 
     -- right_layout:add(mylayoutbox[s])
 
