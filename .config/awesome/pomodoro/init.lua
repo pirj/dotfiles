@@ -1,147 +1,140 @@
 local wibox     = require("wibox")
-local image     = image
-local timer     = timer
 local awful     = require("awful")
-local naughty   = require("naughty")
 local beautiful = require("beautiful")
+local util      = require("pomodoro/util")
 local os        = os
-local string    = string
-local ipairs    = ipairs
+local timer     = timer
 local setmetatable = setmetatable
 
 module("pomodoro")
 
--- pomodoro timer widget
-pomodoro = {}
--- tweak these values in seconds to your liking
-pomodoro.pause_duration = 5 * 60
-pomodoro.work_duration = 25 * 60
-pomodoro.change = 60
+local pomodoro = {}
 
-local pomodoro_image_path = beautiful.pomodoro_icon or awful.util.getdir("config") .."/pomodoro/pomodoro.png"
+-- Internal state
+local current_pomodoro = 1
+local state = "free_time"
+local initial_time = os.time()
 
-pomodoro.pre_text = "Pomodoro: "
-pomodoro.pause_title = "Pause finished."
-pomodoro.pause_text = "Get back to work!"
-pomodoro.work_title = "Pomodoro finished."
-pomodoro.work_text = "Time for a pause!"
-pomodoro.working = true
-pomodoro.widget = wibox.widget.textbox()
-pomodoro.icon_widget = wibox.widget.imagebox()
-pomodoro.timer = timer { timeout = 1 }
+-- Tweakable configuration {{{
+-- Durations in seconds
+pomodoro.durations = { in_progress = 25 * 60, short_break = 5 * 60, long_break = 25 * 60, away = 90 * 60, treshold = 5 * 60 }
 
--- Callbacks to be called when the pomodoro finishes or the rest time finishes
-pomodoro.on_work_pomodoro_finish_callbacks = {}
-pomodoro.on_pause_pomodoro_finish_callbacks = {}
+-- Titles
+pomodoro.titles = {
+  started = { title = "Pomodoro started", subtitle = "Stay focused" },
+  done = { title = "Pomodoro done", subtitle = "Time for a short break" },
+  set_done = { title = "Set done", subtitle = "Time for a long break" },
+  squashed = { title = "Pomodoro squashed", subtitle = "Yuck!" },
+  short_exceeded = { title = "Short break exeeded", subtitle = "" },
+  long_exceeded = { title = "Long break exeeded", subtitle = "" },
+  free_time = { title = "Enjoy your free time", subtitle = "Forget about work" }
+}
 
-function pomodoro:settime(t)
-  if t >= 3600 then -- more than one hour!
-    t = os.date("%X", t-3600)
+pomodoro.notification_timeout = 10
+
+-- Prefixes
+pomodoro.prefixes = { in_progress = "In progress", short_break = "Short break", long_break = "Long break", away = "Away", free_time = "Free time" }
+
+-- Widget contents format
+pomodoro.format = function (time, state, current_pomodoro)
+  local icon = pomodoro.prefixes[state]
+  return current_pomodoro .. " " .. icon .. " " .. time
+end
+-- }}}
+
+-- Transition handlers
+local transitions = {}
+transitions.started = function()
+  util.notify(pomodoro.titles.started)
+  initial_time = os.time()
+  state = "in_progress"
+end
+transitions.done = function()
+  if current_pomodoro == 4 then
+    pomodoro.transitions.set_done()
   else
-    t = os.date("%M:%S", t)
+    initial_time = os.time()
+    util.notify(pomodoro.titles.done)
+    current_pomodoro = current_pomodoro + 1
+    state = "short_break"
   end
-  self.widget:set_markup(pomodoro.pre_text .. "<b>" .. t .. "</b>")
+end
+transitions.set_done = function()
+  util.notify(pomodoro.titles.set_done)
+  initial_time = os.time()
+  current_pomodoro = 1
+  state = "long_break"
+end
+transitions.squashed = function()
+  util.notify(pomodoro.titles.squashed)
+  initial_time = os.time()
+  state = "short_break"
+end
+transitions.short_break_exceeded = function()
+  util.notify(pomodoro.titles.short_exceeded)
+  state = "long_break"
+end
+transitions.long_break_exceeded = function()
+  util.notify(pomodoro.titles.long_exceeded)
+  state = "away"
+end
+transitions.free_time = function()
+  util.notify(pomodoro.titles.free_time)
+  state = "free_time"
 end
 
-function pomodoro:notify(title, text, duration, working)
-  naughty.notify {
-    bg = beautiful.bg_urgent,
-    fg = beautiful.fg_urgent,
-    title = title,
-    text  = text,
-    timeout = 10
-  }
+-- Widget
+pomodoro.widget = wibox.widget.textbox()
 
-  pomodoro.left = duration
-  pomodoro:settime(duration)
-  pomodoro.working = working
-end
+-- Time representation handlers
+local time_representations = {}
+time_representations.in_progress = function(now, initial) return pomodoro.durations.in_progress - (now - initial) end
+time_representations.short_break = function(now, initial) return now - initial end
+time_representations.long_break = function(now, initial) return now - initial end
+time_representations.away = function(now, initial) return now - initial end
+time_representations.free_time = function(now, initial) return now - initial end
 
+-- Button click handlers
+local clicked = {}
+clicked.in_progress = transitions.squashed
+clicked.short_break = transitions.started
+clicked.long_break = transitions.started
+clicked.away = transitions.started
+clicked.free_time = transitions.started
 
+mouse_clicked = function() clicked[state]() end
 
-function get_buttons()
+local buttons = function()
   return awful.util.table.join(
     awful.button({ }, 1, function()
-      pomodoro.last_time = os.time()
-      pomodoro.timer:start()
-    end),
-    awful.button({ }, 2, function()
-      pomodoro.timer:stop()
+      mouse_clicked()
     end),
     awful.button({ }, 3, function()
-      pomodoro.timer:stop()
-      pomodoro.left = pomodoro.work_duration
-      pomodoro:settime(pomodoro.work_duration)
-    end),
-    awful.button({ }, 4, function()
-      pomodoro.timer:stop()
-      pomodoro:settime(pomodoro.work_duration+pomodoro.change)
-      pomodoro.work_duration = pomodoro.work_duration+pomodoro.change
-      pomodoro.left = pomodoro.work_duration
-    end),
-    awful.button({ }, 5, function()
-        pomodoro.timer:stop()
-        if pomodoro.work_duration > pomodoro.change then
-            pomodoro:settime(pomodoro.work_duration-pomodoro.change)
-            pomodoro.work_duration = pomodoro.work_duration-pomodoro.change
-            pomodoro.left = pomodoro.work_duration
-        end
+      transitions.free_time()
     end)
   )
 end
 
+-- Timeout handlers
+timeout_handlers = {}
+timeout_handlers.in_progress = function(now, initial) if (now - initial) > pomodoro.durations.in_progress then transitions.done() end end
+timeout_handlers.short_break = function(now, initial) if (now - initial) > (pomodoro.durations.short_break + pomodoro.durations.treshold) then transitions.short_break_exceeded() end end
+timeout_handlers.long_break = function(now, initial) if (now - initial) > (pomodoro.durations.long_break + pomodoro.durations.treshold) then transitions.long_break_exceeded() end end
+timeout_handlers.away = function(now, initial) if (now - initial) > (pomodoro.durations.away + pomodoro.durations.treshold) then transitions.free_time() end end
+timeout_handlers.free_time = function(now, initial) end
 
-function pomodoro:init()
-    -- Initial values that depend on the values that can be set by the user
-    pomodoro.left = pomodoro.work_duration
-    pomodoro.icon_widget:set_image(pomodoro_image_path)
-    -- Timer configuration
-    --
-    pomodoro.timer:connect_signal("timeout", function()
-        local now = os.time()
-        pomodoro.left = pomodoro.left - (now - pomodoro.last_time)
-        pomodoro.last_time = now
-
-        if pomodoro.left > 0 then
-            pomodoro:settime(pomodoro.left)
-        else
-            if pomodoro.working then
-                pomodoro:notify(pomodoro.work_title, pomodoro.work_text,
-                pomodoro.pause_duration, false)
-                for _, value in ipairs(pomodoro.on_work_pomodoro_finish_callbacks) do
-                    value()
-                end
-            else
-                pomodoro:notify(pomodoro.pause_title, pomodoro.pause_text,
-                pomodoro.work_duration, true)
-                for _, value in ipairs(pomodoro.on_pause_pomodoro_finish_callbacks) do
-                    value()
-                end
-            end
-            pomodoro.timer:stop()
-        end
-    end)
-
-    pomodoro:settime(pomodoro.work_duration)
-    pomodoro.widget:buttons(get_buttons())
-    pomodoro.icon_widget:buttons(get_buttons())
-
-    awful.tooltip({
-        objects = { pomodoro.widget, pomodoro.icon_widget},
-        timer_function = function()
-            if pomodoro.timer.started then
-                if pomodoro.working then
-                    return 'Work ending in ' .. os.date("%M:%S", pomodoro.left)
-                else
-                    return 'Rest ending in ' .. os.date("%M:%S", pomodoro.left)
-                end
-            else
-                return 'Pomodoro not started'
-            end
-            return 'Bad tooltip'
-        end,
-    })
-
+-- Main tick handler
+local tick = function()
+  local now = os.time()
+  timeout_handlers[state](now, initial_time)
+  local time = time_representations[state](now, initial_time)
+  pomodoro.widget:set_markup(pomodoro.format(util.format_time(time), state, current_pomodoro))
 end
 
-return pomodoro
+local timer = timer { timeout = 1 }
+timer:connect_signal("timeout", function() tick() end)
+timer:start()
+
+pomodoro.widget:buttons(buttons())
+
+return setmetatable(pomodoro, { __call = function(_, ...) return pomodoro end })

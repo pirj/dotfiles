@@ -13,9 +13,7 @@ local naughty = require("naughty")
 local vicious = require("vicious")
 local taskwarrior = require("taskwarrior")
 local pomodoro = require("pomodoro")
-
-pomodoro.pre_text = ""
-pomodoro.init()
+local io = { popen = io.popen }
 
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
@@ -135,6 +133,8 @@ vicious.register(mpdwidget, vicious.widgets.mpd,
     function (mpdwidget, args)
         if args["{state}"] == "Stop" then
             return "[ ■ ]"
+        elseif args["{state}"] == "Pause" then
+            return "[  "..args["{Artist}"]..' - '.. args["{Title}"] .." ]"
         else
             return "[ ▶ "..args["{Artist}"]..' - '.. args["{Title}"] .." ]"
         end
@@ -142,11 +142,24 @@ vicious.register(mpdwidget, vicious.widgets.mpd,
 
 local taskwidget = wibox.widget.textbox()
 vicious.register(taskwidget, taskwarrior,
-    function (mpdwidget, args)
-        return "[ <span color='red'>" .. args["{Now}"] .. '</span>/' .. args["{Today}"] .. "/" .. args["{All}"] .. " ]"
+    function (taskwidget, args)
+        return "[ <span color='darkred'>" .. args["{Now}"] .. '</span>/' .. args["{Today}"] .. "/" .. args["{All}"] .. " ]"
     end, 60)
 
-local widgets = {taskwidget, mpdwidget, datewidget}
+--  Pomodoro in progress
+--  Pomodoro done
+--  Pomodoro squashed
+--  Short break
+--  Long break
+--  Away
+--  Free time
+
+pomodoro.prefixes = { in_progress = "<span color='darkred'></span>", short_break = "", long_break = "", away = "", free_time = "" }
+
+local _pomodoro_format = pomodoro.format
+pomodoro.format = function(time, state, current_pomodoro) return "[ " .. _pomodoro_format(time, state, current_pomodoro) .. " ]" end
+
+local widgets = {taskwidget, mpdwidget, datewidget, pomodoro.widget}
 
 for key, widget in pairs(widgets) do
     widget:set_font('Inconsolata 10')
@@ -165,6 +178,7 @@ mytaglist.buttons = awful.util.table.join(
                     awful.button({ }, 4, function(t) awful.tag.viewnext(awful.tag.getscreen(t)) end),
                     awful.button({ }, 5, function(t) awful.tag.viewprev(awful.tag.getscreen(t)) end)
                     )
+
 mytasklist = {}
 mytasklist.buttons = awful.util.table.join(
                      awful.button({ }, 1, function (c)
@@ -233,10 +247,6 @@ for s = 1, screen.count() do
     for key, widget in pairs(widgets) do
       right_layout:add(widget)
     end
-
-    right_layout:add(pomodoro.icon_widget)
-    pomodoro.widget:set_font('Inconsolata 10')
-    right_layout:add(pomodoro.widget)
 
     -- right_layout:add(mylayoutbox[s])
 
