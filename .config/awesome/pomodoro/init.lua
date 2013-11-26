@@ -92,14 +92,8 @@ local regular = function(now, initial) return now - initial end
 local time_representations = { in_progress = countdown, short_break = regular, long_break = regular, away = regular, free_time = regular }
 
 -- Button click handlers
-local clicked = {}
-clicked.in_progress = transitions.squashed
-clicked.short_break = transitions.started
-clicked.long_break = transitions.started
-clicked.away = transitions.started
-clicked.free_time = transitions.started
-
-mouse_clicked = function() clicked[state]() end
+local clicked = { in_progress = transitions.squashed, short_break = transitions.started, long_break = transitions.started, away = transitions.started, free_time = transitions.started }
+local mouse_clicked = function() clicked[state]() end
 
 local buttons = function()
   return awful.util.table.join(
@@ -112,13 +106,18 @@ local buttons = function()
   )
 end
 
+pomodoro.widget:buttons(buttons())
+
 -- Timeout handlers
-timeout_handlers = {}
-timeout_handlers.in_progress = function(now, initial) if (now - initial) > pomodoro.durations.in_progress then transitions.done() end end
-timeout_handlers.short_break = function(now, initial) if (now - initial) > (pomodoro.durations.short_break + pomodoro.durations.treshold) then transitions.short_break_exceeded() end end
-timeout_handlers.long_break = function(now, initial) if (now - initial) > (pomodoro.durations.long_break + pomodoro.durations.treshold) then transitions.long_break_exceeded() end end
-timeout_handlers.away = function(now, initial) if (now - initial) > (pomodoro.durations.away + pomodoro.durations.treshold) then transitions.free_time() end end
-timeout_handlers.free_time = function(now, initial) end
+local exceeds = function(limit, action) return function(now, initial) if (now - initial) > limit then action() end end end
+
+timeout_handlers = {
+  in_progress = exceeds(pomodoro.durations.in_progress, transitions.done),
+  short_break = exceeds(pomodoro.durations.short_break + pomodoro.durations.treshold, transitions.short_break_exceeded),
+  long_break  = exceeds(pomodoro.durations.long_break + pomodoro.durations.treshold, transitions.long_break_exceeded),
+  away        = exceeds(pomodoro.durations.away + pomodoro.durations.treshold, transitions.free_time),
+  free_time   = function(now, initial) end
+}
 
 -- Main tick handler
 local tick = function()
@@ -131,7 +130,5 @@ end
 local timer = timer { timeout = 1 }
 timer:connect_signal("timeout", function() tick() end)
 timer:start()
-
-pomodoro.widget:buttons(buttons())
 
 return setmetatable(pomodoro, { __call = function(_, ...) return pomodoro end })
