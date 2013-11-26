@@ -93,20 +93,17 @@ local time_representations = { in_progress = countdown, short_break = regular, l
 
 -- Button click handlers
 local clicked = { in_progress = transitions.squashed, short_break = transitions.started, long_break = transitions.started, away = transitions.started, free_time = transitions.started }
-local mouse_clicked = function() clicked[state]() end
 
-local buttons = function()
-  return awful.util.table.join(
+pomodoro.widget:buttons(
+  awful.util.table.join(
     awful.button({ }, 1, function()
-      mouse_clicked()
+      clicked[state]()
     end),
     awful.button({ }, 3, function()
       transitions.free_time()
     end)
   )
-end
-
-pomodoro.widget:buttons(buttons())
+)
 
 -- Timeout handlers
 local exceeds = function(limit, action) return function(now, initial) if (now - initial) > limit then action() end end end
