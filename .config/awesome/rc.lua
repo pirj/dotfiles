@@ -159,7 +159,7 @@ pomodoro.prefixes = { in_progress = "<span color='darkred'></span>", short_br
 local _pomodoro_format = pomodoro.format
 pomodoro.format = function(time, state, current_pomodoro) return "[ " .. _pomodoro_format(time, state, current_pomodoro) .. " ]" end
 
-local widgets = {taskwidget, mpdwidget, datewidget, pomodoro.widget}
+local widgets = {pomodoro.widget, taskwidget, mpdwidget, datewidget}
 
 for key, widget in pairs(widgets) do
     widget:set_font('Inconsolata 10')

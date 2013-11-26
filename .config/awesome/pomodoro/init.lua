@@ -51,7 +51,7 @@ transitions.started = function()
 end
 transitions.done = function()
   if current_pomodoro == 4 then
-    pomodoro.transitions.set_done()
+    transitions.set_done()
   else
     initial_time = os.time()
     util.notify(pomodoro.titles.done)
