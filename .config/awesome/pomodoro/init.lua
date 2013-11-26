@@ -87,12 +87,9 @@ end
 pomodoro.widget = wibox.widget.textbox()
 
 -- Time representation handlers
-local time_representations = {}
-time_representations.in_progress = function(now, initial) return pomodoro.durations.in_progress - (now - initial) end
-time_representations.short_break = function(now, initial) return now - initial end
-time_representations.long_break = function(now, initial) return now - initial end
-time_representations.away = function(now, initial) return now - initial end
-time_representations.free_time = function(now, initial) return now - initial end
+local countdown = function(now, initial) return pomodoro.durations.in_progress - (now - initial) end
+local regular = function(now, initial) return now - initial end
+local time_representations = { in_progress = countdown, short_break = regular, long_break = regular, away = regular, free_time = regular }
 
 -- Button click handlers
 local clicked = {}
