@@ -11,7 +11,7 @@ module("pomodoro")
 local pomodoro = {}
 
 -- Internal state
-local current_pomodoro = 1
+local current_pomodoro = 0
 local state = "free_time"
 local initial_time = os.time()
 
@@ -45,6 +45,7 @@ end
 -- Transition handlers
 local transitions = {}
 transitions.started = function()
+  current_pomodoro = current_pomodoro + 1
   util.notify(pomodoro.titles.started)
   initial_time = os.time()
   state = "in_progress"
@@ -55,7 +56,6 @@ transitions.done = function()
   else
     initial_time = os.time()
     util.notify(pomodoro.titles.done)
-    current_pomodoro = current_pomodoro + 1
     state = "short_break"
   end
 end
@@ -96,12 +96,8 @@ local clicked = { in_progress = transitions.squashed, short_break = transitions.
 
 pomodoro.widget:buttons(
   awful.util.table.join(
-    awful.button({ }, 1, function()
-      clicked[state]()
-    end),
-    awful.button({ }, 3, function()
-      transitions.free_time()
-    end)
+    awful.button({ }, 1, function() clicked[state]() end),
+    awful.button({ }, 3, function() transitions.free_time() end)
   )
 )
 
