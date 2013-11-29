@@ -146,7 +146,7 @@ vicious.register(taskwidget, taskwarrior,
         return "[ <span color='darkred'>" .. args["{Now}"] .. '</span>/' .. args["{Today}"] .. "/" .. args["{All}"] .. " ]"
     end, 60)
 
---  Pomodoro in progress
+--  Pomodoro working
 --  Pomodoro done
 --  Pomodoro squashed
 --  Short break
@@ -154,7 +154,7 @@ vicious.register(taskwidget, taskwarrior,
 --  Away
 --  Free time
 
-pomodoro.prefixes = { in_progress = "<span color='darkred'></span>", short_break = "", long_break = "", away = "", free_time = "" }
+pomodoro.prefixes = { work = "<span color='darkred'></span>", short_break = "", long_break = "", away = "", free_time = "" }
 
 local _pomodoro_format = pomodoro.format
 pomodoro.format = function(time, state, current_pomodoro) return "[ " .. _pomodoro_format(time, state, current_pomodoro) .. " ]" end

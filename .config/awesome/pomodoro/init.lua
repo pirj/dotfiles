@@ -17,7 +17,7 @@ local initial_time = os.time()
 
 -- Tweakable configuration {{{
 -- Durations in seconds
-pomodoro.durations = { in_progress = 25 * 60, short_break = 5 * 60, long_break = 25 * 60, away = 90 * 60, treshold = 5 * 60 }
+pomodoro.durations = { work = 25 * 60, short_break = 5 * 60, long_break = 25 * 60, away = 90 * 60, treshold = 5 * 60 }
 
 -- Titles
 pomodoro.titles = {
@@ -33,7 +33,7 @@ pomodoro.titles = {
 pomodoro.notification_timeout = 10
 
 -- Prefixes
-pomodoro.prefixes = { in_progress = "In progress", short_break = "Short break", long_break = "Long break", away = "Away", free_time = "Free time" }
+pomodoro.prefixes = { work = "In progress", short_break = "Short break", long_break = "Long break", away = "Away", free_time = "Free time" }
 
 -- Widget contents format
 pomodoro.format = function (time, state, current_pomodoro)
@@ -48,7 +48,7 @@ transitions.started = function()
   current_pomodoro = current_pomodoro + 1
   util.notify(pomodoro.titles.started)
   initial_time = os.time()
-  state = "in_progress"
+  state = "work"
 end
 transitions.done = function()
   if current_pomodoro == 4 then
@@ -87,12 +87,12 @@ end
 pomodoro.widget = wibox.widget.textbox()
 
 -- Time representation handlers
-local countdown = function(now, initial) return pomodoro.durations.in_progress - (now - initial) end
+local countdown = function(now, initial) return pomodoro.durations.work - (now - initial) end
 local regular = function(now, initial) return now - initial end
-local time_representations = { in_progress = countdown, short_break = regular, long_break = regular, away = regular, free_time = regular }
+local time_representations = { work = countdown, short_break = regular, long_break = regular, away = regular, free_time = regular }
 
 -- Button click handlers
-local clicked = { in_progress = transitions.squashed, short_break = transitions.started, long_break = transitions.started, away = transitions.started, free_time = transitions.started }
+local clicked = { work = transitions.squashed, short_break = transitions.started, long_break = transitions.started, away = transitions.started, free_time = transitions.started }
 
 pomodoro.widget:buttons(
   awful.util.table.join(
@@ -105,7 +105,7 @@ pomodoro.widget:buttons(
 local exceeds = function(limit, action) return function(now, initial) if (now - initial) > limit then action() end end end
 
 timeout_handlers = {
-  in_progress = exceeds(pomodoro.durations.in_progress, transitions.done),
+  work        = exceeds(pomodoro.durations.work, transitions.done),
   short_break = exceeds(pomodoro.durations.short_break + pomodoro.durations.treshold, transitions.short_break_exceeded),
   long_break  = exceeds(pomodoro.durations.long_break + pomodoro.durations.treshold, transitions.long_break_exceeded),
   away        = exceeds(pomodoro.durations.away + pomodoro.durations.treshold, transitions.free_time),
