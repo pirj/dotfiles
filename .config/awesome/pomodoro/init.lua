@@ -5,6 +5,8 @@ local util      = require("pomodoro/util")
 local os        = os
 local timer     = timer
 local setmetatable = setmetatable
+local table     = table
+local ipairs    = ipairs
 
 module("pomodoro")
 
@@ -17,7 +19,7 @@ local initial_time = os.time()
 
 -- Tweakable configuration {{{
 -- Durations in seconds
-pomodoro.durations = { work = 25 * 60, short_break = 5 * 60, long_break = 25 * 60, away = 90 * 60, treshold = 5 * 60 }
+pomodoro.durations = { work = 25 * 60, short_break = 5 * 60, long_break = 20 * 60, away = 60 * 60, treshold = 2 * 60 }
 
 -- Titles
 pomodoro.titles = {
@@ -25,8 +27,8 @@ pomodoro.titles = {
   done = { title = "Pomodoro done", subtitle = "Time for a short break" },
   set_done = { title = "Set done", subtitle = "Time for a long break" },
   squashed = { title = "Pomodoro squashed", subtitle = "Yuck!" },
-  short_exceeded = { title = "Short break exeeded", subtitle = "" },
-  long_exceeded = { title = "Long break exeeded", subtitle = "" },
+  short_break_exceeded = { title = "Short break exeeded", subtitle = "" },
+  long_break_exceeded = { title = "Long break exeeded", subtitle = "" },
   free_time = { title = "Enjoy your free time", subtitle = "Forget about work" }
 }
 
@@ -42,47 +44,6 @@ pomodoro.format = function (time, state, current_pomodoro)
 end
 -- }}}
 
--- Transition handlers
-local transitions = {}
-transitions.started = function()
-  current_pomodoro = current_pomodoro + 1
-  util.notify(pomodoro.titles.started)
-  initial_time = os.time()
-  state = "work"
-end
-transitions.done = function()
-  if current_pomodoro == 4 then
-    transitions.set_done()
-  else
-    initial_time = os.time()
-    util.notify(pomodoro.titles.done)
-    state = "short_break"
-  end
-end
-transitions.set_done = function()
-  util.notify(pomodoro.titles.set_done)
-  initial_time = os.time()
-  current_pomodoro = 1
-  state = "long_break"
-end
-transitions.squashed = function()
-  util.notify(pomodoro.titles.squashed)
-  initial_time = os.time()
-  state = "short_break"
-end
-transitions.short_break_exceeded = function()
-  util.notify(pomodoro.titles.short_exceeded)
-  state = "long_break"
-end
-transitions.long_break_exceeded = function()
-  util.notify(pomodoro.titles.long_exceeded)
-  state = "away"
-end
-transitions.free_time = function()
-  util.notify(pomodoro.titles.free_time)
-  state = "free_time"
-end
-
 -- Widget
 pomodoro.widget = wibox.widget.textbox()
 
@@ -91,25 +52,74 @@ local countdown = function(now, initial) return pomodoro.durations.work - (now -
 local regular = function(now, initial) return now - initial end
 local time_representations = { work = countdown, short_break = regular, long_break = regular, away = regular, free_time = regular }
 
+local listeners = { started = {}, done = {}, set_done = {}, squashed = {}, short_break_exceeded = {}, long_break_exceeded = {}, free_time = {}, all = {} }
+
+pomodoro.on = function(event, fn) table.insert(listeners[event], fn) end
+
+local emit = function(event)
+  for _, listener in ipairs(listeners[event]) do listener() end
+  for _, listener in ipairs(listeners["all"]) do listener(event) end
+end
+
 -- Button click handlers
-local clicked = { work = transitions.squashed, short_break = transitions.started, long_break = transitions.started, away = transitions.started, free_time = transitions.started }
+local clicked = { work = "squashed", short_break = "started", long_break = "started", away = "started", free_time = "started" }
 
 pomodoro.widget:buttons(
-  awful.util.table.join(
-    awful.button({ }, 1, function() clicked[state]() end),
-    awful.button({ }, 3, function() transitions.free_time() end)
-  )
+  awful.button({ }, 1, function() emit(clicked[state]) end)
 )
 
+-- Hooks
+pomodoro.on("all", function(event)
+  util.notify(pomodoro.titles[event])
+end)
+
+pomodoro.on("started", function()
+  current_pomodoro = current_pomodoro + 1
+  initial_time = os.time()
+  state = "work"
+end)
+
+pomodoro.on("done", function()
+  if current_pomodoro == 4 then
+    emit("set_done")
+  else
+    initial_time = os.time()
+    state = "short_break"
+  end
+end)
+
+pomodoro.on("set_done", function()
+  initial_time = os.time()
+  current_pomodoro = 1
+  state = "long_break"
+end)
+
+pomodoro.on("squashed", function()
+  initial_time = os.time()
+  state = "short_break"
+end)
+
+pomodoro.on("short_break_exceeded", function()
+  state = "long_break"
+end)
+
+pomodoro.on("long_break_exceeded", function()
+  state = "away"
+end)
+
+pomodoro.on("free_time", function()
+  state = "free_time"
+end)
+
 -- Timeout handlers
-local exceeds = function(limit, action) return function(now, initial) if (now - initial) > limit then action() end end end
+local exceeds = function(limit, event) return function(now, initial) if (now - initial) > limit() then emit(event) end end end
 
 timeout_handlers = {
-  work        = exceeds(pomodoro.durations.work, transitions.done),
-  short_break = exceeds(pomodoro.durations.short_break + pomodoro.durations.treshold, transitions.short_break_exceeded),
-  long_break  = exceeds(pomodoro.durations.long_break + pomodoro.durations.treshold, transitions.long_break_exceeded),
-  away        = exceeds(pomodoro.durations.away + pomodoro.durations.treshold, transitions.free_time),
-  free_time   = function(now, initial) end
+  work        = exceeds(function() return pomodoro.durations.work end, "done"),
+  short_break = exceeds(function() return pomodoro.durations.short_break + pomodoro.durations.treshold end, "short_break_exceeded"),
+  long_break  = exceeds(function() return pomodoro.durations.long_break + pomodoro.durations.treshold end, "long_break_exceeded"),
+  away        = exceeds(function() return pomodoro.durations.away + pomodoro.durations.treshold end, "free_time"),
+  free_time   = function() end
 }
 
 -- Main tick handler
