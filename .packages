@@ -261,7 +261,8 @@ usbutils
 util-linux
 vi
 vicious
-vimprobable2
+vimb-git
+vimprobable2-git
 virtualbox
 virtualbox-guest-modules
 virtualbox-guest-utils
