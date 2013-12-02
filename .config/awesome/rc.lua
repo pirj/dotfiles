@@ -159,6 +159,8 @@ pomodoro.prefixes = { work = "<span color='darkred'></span>", short_break = "
 local _pomodoro_format = pomodoro.format
 pomodoro.format = function(time, state, current_pomodoro) return "[ " .. _pomodoro_format(time, state, current_pomodoro) .. " ]" end
 
+pomodoro.on('done', function() awful.util.spawn('slock') end)
+
 local widgets = {pomodoro.widget, taskwidget, mpdwidget, datewidget}
 
 for key, widget in pairs(widgets) do
