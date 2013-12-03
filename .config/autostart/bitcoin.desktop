@@ -1,0 +1,6 @@
+[Desktop Entry]
+Type=Application
+Name=Bitcoin
+Exec=/usr/bin/bitcoin-qt -min
+Terminal=false
+Hidden=false

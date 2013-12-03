@@ -103,3 +103,5 @@ music
 .mysql_history
 .awesome-client_history
 .config/vimb
+.bitcoin
+.secret
