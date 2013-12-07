@@ -81,6 +81,7 @@ alias -g g='| grep'
 alias -g l='| less'
 alias -g w='| wc -l'
 alias -r tf='tail -f'
+alias space='du --max-depth=2 -h . | sort -h -r | head -n 20'
 
 # Password generation. Just one. Print and put to clipboard
 alias pwgen='pwgen -1cnsB 12 >&2 | xclip'
