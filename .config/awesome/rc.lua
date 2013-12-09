@@ -12,7 +12,7 @@ local naughty = require("naughty")
 -- local menubar = require("menubar")
 local vicious = require("vicious")
 local taskwarrior = require("taskwarrior")
-local pomodoro = require("pomodoro")
+pomodoro = require("pomodoro")
 local io = { popen = io.popen }
 
 -- {{{ Error handling

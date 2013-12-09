@@ -85,7 +85,7 @@ How to use
 
 In your rc.lua:
 
-    local pomodoro = require("pomodoro")
+    pomodoro = require("pomodoro")
     ...
     right_layout:add(pomodoro.widget)
 
@@ -118,13 +118,13 @@ By default, Mod4 + p is used. You can override that, e.g. Mod4+Shift+p:
 
     pomodoro.hotkey({ modkey, "Shift" }, "p")
 
-### Sets
+#### Sets
 
-By default each set consists of 4 Pomodoros, but you can redefine that:
+By default each set consists of 4 Pomodoros, but you can tweak that:
 
     pomodoro.sets = {4, 3, 3, 4, 2}
 
-### Log
+#### Log
 
 You can set up Pomodoro to write the results to a text file with tab separated format:
 
@@ -132,6 +132,20 @@ You can set up Pomodoro to write the results to a text file with tab separated f
     21 Nov 2013\t09:00\tSet 1\tPomodoro 2\tSquashed
 
     pomodoro.log = "~/.pomodoro_log"
+
+#### Activity tracking
+
+You can call `pomodoro.idle()` in a hook and Pomodoro will be squashed if a working period is active:
+
+    pomodoro.idle()
+
+It's possible to acieve running [xsidle.sh](http://git.suckless.org/xssstate/commit/?id=c30b12c8e9d20225f69014d3fe60c0c0c4476773) from .xinitrc (with a small patch of $1 to $@ in xsidle.sh):
+
+    xsidle.sh echo pomodoro.idle() | awesome-client &
+
+#### Taskwarrior integration
+
+    TODO: port to awesome 3.5 https://github.com/ValiValpas/awesome-taskwarrior
 
 ### Interaction
 
@@ -146,15 +160,15 @@ Plans
     -only count non-squashed Pomodoros in set
     +transition listeners
     -hotkeys
-    -Set formats [1,3],[3,1],[3],[3]
+    -Set formats {4, 3, 3, 4, 2}
     -Save timelapse to text file for later inspection
-    activity tracker, if screensaver is being run, pomodoro is squashed
+    -idle tracker, if screensaver is being run, pomodoro is squashed
     Taskwarrior integration: focus on a specific task
     visualizer (d3js?)
 
 License
 -------
-Copyright &copy; 2011 Phil Pirozhkov
+Copyright &copy; 2013 Phil Pirozhkov
 
 Licensed under the [MIT License][MIT].
 
