@@ -8,8 +8,6 @@ alsa-firmware
 alsa-oss
 alsa-plugins
 alsa-utils
-android-sdk
-android-sdk-platform-tools
 apache-ant
 arch-wiki-lite
 asciidoc
@@ -28,6 +26,8 @@ bash
 bc
 binutils
 bison
+bitcoin-daemon
+bitcoin-qt
 boost
 busybox
 bzip2
@@ -56,7 +56,6 @@ dmon
 dnsmasq
 dnsutils
 dumb
-dwt
 e2fsprogs
 eventlog
 extundelete
@@ -167,6 +166,7 @@ netctl
 nethack
 netkit-bsd-finger
 nmap
+nomacs
 ntop
 openal
 openssh
@@ -205,8 +205,6 @@ qtwebkit
 redis
 redshift
 reiserfsprogs
-rfkill
-ristretto
 rlwrap
 rtorrent
 ruby-install-git
@@ -226,8 +224,6 @@ sshpass
 stone-soup
 subversion
 sudo
-swt
-sxhkd
 sysfsutils
 syslinux
 syslog-ng
