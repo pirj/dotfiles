@@ -63,6 +63,8 @@ alias edit=vim
 # Run tmux in 256 color mode
 alias tmux='tmux -2'
 
+alias ssh='TERM=xterm-color ssh'
+
 # tmux aliases
 alias ta='tmux at'
 alias tat='tmux at -t'
@@ -93,5 +95,3 @@ source ~/.colors.sh
 
 # Load RVM into a shell session *as a function*
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-
-export TERM=xterm-color
