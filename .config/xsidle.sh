@@ -9,18 +9,17 @@ then
 fi
 cmd="$@"
 
-while true
-do
-  if [ $(xssstate -s) != "disabled" ];
-  then
+if [ $(xssstate -s) != "disabled" ];
+then
+  while true
+  do
     tosleep=$(($(xssstate -t) / 1000))
     if [ $tosleep -le 0 ];
     then
       $cmd
+      sleep 10
     else
       sleep $tosleep
     fi
-  else
-    sleep 10
-  fi
-done
+  done
+fi

@@ -111,6 +111,14 @@ pomodoro.on("free_time", function()
   state = "free_time"
 end)
 
+-- Idle handlers
+pomodoro.idle = function() idle_handlers[state]() end
+
+idle_handlers = {
+  work        = function() emit("squashed") end,
+  short_break = function() end, long_break = function() end, away = function() end, free_time = function() end
+}
+
 -- Timeout handlers
 local exceeds = function(limit, event) return function(now, initial) if (now - initial) > limit() then emit(event) end end end
 

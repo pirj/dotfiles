@@ -141,7 +141,7 @@ You can call `pomodoro.idle()` in a hook and Pomodoro will be squashed if a work
 
 It's possible to acieve running [xsidle.sh](http://git.suckless.org/xssstate/commit/?id=c30b12c8e9d20225f69014d3fe60c0c0c4476773) from .xinitrc (with a small patch of $1 to $@ in xsidle.sh):
 
-    xsidle.sh echo pomodoro.idle() | awesome-client &
+    xsidle.sh echo "pomodoro.idle()" | awesome-client &
 
 #### Taskwarrior integration
 
@@ -162,8 +162,7 @@ Plans
     -hotkeys
     -Set formats {4, 3, 3, 4, 2}
     -Save timelapse to text file for later inspection
-    -idle tracker, if screensaver is being run, pomodoro is squashed
-    Taskwarrior integration: focus on a specific task
+    Taskwarrior/todo.txt integration: focus on a specific task
     visualizer (d3js?)
 
 License
