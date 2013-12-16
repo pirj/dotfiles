@@ -139,7 +139,7 @@ You can call `pomodoro.idle()` in a hook and Pomodoro will be squashed if a work
 
     pomodoro.idle()
 
-It's possible to acieve running [xsidle.sh](http://git.suckless.org/xssstate/commit/?id=c30b12c8e9d20225f69014d3fe60c0c0c4476773) from .xinitrc (with a small patch of $1 to $@ in xsidle.sh):
+It's possible to achieve running [xsidle.sh](http://git.suckless.org/xssstate/commit/?id=c30b12c8e9d20225f69014d3fe60c0c0c4476773) from .xinitrc (with a small patch of $1 to $@ in xsidle.sh):
 
     xsidle.sh echo "pomodoro.idle()" | awesome-client &
 
@@ -156,9 +156,7 @@ In case Pomodoro detects inactivity during a working period, Pomodoro is squashe
 Plans
 -----
 
-    -minimum_short_break, minimum_long_break
     -only count non-squashed Pomodoros in set
-    +transition listeners
     -hotkeys
     -Set formats {4, 3, 3, 4, 2}
     -Save timelapse to text file for later inspection

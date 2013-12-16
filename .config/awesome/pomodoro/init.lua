@@ -28,7 +28,9 @@ pomodoro.titles = {
   set_done = { title = "Set done", subtitle = "Time for a long break" },
   squashed = { title = "Pomodoro squashed", subtitle = "Yuck!" },
   short_break_exceeded = { title = "Short break exeeded", subtitle = "" },
-  long_break_exceeded = { title = "Long break exeeded", subtitle = "" },
+  short_break_unfulfilled = { title = "Short break unfulfilled", subtitle = "You need to rest between working periods" },
+  long_break_exceeded = { title = "Long break exceeded", subtitle = "" },
+  long_break_unfulfilled = { title = "Long break unfulfilled", subtitle = "You need to rest between working periods" },
   free_time = { title = "Enjoy your free time", subtitle = "Forget about work" }
 }
 
@@ -62,10 +64,30 @@ local emit = function(event)
 end
 
 -- Button click handlers
-local clicked = { work = "squashed", short_break = "started", long_break = "started", away = "started", free_time = "started" }
+local clicked = {
+  work = function() emit("squashed") end,
+  short_break = function()
+    local now = os.time()
+    if (now - initial_time > pomodoro.durations.short_break) then
+      emit("started")
+    else
+      util.notify(pomodoro.titles.short_break_unfulfilled)
+    end
+  end,
+  long_break = function()
+    local now = os.time()
+    if (now - initial_time > pomodoro.durations.long_break) then
+      emit("started")
+    else
+      util.notify(pomodoro.titles.long_break_unfulfilled)
+    end
+  end,
+  away = function() emit("started") end,
+  free_time = function() emit("started") end
+}
 
 pomodoro.widget:buttons(
-  awful.button({ }, 1, function() emit(clicked[state]) end)
+  awful.button({ }, 1, function() clicked[state]() end)
 )
 
 -- Hooks
