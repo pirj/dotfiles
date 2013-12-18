@@ -106,3 +106,4 @@ music
 .bitcoin
 .secret
 .config/nomacs/
+.gstreamer-0.10
