@@ -107,3 +107,5 @@ music
 .secret
 .config/nomacs/
 .gstreamer-0.10
+.pgadmin_histoqueries
+pgadmin.log
