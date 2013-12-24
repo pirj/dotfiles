@@ -1,5 +1,3 @@
-# INFO: Install with `rvm gemset use global; gem install hirb awesome_print pry pry-doc pry-rescue pry-syntax-hacks`
-
 # https://github.com/carlhuda/bundler/issues/183#issuecomment-1149953
 if defined?(::Bundler)
   global_gemset = ENV['GEM_PATH'].split(':').grep(/ruby.*@global/).first
@@ -24,8 +22,7 @@ end
 
 begin
   require 'pry'
-# TODO: pry-debugger pry-stack_explorer
-  ['pry-doc', 'pry-rescue', 'pry-syntax-hacks'].each do |gem|
+  ['pry-doc', 'pry-rescue', 'pry-syntax-hacks', 'pry-debugger', 'pry-stack_explorer'].each do |gem|
     load_gem gem
   end
 
