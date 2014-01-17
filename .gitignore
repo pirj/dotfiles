@@ -109,3 +109,5 @@ music
 .gstreamer-0.10
 .pgadmin_histoqueries
 pgadmin.log
+.heroku/
+.netrc
