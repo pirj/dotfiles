@@ -1,9 +1,0 @@
-bundler
-awesome_print
-hirb
-pry
-pry-doc
-pry-rescue
-pry-syntax-hacks
-pry-debugger
-pry-stack_explorer
