@@ -101,6 +101,8 @@ Bundle 'mhinz/vim-signify'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-rails'
 Bundle 'slim-template/vim-slim'
+" Documentation browser
+" Bundle 'danchoi/ri.vim'
 
 "t9md/vim-ruby-xmpfilter
 "https://github.com/t9md/vim-ruby_eval
