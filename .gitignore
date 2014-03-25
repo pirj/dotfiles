@@ -112,3 +112,6 @@ pgadmin.log
 .heroku/
 .netrc
 .xbmc
+.wine/
+photo/
+Desktop/
