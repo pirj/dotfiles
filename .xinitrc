@@ -15,7 +15,7 @@ xkbevd &
 setxkbmap -option caps:escape # use caps as esc (caps:swapescape to swap)
 setxkbmap -layout us,ru -option grp:toggle # change layout with AltGr
 #setxkbmap -model face -layout us,ru -option grp:toggle # secondary keyboard too
-setxkbmap -option compose:rctrl # use RCtl as Compose key (http://en.wikipedia.org/wiki/Compose_key)
+setxkbmap -option compose:rctrl # use RCtl as Compose key (http://en.wikipedia.org/wiki/Compose_key) See full list of combinations (http://cgit.freedesktop.org/xorg/lib/libX11/plain/nls/en_US.UTF-8/Compose.pre)
 
 xmodmap -e "keycode 47 = colon semicolon Cyrillic_ZHE" # remap : and ; + still supports cyrillic
 
