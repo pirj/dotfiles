@@ -89,7 +89,7 @@ Bundle "tpope/vim-commentary"
 
 " VERSION CONTROL
 " ---------------
-Bundle 'tpope/vim-fugitive'
+" Bundle 'tpope/vim-fugitive'
 Bundle 'mhinz/vim-signify'
 
 " SYNTAX SUPPORT
@@ -112,7 +112,7 @@ Bundle 'slim-template/vim-slim'
 "Bundle 'tpope/vim-rake'
 
 "   Other
-Bundle 'perl-support.vim'
+" Bundle 'perl-support.vim'
 "Bundle 'pangloss/vim-javascript'
 
 " LIBRARIES
