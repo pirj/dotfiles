@@ -22,7 +22,7 @@ end
 
 begin
   require 'pry'
-  ['pry-doc', 'pry-rescue', 'pry-syntax-hacks', 'pry-byebug', 'pry-stack_explorer', 'pry-coolline'].each do |gem|
+  ['pry-doc', 'pry-rescue', 'pry-syntax-hacks', 'pry-byebug', 'pry-stack_explorer'].each do |gem|
     load_gem gem
   end
 
