@@ -55,4 +55,7 @@ xset s 300 # idle is 5 min
 # Hotkey daemon
 sxhkd -c .config/sxhkdrc &disown
 
+# Random wallpaper
+hsetroot -center ~/wallpapers/$(ls wallpapers | shuf| tail -n 1)
+
 /usr/bin/awesome
