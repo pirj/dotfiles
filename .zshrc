@@ -55,10 +55,11 @@ export EDITOR=vim
 alias ll='ls -l'
 alias la='ls -a'
 
-# Use vim everywhere
-alias vi=vim
-alias view=vim -R
-alias edit=vim
+# Use nvim everywhere
+alias vim=nvim
+alias vi=nvim
+alias view=vnim -R
+alias edit=vnim
 
 # Run tmux in 256 color mode
 alias tmux='tmux -2'

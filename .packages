@@ -23,7 +23,6 @@ avr-gcc
 avr-libc
 awesome
 bash
-bc
 binutils
 bison
 bitcoin-daemon
@@ -31,7 +30,6 @@ bitcoin-qt
 boost
 busybox
 bzip2
-cassandra
 celt
 chromium
 cmake
@@ -41,6 +39,7 @@ compton-git
 coreutils
 cpio
 cpulimit
+cpupower
 crda
 cronie
 cryptsetup
@@ -72,6 +71,7 @@ flex
 freeradius-git
 freeswitch
 fuse
+fuseiso
 gawk
 gcc
 gcc-libs
@@ -82,10 +82,10 @@ git-extras
 git-flow-git
 glibc
 gnu-netcat
-gobi-firmware
 gobi-loader
 google-translate-cli-git
 grep
+gstreamer
 gstreamer0.10-bad
 gstreamer0.10-bad-plugins
 gstreamer0.10-base-plugins
@@ -96,6 +96,7 @@ gvim
 gzip
 hdparm
 help2man
+hsetroot
 htop
 httperf
 idnkit
@@ -129,6 +130,7 @@ libreoffice-writer
 libstdc++5
 libtool
 libusb-compat
+libuv
 libzrtpcpp
 licenses
 links
@@ -138,6 +140,7 @@ lm_sensors
 logkeys
 logrotate
 lvm2
+lynis
 lzo2
 lzop
 m4
@@ -154,11 +157,14 @@ mdadm
 memcached
 mesa
 mesa-libgl
+metalog
 mosh
 mpd
 mpg123
+mtr
 nano
 ncmpcpp
+neovim-git
 net-snmp
 net-tools
 netbrake
@@ -211,7 +217,6 @@ ruby-install-git
 rxvt-unicode
 s-nail
 scrot
-sdparm
 sed
 shadow
 skype
@@ -233,6 +238,7 @@ tar
 task
 tcl
 tcpdump
+teamviewer
 terminus-font
 termite-git
 texinfo
@@ -258,16 +264,18 @@ util-linux
 vi
 vicious
 vimb-git
-vimprobable2-git
+vimprobable2
 virtualbox
 virtualbox-guest-modules
 virtualbox-guest-utils
 vit
 vlc
+weston
 wget
 which
 whois
 windowmaker
+wine
 wit
 wpa_actiond
 wpa_supplicant
