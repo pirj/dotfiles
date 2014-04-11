@@ -43,7 +43,7 @@ end
 -- {{{ Variable definitions
 -- Themes define colours, icons, and wallpapers
 beautiful.init("/usr/share/awesome/themes/default/theme.lua")
--- theme.wallpaper = "/home/pirj/wallpaper.jpg"
+theme.wallpaper = false
 theme.font      = "Inconsolata Medium 10"
 theme.bg_focus = theme.bg_normal
 theme.taglist_squares_sel = "/usr/share/awesome/themes/zenburn/taglist/squarefz.png"
