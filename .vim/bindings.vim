@@ -63,3 +63,6 @@ nnoremap <Left> <NOP>
 nnoremap <Down> <NOP>
 nnoremap <Up> <NOP>
 nnoremap <Right> <NOP>
+
+" No highlight search
+nnoremap <leader>q :nohlsearch<CR>
