@@ -3,7 +3,7 @@
 " ----------------------------------------
 
 " Remap leader
-let mapleader = ","
+let mapleader = " "
 
 " No need to switch between layouts to use normal mode https://gist.github.com/sigsergv/5329459
 set langmap=ёйцукенгшщзхъфывапролджэячсмитьбюЁЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ;`qwertyuiop[]asdfghjkl:'zxcvbnm\\,.~QWERTYUIOP{}ASDFGHJKL\\;\\"ZXCVBNM<>
@@ -58,5 +58,8 @@ imap <tab> <c-p>
 " Temporarily disable hard mode. Sign of weakness!
 nnoremap <leader>h <Esc>:call ToggleHardMode()<cr>
 
-" No highlight search
-nmap <Space> :nohlsearch<cr>
+" Soft hardmode
+nnoremap <Left> <NOP>
+nnoremap <Down> <NOP>
+nnoremap <Up> <NOP>
+nnoremap <Right> <NOP>
