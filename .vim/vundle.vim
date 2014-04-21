@@ -111,6 +111,9 @@ Bundle 'slim-template/vim-slim'
 "Bundle 'tpope/vim-haml'
 "Bundle 'tpope/vim-rake'
 
+" CSS color previews
+Bundle 'ap/vim-css-color'
+
 "   Other
 " Bundle 'perl-support.vim'
 "Bundle 'pangloss/vim-javascript'
