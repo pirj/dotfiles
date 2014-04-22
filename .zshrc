@@ -34,11 +34,12 @@ ZSH=$HOME/.oh-my-zsh
 # Example format: plugins=(rails git textmate ruby lighthouse)
 plugins=(git git-flow git-extras vi-mode fasd history history-substring-search colored-man rvm sprunge taskwarrior systemd)
 
+MODE_INDICATOR="%{$bg[blue]%}#%{$fg[black]%}@"
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
-PROMPT='%{$fg[$NCOLOR]%}%B%n%b%{$reset_color%}:%{$fg[blue]%}%B%c/%b%{$reset_color%} $(git_prompt_info)%(!.#.$) '
+PROMPT='%{$fg[$NCOLOR]%}%B%n%b%{$reset_color%}:$(vi_mode_prompt_info)%{$fg[blue]%}%B%c/%b%{$reset_color%} $(git_prompt_info)%(!.#.$) '
 RPROMPT='[%*]'
 
 # git theming
@@ -56,10 +57,13 @@ alias ll='ls -l'
 alias la='ls -a'
 
 # Use nvim everywhere
-alias vim=nvim
-alias vi=nvim
-alias view=vnim -R
-alias edit=vnim
+# alias vim=nvim
+# alias vi=nvim
+# alias view=nvim -R
+# alias edit=nvim
+alias vi=vim
+alias view=vim -R
+alias edit=vim
 
 # Run tmux in 256 color mode
 alias tmux='tmux -2'

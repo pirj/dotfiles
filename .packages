@@ -164,7 +164,6 @@ mpg123
 mtr
 nano
 ncmpcpp
-neovim-git
 net-snmp
 net-tools
 netbrake
@@ -211,11 +210,11 @@ qtwebkit
 redis
 redshift
 reiserfsprogs
+reptyr
 rlwrap
 rtorrent
 ruby-install-git
 rxvt-unicode
-s-nail
 scrot
 sed
 shadow
