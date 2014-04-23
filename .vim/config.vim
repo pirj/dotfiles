@@ -115,13 +115,6 @@ set t_vb=
 " Better complete options to speed it up
 set complete=.,w,b,u,U
 
-" Layout assistant
-"let g:XkbSwitchEnabled = 1
-"let g:XkbSwitchIMappings = ['ru']
-
-" Ack replacement
-let g:ackprg = 'ag --nogroup --nocolor --column'
-
 " Avoid annoying mode switch lag
 set timeoutlen=1000 ttimeoutlen=50
 

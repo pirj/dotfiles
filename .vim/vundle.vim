@@ -20,8 +20,9 @@ Bundle 'gmarik/vundle'
 "Bundle 'Lokaltog/vim-easymotion'
 " christoomey/vim-tmux-navigator
 
-" Search anything with ^P
-Bundle 'kien/ctrlp.vim'
+" Fuzzy search
+" Bundle 'kien/ctrlp.vim'
+Bundle 'Shougo/unite.vim'
 
 " No char-wise navigation, please
 " Bundle 'wikitopian/hardmode'
@@ -53,8 +54,7 @@ Bundle 'justincampbell/vim-eighties'
 Bundle 'tpope/vim-surround'
 "Bundle 'godlygeek/tabular'
 
-Bundle 'mileszs/ack.vim'
-"Bundle 'rking/ag.vim' and remove ag-ack config
+Bundle 'rking/ag.vim'
 
 "Bundle 'milkypostman/vim-togglelist'
 "Bundle 'AndrewRadev/sideways.vim'
@@ -141,5 +141,4 @@ Bundle 'teranex/tslime.vim'
 "http://www.vim.org/scripts/script.php?script_id=1590
 "https://github.com/kana/vim-scratch
 "https://github.com/mootoh/refe2-vim
-"Shougo/unite.vim
 "mattn/webapi-vim
