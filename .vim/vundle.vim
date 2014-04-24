@@ -12,7 +12,7 @@ Bundle 'gmarik/vundle'
 " Shougo/neobundle.vim
 
 " NAVIGATION
-" ---------------
+" ----------
 
 "Bundle 'ZoomWin'
 " This fork is required due to remapping ; to :
@@ -30,12 +30,13 @@ Bundle 'Shougo/unite.vim'
 " Allows you to visually select increasingly larger regions of text using the same key combination
 Bundle 'terryma/vim-expand-region'
 
-" Collaboration
+" COLLABORATION
 " -------------
+
 " Bundle 'emgram769/vim-multiuser'
 
 " UI ADDITIONS
-" ---------------
+" ------------
 
 " Neat replacement for powerline
 Bundle 'bling/vim-airline'
@@ -65,7 +66,7 @@ Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-endwise'
 
 " COMMANDS
-" ---------------
+" --------
 
 "Bundle 'godlygeek/tabular'
 
@@ -89,7 +90,7 @@ Bundle 'rking/ag.vim'
 Bundle "tpope/vim-commentary"
 
 " AUTOMATIC HELPERS
-" ---------------
+" -----------------
 
 "Bundle 'IndexedSearch'
 "Bundle 'xolox/vim-session'
@@ -101,14 +102,13 @@ Bundle "tpope/vim-commentary"
 "Bundle 'Shougo/neocomplete.vim'
 "valloric/YouCompleteMe
 
-
 " VERSION CONTROL
 " ---------------
 " Bundle 'tpope/vim-fugitive'
 " Bundle 'mhinz/vim-signify'
 
 " SYNTAX SUPPORT
-" ---------------
+" --------------
 
 "scrooloose/syntastic
 
@@ -134,13 +134,13 @@ Bundle 'ap/vim-css-color'
 "Bundle 'pangloss/vim-javascript'
 
 " LIBRARIES
-" ---------------
+" ---------
 
 Bundle 'L9'
 Bundle 'tpope/vim-repeat'
 
 " OTHER
-" ---------------
+" -----
 
 " tmux support
 Bundle 'teranex/tslime.vim'
