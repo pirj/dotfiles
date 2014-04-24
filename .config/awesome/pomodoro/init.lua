@@ -121,10 +121,6 @@ pomodoro.on("squashed", function()
   state = "short_break"
 end)
 
-pomodoro.on("short_break_exceeded", function()
-  state = "long_break"
-end)
-
 pomodoro.on("long_break_exceeded", function()
   state = "away"
 end)

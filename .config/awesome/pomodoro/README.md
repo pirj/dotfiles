@@ -156,6 +156,7 @@ In case Pomodoro detects inactivity during a working period, Pomodoro is squashe
 Plans
 -----
 
+    ! fix: short break should not automatically become long break; remove thresholds; (impossible to begin pomodoro when short break exceeds until long break exceeds)
     -only count non-squashed Pomodoros in set
     -hotkeys
     -Set formats {4, 3, 3, 4, 2}
