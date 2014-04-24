@@ -55,10 +55,18 @@ Bundle 'justincampbell/vim-eighties'
 "Bundle 'Rykka/colorv.vim'
 "Bundle 'mutewinter/vim-indent-guides'
 
+" EDITING
+" -------
+
+" Quoting/parenthesizing made simple
+Bundle 'tpope/vim-surround'
+
+" Wisely add 'end' in ruby, endfunction/endif/more in vim script, etc
+Bundle 'tpope/vim-endwise'
+
 " COMMANDS
 " ---------------
 
-Bundle 'tpope/vim-surround'
 "Bundle 'godlygeek/tabular'
 
 Bundle 'rking/ag.vim'
