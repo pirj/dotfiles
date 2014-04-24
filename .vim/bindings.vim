@@ -32,9 +32,6 @@ nnoremap <leader>x :bn<CR>
 " Select previously pasted text
 nnoremap gv `[v`]
 
-" Select all
-nnoremap <Leader>a ggVG
-
 " Yank to the end of line
 nnoremap Y y$
 
@@ -65,8 +62,11 @@ nnoremap <Up> <NOP>
 nnoremap <Right> <NOP>
 
 " No highlight search
-nnoremap <leader>q :nohlsearch<CR>
+nnoremap <leader><Space> :nohlsearch<CR>
 
 " Expand region bindings
 vmap v <Plug>(expand_region_expand)
 vmap V <Plug>(expand_region_shrink)
+
+" Open search
+nnoremap <leader>a :Ag<Space>
