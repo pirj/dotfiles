@@ -1,0 +1,3 @@
+[submodule ".opp.zsh"]
+	path = .opp.zsh
+	url = git@github.com:hchbaw/opp.zsh.git

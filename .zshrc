@@ -1,46 +1,30 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
-# Set name of the theme to load.
-# Look in ~/.oh-my-zsh/themes/
-# Optionally, if you set this to "random", it'll load a random theme each
-# time that oh-my-zsh is loaded.
-# ZSH_THEME="philips"
-
-# Example aliases
-# alias zshconfig="mate ~/.zshrc"
-# alias ohmyzsh="mate ~/.oh-my-zsh"
-
-# Set to this to use case-sensitive completion
-# CASE_SENSITIVE="true"
-
-# Comment this out to disable bi-weekly auto-update checks
-# DISABLE_AUTO_UPDATE="true"
-
-# Uncomment to change how many often would you like to wait before auto-updates occur? (in days)
-# export UPDATE_ZSH_DAYS=13
-
-# Uncomment following line if you want to disable colors in ls
-# DISABLE_LS_COLORS="true"
-
-# Uncomment following line if you want to disable autosetting terminal title.
-# DISABLE_AUTO_TITLE="true"
-
-# Uncomment following line if you want red dots to be displayed while waiting for completion
-# COMPLETION_WAITING_DOTS="true"
-
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-# Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
-# Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git git-flow git-extras vi-mode fasd history history-substring-search colored-man rvm sprunge taskwarrior systemd)
+plugins=(git git-flow git-extras fasd history history-substring-search colored-man rvm sprunge taskwarrior systemd)
 
-MODE_INDICATOR="%{$bg[blue]%}#%{$fg[black]%}@"
 source $ZSH/oh-my-zsh.sh
 
-# Customize to your needs...
+# https://github.com/hchbaw/opp.zsh
+source .opp.zsh/*.zsh
+source .opp.zsh/opp/*.zsh
 
-PROMPT='%{$fg[$NCOLOR]%}%B%n%b%{$reset_color%}:$(vi_mode_prompt_info)%{$fg[blue]%}%B%c/%b%{$reset_color%} $(git_prompt_info)%(!.#.$) '
+PROMPT='%{$fg[$NCOLOR]%}%B%n%b%{$reset_color%}:%{$fg[blue]%}%B%c/%b%{$reset_color%} $(git_prompt_info)%(!.#.$) '
 RPROMPT='[%*]'
+
+# Better vi mode (hat tip Doug Black)
+bindkey -v
+bindkey '^r' history-incremental-search-backward
+
+function zle-line-init zle-keymap-select {
+  VIM_PROMPT="%{$fg_bold[yellow]%} [% NORMAL]%  %{$reset_color%}"
+  RPROMPT='${${KEYMAP/vicmd/$VIM_PROMPT}/(main|viins)/} [%*]'
+  zle reset-prompt
+}
+
+zle -N zle-line-init
+zle -N zle-keymap-select
 
 # git theming
 ZSH_THEME_GIT_PROMPT_PREFIX="%{$fg_bold[blue]%}(%{$fg_no_bold[red]%}%B"
@@ -49,6 +33,9 @@ ZSH_THEME_GIT_PROMPT_CLEAN=""
 ZSH_THEME_GIT_PROMPT_DIRTY="*"
 
 unsetopt correct_all
+
+# Reduce delay after you hit the <ESC> to 0.1 seconds (hat tip Doug Black)
+export KEYTIMEOUT=1
 
 export EDITOR=vim
 
