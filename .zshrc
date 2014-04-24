@@ -22,16 +22,20 @@ if [[ -s ~/.zsh/colors.sh ]]; then
   source ~/.zsh/colors.sh
 fi
 
-PROMPT='%{$fg[$NCOLOR]%}%B%n%b%{$reset_color%}:%{$fg[blue]%}%B%c/%b%{$reset_color%} $(git_prompt_info)%(!.#.$) '
 RPROMPT='[%*]'
+PROMPT_PROMPT="%(!.#.$)"
 
 # Better vi mode (hat tip Doug Black)
 bindkey -v
 bindkey '^r' history-incremental-search-backward
 
 function zle-line-init zle-keymap-select {
-  VIM_PROMPT="%{$fg_bold[yellow]%} [% NORMAL]%  %{$reset_color%}"
-  RPROMPT='${${KEYMAP/vicmd/$VIM_PROMPT}/(main|viins)/} [%*]'
+  if [[ $KEYMAP == main ]]; then
+    MODE=''
+  else
+    MODE=$bg_bold[green]
+  fi
+  PROMPT='%{$fg[$NCOLOR]%}%B%n%b%{$reset_color%}:%{$fg[blue]%}%B%c/%b%{$reset_color%} $(git_prompt_info)%{$MODE%}%(!.#.$)%{$reset_color%} '
   zle reset-prompt
 }
 
