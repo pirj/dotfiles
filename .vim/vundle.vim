@@ -30,6 +30,10 @@ Bundle 'Shougo/unite.vim'
 " Allows you to visually select increasingly larger regions of text using the same key combination
 Bundle 'terryma/vim-expand-region'
 
+" Collaboration
+" -------------
+" Bundle 'emgram769/vim-multiuser'
+
 " UI ADDITIONS
 " ---------------
 
