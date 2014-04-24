@@ -32,6 +32,20 @@ ZSH_THEME_GIT_PROMPT_SUFFIX="%b%{$fg_bold[blue]%})%{$reset_color%} "
 ZSH_THEME_GIT_PROMPT_CLEAN=""
 ZSH_THEME_GIT_PROMPT_DIRTY="*"
 
+# Switch back to fg %1 on ^Z (hat tip Adam Stankiewicz http://sheerun.net/)
+fancy-ctrl-z () {
+  if [[ $#BUFFER -eq 0 ]]; then
+    fg
+    zle redisplay
+  else
+    zle push-input
+    zle clear-screen
+  fi
+}
+zle -N fancy-ctrl-z
+bindkey '^Z' fancy-ctrl-z
+
+# Zsh, please...
 unsetopt correct_all
 
 # Reduce delay after you hit the <ESC> to 0.1 seconds (hat tip Doug Black)
