@@ -1,14 +1,21 @@
-# Path to your oh-my-zsh configuration.
-ZSH=$HOME/.oh-my-zsh
+if [[ -s $HOME/.zsh/oh-my-zsh ]]; then
+  ZSH=$HOME/.zsh/oh-my-zsh
+  # # Which plugins would you like to load? (plugins can be found in .oh-my-zsh/plugins/*)
+  plugins=(git git-flow git-extras fasd history-substring-search sprunge)
 
-# Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
-plugins=(git git-flow git-extras fasd history history-substring-search colored-man rvm sprunge taskwarrior systemd)
+  source $ZSH/oh-my-zsh.sh
+fi
 
-source $ZSH/oh-my-zsh.sh
+# Vim's text-objects-ish for zsh
+if [[ -s .zsh/opp ]]; then
+  source .zsh/opp/*.zsh
+  source .zsh/opp/opp/*.zsh
+fi
 
-# https://github.com/hchbaw/opp.zsh
-source .opp.zsh/*.zsh
-source .opp.zsh/opp/*.zsh
+# # The configuration framework for Zsh
+# if [[ -s .zsh/prezto/init.zsh ]]; then
+#   source .zsh/prezto/init.zsh
+# fi
 
 PROMPT='%{$fg[$NCOLOR]%}%B%n%b%{$reset_color%}:%{$fg[blue]%}%B%c/%b%{$reset_color%} $(git_prompt_info)%(!.#.$) '
 RPROMPT='[%*]'
@@ -94,10 +101,10 @@ alias space='du --max-depth=2 -h . | sort -h -r | head -n 20'
 # Password generation. Just one. Print and put to clipboard
 alias pwgen='pwgen -1cnsB 12 >&2 | xclip'
 
-PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
-
 # Color scheme
 source ~/.colors.sh
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 # Load RVM into a shell session *as a function*
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
