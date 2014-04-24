@@ -66,3 +66,7 @@ nnoremap <Right> <NOP>
 
 " No highlight search
 nnoremap <leader>q :nohlsearch<CR>
+
+" Expand region bindings
+vmap v <Plug>(expand_region_expand)
+vmap V <Plug>(expand_region_shrink)
