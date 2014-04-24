@@ -207,6 +207,7 @@ python2-lxml
 python2-numpy
 python2-setuptools
 qtwebkit
+ranger
 redis
 redshift
 reiserfsprogs
@@ -237,7 +238,6 @@ tar
 task
 tcl
 tcpdump
-teamviewer
 terminus-font
 termite-git
 texinfo

@@ -17,6 +17,11 @@ fi
 #   source .zsh/prezto/init.zsh
 # fi
 
+# Color scheme
+if [[ -s ~/.zsh/colors.sh ]]; then
+  source ~/.zsh/colors.sh
+fi
+
 PROMPT='%{$fg[$NCOLOR]%}%B%n%b%{$reset_color%}:%{$fg[blue]%}%B%c/%b%{$reset_color%} $(git_prompt_info)%(!.#.$) '
 RPROMPT='[%*]'
 
@@ -100,9 +105,6 @@ alias space='du --max-depth=2 -h . | sort -h -r | head -n 20'
 
 # Password generation. Just one. Print and put to clipboard
 alias pwgen='pwgen -1cnsB 12 >&2 | xclip'
-
-# Color scheme
-source ~/.colors.sh
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
