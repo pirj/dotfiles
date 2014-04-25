@@ -112,26 +112,35 @@ Bundle "tpope/vim-commentary"
 
 "scrooloose/syntastic
 
-"   Ruby
+" This one is a collection of 50 autoloaded syntax files, may replace
+" everything below
+"sheerun/vim-polyglot
+
+" Ruby
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-rails'
 Bundle 'slim-template/vim-slim'
-" Documentation browser
-" Bundle 'danchoi/ri.vim'
 
-"t9md/vim-ruby-xmpfilter
-"https://github.com/t9md/vim-ruby_eval
-"astashov/vim-ruby-debugger
-
-"Bundle 'tpope/vim-haml'
-"Bundle 'tpope/vim-rake'
+" Bundle 'tpope/vim-haml'
+" Bundle 'tpope/vim-rake'
 
 " CSS color previews
 Bundle 'ap/vim-css-color'
 
-"   Other
+" Other
 " Bundle 'perl-support.vim'
-"Bundle 'pangloss/vim-javascript'
+" Bundle 'pangloss/vim-javascript'
+
+" RUBY
+" ----
+
+" Documentation browser
+" Bundle 'danchoi/ri.vim'
+
+" In-place evaluation
+"t9md/vim-ruby-xmpfilter
+"https://github.com/t9md/vim-ruby_eval
+"astashov/vim-ruby-debugger
 
 " LIBRARIES
 " ---------
@@ -157,3 +166,6 @@ Bundle 'teranex/tslime.vim'
 "https://github.com/kana/vim-scratch
 "https://github.com/mootoh/refe2-vim
 "mattn/webapi-vim
+
+" Handle focus lost inside tmux
+"sjl/vitality.vim
