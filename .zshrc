@@ -51,8 +51,8 @@ ZSH_THEME_GIT_PROMPT_DIRTY="*"
 # Switch back to fg %1 on ^Z (hat tip Adam Stankiewicz http://sheerun.net/)
 fancy-ctrl-z () {
   if [[ $#BUFFER -eq 0 ]]; then
-    fg
-    zle redisplay
+    BUFFER="fg"
+    zle accept-line
   else
     zle push-input
     zle clear-screen
@@ -60,6 +60,7 @@ fancy-ctrl-z () {
 }
 zle -N fancy-ctrl-z
 bindkey '^Z' fancy-ctrl-z
+# TODO: does't work in vi mode
 
 # Zsh, please...
 unsetopt correct_all
