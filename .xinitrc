@@ -29,6 +29,12 @@ xmodmap -e "keysym Caps_Lock = Control_L"
 xmodmap -e "add Control = Control_L"
 xcape -t 1000 -e "Control_L=Escape" # Fire nothing if 1000ms hold time out
 
+# Map Left Shift to both Sticky Shift(tap)/Mod4(hold)
+xmodmap -e "remove Shift = Shift_L"
+xmodmap -e "keysym Shift_L = Hyper_L"
+# xmodmap -e "add Mod4 = Shift_L" # Does nothing. wtf
+
+# xcape -t 1000 -e "Hyper_L=ISO_Level3_Latch"
 # Eventually move the above to .Xmodmap, or use a superior xkb, or ibus, or scim, or fcitx, or wait for Wayland to fix all this shit
 # xmodmap ~/.Xmodmap
 
