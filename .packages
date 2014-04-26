@@ -229,6 +229,7 @@ sshpass
 stone-soup
 subversion
 sudo
+sxhkd-git
 sysfsutils
 syslinux
 syslog-ng
@@ -280,6 +281,7 @@ wit
 wpa_actiond
 wpa_supplicant
 wvdial
+xcape-git
 xclip
 xdotool
 xf86-input-keyboard
@@ -288,6 +290,7 @@ xf86-input-synaptics
 xf86-video-ati
 xfsprogs
 xinetd
+xkeycaps
 xorg-server
 xorg-server-utils
 xorg-server-xvfb
