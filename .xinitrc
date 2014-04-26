@@ -12,12 +12,25 @@ if [ -d /etc/X11/xinit/xinitrc.d ]; then
 fi
 
 xkbevd &
-setxkbmap -option caps:escape # use caps as esc (caps:swapescape to swap)
+# setxkbmap -option caps:escape # use caps as esc (caps:swapescape to swap)
 setxkbmap -layout us,ru -option grp:toggle # change layout with AltGr
 #setxkbmap -model face -layout us,ru -option grp:toggle # secondary keyboard too
 setxkbmap -option compose:rctrl # use RCtl as Compose key (http://en.wikipedia.org/wiki/Compose_key) See full list of combinations (http://cgit.freedesktop.org/xorg/lib/libX11/plain/nls/en_US.UTF-8/Compose.pre)
 
-xmodmap ~/.Xmodmap
+# Remap symbols, still support cyrillic
+xmodmap -e "keycode 47 = colon semicolon Cyrillic_zhe Cyrillic_ZHE"
+xmodmap -e "keycode 49 = asciitilde grave Cyrillic_io Cyrillic_IO"
+
+# Map CapsLock to a more useful double behavior Esc(tap)/Control(hold)
+xmodmap -e "remove Lock = Caps_Lock"
+xmodmap -e "remove Control = Control_L"
+xmodmap -e "keysym Control_L = Caps_Lock"
+xmodmap -e "keysym Caps_Lock = Control_L"
+xmodmap -e "add Control = Control_L"
+xcape -t 1000 -e "Control_L=Escape" # Fire nothing if 1000ms hold time out
+
+# Eventually move the above to .Xmodmap, or use a superior xkb, or ibus, or scim, or fcitx, or wait for Wayland to fix all this shit
+# xmodmap ~/.Xmodmap
 
 xsetroot -cursor_name left_ptr
 
