@@ -3,12 +3,10 @@ abs
 acpi
 acpid
 aircrack-ng
-aisleriot
 alsa-firmware
 alsa-oss
 alsa-plugins
 alsa-utils
-apache-ant
 arch-wiki-lite
 asciidoc
 aspell-en
@@ -168,7 +166,6 @@ net-snmp
 net-tools
 netbrake
 netctl
-nethack
 netkit-bsd-finger
 nmap
 nomacs
@@ -214,7 +211,6 @@ reiserfsprogs
 reptyr
 rlwrap
 rtorrent
-ruby-install-git
 rxvt-unicode
 scrot
 sed
@@ -302,7 +298,6 @@ xorg-xkbevd
 xsel
 xssstate-git
 xterm
-youtube-dl
 zathura
 zathura-pdf-mupdf
 zip
