@@ -35,7 +35,10 @@ path_sep_replace: _
 art_filename: cover
 max_filename_length: 0
 
-plugins: []
+plugins:
+  duplicates
+  missing
+  fromfilename
 pluginpath: []
 threaded: yes
 color: yes
@@ -100,3 +103,21 @@ match:
     ignored: []
     track_length_grace: 10
     track_length_max: 30
+
+duplicates:
+    checksum: no
+    copy: no
+    keys: mb_trackid album
+    album: no
+    count: no
+    delete: no
+    format: "$albumartist - $album - $title"
+    full: no
+    move: no
+    path: no
+    tag: no
+
+missing:
+    format: $albumartist - $album - $title
+    count: no
+    total: no
