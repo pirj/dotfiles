@@ -23,6 +23,7 @@ avr-gcc
 avr-libc
 awesome
 bash
+beets
 binutils
 bison
 bitcoin-daemon
@@ -46,7 +47,6 @@ cryptsetup
 dash
 device-mapper
 dhclient
-dhcpcd
 dialog
 diffutils
 dkms
