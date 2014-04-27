@@ -25,7 +25,7 @@ set undodir=~/.vim/.undo
 " UI
 "set ruler          " Ruler on
 set number         " Line numbers on
-set nowrap         " Line wrapping off
+set wrap           " Line wrapping on
 set encoding=utf-8
 set noshowmode     " Don't show the mode since Airline shows it
 set title          " Set the title of the window in the terminal to the file
@@ -35,7 +35,7 @@ set laststatus=2
 set lazyredraw     " Make plugins smoother
 set ttyfast        " Indicates a fast terminal connection... characters will be sent to the screen for redrawing, instead of using insert/delete line commands. Improves smoothness of redrawing when there are multiple windows and the terminal does not support a scrolling region.
 
-set synmaxcol=256  " Syntax coloring lines that are too long just slows down the world
+set synmaxcol=512  " Syntax coloring lines that are too long just slows down the world
 
 " vim-eighties
 let g:eighties_extra_width = 10 " Increase this if you want some extra room
