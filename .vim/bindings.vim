@@ -47,6 +47,7 @@ vmap <leader>c <Plug>SendSelectionToTmux
 nmap <leader>c <Plug>NormalModeSendToTmux
 
 " Tab navigation
+nmap <leader>n :tabnew<CR>
 nmap <leader>t :tabNext<CR>
 
 " Autocomplete on Tab
