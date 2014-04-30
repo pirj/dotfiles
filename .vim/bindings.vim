@@ -50,6 +50,10 @@ nmap <leader>c <Plug>NormalModeSendToTmux
 nmap <leader>n :tabnew<CR>
 nmap <leader>t :tabNext<CR>
 
+" Save and quit
+nmap <leader>q :q<CR>
+nmap <leader>w :w<CR>
+
 " Autocomplete on Tab
 imap <tab> <c-p>
 
