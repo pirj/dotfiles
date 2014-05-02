@@ -11,7 +11,6 @@ arch-wiki-lite
 asciidoc
 aspell-en
 aspell-ru
-atop
 aurget
 autoconf
 autocutsel
@@ -45,6 +44,7 @@ cryptsetup
 dash
 device-mapper
 dhclient
+dhcpcd
 dialog
 diffutils
 dkms
@@ -110,9 +110,7 @@ ipw2200-fw
 irssi
 iw
 jack2
-jdk7-openjdk
 jfsutils
-jitsi
 jnettop
 keychain
 less
@@ -149,7 +147,6 @@ man-pages
 mariadb
 mariadb-clients
 markdown
-maven
 mc
 mdadm
 memcached
@@ -178,7 +175,6 @@ otf-font-awesome
 otf-pomodoro-git
 p7zip
 pacman
-parallel
 patch
 pciutils
 pcmciautils
@@ -223,7 +219,6 @@ sox
 sphinx
 sshpass
 stone-soup
-subversion
 sudo
 sxhkd-git
 sysfsutils
