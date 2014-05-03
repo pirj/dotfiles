@@ -215,6 +215,7 @@ skype
 skypetab-ng-git
 slock
 smartmontools
+sntop
 sox
 sphinx
 sshpass
@@ -281,7 +282,6 @@ xf86-input-synaptics
 xf86-video-ati
 xfsprogs
 xinetd
-xkeycaps
 xorg-server
 xorg-server-utils
 xorg-server-xvfb
