@@ -1,8 +1,6 @@
 if [[ -s $HOME/.zsh/oh-my-zsh ]]; then
   ZSH=$HOME/.zsh/oh-my-zsh
-  # # Which plugins would you like to load? (plugins can be found in .oh-my-zsh/plugins/*)
-  plugins=(git git-flow git-extras fasd history-substring-search sprunge)
-
+  plugins=(fasd history-substring-search sprunge)
   source $ZSH/oh-my-zsh.sh
 fi
 
@@ -98,7 +96,10 @@ alias tn='tmux new -s'
 alias tru='trs {=ru}'
 
 ## git
-# Faster branch switching
+alias gco='git checkout'
+alias gst='git status -sb'
+alias gd='git diff'
+alias gup='git pull --rebase'
 alias gc-='git checkout -'
 
 # Handy aliases
