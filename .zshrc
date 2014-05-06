@@ -105,6 +105,7 @@ alias gst='git status -sb'
 alias gd='git diff'
 alias gup='git pull --rebase'
 alias gc='git commit'
+alias gp='git push'
 
 # Handy aliases
 alias -g g='| grep'
