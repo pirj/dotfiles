@@ -1,6 +1,6 @@
 if [[ -s $HOME/.zsh/oh-my-zsh ]]; then
   ZSH=$HOME/.zsh/oh-my-zsh
-  plugins=(fasd history-substring-search sprunge)
+  plugins=(fasd history-substring-search)
   source $ZSH/oh-my-zsh.sh
 fi
 
