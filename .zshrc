@@ -100,10 +100,11 @@ alias tru='trs {=ru}'
 
 ## git
 alias gco='git checkout'
+alias gc-='git checkout -'
 alias gst='git status -sb'
 alias gd='git diff'
 alias gup='git pull --rebase'
-alias gc-='git checkout -'
+alias gc='git commit'
 
 # Handy aliases
 alias -g g='| grep'
