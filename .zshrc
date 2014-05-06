@@ -98,20 +98,16 @@ alias tn='tmux new -s'
 # Google translate cli, en -> ru
 alias tru='trs {=ru}'
 
-## git
-alias gco='git checkout'
-alias gc-='git checkout -'
-alias gst='git status -sb'
-alias gd='git diff'
-alias gup='git pull --rebase'
-alias gc='git commit'
-alias gp='git push'
+# Pretty self explaining
+alias g=git
 
-# Handy aliases
-alias -g g='| grep'
-alias -g l='| less'
-alias -g w='| wc -l'
-alias -r tf='tail -f'
+# Handy pipes
+alias -g G='| grep'
+alias -g L='| less'
+alias -g W='| wc -l'
+alias -r T='tail -f'
+
+# Find that fat files
 alias space='du --max-depth=2 -h . | sort -h -r | head -n 20'
 
 # Password generation. Just one. Print and put to clipboard
