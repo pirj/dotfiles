@@ -20,6 +20,9 @@ if [[ -s ~/.zsh/colors.sh ]]; then
   source ~/.zsh/colors.sh
 fi
 
+# Quickly edit commonly used files
+emulate sh -c 'source /usr/share/qfi/wrapper.sh'
+
 RPROMPT='[%*]'
 PROMPT_PROMPT="%(!.#.$)"
 
