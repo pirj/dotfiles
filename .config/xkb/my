@@ -1,0 +1,33 @@
+xkb_keymap {
+  xkb_keycodes  { include "evdev+aliases(qwerty)" };
+  xkb_types     { include "complete" };
+  xkb_compat    { include "complete" };
+  xkb_geometry  { include "pc(pc104)" };
+
+  xkb_symbols "my" {
+    include "pc+us+inet(evdev)"
+    include "ru:2"
+
+    // Change layout with AltGr
+    include "group(toggle)"
+
+    // Use caps as esc (caps:swapescape to swap)
+    include "capslock(escape)"
+
+    // Use RCtl as Compose key http://en.wikipedia.org/wiki/Compose_key
+    // See full list of combinations http://cgit.freedesktop.org/xorg/lib/libX11/plain/nls/en_US.UTF-8/Compose.pre
+    include "compose(rctrl)"
+
+    // Remap : and ;
+    key <AC10> { [ colon, semicolon ] };
+
+    // Remap ~ and `
+    key <TLDE> { [ asciitilde, grave ] };
+
+    // LCtl on CapsLock
+    replace key <CAPS> { [ Control_L ] };
+
+    // Old LCtl does nothing
+    replace key <LCTL> { [ VoidSymbol ] };
+  };
+};
