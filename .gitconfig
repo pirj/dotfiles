@@ -16,5 +16,6 @@
   d = diff
   up = pull --rebase
   c = commit
+  ca = commit --amend
   p = push
   a = add
