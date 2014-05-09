@@ -72,8 +72,8 @@ set showmatch   " Show matching brackets
 set matchtime=2 " How many tenths of a second to blink
 
 set list                    " Show invisible whitespace
-set listchars=""            " Reset the listchars
-set listchars=tab:>-        " Indentended trailing whitespace as dots
+set listchars=""            " Reset the list chars
+set listchars=tab:>-        " Indicate trailing whitespace as dots
 set listchars+=trail:.      " The character to show in the last column when wrap is off and the line
 set listchars+=extends:>    " Indicate that text continues beyond the right of the screen
 set listchars+=precedes:<   " Indicate that text continues beyond the left of the screen
@@ -100,3 +100,6 @@ let g:airline_powerline_fonts = 1
 " Splits
 set splitbelow
 set splitright
+
+" Spell checking
+set spelllang=en,ru

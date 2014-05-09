@@ -121,3 +121,4 @@ junk
 .config/Bitcoin/Bitcoin-Qt.conf
 .config/beets/library.db
 .config/beets/state.pickle
+.vim/spell/

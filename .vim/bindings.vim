@@ -75,3 +75,6 @@ vmap V <Plug>(expand_region_shrink)
 
 " Open search
 nnoremap <leader>a :Ag<Space>
+
+" Toggle spell check
+nmap <leader>k :set spell!<CR>
