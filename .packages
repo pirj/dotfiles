@@ -101,6 +101,7 @@ idnkit
 ifplugd
 iftop
 imagemagick-doc
+imagemagick-no-hdri
 inetutils
 inkscape
 iotop
@@ -218,6 +219,7 @@ slock
 smartmontools
 sntop
 sox
+speedread-git
 sshpass
 stone-soup
 sudo
