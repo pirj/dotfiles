@@ -167,6 +167,8 @@ pomodoro.format = function(time, state, current_pomodoro) return "[ " .. _pomodo
 
 pomodoro.on('done', function() awful.util.spawn('slock') end)
 
+
+
 local widgets = {pomodoro.widget, taskwidget, mpdwidget, datewidget}
 
 for key, widget in pairs(widgets) do
@@ -277,9 +279,24 @@ end
 -- }}}
 
 -- {{{ Key bindings
+local shift_client = function(direction)
+    return function ()
+        local current = awful.tag.selected()
+        local screen = awful.tag.getscreen(current)
+        local tags = awful.tag.gettags(screen)
+        local idx = awful.tag.getidx()
+        local next_tag = tags[awful.util.cycle(#tags, idx + direction)]
+
+        awful.client.movetotag(next_tag)
+    end
+end
+
 globalkeys = awful.util.table.join(
-    awful.key({ modkey,           }, "u",   awful.tag.viewprev       ),
-    awful.key({ modkey,           }, "i",  awful.tag.viewnext       ),
+    awful.key({ modkey,           }, "u", awful.tag.viewprev       ),
+    awful.key({ modkey,           }, "i", awful.tag.viewnext       ),
+    awful.key({ modkey, "Shift"   }, "u", shift_client(-1)         ),
+    awful.key({ modkey, "Shift"   }, "i", shift_client(1)          ),
+
     awful.key({ modkey,           }, "Escape", awful.tag.history.restore),
 
     awful.key({ modkey,           }, "j",
@@ -350,36 +367,36 @@ end
 -- Bind all key numbers to tags.
 -- Be careful: we use keycodes to make it works on any keyboard layout.
 -- This should map on the top row of your keyboard, usually 1 to 9.
-tagkeys = {"a", "s", "d", "f"}
-for i = 1, keynumber do
-    globalkeys = awful.util.table.join(globalkeys,
-        awful.key({ modkey }, tagkeys[i],
-                  function ()
-                        local screen = mouse.screen
-                        if tags[screen][i] then
-                            awful.tag.viewonly(tags[screen][i])
-                        end
-                  end),
-        awful.key({ modkey, "Control" }, tagkeys[i],
-                  function ()
-                      local screen = mouse.screen
-                      if tags[screen][i] then
-                          awful.tag.viewtoggle(tags[screen][i])
-                      end
-                  end),
-        awful.key({ modkey, "Shift" }, tagkeys[i],
-                  function ()
-                      if client.focus and tags[client.focus.screen][i] then
-                          awful.client.movetotag(tags[client.focus.screen][i])
-                      end
-                  end),
-        awful.key({ modkey, "Control", "Shift" }, tagkeys[i],
-                  function ()
-                      if client.focus and tags[client.focus.screen][i] then
-                          awful.client.toggletag(tags[client.focus.screen][i])
-                      end
-                  end))
-end
+-- tagkeys = {"a", "s", "d", "f"}
+-- for i = 1, keynumber do
+--     globalkeys = awful.util.table.join(globalkeys,
+--         awful.key({ modkey }, tagkeys[i],
+--                   function ()
+--                         local screen = mouse.screen
+--                         if tags[screen][i] then
+--                             awful.tag.viewonly(tags[screen][i])
+--                         end
+--                   end),
+--         awful.key({ modkey, "Control" }, tagkeys[i],
+--                   function ()
+--                       local screen = mouse.screen
+--                       if tags[screen][i] then
+--                           awful.tag.viewtoggle(tags[screen][i])
+--                       end
+--                   end),
+--         awful.key({ modkey, "Shift" }, tagkeys[i],
+--                   function ()
+--                       if client.focus and tags[client.focus.screen][i] then
+--                           awful.client.movetotag(tags[client.focus.screen][i])
+--                       end
+--                   end),
+--         awful.key({ modkey, "Control", "Shift" }, tagkeys[i],
+--                   function ()
+--                       if client.focus and tags[client.focus.screen][i] then
+--                           awful.client.toggletag(tags[client.focus.screen][i])
+--                       end
+--                   end))
+-- end
 
 clientbuttons = awful.util.table.join(
     awful.button({ }, 1, function (c) client.focus = c; c:raise() end),
