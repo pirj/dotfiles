@@ -40,7 +40,8 @@ Bundle 'terryma/vim-expand-region'
 " ------------
 
 " Neat replacement for powerline
-Bundle 'bling/vim-airline'
+" Bundle 'bling/vim-airline'
+Bundle 'itchyny/lightline.vim'
 
 " Favourite colorscheme
 Bundle 'nanotech/jellybeans.vim'
