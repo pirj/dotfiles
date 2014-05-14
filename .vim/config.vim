@@ -103,3 +103,6 @@ set splitright
 
 " Spell checking
 set spelllang=en,ru
+
+" Hard time, disallow several hjkl in a row
+let g:hardtime_default_on = 1

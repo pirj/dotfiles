@@ -17,7 +17,7 @@ Bundle 'gmarik/vundle'
 "Bundle 'ZoomWin'
 " This fork is required due to remapping ; to :
 "Bundle 'christoomey/vim-space'
-"Bundle 'Lokaltog/vim-easymotion'
+"Bundle 'supasorn/vim-easymotion'
 " christoomey/vim-tmux-navigator
 
 " Fuzzy search
@@ -26,6 +26,7 @@ Bundle 'Shougo/unite.vim'
 
 " No char-wise navigation, please
 " Bundle 'wikitopian/hardmode'
+Bundle 'takac/vim-hardtime'
 
 " Allows you to visually select increasingly larger regions of text using the same key combination
 Bundle 'terryma/vim-expand-region'
