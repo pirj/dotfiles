@@ -79,3 +79,6 @@ nnoremap <leader>a :Ag<Space>
 
 " Toggle spell check
 nmap <leader>k :set spell!<CR>
+
+" Golden view
+let g:goldenview__enable_default_mapping = 0
