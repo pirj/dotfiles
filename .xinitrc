@@ -9,11 +9,14 @@ fi
 
 xkbevd &
 
-xkbcomp $HOME/.config/xkb/my $DISPLAY
-# -w 0 for no warnings
+# Change layout with AltGr "group(toggle)"
+# Use RCtl as Compose key http://en.wikipedia.org/wiki/Compose_key "compose(rctrl)"
+# See full list of combinations http://cgit.freedesktop.org/xorg/lib/libX11/plain/nls/en_US.UTF-8/Compose.pre
+setxkbmap -layout "us+custom(default),ru(winkeys)" -option "" -option "grp:toggle,compose:rctrl" -print | xkbcomp -I"$HOME/.config/xkb" - "${DISPLAY%%.*}"
 
 # Map CapsLock to a more useful double behavior Esc(tap)/Control(hold)
-xcape -t 1000 -e "Control_L=Escape" # Fire nothing if 1000ms hold time out
+# Fire nothing if 1000ms hold time out
+xcape -t 1000 -e "Control_L=Escape"
 
 xsetroot -cursor_name left_ptr
 

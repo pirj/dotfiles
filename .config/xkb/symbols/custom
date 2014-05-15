@@ -1,0 +1,13 @@
+xkb_symbols "default" {
+  // Remap : and ;
+  key <AC10> { [ colon, semicolon ] };
+
+  // Remap ~ and `
+  key <TLDE> { [ asciitilde, grave ] };
+
+  // LCtl on CapsLock
+  replace key <CAPS> { [ Control_L ] };
+
+  // Old LCtl does nothing
+  replace key <LCTL> { [ VoidSymbol ] };
+};
