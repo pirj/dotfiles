@@ -137,6 +137,9 @@ Bundle 'ap/vim-css-color'
 " Bundle 'perl-support.vim'
 " Bundle 'pangloss/vim-javascript'
 
+" LiveScript
+Bundle 'ninegrid/vim-livescript'
+
 " RUBY
 " ----
 

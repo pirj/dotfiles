@@ -117,3 +117,6 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 # Load RVM into a shell session *as a function*
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+# LiveScript
+[[ -s "$HOME/node_modules/LiveScript" ]] && PATH=$PATH:$HOME/node_modules/LiveScript/bin
