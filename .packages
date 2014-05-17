@@ -66,8 +66,7 @@ firefox
 fish
 flashplugin
 flex
-freeradius-git
-freeswitch
+freeswitch-fixed
 fuse
 fuseiso
 gawk
@@ -233,6 +232,7 @@ tar
 task
 tcl
 tcpdump
+teamviewer
 terminus-font
 termite-git
 texinfo
