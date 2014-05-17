@@ -122,3 +122,7 @@ junk
 .config/beets/library.db
 .config/beets/state.pickle
 .vim/spell/
+.npm/
+.npm-debug.log
+node_modules
+.node-gyp
