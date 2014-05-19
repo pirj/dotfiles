@@ -9,8 +9,7 @@ filetype plugin indent on
 
 " Color
 set t_Co=256
-colorscheme jellybeans
-"colorscheme desert256
+colorscheme jellyx
 
 " Tempfiles
 set backupdir=~/.vim/.backup
@@ -36,10 +35,6 @@ set lazyredraw     " Make plugins smoother
 set ttyfast        " Indicates a fast terminal connection... characters will be sent to the screen for redrawing, instead of using insert/delete line commands. Improves smoothness of redrawing when there are multiple windows and the terminal does not support a scrolling region.
 
 set synmaxcol=512  " Syntax coloring lines that are too long just slows down the world
-
-" vim-eighties
-let g:eighties_extra_width = 10 " Increase this if you want some extra room
-let g:eighties_compute = 1      " Disable this if you just want the minimum + extra
 
 " Behaviors
 syntax enable             " Enable syntax processing

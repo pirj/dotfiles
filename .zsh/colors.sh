@@ -1,7 +1,7 @@
 # Base16 Default - Console color setup script
 # Chris Kempson (http://chriskempson.com)
 
-color00="15/15/15" # Base 00 - Black
+# color00="15/15/15" # Base 00 - Black
 color01="ac/41/42" # Base 08 - Red
 color02="90/a9/59" # Base 0B - Green
 color03="f4/bf/75" # Base 0A - Yellow
@@ -25,7 +25,7 @@ color20="b0/b0/b0" # Base 04
 color21="e0/e0/e0" # Base 06
 
 # 16 color space
-printf "\e]4;0;rgb:$color00\e\\"
+# printf "\e]4;0;rgb:$color00\e\\"
 printf "\e]4;1;rgb:$color01\e\\"
 printf "\e]4;2;rgb:$color02\e\\"
 printf "\e]4;3;rgb:$color03\e\\"
@@ -54,7 +54,7 @@ if [ "$TERM" != linux ]; then
 fi
 
 # clean up
-unset color00
+# unset color00
 unset color01
 unset color02
 unset color03

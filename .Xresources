@@ -1,12 +1,5 @@
-#define corebg #080820
-#define corefg #f5f5f5
-#define corecc #d0d0d0
-
-*.foreground:   corefg
-*.background:   corebg
-*.cursorColor:  corecc
 *saveLines: 65535
-*termName: xterm-color
+*termName: xterm-256color
 *loginShell: true
 *urgentOnBell: false
 
