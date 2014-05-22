@@ -26,7 +26,7 @@ Bundle 'Shougo/unite.vim'
 
 " No char-wise navigation, please
 " Bundle 'wikitopian/hardmode'
-Bundle 'takac/vim-hardtime'
+" Bundle 'takac/vim-hardtime'
 
 " Allows you to visually select increasingly larger regions of text using the same key combination
 Bundle 'terryma/vim-expand-region'
