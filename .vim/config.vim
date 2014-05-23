@@ -112,4 +112,9 @@ set splitright
 set spelllang=en,ru
 
 " Hard time, disallow several hjkl in a row
-let g:hardtime_default_on = 1
+" let g:hardtime_default_on = 1
+
+" Clever-f
+let g:clever_f_smart_case = 1
+let g:clever_f_chars_match_any_signs = 1
+" let g:clever_f_forget_on_esc = 1 " TODO
