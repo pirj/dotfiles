@@ -82,3 +82,6 @@ nmap <leader>k :set spell!<CR>
 
 " Golden view
 let g:goldenview__enable_default_mapping = 0
+
+" Clever-f
+nmap <Esc> <Plug>(clever-f-reset)
