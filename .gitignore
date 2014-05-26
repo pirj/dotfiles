@@ -126,3 +126,6 @@ junk
 .npm-debug.log
 node_modules
 .node-gyp
+.config/CycloneSoft
+bin
+timedoctor
