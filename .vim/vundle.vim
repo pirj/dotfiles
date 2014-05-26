@@ -143,6 +143,9 @@ Bundle 'ap/vim-css-color'
 " LiveScript
 Bundle 'ninegrid/vim-livescript'
 
+" JavaScript
+Bundle 'Shutnik/jshint2.vim'
+
 " RUBY
 " ----
 
