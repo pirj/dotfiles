@@ -75,6 +75,9 @@ export EDITOR=vim
 alias ll='ls -l'
 alias la='ls -a'
 
+# Start week from Monday
+alias cal='cal -m'
+
 # Use nvim everywhere
 # alias vim=nvim
 # alias vi=nvim
