@@ -20,7 +20,7 @@ xcape -t 1000 -e "Control_L=Escape"
 
 xsetroot -cursor_name left_ptr
 
-xinput disable 12 # disable touchpad
+xinput disable "SynPS/2 Synaptics TouchPad"
 
 xset -r # disable key repeat
 xset -b # disable bell
