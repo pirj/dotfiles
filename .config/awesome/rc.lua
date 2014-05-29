@@ -48,13 +48,15 @@ theme.font      = "Inconsolata Medium 10"
 theme.bg_focus = theme.bg_normal
 theme.taglist_squares_sel = "/usr/share/awesome/themes/zenburn/taglist/squarefz.png"
 theme.taglist_squares_unsel = "/usr/share/awesome/themes/zenburn/taglist/squarez.png"
-theme.taglist_bg_focus      = "#00004400"
-theme.border_width  = 3
-theme.bg_normal     = "#22222200"
-theme.bg_focus      = "#535d6c00"
-theme.bg_urgent     = "#ff000000"
-theme.bg_minimize   = "#44444400"
-theme.bg_systray    = theme.bg_normal
+theme.taglist_bg_focus      = "#00000040"
+theme.border_width  = 16
+theme.border_normal = "#000000"
+theme.border_focus  = "#000000"
+theme.border_marked = "#91231c"
+-- theme.border_width  = 16
+theme.bg_normal     = "#00000000"
+theme.bg_focus      = theme.bg_normal
+theme.bg_urgent     = theme.bg_normal
 
 -- This is used later as the default terminal and editor to run.
 -- terminal = "dwt -f 'Inconsolata 12'"

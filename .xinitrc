@@ -57,4 +57,7 @@ sxhkd -c .config/sxhkdrc &disown
 # Random wallpaper
 hsetroot -center ~/wallpapers/$(ls wallpapers | shuf| tail -n 1)
 
+# Compton window composer
+compton &
+
 /usr/bin/awesome
