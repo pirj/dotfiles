@@ -70,8 +70,8 @@ set matchtime=2 " How many tenths of a second to blink
 
 set list                    " Show invisible whitespace
 set listchars=""            " Reset the list chars
-set listchars=tab:>-        " Indicate trailing whitespace as dots
-set listchars+=trail:.      " The character to show in the last column when wrap is off and the line
+set listchars=tab:>-        " Indicate tabs
+set listchars+=trail:-      " Indicate trailing whitespace as dots
 set listchars+=extends:>    " Indicate that text continues beyond the right of the screen
 set listchars+=precedes:<   " Indicate that text continues beyond the left of the screen
 
