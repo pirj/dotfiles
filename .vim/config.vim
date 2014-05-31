@@ -50,11 +50,12 @@ set scrolloff=3           " Keep three lines below the last line when scrolling
 set gdefault              " have :s///g flag by default on
 
 " Text Format
-set tabstop=2    " Number of visual spaces per TAB
-set backspace=2  " Delete everything with backspace
-set shiftwidth=2 " Tabs under smart indent
-set autoindent   " Copy indent from current line when starting a new line
-set expandtab    " Tabs are spaces
+set tabstop=2             " Number of visual spaces per TAB
+set backspace=2           " Delete everything with backspace
+set shiftwidth=2          " Tabs under smart indent
+set autoindent            " Copy indent from current line when starting a new line
+set expandtab             " Tabs are spaces
+set formatoptions=tqc     " Do not insert new line of comments
 
 " Searching
 set ignorecase " Case insensitive search
