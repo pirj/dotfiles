@@ -39,7 +39,8 @@ set synmaxcol=512  " Syntax coloring lines that are too long just slows down the
 " Behaviors
 syntax enable             " Enable syntax processing
 set autoread              " Automatically reload changes if detected
-"set wildmenu              " Turn on WiLd menu
+set wildmenu              " Turn on WiLd menu
+set wildmode=list:full    " Wildmenu dock
 set hidden                " Change buffer - without saving
 set history=768           " Number of things to remember in history.
 set clipboard=unnamedplus " Yanks go on clipboard instead.
