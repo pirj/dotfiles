@@ -8,10 +8,6 @@ let mapleader = " "
 " No need to switch between layouts to use normal mode https://gist.github.com/sigsergv/5329459
 set langmap=ёйцукенгшщзхъфывапролджэячсмитьбюЁЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ;`qwertyuiop[]asdfghjkl:'zxcvbnm\\,.~QWERTYUIOP{}ASDFGHJKL\\;\\"ZXCVBNM<>
 
-" Escape in home row
-" inoremap jj <Esc>
-" vnoremap ll <Esc>
-
 " Navigate panes
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
@@ -39,8 +35,18 @@ nnoremap gv `[v`]
 nnoremap Y y$
 
 " Jump to start and end of line using the home row keys
-nnoremap H _
-nnoremap L $
+noremap H 0
+noremap L $
+map 0 <NOP>
+map _ <NOP>
+map $ <NOP>
+
+" Disable Ex mode, run last macro instead
+nnoremap Q @@
+
+" Swap jumping, ' is closer, so use it to jump to line and column
+nnoremap ' `
+nnoremap ` '
 
 " Easier redo
 nnoremap U <C-r>
