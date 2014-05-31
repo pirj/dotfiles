@@ -21,6 +21,8 @@ set noswapfile
 " Persistent Undo
 set undodir=~/.vim/.undo
 
+set path=.,**             " Paths to find files in
+
 " UI
 set ruler          " Ruler on
 set relativenumber " Relative line numbers
@@ -80,11 +82,10 @@ set noerrorbells
 set novisualbell
 set t_vb=
 
-" Better complete options to speed it up
-set complete=.,w,b,u,U
+set complete=.,w,b,u,U " Better complete options to speed it up
 
-" Avoid annoying mode switch lag
-set timeoutlen=1000 ttimeoutlen=50
+set timeoutlen=1000 ttimeoutlen=50 " Avoid annoying mode switch lag
+
 
 " Lightline
 let g:lightline = {

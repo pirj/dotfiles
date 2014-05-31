@@ -17,8 +17,11 @@ nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
-nnoremap <leader>v <c-w>v
-nnoremap <leader>s <c-w>s
+
+" Find with :find (haha Ctrl-P) (also in splits)
+nnoremap <leader>f :find<Space>
+nnoremap <leader>s :sfind<Space>
+nnoremap <leader>v :vert sfind<Space>
 
 " Resize panes
 nnoremap <leader>- <c-w>_
@@ -59,7 +62,7 @@ nmap <leader>e :e<Space>
 imap <tab> <c-p>
 
 " Temporarily disable hard mode. Sign of weakness!
-nnoremap <leader>h <Esc>:call ToggleHardMode()<cr>
+" nnoremap <leader>h <Esc>:call ToggleHardMode()<cr>
 
 " Soft hardmode
 nnoremap <Left> <NOP>
@@ -84,4 +87,4 @@ nmap <leader>k :set spell!<CR>
 let g:goldenview__enable_default_mapping = 0
 
 " Clever-f
-nmap <Esc> <Plug>(clever-f-reset)
+" nmap <Esc> <Plug>(clever-f-reset)
