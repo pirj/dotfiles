@@ -57,7 +57,7 @@ set backspace=2           " Delete everything with backspace
 set shiftwidth=2          " Tabs under smart indent
 set autoindent            " Copy indent from current line when starting a new line
 set expandtab             " Tabs are spaces
-set formatoptions=tqc     " Do not insert new line of comments
+set formatoptions=t       " Do not insert new line of comments
 
 " Searching
 set ignorecase " Case insensitive search
