@@ -26,6 +26,7 @@ bison
 bitcoin-daemon
 bitcoin-qt
 boost
+brogue
 busybox
 bzip2
 celt
@@ -111,6 +112,7 @@ irssi
 iw
 jack2
 jfsutils
+jitsi
 jnettop
 keychain
 less
@@ -153,11 +155,13 @@ memcached
 mesa
 mesa-libgl
 metalog
+mongodb
 mosh
 mpd
 mpg123
 mtr
 nano
+nas
 ncmpcpp
 net-snmp
 net-tools
@@ -165,6 +169,7 @@ netbrake
 netctl
 netkit-bsd-finger
 nmap
+nodejs
 nomacs
 ntop
 openal
@@ -284,6 +289,7 @@ xf86-input-synaptics
 xf86-video-ati
 xfsprogs
 xinetd
+xkbset
 xorg-server
 xorg-server-utils
 xorg-server-xvfb
