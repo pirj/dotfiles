@@ -130,3 +130,4 @@ node_modules
 bin
 timedoctor
 .config/teamviewer9/
+.byebug_hist
