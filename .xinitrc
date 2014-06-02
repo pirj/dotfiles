@@ -18,8 +18,10 @@ setxkbmap -layout "us+custom(default),ru(winkeys)" -option "" -option "grp:toggl
 # Fire nothing if 1000ms hold time out
 xcape -t 1000 -e "Control_L=Escape"
 
-# Sticky modifiers. Double press interpreted as locked modifier, reset when two keys are pressed simulatenously.
+# Sticky modifiers. Double press interpreted as locked modifier, reset when two keys are pressed simulatenously
 xkbset sticky twokey latchlock
+# And do not expire these settings
+xkbset exp 1 =sticky =twokey =latchlock
 
 xsetroot -cursor_name left_ptr
 
