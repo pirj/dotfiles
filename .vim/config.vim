@@ -26,6 +26,7 @@ set path=.,**             " Paths to find files in
 " UI
 set ruler          " Ruler on
 set relativenumber " Relative line numbers
+set number         " And current line number under cursor too
 set wrap           " Line wrapping on
 set encoding=utf-8
 set noshowmode     " Don't show the mode since lightline shows it
