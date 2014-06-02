@@ -1,0 +1,11 @@
+partial xkb_compatibility "latch" {
+  virtual_modifiers  Shift, Super;
+
+  interpret ISO_Level2_Latch {
+    action = LatchMods(modifiers = Shift);
+  };
+
+  interpret ISO_Level3_Latch {
+    action = LatchMods(modifiers = Super);
+  };
+};

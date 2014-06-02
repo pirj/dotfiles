@@ -10,4 +10,9 @@ xkb_symbols "default" {
 
   // Old LCtl does nothing
   replace key <LCTL> { [ VoidSymbol ] };
+
+  key <LFSH> { [ ISO_Level2_Latch ] };
+  key <RTSH> { [ ISO_Level2_Latch ] };
+
+  key <LWIN> { [ ISO_Level3_Latch ] };
 };

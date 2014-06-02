@@ -289,7 +289,6 @@ xf86-input-synaptics
 xf86-video-ati
 xfsprogs
 xinetd
-xkbset
 xorg-server
 xorg-server-utils
 xorg-server-xvfb

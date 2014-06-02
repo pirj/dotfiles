@@ -12,16 +12,12 @@ xkbevd &
 # Change layout with AltGr "group(toggle)"
 # Use RCtl as Compose key http://en.wikipedia.org/wiki/Compose_key "compose(rctrl)"
 # See full list of combinations http://cgit.freedesktop.org/xorg/lib/libX11/plain/nls/en_US.UTF-8/Compose.pre
-setxkbmap -layout "us+custom(default),ru(winkeys)" -option "" -option "grp:toggle,compose:rctrl" -print | xkbcomp -I"$HOME/.config/xkb" - "${DISPLAY%%.*}"
+# Latch Shifts
+setxkbmap -layout "us+custom(default),ru(winkeys)" -option "" -option "grp:toggle,compose:rctrl" -compat "complete+custom(latch)" -print | xkbcomp -I"$HOME/.config/xkb" - "${DISPLAY%%.*}"
 
 # Map CapsLock to a more useful double behavior Esc(tap)/Control(hold)
 # Fire nothing if 1000ms hold time out
 xcape -t 1000 -e "Control_L=Escape"
-
-# Sticky modifiers. Double press interpreted as locked modifier, reset when two keys are pressed simulatenously
-xkbset sticky twokey latchlock
-# And do not expire these settings
-xkbset exp 1 =sticky =twokey =latchlock
 
 xsetroot -cursor_name left_ptr
 
