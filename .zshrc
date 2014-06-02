@@ -1,6 +1,6 @@
 if [[ -s $HOME/.zsh/oh-my-zsh ]]; then
   ZSH=$HOME/.zsh/oh-my-zsh
-  plugins=(fasd history-substring-search sprunge)
+  plugins=(fasd sprunge)
   source $ZSH/oh-my-zsh.sh
 fi
 
@@ -29,6 +29,9 @@ PROMPT_PROMPT="%(!.#.$)"
 # Better vi mode (hat tip Doug Black)
 bindkey -v
 bindkey '^r' history-incremental-search-backward
+bindkey -a '^r' history-incremental-search-backward
+bindkey -a H beginning-of-line
+bindkey -a L end-of-line
 
 function zle-line-init zle-keymap-select {
   if [[ $KEYMAP == main ]]; then
