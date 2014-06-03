@@ -14,6 +14,7 @@ local vicious = require("vicious")
 local taskwarrior = require("taskwarrior")
 pomodoro = require("pomodoro")
 local io = { popen = io.popen }
+local mpd = require("mpd")
 
 -- {{{ Error handling
 -- Check if awesome encountered an error during startup and fell back to
@@ -137,15 +138,25 @@ local datewidget = wibox.widget.textbox()
 
 vicious.register(datewidget, vicious.widgets.date, "[ %a %d %b %R ]", 60)
 
+
+
 local mpdwidget = wibox.widget.textbox()
-vicious.register(mpdwidget, vicious.widgets.mpd,
+vicious.register(mpdwidget, mpd,
     function (mpdwidget, args)
         if args["{state}"] == "Stop" then
             return "[ ■ ]"
         elseif args["{state}"] == "Pause" then
+          if args["{Artist}"] == "N/A" then
+            return "[  "..args["{file}"].." ]"
+          else
             return "[  "..args["{Artist}"]..' - '.. args["{Title}"] .." ]"
+          end
         else
+          if args["{Artist}"] == "N/A" then
+            return "[ ▶ "..args["{file}"].." ]"
+          else
             return "[ ▶ "..args["{Artist}"]..' - '.. args["{Title}"] .." ]"
+          end
         end
     end, 1)
 
