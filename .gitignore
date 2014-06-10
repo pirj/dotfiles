@@ -131,3 +131,4 @@ bin
 timedoctor
 .config/teamviewer9/
 .byebug_hist
+.guard_history
