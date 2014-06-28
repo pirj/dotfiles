@@ -132,3 +132,5 @@ timedoctor
 .config/teamviewer9/
 .byebug_hist
 .guard_history
+.config/configstore/insight-bower.yml
+.config/configstore/update-notifier-bower.yml
