@@ -136,3 +136,4 @@ timedoctor
 .config/configstore/update-notifier-bower.yml
 .magick/ImagemagickOpenCLDeviceProfile
 .purple
+.config/tox
