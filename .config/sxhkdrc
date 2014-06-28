@@ -6,3 +6,9 @@ XF86AudioPlay
 
 XF86Audio{Prev,Next}
     ncmpcpp {prev,next}
+
+super + c
+    chromium
+
+super + o
+    termite

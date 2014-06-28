@@ -16,8 +16,10 @@ xkbevd &
 setxkbmap -layout "us+custom(default),ru(winkeys)" -option "" -option "grp:toggle,compose:rctrl" -compat "complete+custom(latch)" -print | xkbcomp -I"$HOME/.config/xkb" - "${DISPLAY%%.*}"
 
 # Map CapsLock to a more useful double behavior Esc(tap)/Control(hold)
+# Map Return to a Return(tap)/Super(hold)
 # Fire nothing if 1000ms hold time out
 xcape -t 1000 -e "Control_L=Escape"
+# xcape -t 1000 -e "Meta_L=Return"
 
 xsetroot -cursor_name left_ptr
 

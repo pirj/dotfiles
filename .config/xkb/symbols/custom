@@ -8,11 +8,22 @@ xkb_symbols "default" {
   // LCtl on CapsLock
   replace key <CAPS> { [ Control_L ] };
 
+  // Super_L on Return
+  // replace key <RTRN> { [ Super_L ] };
+  // key <RTRN> { [ Meta_L ] };
+
+  // Swap Alt and Win
+  // replace key <LALT> { [ Super_L ] };
+  // replace key <LWIN> { [ Alt_L, Meta_L ] };
+
+  // modifier_map Mod1 { Alt_L, Alt_R };
+  // modifier_map Mod4 { <META>, <RTRN> };
+
   // Old LCtl does nothing
   replace key <LCTL> { [ VoidSymbol ] };
 
   key <LFSH> { [ ISO_Level2_Latch ] };
   key <RTSH> { [ ISO_Level2_Latch ] };
 
-  key <LWIN> { [ ISO_Level3_Latch ] };
+//  key <LWIN> { [ ISO_Level3_Latch ] };
 };
