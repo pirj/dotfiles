@@ -135,3 +135,4 @@ timedoctor
 .config/configstore/insight-bower.yml
 .config/configstore/update-notifier-bower.yml
 .magick/ImagemagickOpenCLDeviceProfile
+.purple
