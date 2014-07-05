@@ -9,7 +9,7 @@ filetype plugin indent on
 
 " Color
 set t_Co=256
-colorscheme jellybeans
+colorscheme jelleybeans
 
 " Tempfiles
 set backupdir=~/.vim/.backup
