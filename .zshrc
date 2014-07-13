@@ -114,6 +114,9 @@ alias -g L='| less'
 alias -g W='| wc -l'
 alias -r T='tail -f'
 
+# Factor listener, readline handler wrapped
+alias factor='rlwrap factor-vm -run=listener'
+
 # Find that fat files
 alias space='du --max-depth=2 -h . | sort -h -r | head -n 20'
 
