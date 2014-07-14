@@ -142,3 +142,4 @@ data
 .config/ImageMagick
 .config/hub
 .factor-vm_history
+.config/htop/htoprc
