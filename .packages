@@ -153,6 +153,7 @@ mariadb
 mariadb-clients
 markdown
 mc
+mcabber
 mdadm
 memcached
 mesa
@@ -250,8 +251,6 @@ tk
 tldp-howtos-txt
 tmux
 tor
-tox-prpl
-toxic
 tree
 ttf-dejavu
 ttf-droid

@@ -143,3 +143,4 @@ data
 .config/hub
 .factor-vm_history
 .config/htop/htoprc
+.mcabber
