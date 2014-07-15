@@ -166,7 +166,6 @@ mpg123
 mtr
 nano
 nas
-ncmpcpp
 net-snmp
 net-tools
 netbrake
@@ -268,6 +267,7 @@ util-linux
 vi
 vicious
 vimb-git
+vimpc-git
 vimprobable2
 virtualbox
 virtualbox-guest-modules
