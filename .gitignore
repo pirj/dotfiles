@@ -144,3 +144,7 @@ data
 .factor-vm_history
 .config/htop/htoprc
 .mcabber
+.config/transmission-daemon/stats.json
+.config/transmission-daemon/blocklists
+.config/transmission-daemon/torrents
+.config/transmission-daemon/resume

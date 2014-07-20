@@ -41,7 +41,7 @@ skypetab-ng &
 # automount disks to /media
 udiskie &
 
-tmux new-session -d -s rtorrent rtorrent
+transmission-daemon
 
 autocutsel -fork &
 autocutsel -selection PRIMARY -fork &

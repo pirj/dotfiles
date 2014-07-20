@@ -215,7 +215,6 @@ redshift
 reiserfsprogs
 reptyr
 rlwrap
-rtorrent
 rxvt-unicode
 scrot
 sed
@@ -250,6 +249,8 @@ tk
 tldp-howtos-txt
 tmux
 tor
+transmission-cli
+transmission-remote-cli
 tree
 ttf-dejavu
 ttf-droid
