@@ -72,7 +72,7 @@ unsetopt correct_all
 # Reduce delay after you hit the <ESC> to 0.1 seconds (hat tip Doug Black)
 export KEYTIMEOUT=1
 
-export EDITOR=vim
+export EDITOR=nvim
 
 # Shell aliases
 alias ll='ls -l'
@@ -82,13 +82,10 @@ alias la='ls -a'
 alias cal='cal -m'
 
 # Use nvim everywhere
-# alias vim=nvim
-# alias vi=nvim
-# alias view=nvim -R
-# alias edit=nvim
-alias vi=vim
-alias view=vim -R
-alias edit=vim
+alias vim=nvim
+alias vi=nvim
+alias view=nvim -R
+alias edit=nvim
 
 # Run tmux in 256 color mode
 alias tmux='tmux -2'
