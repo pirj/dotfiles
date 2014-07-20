@@ -19,7 +19,7 @@ Bundle 'gmarik/vundle'
 "Bundle 'christoomey/vim-space'
 "Bundle 'supasorn/vim-easymotion'
 " christoomey/vim-tmux-navigator
-Bundle 'rhysd/clever-f.vim'
+
 " Fuzzy search
 " Bundle 'kien/ctrlp.vim'
 " Bundle 'Shougo/unite.vim'
