@@ -46,7 +46,6 @@ set wildmenu              " Turn on WiLd menu
 set wildmode=list:full    " Wildmenu dock
 set hidden                " Change buffer - without saving
 set history=768           " Number of things to remember in history.
-set clipboard=unnamedplus " Yanks go on clipboard instead.
 set iskeyword+=$,@        " Add extra characters that are valid parts of variables
 set nostartofline         " Don't go to the start of the line after some commands
 set scrolloff=3           " Keep three lines below the last line when scrolling

@@ -34,6 +34,10 @@ nnoremap gv `[v`]
 " Yank to the end of line
 nnoremap Y y$
 
+" Only use X clipboard when required
+nnoremap <Leader>p :set paste<CR>"*p:set nopaste<CR>
+nnoremap <Leader>y "*y
+
 " Jump to start and end of line using the home row keys
 noremap H 0
 noremap L $
@@ -91,6 +95,3 @@ nmap <leader>k :set spell!<CR>
 
 " Golden view
 let g:goldenview__enable_default_mapping = 0
-
-" Clever-f
-" nmap <Esc> <Plug>(clever-f-reset)
