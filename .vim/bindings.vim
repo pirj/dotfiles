@@ -95,3 +95,8 @@ nmap <leader>k :set spell!<CR>
 
 " Golden view
 let g:goldenview__enable_default_mapping = 0
+
+
+" Tslime: send selection or current line to tmux pane
+vmap <leader>c <Plug>SendSelectionToTmux
+nmap <leader>c <Plug>NormalModeSendToTmux
