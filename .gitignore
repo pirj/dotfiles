@@ -149,3 +149,4 @@ data
 .config/transmission-daemon/torrents
 .config/transmission-daemon/resume
 .nvimlog
+.gnome/apps/chrome-*
