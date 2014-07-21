@@ -110,7 +110,6 @@ iotop
 iproute2
 iputils
 ipw2200-fw
-irssi
 iw
 jack2
 jfsutils
@@ -268,6 +267,7 @@ usbutils
 util-linux
 vi
 vicious
+vim-runtime
 vimb-git
 vimpc-git
 vimprobable2
@@ -276,6 +276,7 @@ virtualbox-guest-modules
 virtualbox-guest-utils
 vit
 vlc
+weechat
 weston
 wget
 which

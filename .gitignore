@@ -75,7 +75,6 @@ wallpapers/
 .ivy2
 .cassandra.history
 .cqlsh_history
-.irssi
 .links
 .android
 .fasd-init-cache
@@ -150,3 +149,5 @@ data
 .config/transmission-daemon/resume
 .nvimlog
 .gnome/apps/chrome-*
+.weechat/weechat.log
+.weechat/logs
