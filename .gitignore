@@ -151,3 +151,4 @@ data
 .gnome/apps/chrome-*
 .weechat/weechat.log
 .weechat/logs
+.config/blender/
