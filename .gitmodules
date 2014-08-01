@@ -7,3 +7,6 @@
 [submodule ".zsh/prezto"]
   path = .zsh/prezto
   url = git@github.com:sorin-ionescu/prezto.git
+[submodule "/home/pirj/.oh-my-fish"]
+	path = /home/pirj/.oh-my-fish
+	url = git://github.com/bpinto/oh-my-fish.git
