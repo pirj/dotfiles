@@ -152,3 +152,7 @@ data
 .weechat/weechat.log
 .weechat/logs
 .config/blender/
+.esd_auth
+.nviminfo.tmp
+.config/transmission-daemon/settings.json.tmp.*
+.config/transmission-daemon/dht.dat
