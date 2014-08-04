@@ -118,6 +118,7 @@ jitsi
 jnettop
 keychain
 less
+libcanberra-pulse
 libcl
 libedit
 libevent
@@ -142,7 +143,7 @@ logkeys
 logrotate
 lvm2
 lynis
-lzo2
+lzo
 lzop
 m4
 macchanger
@@ -203,6 +204,7 @@ procinfo-ng
 procps-ng
 psmisc
 pssh
+pulseaudio-alsa
 pwgen
 python2-cairo
 python2-lxml
