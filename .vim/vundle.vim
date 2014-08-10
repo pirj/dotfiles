@@ -50,8 +50,8 @@ Bundle 'flazz/vim-colorschemes'
 Bundle 'vim-misc'
 
 " Automatically resizes splits on switch
-" Bundle 'justincampbell/vim-eighties'
-Bundle 'zhaocai/GoldenView.Vim'
+Bundle 'justincampbell/vim-eighties'
+" Bundle 'zhaocai/GoldenView.Vim'
 
 " Startup screen
 "mhinz/vim-startify
