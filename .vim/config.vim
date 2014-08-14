@@ -9,7 +9,8 @@ filetype plugin indent on
 
 " Color
 set t_Co=256
-colorscheme jelleybeans
+let g:jellybeans_background_color_256=232
+colorscheme jellybeans
 
 " Tempfiles
 set backupdir=~/.vim/.backup
@@ -34,7 +35,7 @@ set title          " Set the title of the window in the terminal to the file
 set laststatus=2
 set cursorline
 
-set lazyredraw     " Make plugins smoother
+set nolazyredraw     " Make plugins smoother
 set ttyfast        " Indicates a fast terminal connection... characters will be sent to the screen for redrawing, instead of using insert/delete line commands. Improves smoothness of redrawing when there are multiple windows and the terminal does not support a scrolling region.
 
 set synmaxcol=512  " Syntax coloring lines that are too long just slows down the world
@@ -116,7 +117,3 @@ set spelllang=en,ru
 
 " Hard time, disallow several hjkl in a row
 " let g:hardtime_default_on = 1
-
-" Clever-f
-let g:clever_f_smart_case = 1
-let g:clever_f_chars_match_any_signs = 1

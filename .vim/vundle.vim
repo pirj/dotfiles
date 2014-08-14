@@ -44,8 +44,8 @@ Bundle 'terryma/vim-expand-region'
 Bundle 'itchyny/lightline.vim'
 
 " Colorschemes
-" Bundle 'nanotech/jellybeans.vim'
-Bundle 'flazz/vim-colorschemes'
+Bundle 'nanotech/jellybeans.vim'
+" Bundle 'flazz/vim-colorschemes'
 " Bundle 'xolox/vim-colorscheme-switcher'
 Bundle 'vim-misc'
 
