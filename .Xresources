@@ -15,23 +15,20 @@
 !urxvt
 URxvt*scrollTtyOutput: false
 URxvt*scrollTtyKeypress: true
-!urxvt*font: xft:Droid Sans Mono for Powerline:size=9.5,xft:inconsolata:size=11
-!urxvt*font: xft:inconsolata:size=11,xft:Droid Sans Mono for Powerline:size=9.5
-!urxvt*font: xft:inconsolatalgc:size=9
-!urxvt*font: xft:Inconsolata-dz for Powerline:size=11
+
 urxvt*font: xft:Droid Sans Mono for Powerline:size=9.5
-URxvt.buffered:         true
-!URxvt.cursorUnderline: true
 URxvt.letterSpace: -1
 
-urxvt*background:       rgba:0000/0000/0000/ffff
-urxvt*foreground:       rgba:d000/d000/d000/ffff
-!urxvt*background:       rgba:0000/0000/0000/0000
-!urxvt*transparent:      true
-urxvt*shading:          08
-urxvt*depth:            32
-!urxvt*tint:             white
-!urxvt*inheritPixmap:    true
+urxvt*cursorColor: #888888
+urxvt*background: #000000
+urxvt*foreground: #aaaaaa
+urxvt*depth:      32
+
+URxvt.buffered:   true
+urxvt*jumpScroll: true
+urxvt*skipScroll: true
+
+urxvt*visualBell: false
 
 Xft.dpi:        96
 Xft.antialias:  true

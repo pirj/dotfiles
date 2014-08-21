@@ -63,4 +63,6 @@ hsetroot -center ~/wallpapers/$(ls wallpapers | shuf| tail -n 1)
 # Compton window composer
 compton &
 
+urxvtd &
+
 /usr/bin/awesome

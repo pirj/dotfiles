@@ -62,7 +62,8 @@ theme.taglist_fg_empty    = "#606060"
 
 -- This is used later as the default terminal and editor to run.
 -- terminal = "dwt -f 'Inconsolata 12'"
-terminal = "termite"
+-- terminal = "termite"
+terminal = "urxvtc"
 editor = os.getenv("EDITOR") or "vim"
 editor_cmd = terminal .. " -e " .. editor
 
