@@ -13,22 +13,22 @@
 *faceSize: 12
 
 !urxvt
-URxvt*scrollTtyOutput: false
-URxvt*scrollTtyKeypress: true
+urxvt.scrollTtyOutput: false
+urxvt.scrollTtyKeypress: true
 
-urxvt*font: xft:Droid Sans Mono for Powerline:size=9.5
-URxvt.letterSpace: -1
+urxvt.font: xft:Droid Sans Mono for Powerline:size=9.5
+urxvt.letterSpace: -1
 
-urxvt*cursorColor: #888888
-urxvt*background: #000000
-urxvt*foreground: #aaaaaa
-urxvt*depth:      32
+urxvt.cursorColor: #888888
+urxvt.background:  #000000
+urxvt.foreground:  #eeeeee
+urxvt.depth:       32
 
-URxvt.buffered:   true
-urxvt*jumpScroll: true
-urxvt*skipScroll: true
+urxvt.buffered:   true
+urxvt.jumpScroll: true
+urxvt.skipScroll: true
 
-urxvt*visualBell: false
+urxvt.visualBell: false
 
 Xft.dpi:        96
 Xft.antialias:  true
