@@ -75,7 +75,7 @@ export KEYTIMEOUT=1
 export EDITOR=nvim
 
 # Shell aliases
-alias ll='ls -l'
+alias ll='ls -lh'
 alias la='ls -a'
 
 # Start week from Monday
