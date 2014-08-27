@@ -157,3 +157,5 @@ data
 .config/transmission-daemon/settings.json.tmp.*
 .config/transmission-daemon/dht.dat
 .weechat/irc.conf
+.config/pavucontrol.ini
+.pencil
