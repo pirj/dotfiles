@@ -14,10 +14,12 @@ nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
 
+" Split panes
+nnoremap <leader>s <c-w>s
+nnoremap <leader>v <c-w>v
+
 " Find with :find (haha Ctrl-P) (also in splits)
 nnoremap <leader>f :find<Space>
-nnoremap <leader>s :sfind<Space>
-nnoremap <leader>v :vert sfind<Space>
 
 " Resize panes
 nnoremap <leader>- <c-w>_
@@ -92,10 +94,6 @@ nnoremap <leader>a :Ag<Space>
 
 " Toggle spell check
 nmap <leader>k :set spell!<CR>
-
-" Golden view
-let g:goldenview__enable_default_mapping = 0
-
 
 " Tslime: send selection or current line to tmux pane
 vmap <leader>c <Plug>SendSelectionToTmux
