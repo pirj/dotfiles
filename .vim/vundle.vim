@@ -130,6 +130,8 @@ Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-rails'
 Bundle 'slim-template/vim-slim'
 
+
+Bundle 'sunaku/vim-ruby-minitest'
 " Bundle 'tpope/vim-haml'
 " Bundle 'tpope/vim-rake'
 
