@@ -94,7 +94,3 @@ nnoremap <leader>a :Ag<Space>
 
 " Toggle spell check
 nmap <leader>k :set spell!<CR>
-
-" Tslime: send selection or current line to tmux pane
-vmap <leader>c <Plug>SendSelectionToTmux
-nmap <leader>c <Plug>NormalModeSendToTmux
