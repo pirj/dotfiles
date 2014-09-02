@@ -1,3 +1,4 @@
+8192cu-dkms
 abs
 acpi
 acpid
@@ -16,6 +17,7 @@ autocutsel
 automake
 autossh
 awesome
+bar-aint-recursive
 bash
 beets
 binutils
@@ -29,6 +31,7 @@ busybox
 bzip2
 celt
 chromium
+clmystery-git
 cmake
 cmus
 commoncpp2
@@ -52,9 +55,11 @@ dmon
 dnsmasq
 dnsutils
 dumb
+dzen2
 e2fsprogs
 elasticsearch
 eventlog
+evolus-pencil-svn
 extundelete
 factor-git
 fakeroot
@@ -122,12 +127,11 @@ libcanberra-pulse
 libcl
 libedit
 libevent
-libmariadbclient
 libpng12
-libreoffice-base
-libreoffice-calc
-libreoffice-common
-libreoffice-writer
+libreoffice-still-base
+libreoffice-still-calc
+libreoffice-still-common
+libreoffice-still-writer
 libsodium
 libstdc++5
 libtool
@@ -167,6 +171,7 @@ mpg123
 mtr
 nano
 nas
+ncmpcpp
 neovim-git
 net-snmp
 net-tools
@@ -186,6 +191,7 @@ otf-pomodoro-git
 p7zip
 pacman
 patch
+pavucontrol
 pciutils
 pcmciautils
 perl
@@ -194,6 +200,7 @@ perl-lwp-protocol-https
 perl-yaml-syck
 pgadmin3
 pkg-config
+pkgbuild-introspection
 pm-utils
 polipo
 portaudio
@@ -204,6 +211,7 @@ procinfo-ng
 procps-ng
 psmisc
 pssh
+pulseaudio
 pulseaudio-alsa
 pwgen
 python2-cairo
@@ -268,15 +276,13 @@ unzip
 urxvt-perls
 usbutils
 util-linux
+uuid
 vi
 vicious
 vim-runtime
 vimb-git
 vimpc-git
 vimprobable2
-virtualbox
-virtualbox-guest-modules
-virtualbox-guest-utils
 vit
 vlc
 weechat
