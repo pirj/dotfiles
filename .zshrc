@@ -90,9 +90,6 @@ alias edit=nvim
 # Run tmux in 256 color mode
 alias tmux='tmux -2'
 
-export TERM=xterm-256color
-alias ssh='TERM=xterm-color ssh'
-
 # tmux aliases
 alias ta='tmux at'
 alias tat='tmux at -t'
