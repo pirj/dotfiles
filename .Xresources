@@ -1,7 +1,6 @@
 *saveLines: 65535
 *termName: xterm-256color
 *loginShell: true
-*urgentOnBell: false
 
 *cursorBlink: true
 *scrollBar: false
@@ -27,8 +26,6 @@ urxvt.depth:       32
 urxvt.buffered:   true
 urxvt.jumpScroll: true
 urxvt.skipScroll: true
-
-urxvt.visualBell: false
 
 Xft.dpi:        96
 Xft.antialias:  true
