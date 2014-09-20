@@ -2,7 +2,7 @@
     scrot
 
 XF86AudioPlay
-    ncmpcpp toggle
+    echo pause | ncat 127.0.0.1 6600
 
 XF86Audio{Prev,Next}
-    ncmpcpp {prev,next}
+    echo {previous,next} | ncat 127.0.0.1 6600
