@@ -6,3 +6,6 @@ XF86AudioPlay
 
 XF86Audio{Prev,Next}
     echo {previous,next} | ncat 127.0.0.1 6600
+
+super + c
+    chromium

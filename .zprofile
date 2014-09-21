@@ -10,6 +10,10 @@ if [[ ! -d "$tmp" ]]; then
   mkdir -p -m 700 "$tmp"
 fi
 
+export XDG_CONFIG_HOME="$HOME/.config"
+export XDG_DATA_HOME="$HOME/.local/share"
+export XDG_CACHE_HOME="$HOME/.cache"
+
 # autorun X
 if [[ -z "$DISPLAY" &&  $(tty) = /dev/tty1 ]]; then
   exec startx

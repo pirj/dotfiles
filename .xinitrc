@@ -7,8 +7,6 @@ if [ -d /etc/X11/xinit/xinitrc.d ]; then
   unset f
 fi
 
-xkbevd &
-
 # Change layout with AltGr "group(toggle)"
 # Use RCtl as Compose key http://en.wikipedia.org/wiki/Compose_key "compose(rctrl)"
 # See full list of combinations http://cgit.freedesktop.org/xorg/lib/libX11/plain/nls/en_US.UTF-8/Compose.pre
@@ -55,7 +53,7 @@ xset s 300 # idle is 5 min
 ~/.config/xsidle.sh $(echo "pomodoro.idle()" | awesome-client) & # squash pomodoro if away during working period
 
 # Hotkey daemon
-sxhkd -c .config/sxhkdrc &disown
+sxhkd &disown
 
 # Random wallpaper
 hsetroot -center ~/wallpapers/$(ls wallpapers | shuf| tail -n 1)
