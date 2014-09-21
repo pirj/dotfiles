@@ -27,6 +27,11 @@ urxvt.buffered:   true
 urxvt.jumpScroll: true
 urxvt.skipScroll: true
 
+URxvt.perl-ext-common: default,url-select
+URxvt.keysym.C-f: perl:url-select:select_next
+URxvt.url-select.launcher: chromium
+URxvt.url-select.underline: true
+
 Xft.dpi:        96
 Xft.antialias:  true
 Xft.hinting:    true
