@@ -159,7 +159,6 @@ man-pages
 mariadb
 mariadb-clients
 markdown
-mc
 mcabber
 mdadm
 memcached
@@ -241,6 +240,7 @@ sox
 speedread-git
 sshpass
 stone-soup
+strace
 sudo
 sxhkd-git
 sysfsutils
@@ -252,7 +252,6 @@ tar
 task
 tcl
 tcpdump
-teamviewer
 terminus-font
 termite-git
 texinfo
@@ -268,7 +267,6 @@ tree
 ttf-dejavu
 ttf-droid
 ttf-inconsolata
-tumbler
 udiskie
 unclutter
 unixodbc
