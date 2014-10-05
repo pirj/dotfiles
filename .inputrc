@@ -1,2 +1,4 @@
 set editing-mode vi
 set keymap vi-insert
+
+set show-mode-in-prompt on
