@@ -37,8 +37,7 @@ nnoremap gv `[v`]
 nnoremap Y y$
 
 " Only use X clipboard when required
-nnoremap <Leader>p :set paste<CR>"*p:set nopaste<CR>
-nnoremap <Leader>y "*y
+nnoremap <Leader>p :set paste<CR>:read !xclip -o<CR>:set nopaste<CR>
 
 " Jump to start and end of line using the home row keys
 noremap H 0
