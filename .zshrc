@@ -76,7 +76,7 @@ export EDITOR=nvim
 
 # Shell aliases
 alias ll='ls -lh'
-alias la='ls -a'
+alias la='ls -A'
 
 # Start week from Monday
 alias cal='cal -m'
