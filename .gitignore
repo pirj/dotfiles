@@ -162,3 +162,4 @@ LEARN
 .weechat/sec.conf
 .weechat/pipe
 .wings3d
+*.sqlite
