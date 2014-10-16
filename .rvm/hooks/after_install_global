@@ -1,6 +1,6 @@
 (
   echo "!@#!@ installing global gems to $rvm_ruby_string"
   rvm use $rvm_ruby_string
-  rvm @global do gem install bundler awesome_print hirb pry pry-doc pry-rescue pry-byebug pry-stack_explorer
+  rvm @global do gem install bundler awesome_print hirb pry pry-doc pry-rescue pry-byebug pry-stack_explorer foreman guard guard-shell
   echo "DONE"
 )
