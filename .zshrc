@@ -42,6 +42,10 @@ bindkey -a L end-of-line
 bindkey -M vicmd u undo
 bindkey -M vicmd U redo
 
+# Switch to command mode. jk or kk or jj are to slow to work with 0.1s timeout
+# kjk<CR> to repeat last command
+bindkey -M viins kj vi-cmd-mode
+
 function zle-line-init zle-keymap-select {
   if [[ $KEYMAP == main ]]; then
     MODE=''
@@ -79,7 +83,7 @@ bindkey '^Z' fancy-ctrl-z
 unsetopt correct_all
 
 # Reduce delay after you hit the <ESC> to 0.1 seconds (hat tip Doug Black)
-export KEYTIMEOUT=1
+export KEYTIMEOUT=10
 
 export EDITOR=nvim
 
