@@ -29,13 +29,24 @@ set ruler          " Ruler on
 set relativenumber " Relative line numbers
 set number         " And current line number under cursor too
 set wrap           " Line wrapping on
+set showbreak=..   " Show broken lines
+set showmatch      " Show matching brackets
+set matchtime=2    " How many tenths of a second to blink
+
+set list                    " Show invisible whitespace
+set listchars=""            " Reset the list chars
+set listchars=tab:>-        " Indicate tabs
+set listchars+=trail:-      " Indicate trailing whitespace as dots
+set listchars+=extends:>    " Indicate that text continues beyond the right of the screen
+set listchars+=precedes:<   " Indicate that text continues beyond the left of the screen
+
 set encoding=utf-8
 set noshowmode     " Don't show the mode since lightline shows it
 set title          " Set the title of the window in the terminal to the file
 set laststatus=2
 set cursorline
 
-set nolazyredraw     " Make plugins smoother
+set nolazyredraw   " Make plugins smoother
 set ttyfast        " Indicates a fast terminal connection... characters will be sent to the screen for redrawing, instead of using insert/delete line commands. Improves smoothness of redrawing when there are multiple windows and the terminal does not support a scrolling region.
 
 set synmaxcol=512  " Syntax coloring lines that are too long just slows down the world
@@ -44,7 +55,7 @@ set synmaxcol=512  " Syntax coloring lines that are too long just slows down the
 syntax enable             " Enable syntax processing
 set autoread              " Automatically reload changes if detected
 set wildmenu              " Turn on WiLd menu
-set wildmode=list:full    " Wildmenu dock
+set wildmode=full         " Wildmenu dock
 set hidden                " Change buffer - without saving
 set history=768           " Number of things to remember in history.
 set iskeyword+=$,@        " Add extra characters that are valid parts of variables
@@ -66,17 +77,6 @@ set smartcase  " Non-case sensitive search
 set incsearch  " Show matches while typing
 set hlsearch   " Highlight search
 set wildignore+=.git
-
-" Visual
-set showmatch   " Show matching brackets
-set matchtime=2 " How many tenths of a second to blink
-
-set list                    " Show invisible whitespace
-set listchars=""            " Reset the list chars
-set listchars=tab:>-        " Indicate tabs
-set listchars+=trail:-      " Indicate trailing whitespace as dots
-set listchars+=extends:>    " Indicate that text continues beyond the right of the screen
-set listchars+=precedes:<   " Indicate that text continues beyond the left of the screen
 
 " Sounds
 set noerrorbells
