@@ -30,8 +30,7 @@ xrdb -merge ~/.Xresources
 
 unclutter & # hide mouse cursor
 
-# redshift &disown # adjust color temperature according to daytime
-xflux -l 60 -g 30
+redshift &disown # adjust color temperature according to daytime
 
 skypetab-ng &
 #cpulimit -l 3 -p `ps -C skype -o pid=` &disown
