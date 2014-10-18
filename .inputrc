@@ -1,4 +1,8 @@
 set editing-mode vi
 set keymap vi-insert
 
-set show-mode-in-prompt on
+# set show-mode-in-prompt on
+
+"kj": vi-movement-mode
+
+set completion-ignore-case off

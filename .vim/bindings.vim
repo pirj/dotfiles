@@ -8,6 +8,10 @@ let mapleader = " "
 " No need to switch between layouts to use normal mode https://gist.github.com/sigsergv/5329459
 set langmap=ёйцукенгшщзхъфывапролджэячсмитьбюЁЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ;`qwertyuiop[]asdfghjkl:'zxcvbnm\\,.~QWERTYUIOP{}ASDFGHJKL\\;\\"ZXCVBNM<>
 
+
+" Switch to normal
+inoremap kj <Esc>
+
 " Navigate panes
 nnoremap <c-j> <c-w>j
 nnoremap <c-k> <c-w>k
