@@ -120,6 +120,9 @@ alias space='du --max-depth=2 -h . | sort -h -r | head -n 20'
 # Password generation. Just one. Print and put to clipboard
 alias pwgen='pwgen -1cnsB 12 >&2 | xclip'
 
+# Stupid MySQL treats ^C as ^D
+alias mysql='mysql --sigint-ignore'
+
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 # Load RVM into a shell session *as a function*
