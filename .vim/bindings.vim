@@ -80,10 +80,19 @@ imap <tab> <c-p>
 " nnoremap <leader>h <Esc>:call ToggleHardMode()<cr>
 
 " Soft hardmode
-nnoremap <Left> <NOP>
-nnoremap <Down> <NOP>
-nnoremap <Up> <NOP>
-nnoremap <Right> <NOP>
+nmap <Left>  <NOP>
+nmap <Down>  <NOP>
+nmap <Up>    <NOP>
+nmap <Right> <NOP>
+imap <Left>  <NOP>
+imap <Down>  <NOP>
+imap <Up>    <NOP>
+imap <Right> <NOP>
+" Use ^N/^P/^F
+cmap <Up>    <Nop>
+cmap <Down>  <Nop>
+cmap <Right> <Nop>
+cmap <Left>  <Nop>
 
 " No highlight search
 nnoremap <leader><Space> :nohlsearch<CR>
