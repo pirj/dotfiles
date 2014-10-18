@@ -23,6 +23,10 @@ fi
 # Quickly edit commonly used files
 emulate sh -c 'source /usr/share/qfi/wrapper.sh'
 
+# Prevent overwriting existing files with '> filename', use '>| filename' # (or >!) instead.
+# Hat tip http://ruderich.org/simon/config/zshrc
+setopt noclobber
+
 RPROMPT='[%*]'
 PROMPT_PROMPT="%(!.#.$)"
 
