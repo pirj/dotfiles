@@ -34,8 +34,13 @@ PROMPT_PROMPT="%(!.#.$)"
 bindkey -v
 bindkey '^r' history-incremental-search-backward
 bindkey -a '^r' history-incremental-search-backward
+
 bindkey -a H beginning-of-line
 bindkey -a L end-of-line
+
+# Better undo/redo
+bindkey -M vicmd u undo
+bindkey -M vicmd U redo
 
 function zle-line-init zle-keymap-select {
   if [[ $KEYMAP == main ]]; then
