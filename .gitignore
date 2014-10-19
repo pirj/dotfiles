@@ -164,3 +164,7 @@ LEARN
 .wings3d
 *.sqlite
 WORK
+.elinks/bookmarks
+.elinks/cookies
+.elinks/globhist
+.elinks/gotohist
