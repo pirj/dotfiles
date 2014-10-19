@@ -60,8 +60,8 @@ theme.bg_urgent     = "#400000f0"
 
 theme.taglist_bg_normal     = "#000000f0"
 theme.taglist_bg_focus      = "#404040f0"
-theme.taglist_fg            = "#404040"
-theme.taglist_fg_occupied   = "#f0f0f0"
+theme.taglist_fg_empty      = "#606060"
+theme.taglist_fg_focus      = "#a0a0a0"
 
 -- This is used later as the default terminal and editor to run.
 -- terminal = "dwt -f 'Inconsolata 12'"
