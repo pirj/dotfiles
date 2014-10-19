@@ -10,5 +10,5 @@ XF86Audio{Prev,Next}
 super + c
     chromium
 
-super + e
+super + b
     urxvtc -e elinks
