@@ -80,7 +80,7 @@ bindkey '^Z' fancy-ctrl-z
 unsetopt correct_all
 
 # Reduce delay after you hit the <ESC> to 0.1 seconds (hat tip Doug Black)
-export KEYTIMEOUT=10
+export KEYTIMEOUT=20
 
 export EDITOR=nvim
 
