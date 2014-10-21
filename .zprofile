@@ -3,7 +3,7 @@ if [ -n "$DISPLAY" ]; then
 fi
 
 # Execute SSH agent
-eval $(keychain --eval --agents ssh,gpg --quiet ~/.ssh/id_*a)
+eval $(keychain --eval --agents ssh,gpg --quiet ~/.ssh/id_*[^pub])
 
 if [[ ! -d "$tmp" ]]; then
   export tmp="/tmp/$USER"
