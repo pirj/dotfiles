@@ -1,4 +1,4 @@
-*saveLines: 65535
+*saveLines: 0
 *termName: xterm-256color
 *loginShell: true
 

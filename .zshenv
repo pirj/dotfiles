@@ -1,1 +1,0 @@
-/home/pirj/.zsh/prezto/runcoms/zshenv
