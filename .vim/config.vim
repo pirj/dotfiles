@@ -15,8 +15,6 @@ colorscheme jellybeans
 " Tempfiles
 set backupdir=~/.vim/.backup
 set directory=~/.vim/.tmp
-set nobackup
-set nowritebackup
 set noswapfile
 
 " Persistent Undo
