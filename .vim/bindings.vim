@@ -53,6 +53,8 @@ map $ <NOP>
 " Disable Ex mode, run last macro instead
 nnoremap Q @@
 
+nnoremap K <NOP>
+
 " Swap jumping, ' is closer, so use it to jump to line and column
 nnoremap ' `
 nnoremap ` '
