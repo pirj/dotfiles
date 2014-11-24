@@ -49,6 +49,8 @@ set ttyfast        " Indicates a fast terminal connection... characters will be 
 
 set synmaxcol=512  " Syntax coloring lines that are too long just slows down the world
 
+set shortmess+=I   " No startup message
+
 " Behaviors
 syntax enable             " Enable syntax processing
 set autoread              " Automatically reload changes if detected
