@@ -27,7 +27,6 @@ beets
 binutils
 bison
 bitcoin-daemon
-bitcoin-qt
 bitlbee
 blender
 boost
@@ -119,6 +118,7 @@ idnkit
 ifplugd
 iftop
 imagemagick-doc
+imagemagick-no-hdri
 inetutils
 inkscape
 iotop
@@ -146,6 +146,7 @@ libstdc++5
 libtool
 libusb-compat
 libuv
+libwebp
 libzrtpcpp
 licenses
 links
