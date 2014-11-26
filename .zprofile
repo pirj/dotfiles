@@ -1,7 +1,3 @@
-if [ -n "$DISPLAY" ]; then
-#     BROWSER=epiphany
-fi
-
 # Execute SSH agent
 eval $(keychain --eval --agents ssh,gpg --quiet ~/.ssh/id_*[^pub])
 
