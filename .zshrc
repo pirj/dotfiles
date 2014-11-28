@@ -16,7 +16,7 @@ HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
 
-. ~/.zsh/antigen/antigen.zsh
+# . ~/.zsh/antigen/antigen.zsh
 . ~/.zsh/pure/pure.zsh
 
 # Better vi mode (hat tip Doug Black)
@@ -61,4 +61,4 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 [[ -s "$HOME/node_modules/LiveScript" ]] && PATH=$PATH:$HOME/node_modules/.bin
 
 # Shell prompt always in the bottom of the screen
-PS1="$(tput cup $((2+$LINES)))"$PS1
+tput cup $((2+$LINES))
