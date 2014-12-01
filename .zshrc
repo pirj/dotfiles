@@ -1,6 +1,9 @@
 # Color scheme
 [[ -s ~/.zsh/colors.sh ]] && source ~/.zsh/colors.sh
 
+# Aliases
+source "$HOME/.zsh/alias.zsh"
+
 # Prevent overwriting existing files with '> filename', use '>| filename' # (or >!) instead.
 # Hat tip http://ruderich.org/simon/config/zshrc
 setopt noclobber
@@ -16,8 +19,14 @@ HISTFILE=~/.zsh_history
 HISTSIZE=10000
 SAVEHIST=10000
 
-# . ~/.zsh/antigen/antigen.zsh
-. ~/.zsh/pure/pure.zsh
+. ~/.zsh/antigen/antigen.zsh
+antigen use oh-my-zsh
+antigen bundle git
+antigen bundle command-not-found
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen bundle zsh-users/zsh-history-substring-search
+antigen theme philips
+antigen apply
 
 # Better vi mode (hat tip Doug Black)
 bindkey -v
@@ -48,9 +57,6 @@ fancy-ctrl-z () {
 zle -N fancy-ctrl-z
 bindkey '^Z' fancy-ctrl-z
 # TODO: does't work in vi mode
-
-# Aliases
-source "$HOME/.zsh/alias.zsh"
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
