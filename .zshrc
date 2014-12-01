@@ -1,9 +1,3 @@
-# Color scheme
-[[ -s ~/.zsh/colors.sh ]] && source ~/.zsh/colors.sh
-
-# Aliases
-source "$HOME/.zsh/alias.zsh"
-
 # Prevent overwriting existing files with '> filename', use '>| filename' # (or >!) instead.
 # Hat tip http://ruderich.org/simon/config/zshrc
 setopt noclobber
@@ -57,6 +51,12 @@ fancy-ctrl-z () {
 zle -N fancy-ctrl-z
 bindkey '^Z' fancy-ctrl-z
 # TODO: does't work in vi mode
+
+# Color scheme
+[[ -s ~/.zsh/colors.sh ]] && source ~/.zsh/colors.sh
+
+# Aliases
+source "$HOME/.zsh/alias.zsh"
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
