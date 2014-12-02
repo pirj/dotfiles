@@ -1,4 +1,5 @@
 # Shell aliases
+alias ls='ls --color'
 alias ll='ls -lh'
 alias la='ls -A'
 alias l='ls -lhA'
