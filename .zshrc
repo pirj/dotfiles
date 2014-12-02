@@ -17,12 +17,8 @@ HISTSIZE=10000
 SAVEHIST=10000
 
 . ~/.zsh/antigen/antigen.zsh
-antigen use oh-my-zsh
-antigen bundle git
-antigen bundle command-not-found
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-history-substring-search
-antigen theme philips
 antigen apply
 
 # Better vi mode (hat tip Doug Black)
@@ -57,6 +53,15 @@ bindkey '^Z' fancy-ctrl-z
 
 # Color scheme
 [[ -s ~/.zsh/colors.sh ]] && source ~/.zsh/colors.sh
+autoload -U colors && colors
+
+# Git prompt
+[[ -s /usr/share/git/git-prompt.sh ]] && source /usr/share/git/git-prompt.sh
+GIT_PS1_SHOWDIRTYSTATE=0
+
+# Prompt
+setopt PROMPT_SUBST
+PS1="%n@%{$fg[blue]%}%m %{$fg[yellow]%}%~ %{$fg[green]%}%$(__git_ps1) %{$reset_color%}% %(!.#.$) "
 
 # Aliases
 source "$HOME/.zsh/alias.zsh"
