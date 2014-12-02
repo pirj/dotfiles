@@ -1,3 +1,6 @@
+# Shell prompt always in the bottom of the screen
+tput cup $((2+$LINES))
+
 # Prevent overwriting existing files with '> filename', use '>| filename' # (or >!) instead.
 # Hat tip http://ruderich.org/simon/config/zshrc
 setopt noclobber
@@ -65,6 +68,3 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 # Adds Node module (LiveScript, Jasmin) binaries into path
 [[ -s "$HOME/node_modules/LiveScript" ]] && PATH=$PATH:$HOME/node_modules/.bin
-
-# Shell prompt always in the bottom of the screen
-tput cup $((2+$LINES))
