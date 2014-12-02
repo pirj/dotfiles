@@ -47,7 +47,7 @@ Bundle 'itchyny/lightline.vim'
 Bundle 'nanotech/jellybeans.vim'
 " Bundle 'flazz/vim-colorschemes'
 " Bundle 'xolox/vim-colorscheme-switcher'
-Bundle 'vim-misc'
+" Bundle 'vim-misc'
 
 " Automatically resizes splits on switch
 Bundle 'justincampbell/vim-eighties'
