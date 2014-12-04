@@ -26,6 +26,7 @@ bash
 beets
 binutils
 bison
+bitcoin-cli
 bitcoin-daemon
 bitlbee
 blender
@@ -60,6 +61,7 @@ dmidecode
 dmon
 dnsmasq
 dnsutils
+docker-git
 dumb
 e2fsprogs
 echoprint-codegen-git
