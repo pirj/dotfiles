@@ -1,6 +1,3 @@
-# Shell prompt always in the bottom of the screen
-tput cup $LINES
-
 # Prevent overwriting existing files with '> filename', use '>| filename' # (or >!) instead.
 # Hat tip http://ruderich.org/simon/config/zshrc
 setopt noclobber
@@ -62,6 +59,9 @@ GIT_PS1_SHOWDIRTYSTATE=0
 # Prompt
 setopt PROMPT_SUBST
 PS1="%n@%{$fg[blue]%}%m %{$fg[yellow]%}%~ %{$fg[green]%}%$(__git_ps1) %{$reset_color%}% %(!.#.$) "
+
+# Shell prompt always in the bottom of the screen
+tput cup $LINES
 
 # Aliases
 source "$HOME/.zsh/alias.zsh"
