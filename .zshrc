@@ -1,5 +1,5 @@
 # Shell prompt always in the bottom of the screen
-tput cup $((2+$LINES))
+tput cup $LINES
 
 # Prevent overwriting existing files with '> filename', use '>| filename' # (or >!) instead.
 # Hat tip http://ruderich.org/simon/config/zshrc
