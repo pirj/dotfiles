@@ -1,5 +1,5 @@
 # Execute SSH agent
-[[ -s $SSH_AGENT_PID ]] && eval $(keychain --eval --agents ssh,gpg --quiet ~/.ssh/id_*[^pub])
+[[ $SSH_AGENT_PID -eq "" ]] && eval $(keychain --eval --agents ssh,gpg --quiet ~/.ssh/id_*[^pub])
 
 if [[ ! -d "$tmp" ]]; then
   export tmp="/tmp/$USER"
