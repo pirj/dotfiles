@@ -72,4 +72,4 @@ PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
 
 # Adds Node module (LiveScript, Jasmin) binaries into path
-[[ -s "$HOME/node_modules/LiveScript" ]] && PATH=$PATH:$HOME/node_modules/.bin
+[[ -s "$HOME/node_modules" ]] && PATH=$PATH:$HOME/node_modules/.bin
