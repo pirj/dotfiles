@@ -57,8 +57,11 @@ autoload -U colors && colors
 GIT_PS1_SHOWDIRTYSTATE=0
 
 # Prompt
-setopt PROMPT_SUBST
-PS1="%n@%{$fg[blue]%}%m %{$fg[yellow]%}%~ %{$fg[green]%}%$(__git_ps1) %{$reset_color%}% %(!.#.$) "
+function prompt {
+  PROMPT="%n@%{$fg[blue]%}%m %{$fg[yellow]%}%~ %{$fg[green]%}%$(__git_ps1) %{$reset_color%}% %(!.#.$) "
+}
+autoload -U add-zsh-hook
+add-zsh-hook precmd prompt
 
 # Shell prompt always in the bottom of the screen
 tput cup $LINES
