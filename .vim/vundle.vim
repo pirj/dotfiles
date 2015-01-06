@@ -40,6 +40,8 @@ Bundle 'terryma/vim-expand-region'
 " UI ADDITIONS
 " ------------
 
+Bundle 'nathanaelkane/vim-indent-guides'
+
 " Neat replacement for powerline
 " Bundle 'bling/vim-airline'
 Bundle 'itchyny/lightline.vim'
