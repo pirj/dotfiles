@@ -51,6 +51,7 @@ Bundle 'nanotech/jellybeans.vim'
 " Bundle 'flazz/vim-colorschemes'
 " Bundle 'xolox/vim-colorscheme-switcher'
 " Bundle 'vim-misc'
+Bundle 'junegunn/seoul256.vim'
 
 " Automatically resizes splits on switch
 Bundle 'justincampbell/vim-eighties'

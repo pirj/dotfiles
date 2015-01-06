@@ -9,8 +9,10 @@ filetype plugin indent on
 
 " Color
 set t_Co=256
-let g:jellybeans_background_color_256=232
-colorscheme jellybeans
+let g:jellybeans_background_color_256=234
+let g:seoul256_background = 234
+" colorscheme jellybeans
+colorscheme seoul256
 
 " Tempfiles
 set backupdir=~/.vim/.backup
