@@ -42,6 +42,8 @@ Bundle 'terryma/vim-expand-region'
 
 Bundle 'nathanaelkane/vim-indent-guides'
 
+"Bundle 'jszakmeister/vim-togglecursor'
+
 " Neat replacement for powerline
 " Bundle 'bling/vim-airline'
 Bundle 'itchyny/lightline.vim'
