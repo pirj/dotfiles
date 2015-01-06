@@ -97,7 +97,7 @@ cmap <Right> <Nop>
 cmap <Left>  <Nop>
 
 " No highlight search
-nnoremap <leader><Space> :nohlsearch<CR>
+nnoremap <leader><Esc> :nohlsearch<CR>
 
 " Expand region bindings
 vmap v <Plug>(expand_region_expand)
@@ -108,3 +108,6 @@ nnoremap <leader>a :Ag<Space>
 
 " Toggle spell check
 nmap <leader>k :set spell!<CR>
+
+
+let g:EasyMotion_do_mapping=1

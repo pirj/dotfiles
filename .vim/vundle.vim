@@ -18,6 +18,7 @@ Bundle 'gmarik/vundle'
 " This fork is required due to remapping ; to :
 "Bundle 'christoomey/vim-space'
 "Bundle 'supasorn/vim-easymotion'
+Bundle 'Lokaltog/vim-easymotion'
 " christoomey/vim-tmux-navigator
 
 " Fuzzy search
