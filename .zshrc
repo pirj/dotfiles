@@ -16,6 +16,7 @@ SAVEHIST=10000
 . ~/.zsh/antigen/antigen.zsh
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-history-substring-search
+antigen bundle djui/alias-tips
 antigen apply
 
 # Better vi mode (hat tip Doug Black)
