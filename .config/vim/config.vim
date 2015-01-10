@@ -15,8 +15,8 @@ let g:seoul256_background = 234
 colorscheme seoul256
 
 " Tempfiles
-set backupdir=/tmp/vim-backup
-set directory=/tmp/vim-tmp
+set backupdir=/tmp
+set directory=/tmp
 set noswapfile
 
 " Persistent Undo
