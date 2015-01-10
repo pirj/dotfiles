@@ -68,7 +68,7 @@ add-zsh-hook precmd prompt
 tput cup $LINES
 
 # Aliases
-[[ -s ~/.config/zsh/alias.sh ]] && source "$HOME/.config/zsh/alias.zsh"
+[[ -s ~/.config/zsh/alias.zsh ]] && source ~/.config/zsh/alias.zsh
 
 PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
