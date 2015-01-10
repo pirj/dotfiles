@@ -4,8 +4,8 @@
 
 filetype off     " required!
 
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
+set rtp+=~/.config/vim/bundle/Vundle.vim
+call vundle#begin('~/.config/vim/bundle')
 
 " let Vundle manage Vundle, required
 Bundle 'gmarik/vundle'
@@ -193,3 +193,7 @@ Bundle 'teranex/tslime.vim'
 
 " Handle focus lost inside tmux
 "sjl/vitality.vim
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required

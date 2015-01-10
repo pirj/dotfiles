@@ -46,9 +46,6 @@
 .vim_colorv_cache
 .vim_colorv_cache_fav
 .viminfo
-.vim/.backup/
-.vim/.undo/
-.vim/bundle/
 .zcompdump*
 .zsh-update
 .zsh_history
@@ -120,7 +117,6 @@ junk
 .config/Bitcoin/Bitcoin-Qt.conf
 .config/beets/library.db
 .config/beets/state.pickle
-.vim/spell/
 .npm/
 .npm-debug.log
 node_modules
@@ -172,3 +168,4 @@ WORK
 Music
 .antigen
 .nviminfz.tmp
+.nvim

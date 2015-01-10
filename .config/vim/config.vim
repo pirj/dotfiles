@@ -15,12 +15,12 @@ let g:seoul256_background = 234
 colorscheme seoul256
 
 " Tempfiles
-set backupdir=~/.vim/.backup
-set directory=~/.vim/.tmp
+set backupdir=/tmp/vim-backup
+set directory=/tmp/vim-tmp
 set noswapfile
 
 " Persistent Undo
-set undodir=~/.vim/.undo
+set undodir=~/.config/vim/.undo
 
 set path=.,**             " Paths to find files in
 
