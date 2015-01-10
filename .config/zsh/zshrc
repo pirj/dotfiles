@@ -38,16 +38,16 @@ bindkey -M viins kj vi-cmd-mode
 # Switch back to fg %1 on ^Z (hat tip Adam Stankiewicz http://sheerun.net/)
 fancy-ctrl-z () {
   if [[ $#BUFFER -eq 0 ]]; then
-    BUFFER="fg"
-    zle accept-line
+    fg
+    zle redisplay
   else
     zle push-input
     zle clear-screen
   fi
 }
 zle -N fancy-ctrl-z
-bindkey '^Z' fancy-ctrl-z
-# TODO: does't work in vi mode
+bindkey -v '^Z' fancy-ctrl-z
+bindkey -a '^Z' fancy-ctrl-z
 
 # Color scheme
 [[ -s ~/.config/zsh/colors.sh ]] && source ~/.config/zsh/colors.sh
