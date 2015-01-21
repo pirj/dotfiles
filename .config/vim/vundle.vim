@@ -147,7 +147,7 @@ Bundle 'ap/vim-css-color'
 " Other
 " Bundle 'perl-support.vim'
 " Bundle 'pangloss/vim-javascript'
-Bundle 'brandonbloom/vim-factor'
+" Bundle 'brandonbloom/vim-factor'
 
 " LiveScript
 Bundle 'ninegrid/vim-livescript'
