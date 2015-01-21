@@ -8,7 +8,7 @@ set rtp+=~/.config/vim/bundle/Vundle.vim
 call vundle#begin('~/.config/vim/bundle')
 
 " let Vundle manage Vundle, required
-Bundle 'gmarik/vundle'
+Bundle 'gmarik/Vundle.vim'
 " Shougo/neobundle.vim
 
 " NAVIGATION
