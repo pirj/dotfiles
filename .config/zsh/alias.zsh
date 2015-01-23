@@ -1,5 +1,11 @@
-# Shell aliases
-alias ls='ls --color'
+# Platform specific values
+if [ $PLATFORM = 'Linux' ]; then
+  LS_COLOR='--color'
+else
+  LS_COLOR='-G'
+fi
+
+alias ls='ls $LS_COLOR'
 alias ll='ls -lh'
 alias la='ls -A'
 alias l='ls -lhA'
@@ -30,7 +36,7 @@ alias g=git
 
 # Handy pipes
 alias -g G='| grep'
-alias -g L='| less'
+alias -g P='| less'
 alias -g W='| wc -l'
 alias -r T='tail -f'
 
@@ -49,5 +55,5 @@ alias pwgen='pwgen -1cnsB 12 >&2 | xclip'
 # Stupid MySQL treats ^C as ^D
 alias mysql='mysql --sigint-ignore'
 
-# Ignore that Guard is installed system-wid
+# Ignore that Guard is installed user-wide
 alias guard='guard --no-bundler-warning'
