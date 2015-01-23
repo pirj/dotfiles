@@ -76,9 +76,6 @@ function prompt {
 autoload -U add-zsh-hook
 add-zsh-hook precmd prompt
 
-# Aliases
-[[ -s ~/.config/zsh/alias.zsh ]] && source ~/.config/zsh/alias.zsh
-
 export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
 # Load RVM into a shell session *as a function*

@@ -1,2 +1,5 @@
+# Aliases
+[[ -s ~/.config/zsh/alias.zsh ]] && source ~/.config/zsh/alias.zsh
+
 # Shell prompt always in the bottom of the screen
 tput cup $LINES
