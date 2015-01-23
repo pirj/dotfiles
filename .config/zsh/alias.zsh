@@ -7,12 +7,11 @@ alias l='ls -lhA'
 # Start week from Monday
 alias cal='cal -m'
 
-export EDITOR=nvim
-# Use nvim everywhere
-alias vim=nvim
-alias vi=nvim
-alias view=nvim -R
-alias edit=nvim
+# Use editor consistently
+alias vim=$EDITOR
+alias vi=$EDITOR
+alias view=$EDITOR -R
+alias edit=$EDITOR
 
 # Run tmux in 256 color mode
 alias tmux='tmux -2'

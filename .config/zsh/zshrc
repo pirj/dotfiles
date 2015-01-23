@@ -7,7 +7,6 @@ unsetopt correct_all
 
 # Reduce delay after you hit the <ESC> to 0.2 seconds (hat tip Doug Black)
 KEYTIMEOUT=20
-EDITOR=nvim
 
 HISTFILE=~/.zsh_history
 HISTSIZE=10000
