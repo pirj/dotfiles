@@ -3,6 +3,10 @@
   email = pirjsuka@gmail.com
 [push]
   default = current
+[pull]
+  default = tracking
+[merge]
+  conflictstyle = diff3
 [color]
   ui = true
 [core]
@@ -11,7 +15,6 @@
   user = pirj
 [alias]
   co = checkout
-  c- = checkout -
   s = status -sb
   d = diff
   up = pull --rebase
