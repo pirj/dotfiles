@@ -13,9 +13,7 @@ image::.config/screenshot.jpg[Screenshot]
 
     git clone --recursive --depth 1 --single-branch https://github.com/pirj/dotfiles
     mv dotfiles/.* .
-    mv bootstrap.sh .
     rm -rf dotfiles
-    ./bootstrap.sh
 
 == Inspiration sources
 
@@ -27,7 +25,6 @@ I use to browse repositories on GH, and check other people's dotfiles. dotshare.
 ** vim
 ** command line, shell
 ** ruby workflow
-* get rid of bootstrap, mention how to clone with submodules
 * vim plugin bootstrap? pathogen?
 
 == About me
