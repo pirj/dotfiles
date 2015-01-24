@@ -68,7 +68,7 @@ bindkey -a '^Z' fancy-ctrl-z
 autoload -U colors && colors
 
 # Git prompt
-[[ -s /usr/share/git/git-prompt.sh ]] && source /usr/share/git/git-prompt.sh
+[[ -s ~/.bin/git-prompt.sh ]] && source ~/.bin/git-prompt.sh
 export GIT_PS1_SHOWDIRTYSTATE=0
 
 # Prompt
