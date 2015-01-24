@@ -49,8 +49,7 @@ autocutsel -selection PRIMARY -fork &
 xrandr --output LVDS --off --output HDMI-0 --mode 1600x1200
 
 xset s 300 # idle is 5 min
-~/.config/xsidle.sh slock & # lock screen when idle
-~/.config/xsidle.sh $(echo "pomodoro.idle()" | awesome-client) & # squash pomodoro if away during working period
+~/.bin/xsidle.sh slock & # lock screen when idle
 
 # Hotkey daemon
 sxhkd &disown

@@ -7,6 +7,18 @@ XF86AudioPlay
 XF86Audio{Prev,Next}
     echo {previous,next} | ncat 127.0.0.1 6600
 
+XF86AudioMute
+    amixer sset Master playback mute
+
+XF86AudioRaiseVolume
+    amixer sset Master playback unmute; amixer sset Master 5%+
+
+XF86AudioLowerVolume
+    amixer sset Master playback unmute; amixer sset Master 5%-
+
+XF86Display
+    $HOME/.bin/display.sh
+
 super + c
     chromium
 
