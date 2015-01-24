@@ -1,0 +1,35 @@
+= Humble dotfiles
+
+Born 2013. Written and cherry-picked with love.
+
+== What's inside
+
+Mostly tmux, vim, git, zsh, urxvt, ruby, js, awesome wm.
+Should work in most Linux'es and BSD. Tested on ArchLinux and OpenBSD.
+
+image::.config/screenshot.jpg[Screenshot]
+
+== Installation
+
+    git clone --recursive --depth 1 --single-branch https://github.com/pirj/dotfiles
+    mv dotfiles/.* .
+    mv bootstrap.sh .
+    rm -rf dotfiles
+    ./bootstrap.sh
+
+== Inspiration sources
+
+I use to browse repositories on GH, and check other people's dotfiles. dotshare.it is another interesting source.
+
+== TODO
+
+* explain what works:
+** vim
+** command line, shell
+** ruby workflow
+* get rid of bootstrap, mention how to clone with submodules
+* vim plugin bootstrap? pathogen?
+
+== About me
+
+Phil Pirozhkov, software engineer
