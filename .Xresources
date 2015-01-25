@@ -21,7 +21,7 @@ urxvt.letterSpace: -1
 urxvt.cursorColor: #888888
 urxvt.background:  #000000
 urxvt.foreground:  #eeeeee
-urxvt.depth:       32
+!urxvt.depth:       32
 
 urxvt.buffered:   true
 urxvt.jumpScroll: true
