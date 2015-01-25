@@ -12,32 +12,32 @@ set langmap=ёйцукенгшщзхъфывапролджэячсмитьбюЁ
 inoremap kj <Esc>
 
 " Navigate panes
-nnoremap <c-j> <c-w>j
-nnoremap <c-k> <c-w>k
-nnoremap <c-h> <c-w>h
-nnoremap <c-l> <c-w>l
+nnoremap <C-j> <C-w>j
+nnoremap <C-k> <C-w>k
+nnoremap <C-h> <C-w>h
+nnoremap <C-l> <C-w>l
 
 " Move panes
-nnoremap <c-J> <c-w>J
-nnoremap <c-K> <c-w>K
-nnoremap <c-H> <c-w>H
-nnoremap <c-L> <c-w>L
+nnoremap <C-J> <C-w>J
+nnoremap <C-K> <C-w>K
+nnoremap <C-H> <C-w>H
+nnoremap <C-L> <C-w>L
 
 " Split panes
-nnoremap <leader>s <c-w>s
-nnoremap <leader>v <c-w>v
+nnoremap <Leader>s <C-w>s
+nnoremap <Leader>v <C-w>v
 
 " Resize panes
-nnoremap <C-_> <c-w>_
-nnoremap <C-\> <c-w><Bar>
-nnoremap <leader>= <c-w>=
+nnoremap <C-_> <C-w>_
+nnoremap <C-\> <C-w><Bar>
+nnoremap <Leader>= <C-w>=
 
 " Navigate buffers
-nnoremap <leader>z :bp<CR>
-nnoremap <leader>x :bn<CR>
+nnoremap <Leader>z :bp<CR>
+nnoremap <Leader>x :bn<CR>
 
 " Find with :find (haha Ctrl-P) (also in splits)
-nnoremap <leader>f :find<Space>
+nnoremap <Leader>f :find<Space>
 
 " Select previously pasted text
 nnoremap gv `[v`]
@@ -68,18 +68,18 @@ nnoremap ` '
 nnoremap U <C-r>
 
 " Send to tmux
-vmap <leader>c <Plug>SendSelectionToTmux
-nmap <leader>c <Plug>NormalModeSendToTmux
+vmap <Leader>c <Plug>SendSelectionToTmux
+nmap <Leader>c <Plug>NormalModeSendToTmux
 
 " Tab navigation
-nmap <leader>n :tabnew<CR>
-nmap <leader>t :tabNext<CR>
+nmap <Leader>n :tabnew<CR>
+nmap <Leader>t :tabNext<CR>
 
 " Autocomplete on Tab
-imap <tab> <c-p>
+imap <Tab> <C-p>
 
 " Temporarily disable hard mode. Sign of weakness!
-" nnoremap <leader>h <Esc>:call ToggleHardMode()<cr>
+" nnoremap <Leader>h <Esc>:call ToggleHardMode()<CR>
 
 " Soft hardmode
 nmap <Left>  <NOP>
@@ -91,22 +91,22 @@ imap <Down>  <NOP>
 imap <Up>    <NOP>
 imap <Right> <NOP>
 " Use ^N/^P/^F
-cmap <Up>    <Nop>
-cmap <Down>  <Nop>
-cmap <Right> <Nop>
-cmap <Left>  <Nop>
+cmap <Up>    <NOP>
+cmap <Down>  <NOP>
+cmap <Right> <NOP>
+cmap <Left>  <NOP>
 
 " No highlight search
-nnoremap <leader><Esc> :nohlsearch<CR>
+nnoremap <Leader><Esc> :nohlsearch<CR>
 
 " Expand region bindings
 vmap v <Plug>(expand_region_expand)
 vmap V <Plug>(expand_region_shrink)
 
 " Open search
-nnoremap <leader>a :Ag<Space>
+nnoremap <Leader>a :Ag<Space>
 
 " Toggle spell check
-nmap <leader>k :set spell!<CR>
+nmap <Leader>k :set spell!<CR>
 
 let g:EasyMotion_do_mapping=1
