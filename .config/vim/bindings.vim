@@ -24,8 +24,9 @@ nnoremap <C-H> <C-w>H
 nnoremap <C-L> <C-w>L
 
 " Split panes
-nnoremap <Leader>s <C-w>s
-nnoremap <Leader>v <C-w>v
+nnoremap <C-o> <C-w>s
+nnoremap <C-v> <C-w>v
+nnoremap <C-n> <C-w>n
 
 " Resize panes
 nnoremap <C-_> <C-w>_
