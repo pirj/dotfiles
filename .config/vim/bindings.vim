@@ -18,15 +18,15 @@ nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
 " Move panes
-nnoremap <C-J> <C-w>J
-nnoremap <C-K> <C-w>K
-nnoremap <C-H> <C-w>H
-nnoremap <C-L> <C-w>L
+" nnoremap <C-J> <C-w>J
+" nnoremap <C-K> <C-w>K
+" nnoremap <C-H> <C-w>H
+" nnoremap <C-L> <C-w>L
 
 " Split panes
-nnoremap <C-o> <C-w>s
-nnoremap <C-v> <C-w>v
-nnoremap <C-n> <C-w>n
+" nnoremap <C-o> <C-w>s
+" nnoremap <C-v> <C-w>v
+" nnoremap <C-n> <C-w>n
 
 " Resize panes
 nnoremap <C-_> <C-w>_
