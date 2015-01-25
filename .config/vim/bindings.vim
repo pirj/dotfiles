@@ -26,8 +26,8 @@ nnoremap <leader>v <c-w>v
 nnoremap <leader>f :find<Space>
 
 " Resize panes
-nnoremap <leader>- <c-w>_
-nnoremap <leader>\ <c-w><Bar>
+nnoremap <C-_> <c-w>_
+nnoremap <C-\> <c-w><Bar>
 nnoremap <leader>= <c-w>=
 
 " Navigate buffers
