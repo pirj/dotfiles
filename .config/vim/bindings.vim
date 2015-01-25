@@ -8,7 +8,6 @@ let mapleader = " "
 " No need to switch between layouts to use normal mode https://gist.github.com/sigsergv/5329459
 set langmap=ёйцукенгшщзхъфывапролджэячсмитьбюЁЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ;`qwertyuiop[]asdfghjkl:'zxcvbnm\\,.~QWERTYUIOP{}ASDFGHJKL\\;\\"ZXCVBNM<>
 
-
 " Switch to normal
 inoremap kj <Esc>
 
@@ -18,12 +17,15 @@ nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 nnoremap <c-l> <c-w>l
 
+" Move panes
+nnoremap <c-J> <c-w>J
+nnoremap <c-K> <c-w>K
+nnoremap <c-H> <c-w>H
+nnoremap <c-L> <c-w>L
+
 " Split panes
 nnoremap <leader>s <c-w>s
 nnoremap <leader>v <c-w>v
-
-" Find with :find (haha Ctrl-P) (also in splits)
-nnoremap <leader>f :find<Space>
 
 " Resize panes
 nnoremap <C-_> <c-w>_
@@ -33,6 +35,9 @@ nnoremap <leader>= <c-w>=
 " Navigate buffers
 nnoremap <leader>z :bp<CR>
 nnoremap <leader>x :bn<CR>
+
+" Find with :find (haha Ctrl-P) (also in splits)
+nnoremap <leader>f :find<Space>
 
 " Select previously pasted text
 nnoremap gv `[v`]
@@ -103,6 +108,5 @@ nnoremap <leader>a :Ag<Space>
 
 " Toggle spell check
 nmap <leader>k :set spell!<CR>
-
 
 let g:EasyMotion_do_mapping=1
