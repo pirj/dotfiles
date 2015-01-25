@@ -8,7 +8,7 @@ XF86Audio{Prev,Next}
     echo {previous,next} | ncat 127.0.0.1 6600
 
 XF86AudioMute
-    amixer sset Master playback mute
+    amixer sset Master playback toggle
 
 XF86AudioRaiseVolume
     amixer sset Master playback unmute; amixer sset Master 5%+
