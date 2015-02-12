@@ -10,6 +10,8 @@ set langmap=ёйцукенгшщзхъфывапролджэячсмитьбюЁ
 
 " Switch to normal
 inoremap kj <Esc>
+vnoremap kj <Esc>
+cnoremap kj <C-f>
 
 " Navigate buffers
 nnoremap <silent> <Leader>j :bp<CR>
@@ -71,7 +73,8 @@ cmap <Right> <NOP>
 cmap <Left>  <NOP>
 
 " No highlight search
-nnoremap <silent> <Leader><Esc> :nohlsearch<CR>
+"nnoremap <silent> <Leader><Leader> :nohlsearch<CR>:let @/ = ''<CR>
+nnoremap <silent> <Leader><Leader> :nohlsearch<CR>
 
 " Expand region bindings
 vmap v <Plug>(expand_region_expand)
@@ -110,4 +113,3 @@ let g:EasyMotion_do_mapping=1
 " Tab navigation
 " nmap <Leader>n :tabnew<CR>
 " nmap <Leader>t :tabNext<CR>
-
