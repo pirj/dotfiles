@@ -117,6 +117,9 @@ set splitright
 " Spell checking
 set spelllang=en,ru
 
+" Grep with ag
+set grepprg=ag\ --vimgrep
+
 " Hard time, disallow several hjkl in a row
 " let g:hardtime_default_on = 1
 

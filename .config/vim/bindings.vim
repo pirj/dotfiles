@@ -81,7 +81,7 @@ vmap v <Plug>(expand_region_expand)
 vmap V <Plug>(expand_region_shrink)
 
 " Open search
-nnoremap <Leader>a :Ag<Space>
+nnoremap <Leader>a :lgrep<Space>
 
 " Toggle spell check
 nmap <Leader>s :set spell!<CR>

@@ -87,7 +87,7 @@ Bundle 'qstrahl/vim-dentures'
 
 "Bundle 'godlygeek/tabular'
 
-Bundle 'rking/ag.vim'
+"Bundle 'rking/ag.vim'
 
 "Bundle 'milkypostman/vim-togglelist'
 "Bundle 'AndrewRadev/sideways.vim'

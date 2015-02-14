@@ -12,3 +12,7 @@ autocmd BufReadPost * execute "normal! g`\""
 
 " But not for Git commits, go to beginning of the file.
 autocmd BufReadPost COMMIT_EDITMSG normal! gg
+
+" Open QuickFix/Location lists on search
+autocmd QuickFixCmdPost l* lwindow
+autocmd QuickFixCmdPost [^l]* cwindow
