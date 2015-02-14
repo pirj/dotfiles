@@ -14,6 +14,8 @@ Bundle 'gmarik/Vundle.vim'
 " NAVIGATION
 " ----------
 
+Bundle 'tpope/vim-vinegar'
+
 "Bundle 'ZoomWin'
 " This fork is required due to remapping ; to :
 "Bundle 'christoomey/vim-space'
