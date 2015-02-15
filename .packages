@@ -1,7 +1,6 @@
 abs
 acpi
 acpid
-alsa-firmware
 alsa-oss
 alsa-plugins
 alsa-utils
@@ -21,7 +20,6 @@ beets
 binutils
 bison
 bitlbee
-blender
 boost
 brogue
 busybox
@@ -40,7 +38,6 @@ cronie
 cryptsetup
 dash
 device-mapper
-dhclient
 dhcpcd
 dialog
 diffutils
@@ -52,7 +49,6 @@ dnsutils
 duff
 dumb
 e2fsprogs
-echoprint-codegen-git
 elinks
 eventlog
 extundelete
@@ -284,7 +280,6 @@ xinetd
 xorg-server
 xorg-server-utils
 xorg-server-xvfb
-xorg-twm
 xorg-util-macros
 xorg-utils
 xorg-xfontsel
