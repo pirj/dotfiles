@@ -11,9 +11,11 @@
   conflictstyle = diff3
   tool = vimdiff
 [diff]
-  tool = vimdiff
+  tool = icdiff
 [difftool]
   prompt = false
+[difftool "icdiff"]
+  cmd = icdiff --highlight --line-numbers --numlines=3 $LOCAL $REMOTE
 [color]
   ui = true
 [core]
