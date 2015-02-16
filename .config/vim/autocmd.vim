@@ -16,3 +16,6 @@ autocmd BufReadPost COMMIT_EDITMSG normal! gg
 " Open QuickFix/Location lists on search
 autocmd QuickFixCmdPost l* lwindow
 autocmd QuickFixCmdPost [^l]* cwindow
+
+" Automatically fold comments on Ruby file open
+autocmd FileType ruby set foldmethod=expr | set foldexpr=getline(v:lnum)=~'^\\s*#'
