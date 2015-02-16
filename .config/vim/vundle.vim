@@ -13,7 +13,6 @@ Bundle 'gmarik/Vundle.vim'
 
 " NAVIGATION
 " ----------
-
 Bundle 'tpope/vim-vinegar'
 
 "Bundle 'ZoomWin'
@@ -32,16 +31,14 @@ Bundle 'Lokaltog/vim-easymotion'
 " Bundle 'takac/vim-hardtime'
 
 " Allows you to visually select increasingly larger regions of text using the same key combination
-Bundle 'terryma/vim-expand-region'
+" Bundle 'terryma/vim-expand-region'
 
 " COLLABORATION
 " -------------
-
 " Bundle 'emgram769/vim-multiuser'
 
 " UI ADDITIONS
 " ------------
-
 Bundle 'nathanaelkane/vim-indent-guides'
 
 "Bundle 'jszakmeister/vim-togglecursor'
@@ -80,7 +77,7 @@ Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-endwise'
 
 " Indentation text-objects to give your old Vim some new bytes
-Bundle 'qstrahl/vim-dentures'
+" Bundle 'qstrahl/vim-dentures'
 
 " COMMANDS
 " --------
@@ -138,7 +135,6 @@ Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-rails'
 Bundle 'slim-template/vim-slim'
 
-
 Bundle 'sunaku/vim-ruby-minitest'
 " Bundle 'tpope/vim-haml'
 " Bundle 'tpope/vim-rake'
@@ -152,7 +148,7 @@ Bundle 'ap/vim-css-color'
 " Bundle 'brandonbloom/vim-factor'
 
 " LiveScript
-Bundle 'ninegrid/vim-livescript'
+" Bundle 'ninegrid/vim-livescript'
 
 " JavaScript
 Bundle 'Shutnik/jshint2.vim'

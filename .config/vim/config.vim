@@ -1,7 +1,3 @@
-" ---------------------------------------------
-" Regular Vim Configuration (No Plugins Needed)
-" ---------------------------------------------
-
 set nocompatible " be iMproved
 
 " Automatically detect file types. (must turn on after Vundle)
@@ -89,7 +85,6 @@ set complete=.,w,b,u,U " Better complete options to speed it up
 
 set timeoutlen=1000 ttimeoutlen=50 " Avoid annoying mode switch lag
 
-
 " Lightline
 let g:lightline = {
       \ 'active': {
@@ -119,9 +114,6 @@ set spelllang=en,ru
 
 " Grep with ag
 set grepprg=ag\ --vimgrep
-
-" Hard time, disallow several hjkl in a row
-" let g:hardtime_default_on = 1
 
 let g:indent_guides_default_mapping = 0
 let g:indent_guides_enable_on_vim_startup = 1
