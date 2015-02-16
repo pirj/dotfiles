@@ -10,10 +10,19 @@ vnoremap kj <Esc>
 cnoremap kj <C-f>
 
 " Navigate buffers
-nnoremap <silent> <Leader>j :bp<CR>
-nnoremap <silent> <Leader>k :bn<CR>
-nnoremap <silent> <Leader>l :ls<CR>
-nnoremap <silent> <Leader>d :bd<CR>
+nnoremap <silent> [b :bprevious<CR>
+nnoremap <silent> ]b :bnext<CR>
+nnoremap <silent> [B :bfirst<CR>
+nnoremap <silent> ]B :blast<CR>
+nnoremap <silent> <Enter>b :ls<CR>
+nnoremap <silent> \b :bd<CR>
+
+" Navigate Location list (lgrep)
+nnoremap <silent> [f :lprevious<CR>
+nnoremap <silent> ]f :lnext<CR>
+nnoremap <silent> [F :lfirst<CR>
+nnoremap <silent> ]F :llast<CR>
+nnoremap <silent> \f :lclose<CR>
 
 " Select previously pasted text
 nnoremap gv `[v`]
