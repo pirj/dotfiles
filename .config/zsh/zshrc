@@ -3,3 +3,6 @@
 
 # Shell prompt always in the bottom of the screen
 tput cup $LINES 0
+
+# Disable annoying flow mode, free up C-S and C-Q
+stty -ixon -ixoff
