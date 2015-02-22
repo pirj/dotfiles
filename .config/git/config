@@ -29,3 +29,4 @@
   ca = commit --amend
   p = push
   a = add
+  c1 = clone --depth 1 --single-branch
