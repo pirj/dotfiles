@@ -20,8 +20,8 @@ nnoremap <silent> \b :bd<CR>
 " Navigate Location list (lgrep)
 nnoremap <silent> [f :lprevious<CR>
 nnoremap <silent> ]f :lnext<CR>
-nnoremap <silent> [F :lfirst<CR>
-nnoremap <silent> ]F :llast<CR>
+nnoremap <silent> [F :lpfile<CR>
+nnoremap <silent> ]F :lnfile<CR>
 nnoremap <silent> \f :lclose<CR>
 
 " Select previously pasted text
