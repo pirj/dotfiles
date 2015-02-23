@@ -55,10 +55,10 @@ nnoremap <Leader>a :lgrep<Space>
 nnoremap <Leader>f :find<Space>
 
 " Only use X clipboard when required
-nnoremap <Leader>p :set paste<CR>:read !xclip -o<CR>:set nopaste<CR>
+nnoremap <silent> <Leader>p :set paste<CR>:read !xclip -o<CR>:set nopaste<CR>
 
 " Toggle spell check
-nmap <Leader>s :set spell!<CR>
+nmap <silent> <Leader>s :set spell!<CR>
 
 " Send to tmux
 vmap <silent> <Leader>c <Plug>SendSelectionToTmux
