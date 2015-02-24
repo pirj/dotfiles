@@ -65,6 +65,11 @@ zle -N fancy-ctrl-z
 bindkey -v '^Z' fancy-ctrl-z
 bindkey -a '^Z' fancy-ctrl-z
 
+# Edit command in external editor
+autoload -U edit-command-line
+zle -N edit-command-line
+bindkey -M vicmd v edit-command-line
+
 # Color scheme
 [[ -s ~/.config/zsh/colors.sh ]] && source ~/.config/zsh/colors.sh
 autoload -U colors && colors
