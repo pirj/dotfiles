@@ -49,7 +49,7 @@ imap <Tab> <C-p>
 nnoremap <silent> <Leader><Leader> :nohlsearch<CR>
 
 " Search files
-nnoremap <Leader>a :lgrep<Space>
+nnoremap <Leader>g :lgrep<Space>
 
 " Find files
 nnoremap <Leader>f :find<Space>
