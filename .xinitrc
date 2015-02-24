@@ -39,6 +39,8 @@ skypetab-ng &
 # automount disks to /media
 udiskie &
 
+mpd &
+
 transmission-daemon
 
 autocutsel -fork &
