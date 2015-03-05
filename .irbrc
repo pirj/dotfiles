@@ -16,7 +16,7 @@ rescue LoadError
   puts "warning: #{gem} not available"
 end
 
-['hirb', 'awesome_print'].each do |gem|
+['hirb', 'awesome_print', 'benchmark/ips'].each do |gem|
   load_gem gem
 end
 
