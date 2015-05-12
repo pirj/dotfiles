@@ -35,7 +35,7 @@ alias tru='trs {=ru}'
 alias g=git
 
 # Handy pipes
-alias -g G='| grep'
+alias -g G='| grep -a'
 alias -g P='| $PAGER'
 alias -g W='| wc -l'
 alias -r T='tail -f'
