@@ -85,6 +85,7 @@ books
 .mpd/mpdstate
 .mpd/mpd.db
 .mpd/mpd.pid
+.mpd/playlists
 .task
 .rubies
 .config/tox/data
@@ -170,3 +171,4 @@ Music
 .nviminfz.tmp
 .nvim
 .profile
+.dbus
