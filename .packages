@@ -17,6 +17,7 @@ awesome
 bash
 bats-git
 beets
+bind-tools
 binutils
 bison
 bitlbee
@@ -28,6 +29,7 @@ celt
 chromium
 clang
 cmake
+cmus
 compton-git
 coreutils
 cpio
@@ -45,7 +47,6 @@ dina-font
 dmidecode
 dmon
 dnsmasq
-dnsutils
 duff
 dumb
 e2fsprogs
@@ -78,7 +79,6 @@ gst-plugins-good
 gstreamer
 gstreamer0.10-base-plugins
 gstreamer0.10-ffmpeg
-gtkpod
 gvim
 gzip
 hdparm
@@ -108,7 +108,6 @@ jnettop
 keychain
 less
 libcanberra-pulse
-libcl
 libedit
 libevent
 libgpod
@@ -137,8 +136,6 @@ macchanger
 make
 man-db
 man-pages
-mariadb
-mariadb-clients
 markdown
 mcabber
 mdadm
@@ -148,11 +145,14 @@ mesa-libgl
 mesa-vdpau
 metalog
 mosh
+mpc
 mpd
 mpg123
 mtr
 nano
 nas
+ncmpcpp
+ndn
 neovim-git
 net-snmp
 net-tools
@@ -163,7 +163,9 @@ newsbeuter
 nmap
 nodejs
 nomacs
+npm
 ntop
+ocl-icd
 openal
 openssh
 openvpn
@@ -194,6 +196,8 @@ proot
 psmisc
 pulseaudio
 pulseaudio-alsa
+pulseaudio-bluetooth
+pulseaudio-zeroconf
 pwgen
 python2-cairo
 python2-lxml
@@ -294,6 +298,7 @@ xssstate-git
 xterm
 youtube-dl
 zathura
+zathura-djvu
 zathura-pdf-mupdf
 zip
 zsh
