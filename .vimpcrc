@@ -1,8 +1,21 @@
-" Only useful ones
 set windows library,playlist
+set window playlist " Show most useful window
 
-" And most useful one
-set window playlist
+" when enabled, expand to artist by default in library
+set expand-artists
+
+" case insensitive searching
+set ignorecase
+" search for results as you are typing
+set incsearch
+" if capital in search pattern, enable case sensitivity
+set smartcase
+
+" turn mouse support off
+set nomouse
+
+" :q and :quit will quit vimpc, not close active tab
+set singlequit
 
 " Ensure that the database is up to date each connect
 update
