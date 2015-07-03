@@ -1,0 +1,8 @@
+" Only useful ones
+set windows library,playlist
+
+" And most useful one
+set window playlist
+
+" Ensure that the database is up to date each connect
+update
