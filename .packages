@@ -128,6 +128,7 @@ linux
 linux-headers
 lm_sensors
 logrotate
+lsof
 lvm2
 lzo
 lzop
@@ -175,6 +176,7 @@ otf-pexico
 otf-pomodoro-git
 p7zip
 pacman
+parted
 patch
 pavucontrol
 pciutils
@@ -183,7 +185,6 @@ perl
 pgadmin3
 pkg-config
 pkgbuild-introspection
-pm-utils
 polipo
 portaudio
 postgresql
@@ -249,7 +250,6 @@ tree
 ttf-dejavu
 ttf-droid
 ttf-inconsolata
-udiskie
 unclutter
 unixodbc
 unoconv
