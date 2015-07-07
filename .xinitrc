@@ -64,4 +64,4 @@ compton &
 
 urxvtd &
 
-/usr/bin/awesome
+awesome
