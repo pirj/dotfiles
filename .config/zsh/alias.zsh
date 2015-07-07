@@ -1,8 +1,6 @@
 # Platform specific values
 if [ '$PLATFORM' = 'Linux' ]; then
   LS_COLOR='--color'
-else
-  LS_COLOR='-G'
 fi
 
 alias ls='ls $LS_COLOR'
