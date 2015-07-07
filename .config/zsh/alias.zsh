@@ -1,5 +1,5 @@
 # Platform specific values
-if [ $PLATFORM = 'Linux' ]; then
+if [ '$PLATFORM' = 'Linux' ]; then
   LS_COLOR='--color'
 else
   LS_COLOR='-G'
