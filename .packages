@@ -58,6 +58,7 @@ file
 filesystem
 findutils
 firefox
+flashplugin
 fuse
 fuseiso
 gawk
@@ -67,7 +68,7 @@ gettext
 gimp
 git
 git-extras
-git-flow-git
+gitflow
 glfw
 glibc
 gnu-netcat
@@ -105,6 +106,7 @@ iw
 jack2
 jfsutils
 jnettop
+jre7-openjdk-headless
 keychain
 less
 libcanberra-pulse
@@ -129,7 +131,6 @@ linux-headers
 lm_sensors
 logrotate
 lsof
-lvm2
 lzo
 lzop
 m4
@@ -170,7 +171,7 @@ ocl-icd
 openal
 openssh
 openvpn
-otf-droidsansmono-powerline-git
+otf-droid-sans-mono-powerline-git
 otf-font-awesome
 otf-pexico
 otf-pomodoro-git
@@ -250,6 +251,7 @@ tree
 ttf-dejavu
 ttf-droid
 ttf-inconsolata
+udiskie
 unclutter
 unixodbc
 unoconv
@@ -294,7 +296,7 @@ xorg-utils
 xorg-xfontsel
 xorg-xinit
 xsel
-xssstate-git
+xssstate
 xterm
 youtube-dl
 zathura
