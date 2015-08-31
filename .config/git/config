@@ -18,6 +18,8 @@
   prompt = false
 [difftool "icdiff"]
   cmd = icdiff --highlight --line-numbers --numlines=3 $LOCAL $REMOTE
+[pager]
+  difftool = less
 [color]
   ui = true
 [core]
