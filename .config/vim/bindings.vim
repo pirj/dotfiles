@@ -6,6 +6,7 @@ set langmap=ёйцукенгшщзхъфывапролджэячсмитьбюЁ
 
 " Switch to normal
 inoremap kj <Esc>
+inoremap ло <Esc>
 vnoremap kj <Esc>
 cnoremap kj <C-f>
 
@@ -28,6 +29,12 @@ nnoremap <silent> \f :lclose<CR>
 nnoremap <silent> [t :tabprevious<CR>
 nnoremap <silent> ]t :tabnext<CR>
 nnoremap <silent> 't :tabnew<CR>
+
+" Navigate panes
+nnoremap <silent> <C-h> <C-w>h
+nnoremap <silent> <C-j> <C-w>j
+nnoremap <silent> <C-k> <C-w>k
+nnoremap <silent> <C-l> <C-w>l
 
 " Select previously pasted text
 nnoremap gv `[v`]
