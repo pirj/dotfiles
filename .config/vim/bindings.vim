@@ -24,6 +24,11 @@ nnoremap <silent> [F :lpfile<CR>
 nnoremap <silent> ]F :lnfile<CR>
 nnoremap <silent> \f :lclose<CR>
 
+" Navigate tabs
+nnoremap <silent> [t :tabprevious<CR>
+nnoremap <silent> ]t :tabnext<CR>
+nnoremap <silent> 't :tabnew<CR>
+
 " Select previously pasted text
 nnoremap gv `[v`]
 
