@@ -10,7 +10,6 @@
   ff = only
   rebase = true
 [merge]
-  conflictstyle = diff3
   tool = vimdiff
 [diff]
   tool = icdiff
