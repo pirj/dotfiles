@@ -32,6 +32,7 @@
   co = checkout
   s = status -sb
   d = difftool
+  ds = diff --staged
   up = pull
   c = commit
   ca = commit --amend
