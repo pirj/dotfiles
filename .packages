@@ -52,7 +52,6 @@ git-extras
 gitflow
 glfw
 gnu-netcat
-google-translate-cli-git
 gst-libav
 gst-plugins-good
 gstreamer0.10-base-plugins
@@ -183,6 +182,7 @@ tk
 tldp-howtos-txt
 tmux
 tor
+translate-shell-git
 transmission-remote-cli
 tree
 ttf-inconsolata
