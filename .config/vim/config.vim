@@ -42,7 +42,7 @@ set title          " Set the title of the window in the terminal to the file
 set laststatus=2
 set cursorline
 
-set nolazyredraw   " Make plugins smoother
+set lazyredraw     " Run macros lightning fast
 set ttyfast        " Indicates a fast terminal connection... characters will be sent to the screen for redrawing, instead of using insert/delete line commands. Improves smoothness of redrawing when there are multiple windows and the terminal does not support a scrolling region.
 
 set synmaxcol=512  " Syntax coloring lines that are too long just slows down the world
