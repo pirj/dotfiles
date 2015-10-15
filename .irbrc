@@ -23,6 +23,8 @@ end
 begin
   require 'pry'
 
+  include Rails::ConsoleMethods if defined? ::Rails
+
   Pry.start
   exit
 rescue LoadError
