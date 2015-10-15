@@ -23,7 +23,10 @@ end
 begin
   require 'pry'
 
-  include Rails::ConsoleMethods if defined? ::Rails
+  if defined? ::Rails
+    include Rails::ConsoleMethods
+    require 'pry-rails'
+  end
 
   Pry.start
   exit
