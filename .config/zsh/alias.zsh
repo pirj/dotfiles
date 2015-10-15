@@ -13,7 +13,6 @@ alias cal='cal -m'
 
 # Use editor consistently
 alias vim=$EDITOR
-alias vi=$EDITOR
 alias view=$EDITOR -R
 alias edit=$EDITOR
 
