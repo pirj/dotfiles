@@ -37,5 +37,6 @@
   c = commit
   ca = commit --amend
   p = push
+  pf = push --force-with-lease
   a = add
   c1 = clone --depth 1 --single-branch
