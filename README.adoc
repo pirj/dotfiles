@@ -19,6 +19,13 @@ image::.config/screenshot.jpg[Screenshot]
 
 I use to browse repositories on GH, and check other people's dotfiles. dotshare.it is another interesting source.
 
+==
+
+Update package list on ArchLinux:
+
+    pacman -Qqett >! .packages # only those explicitly installed and not required directly by other packages (double t)
+    pacman -Qqe >! .packages # only those explicitly installed and not required by other packages
+
 == TODO
 
 * explain what works:

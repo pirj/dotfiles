@@ -97,6 +97,7 @@ make
 man-db
 man-pages
 markdown
+maven
 mcabber
 mdadm
 memcached
@@ -140,6 +141,7 @@ polipo
 portaudio
 postgresql
 powertop
+pptpclient
 procinfo-ng
 procps-ng
 profont
