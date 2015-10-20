@@ -46,6 +46,9 @@ nnoremap Y y$
 nnoremap H 0
 nnoremap L $
 
+" No additional whitespace on joins
+nnoremap J gJ
+
 " Swap jumping, ' is closer, so use it to jump to line and column
 nnoremap ' `
 nnoremap ` '
