@@ -6,7 +6,7 @@ set langmap=ёйцукенгшщзхъфывапролджэячсмитьбюЁ
 
 " Switch to normal
 inoremap kj <Esc>
-inoremap ло <Esc>
+" inoremap ло <Esc>
 vnoremap kj <Esc>
 cnoremap kj <C-f>
 
