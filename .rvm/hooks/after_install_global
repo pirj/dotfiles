@@ -1,5 +1,5 @@
 (
-  echo "!@#!@ installing global gems to $rvm_ruby_string"
+  echo "Installing global gems to $rvm_ruby_string"
   rvm use $rvm_ruby_string
   rvm @global do gem install bundler awesome_print hirb pry pry-doc pry-rescue pry-byebug pry-stack_explorer pry-rails foreman guard guard-shell benchmark-ips
   echo "DONE"
