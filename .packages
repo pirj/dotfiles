@@ -96,6 +96,7 @@ macchanger
 make
 man-db
 man-pages
+mariadb
 markdown
 maven
 mcabber
@@ -134,12 +135,10 @@ p7zip
 patch
 pavucontrol
 pcmciautils
-pgadmin3
 pkg-config
 pkgbuild-introspection
 polipo
 portaudio
-postgresql
 powertop
 pptpclient
 procinfo-ng
