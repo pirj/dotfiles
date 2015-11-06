@@ -36,6 +36,7 @@ alias g=git
 alias -g G='| grep -a'
 alias -g P='| $PAGER'
 alias -g W='| wc -l'
+alias -g H='| head -n'
 alias -r T='tail -f'
 
 # Factor listener, readline handler wrapped
