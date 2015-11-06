@@ -28,6 +28,7 @@
   graph = true
 [log]
   abbrevCommit = true
+  date = iso
 [alias]
   co = checkout
   s = status -sb
