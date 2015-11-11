@@ -14,6 +14,7 @@ image::.config/screenshot.jpg[Screenshot]
     git clone --recursive --depth 1 --single-branch https://github.com/pirj/dotfiles
     mv dotfiles/.* .
     rm -rf dotfiles
+    mkdir .tmp
 
 == Inspiration sources
 
@@ -33,6 +34,7 @@ Update package list on ArchLinux:
 ** command line, shell
 ** ruby workflow
 * vim plugin bootstrap? pathogen?
+* how to install all those aur packages, yaourt? how to install yaourt? bsd?
 
 == About me
 
