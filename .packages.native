@@ -189,7 +189,6 @@ xdotool
 xf86-input-keyboard
 xf86-input-mouse
 xf86-input-synaptics
-xf86-video-ati
 xfsprogs
 xorg-server-utils
 xorg-server-xvfb
