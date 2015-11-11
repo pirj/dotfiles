@@ -20,12 +20,12 @@ image::.config/screenshot.jpg[Screenshot]
 
 I use to browse repositories on GH, and check other people's dotfiles. dotshare.it is another interesting source.
 
-==
+== Packages
 
-Update package list on ArchLinux:
+Update package list on ArchLinux, only those explicitly installed and not required directly by other packages (double t), native and foreign to pacman:
 
-    pacman -Qqett >! .packages # only those explicitly installed and not required directly by other packages (double t)
-    pacman -Qqe >! .packages # only those explicitly installed and not required by other packages
+    pacman -Qqettn >! .packages.native
+    pacman -Qqettm >! .packages.foreign
 
 == TODO
 
@@ -34,7 +34,9 @@ Update package list on ArchLinux:
 ** command line, shell
 ** ruby workflow
 * vim plugin bootstrap? pathogen?
-* how to install all those aur packages, yaourt? how to install yaourt? bsd?
+* how to install aurget?
+* how to install all those aur packages?
+* bsd packages?
 
 == About me
 
