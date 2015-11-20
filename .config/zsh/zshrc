@@ -18,6 +18,9 @@ unsetopt correct_all
 # Allow [ or ] whereever you want
 unsetopt nomatch
 
+# Ignore duplicate history entries
+setopt histignoredups
+
 . ~/.config/zsh/antigen/antigen.zsh
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-history-substring-search
