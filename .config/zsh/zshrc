@@ -71,8 +71,8 @@ autoload -U colors && colors
 export GIT_PS1_SHOWDIRTYSTATE=0
 
 # Prompt
-function prompt {
-  export PROMPT="%n@%{$fg[blue]%}%m %{$fg[yellow]%}%~ %{$fg[green]%}%$(__git_ps1) %{$reset_color%}% %(!.#.$) "
-}
-autoload -U add-zsh-hook
-add-zsh-hook precmd prompt
+
+# Expand functions in the prompt
+setopt prompt_subst
+
+export PS1='%n@%{$fg[blue]%}%m %{$fg[yellow]%}%~ %{$fg[green]%}%$(__git_ps1) %{$reset_color%}% %(!.#.$) '
