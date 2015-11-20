@@ -14,6 +14,10 @@ setopt noclobber
 # Zsh, please...
 unsetopt correct_all
 
+# Credit: https://robots.thoughtbot.com/how-to-use-arguments-in-a-rake-task
+# Allow [ or ] whereever you want
+unsetopt nomatch
+
 . ~/.config/zsh/antigen/antigen.zsh
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle zsh-users/zsh-history-substring-search
