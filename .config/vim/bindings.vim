@@ -62,10 +62,10 @@ imap <Tab> <C-p>
 nnoremap <silent> <Leader><Leader> :nohlsearch<CR>
 
 " Search files
-nnoremap <Leader>g :lgrep<Space>
+nnoremap 'g :Silent lgrep<Space>
 
 " Find files
-nnoremap <Leader>f :find<Space>
+nnoremap 'f :find<Space>
 
 " Only use X clipboard when required
 nnoremap <silent> <Leader>p :set paste<CR>:read !xclip -o<CR>:set nopaste<CR>

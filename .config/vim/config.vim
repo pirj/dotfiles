@@ -113,7 +113,8 @@ set splitright
 set spelllang=en,ru
 
 " Grep with ag
-set grepprg=ag\ --vimgrep
+set grepprg=ag\ --nogroup\ --nocolor\ --ignore-case\ --column\ --vimgrep
+command! -nargs=+ Silent execute 'silent <args>' | redraw!
 
 " Mouse integration is for all modes by default on some installs
 " Switch back to normal only
