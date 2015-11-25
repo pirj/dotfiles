@@ -9,6 +9,9 @@
   default = tracking
   ff = only
   rebase = true
+[rebase]
+  autostash = true
+  autosquash = true
 [merge]
   tool = vimdiff
 [diff]
