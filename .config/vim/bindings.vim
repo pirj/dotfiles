@@ -34,6 +34,29 @@ nnoremap <silent> <C-j> <C-w>j
 nnoremap <silent> <C-k> <C-w>k
 nnoremap <silent> <C-l> <C-w>l
 
+" Disable some annoying keys
+nnoremap Q <NOP>
+nnoremap K <NOP>
+map 0 <NOP>
+map _ <NOP>
+map $ <NOP>
+
+" Soft hardmode
+nmap <Left>  <NOP>
+nmap <Down>  <NOP>
+nmap <Up>    <NOP>
+nmap <Right> <NOP>
+imap <Left>  <NOP>
+imap <Down>  <NOP>
+imap <Up>    <NOP>
+imap <Right> <NOP>
+
+" Use ^N/^P/^F
+cmap <Up>    <NOP>
+cmap <Down>  <NOP>
+cmap <Right> <NOP>
+cmap <Left>  <NOP>
+
 " Select previously pasted text
 nnoremap gv `[v`]
 
@@ -63,6 +86,7 @@ nnoremap <silent> <Leader><Leader> :nohlsearch<CR>
 
 " Search files
 nnoremap 'g :Silent lgrep<Space>
+nnoremap K :Silent lgrep <C-r><C-w><CR>
 
 " Find files
 nnoremap 'f :find<Space>
@@ -76,26 +100,3 @@ nmap <silent> <Leader>s :set spell!<CR>
 " Send to tmux
 vmap <silent> <Leader>c <Plug>SendSelectionToTmux
 nmap <silent> <Leader>c <Plug>NormalModeSendToTmux
-
-" Disable some annoying keys
-nnoremap Q <NOP>
-nnoremap K <NOP>
-map 0 <NOP>
-map _ <NOP>
-map $ <NOP>
-
-" Soft hardmode
-nmap <Left>  <NOP>
-nmap <Down>  <NOP>
-nmap <Up>    <NOP>
-nmap <Right> <NOP>
-imap <Left>  <NOP>
-imap <Down>  <NOP>
-imap <Up>    <NOP>
-imap <Right> <NOP>
-
-" Use ^N/^P/^F
-cmap <Up>    <NOP>
-cmap <Down>  <NOP>
-cmap <Right> <NOP>
-cmap <Left>  <NOP>
