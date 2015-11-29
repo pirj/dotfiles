@@ -49,7 +49,7 @@ alias tra='transmission-remote-cli'
 alias space='du --dereference --max-depth=2 -h . | sort -h -r | head -n 20'
 
 # Password generation. Just one. Print and put to clipboard
-alias pwgen='pwgen -1cnsB 12 >&2 | xclip'
+alias pwgen='pwgen -1cnsB 12 >&2 | xsel -i && xsel -o'
 
 # Stupid MySQL treats ^C as ^D
 alias mysql='mysql --sigint-ignore'

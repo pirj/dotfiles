@@ -92,7 +92,7 @@ nnoremap K :Silent lgrep <C-r><C-w><CR>
 nnoremap 'f :find<Space>
 
 " Only use X clipboard when required
-nnoremap <silent> <Leader>p :set paste<CR>:read !xclip -o<CR>:set nopaste<CR>
+nnoremap <silent> <Leader>p :set paste<CR>:read !xsel -o<CR>:set nopaste<CR>
 
 " Toggle spell check
 nmap <silent> <Leader>s :set spell!<CR>

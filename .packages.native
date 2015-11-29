@@ -126,6 +126,7 @@ profont
 pulseaudio-alsa
 pulseaudio-bluetooth
 pulseaudio-zeroconf
+pv
 pwgen
 python2-lxml
 python2-numpy
@@ -182,7 +183,6 @@ whois
 windowmaker
 wpa_actiond
 wvdial
-xclip
 xdg-user-dirs
 xdotool
 xf86-input-keyboard
