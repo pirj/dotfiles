@@ -8,7 +8,7 @@ alias ll='ls -lh'
 alias la='ls -A'
 alias l='ls -lhA'
 
-# Start week from Monday
+# Start week on Monday
 alias cal='cal -m'
 
 # Use editor consistently
@@ -37,6 +37,8 @@ alias -g G='| grep -a'
 alias -g P='| $PAGER'
 alias -g W='| wc -l'
 alias -g H='| head -n'
+alias -g C='| xsel -i && xsel -o'
+alias -g S="| curl -F 'sprunge=<-' http://sprunge.us C"
 alias -r T='tail -f'
 
 # Factor listener, readline handler wrapped
@@ -49,7 +51,7 @@ alias tra='transmission-remote-cli'
 alias space='du --dereference --max-depth=2 -h . | sort -h -r | head -n 20'
 
 # Password generation. Just one. Print and put to clipboard
-alias pwgen='pwgen -1cnsB 12 >&2 | xsel -i && xsel -o'
+alias pwgen='pwgen -1cnsB 12 C'
 
 # Stupid MySQL treats ^C as ^D
 alias mysql='mysql --sigint-ignore'
