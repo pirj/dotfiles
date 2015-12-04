@@ -46,10 +46,7 @@ transmission-daemon
 autocutsel -fork &
 autocutsel -selection PRIMARY -fork &
 
-#xrandr --output LVDS --auto --output HDMI-0 --off
-#xrandr --output LVDS --mode 1280x720 --output HDMI-0 --mode 1600x1200
-# xrandr --output LVDS-0 --off --output HDMI-0 --mode 1600x1200
-xrandr --output LVDS-0 --off --output VGA-0 --preferred
+xrandr --output LVDS-1 --off --output VGA-1 --preferred
 
 xset s 300 # idle is 5 min
 ~/.bin/xsidle.sh slock & # lock screen when idle
