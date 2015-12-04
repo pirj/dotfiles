@@ -32,6 +32,8 @@
 [log]
   abbrevCommit = true
   date = iso
+[branch]
+  autosetupmerge = true
 [alias]
   co = checkout
   s = status -sb
@@ -45,3 +47,5 @@
   a = add
   c1 = clone --depth 1 --single-branch
   f = flow feature
+  l = log -p
+  ll = log --no-merges
