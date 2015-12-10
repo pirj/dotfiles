@@ -82,8 +82,8 @@ imap <Tab> <C-p>
 nnoremap <silent> <Leader><Leader> :nohlsearch<CR>
 
 " Search files
-nnoremap 'g :Silent lgrep<Space>
-nnoremap K :Silent lgrep <C-r><C-w><CR>
+nnoremap 'g :silent lgrep<Space>
+nnoremap K :silent lgrep <C-r><C-w><CR>
 
 " Find files
 nnoremap 'f :find<Space>
