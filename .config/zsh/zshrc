@@ -76,3 +76,6 @@ export GIT_PS1_SHOWDIRTYSTATE=0
 setopt prompt_subst
 
 export PS1='%n@%{$fg[blue]%}%m %{$fg[yellow]%}%~ %{$fg[green]%}%$(__git_ps1) %{$reset_color%}% %(!.#.$) '
+
+# Many programs change the terminal state, and often do not restore terminal settings on exiting abnormally. To avoid the need to manually reset the terminal, freeze it:
+ttyctl -f
