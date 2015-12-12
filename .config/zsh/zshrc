@@ -27,6 +27,7 @@ zplug b4b4r07/zplug
 zplug zsh-users/zsh-syntax-highlighting
 zplug zsh-users/zsh-history-substring-search
 zplug djui/alias-tips
+# zplug tarruda/zsh-autosuggestions
 zplug load
 
 # Better vi mode (hat tip Doug Black)
@@ -63,6 +64,13 @@ bindkey -a '^Z' fancy-ctrl-z
 autoload -U edit-command-line
 zle -N edit-command-line
 bindkey -M vicmd v edit-command-line
+
+# # Autosuggestions
+# zle-line-init() {
+#   zle autosuggest-start
+# }
+# zle -N zle-line-init
+# bindkey '^f' vi-forward-word
 
 # Color scheme
 [[ -s ~/.config/zsh/colors.sh ]] && source ~/.config/zsh/colors.sh
