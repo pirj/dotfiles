@@ -22,7 +22,8 @@ I use to browse repositories on GH, and check other people's dotfiles. dotshare.
 
 == Packages
 
-Update package list on ArchLinux, only those explicitly installed and not required directly by other packages (double t), native and foreign to pacman:
+On ArchLinux (pacman):
+Query (-Q) package list without version numbers (-q), only those explicitly installed (-t) and not required directly by other packages (-tt), native (-n) and foreign (-m):
 
     pacman -Qqettn >! .packages.native
     pacman -Qqettm >! .packages.foreign
