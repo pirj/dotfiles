@@ -1,12 +1,11 @@
-set nocompatible " be iMproved
+set nocompatible          " be iMproved
 
-" Automatically detect file types. (must turn on after Vundle)
-filetype plugin indent on
+filetype plugin indent on " Automatically detect file types. (must turn on after Vundle)
 
 " Color
 set t_Co=256
 let g:jellybeans_background_color_256=234
-let g:seoul256_background = 234
+let g:seoul256_background=234
 " colorscheme jellybeans
 colorscheme seoul256
 
@@ -21,33 +20,33 @@ set undodir=~/.local/vim/undo
 set path=.,**             " Paths to find files in
 
 " UI
-set ruler          " Ruler on
-set relativenumber " Relative line numbers
-set number         " And current line number under cursor too
-set wrap           " Line wrapping on
-set showbreak=..   " Show broken lines
-set showmatch      " Show matching brackets
-set matchtime=2    " How many tenths of a second to blink
+set ruler                 " Ruler on
+set norelativenumber      " No relative line numbers
+set nonumber              " And not even current line number under cursor too
+set wrap                  " Line wrapping on
+set showbreak=..          " Show broken lines
+set showmatch             " Show matching brackets
+set matchtime=2           " How many tenths of a second to blink
 
-set list                    " Show invisible whitespace
-set listchars=""            " Reset the list chars
-set listchars=tab:>-        " Indicate tabs
-set listchars+=trail:-      " Indicate trailing whitespace as dots
-set listchars+=extends:>    " Indicate that text continues beyond the right of the screen
-set listchars+=precedes:<   " Indicate that text continues beyond the left of the screen
+set list                  " Show invisible whitespace
+set listchars=""          " Reset the list chars
+set listchars=tab:>-      " Indicate tabs
+set listchars+=trail:-    " Indicate trailing whitespace as dots
+set listchars+=extends:>  " Indicate that text continues beyond the right of the screen
+set listchars+=precedes:< " Indicate that text continues beyond the left of the screen
 
 set encoding=utf-8
-set noshowmode     " Don't show the mode since lightline shows it
-set title          " Set the title of the window in the terminal to the file
+set noshowmode            " Don't show the mode since lightline shows it
+set title                 " Set the title of the window in the terminal to the file
 set laststatus=2
 set cursorline
 
-set lazyredraw     " Run macros lightning fast
-set ttyfast        " Indicates a fast terminal connection... characters will be sent to the screen for redrawing, instead of using insert/delete line commands. Improves smoothness of redrawing when there are multiple windows and the terminal does not support a scrolling region.
+set lazyredraw            " Run macros lightning fast
+set ttyfast               " Indicates a fast terminal connection... characters will be sent to the screen for redrawing, instead of using insert/delete line commands. Improves smoothness of redrawing when there are multiple windows and the terminal does not support a scrolling region.
 
-set synmaxcol=512  " Syntax coloring lines that are too long just slows down the world
+set synmaxcol=512         " Syntax coloring lines that are too long just slows down the world
 
-set shortmess+=I   " No startup message
+set shortmess+=I          " No startup message
 
 " Behaviors
 syntax enable             " Enable syntax processing
@@ -70,10 +69,10 @@ set expandtab             " Tabs are spaces
 set formatoptions=t       " Do not insert new line of comments
 
 " Searching
-set ignorecase " Case insensitive search
-set smartcase  " Non-case sensitive search
-set incsearch  " Show matches while typing
-set hlsearch   " Highlight search
+set ignorecase            " Case insensitive search
+set smartcase             " Non-case sensitive search
+set incsearch             " Show matches while typing
+set hlsearch              " Highlight search
 set wildignore+=.git
 
 " Sounds
@@ -81,9 +80,10 @@ set noerrorbells
 set novisualbell
 set t_vb=
 
-set complete=.,w,b,u,U " Better complete options to speed it up
+set complete=.,w,b,u,U    " Better complete options to speed it up
 
-set timeoutlen=1000 ttimeoutlen=50 " Avoid annoying mode switch lag
+set timeoutlen=1000       " Those two together
+set ttimeoutlen=50        " are avoiding annoying mode switch lag
 
 " Lightline
 let g:lightline = {
