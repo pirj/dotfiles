@@ -177,3 +177,5 @@ oradiag_pirj
 articles
 .phantomjs
 .xsel.log
+.config/QtProject.conf
+.renoise
