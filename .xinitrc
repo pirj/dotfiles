@@ -58,8 +58,10 @@ sxhkd &disown
 hsetroot -center ~/wallpapers/$(ls wallpapers | shuf| tail -n 1)
 
 # Compton window composer
-compton &
+# compton &
 
 urxvtd &
+
+jackd -v -dalsa -D -Phw:1 &disown
 
 awesome
