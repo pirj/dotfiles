@@ -22,6 +22,11 @@ xkb_symbols "default" {
   // Old LCtl does nothing
   replace key <LCTL> { [ VoidSymbol ] };
 
+  replace key <LALT> { [ ISO_Last_Group ] };
+  replace key <RALT> { [ ISO_First_Group ] };
+
+  replace key <RCTL> { [ Multi_key ] };
+
 //  key <LFSH> { [ ISO_Level2_Latch ] };
 //  key <RTSH> { [ ISO_Level2_Latch ] };
 

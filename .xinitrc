@@ -11,7 +11,7 @@ fi
 # Use RCtl as Compose key http://en.wikipedia.org/wiki/Compose_key "compose(rctrl)"
 # See full list of combinations http://cgit.freedesktop.org/xorg/lib/libX11/plain/nls/en_US.UTF-8/Compose.pre
 # Latch Shifts
-setxkbmap -layout "us+custom(default),ru(winkeys)" -option "" -option "grp:toggle,compose:rctrl" -compat "complete+custom(latch)" -print | xkbcomp -I"$HOME/.config/xkb" - "${DISPLAY%%.*}"
+setxkbmap -layout "us+custom(default),ru(winkeys)" -option "" -compat "complete+custom(latch)" -print | xkbcomp -I"$HOME/.config/xkb" - "${DISPLAY%%.*}"
 
 # Map CapsLock to a more useful double behavior Esc(tap)/Control(hold)
 # Map Return to a Return(tap)/Super(hold)
