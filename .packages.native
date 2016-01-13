@@ -15,7 +15,6 @@ awesome
 beets
 bind-tools
 bison
-bitlbee
 boost
 busybox
 chromium
@@ -34,11 +33,11 @@ dialog
 dina-font
 dmidecode
 dnsmasq
-dumb
 elinks
 extundelete
 fakeroot
 firefox
+flashplugin
 fuseiso
 gimp
 glfw
@@ -56,8 +55,8 @@ hub
 ifplugd
 iftop
 ifuse
+imagemagick
 imagemagick-doc
-inkscape
 iotop
 iputils
 ipw2200-fw
@@ -80,10 +79,8 @@ macchanger
 make
 man-db
 man-pages
-mariadb
 markdown
 maven
-mcabber
 mdadm
 memcached
 mesa-vdpau
@@ -117,7 +114,6 @@ pkg-config
 pkgbuild-introspection
 pm-utils
 polipo
-portaudio
 powertop
 pptpclient
 procinfo-ng
@@ -128,8 +124,9 @@ pulseaudio-zeroconf
 pv
 pwgen
 python2-lxml
-python2-numpy
+qtractor
 ranger
+recordmydesktop
 redis
 redshift
 reiserfsprogs

@@ -1,10 +1,10 @@
 aurget
 aurvote-git
 bats-git
-brogue
 compton-git
 dmon
 duff
+factor
 git-extras
 gitflow-git
 heroku-toolbelt
@@ -13,6 +13,8 @@ icdiff
 libpng12
 linux-pae
 lostfiles
+modplay
+mysql
 nas
 ncurses5-compat-libs
 ndn
@@ -22,7 +24,9 @@ otf-droid-sans-mono-powerline-git
 otf-font-awesome
 otf-pexico
 otf-pomodoro-git
+oxefmsynth
 proot
+renoise3-demo
 skypetab-ng-git
 sntop
 sxhkd-git
