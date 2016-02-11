@@ -62,6 +62,6 @@ hsetroot -center ~/wallpapers/$(ls wallpapers | shuf| tail -n 1)
 
 urxvtd &
 
-jackd -v -dalsa -D -Phw:1 &disown
+# jackd -v -dalsa -D -Phw:1 &disown
 
 awesome
