@@ -7,7 +7,7 @@ set langmap=ёйцукенгшщзхъфывапролджэячсмитьбюЁ
 " Switch to normal
 inoremap kj <Esc>
 " inoremap ло <Esc>
-vnoremap kj <Esc>
+" vnoremap kj <Esc>
 cnoremap kj <C-f>
 
 " Navigate buffers
