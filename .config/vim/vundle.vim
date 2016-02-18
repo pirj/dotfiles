@@ -8,7 +8,7 @@ set rtp+=~/.config/vim/bundle/Vundle.vim
 call vundle#begin('~/.config/vim/bundle')
 
 " let Vundle manage Vundle, required
-Bundle 'gmarik/Vundle.vim'
+Bundle 'VundleVim/Vundle.vim'
 " Shougo/neobundle.vim
 
 " NAVIGATION
@@ -120,7 +120,7 @@ Bundle "tpope/vim-commentary"
 " VERSION CONTROL
 " ---------------
 Bundle 'tpope/vim-fugitive'
-" Bundle 'mhinz/vim-signify'
+Bundle 'mhinz/vim-signify'
 
 " SYNTAX SUPPORT
 " --------------

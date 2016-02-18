@@ -1,6 +1,6 @@
 [submodule ".config/vim/bundle/Vundle.vim"]
 	path = .config/vim/bundle/Vundle.vim
-	url = https://github.com/gmarik/Vundle.vim.git
+	url = https://github.com/VundleVim/Vundle.vim.git
 [submodule ".zplug"]
 	path = .zplug
 	url = https://github.com/b4b4r07/zplug.git
