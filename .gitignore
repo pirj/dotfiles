@@ -179,3 +179,4 @@ articles
 .xsel.log
 .config/QtProject.conf
 .renoise
+.httpie
