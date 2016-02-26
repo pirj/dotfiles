@@ -49,4 +49,4 @@
   f = flow feature
   l = log -p
   ll = log --no-merges
-  align = !git fetch origin master && git rebase origin/master
+  align = !BASE_BRANCH=${1:-develop} && git fetch origin $BASE_BRANCH && git rebase origin/$BASE_BRANCH && :
