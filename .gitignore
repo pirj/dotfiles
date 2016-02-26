@@ -180,3 +180,4 @@ articles
 .config/QtProject.conf
 .renoise
 .httpie
+.node_repl_history
