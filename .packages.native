@@ -33,6 +33,7 @@ dialog
 dina-font
 dmidecode
 dnsmasq
+dosfstools
 elinks
 extundelete
 fakeroot
@@ -51,6 +52,7 @@ help2man
 highlight
 htop
 httperf
+httpie
 hub
 ifplugd
 iftop
@@ -109,13 +111,16 @@ p7zip
 patch
 pavucontrol
 pcmciautils
+pcsclite
+pgadmin3
 phantomjs
 pkg-config
 pkgbuild-introspection
 pm-utils
-polipo
+postgresql
 powertop
 pptpclient
+privoxy
 procinfo-ng
 profont
 pulseaudio-alsa

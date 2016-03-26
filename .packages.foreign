@@ -1,3 +1,4 @@
+apache-tools
 aurget
 aurvote-git
 bats-git
@@ -12,6 +13,8 @@ hsetroot
 icdiff
 libpng12
 linux-pae
+linux-pae-docs
+linux-pae-headers
 lostfiles
 modplay
 mysql
