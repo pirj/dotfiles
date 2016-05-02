@@ -12,7 +12,6 @@ alias l='ls -lhA'
 alias cal='cal -m'
 
 # Use editor consistently
-alias vim=$EDITOR
 alias view=$EDITOR -R
 alias edit=$EDITOR
 
