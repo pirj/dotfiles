@@ -1,6 +1,6 @@
 [[ -s $HOME/.profile ]] && source $HOME/.profile
 
-[[ $SSH_AGENT_PID -eq "" ]] && eval $(keychain --eval --agents ssh,gpg --quiet ~/.ssh/id_*[^pub])
+[[ $SSH_AGENT_PID -eq "" ]] && [[ -s $(which keychain) ]] && eval $(keychain --eval --agents ssh,gpg --quiet ~/.ssh/id_*[^pub])
 
 [[ ! -d "$tmp" ]] && export tmp="/tmp/$USER"
 mkdir -p -m 700 "$tmp"
