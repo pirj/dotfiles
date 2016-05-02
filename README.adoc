@@ -5,7 +5,7 @@ Born 2013. Written and cherry-picked with love.
 == What's inside
 
 Mostly tmux, vim, git, zsh, urxvt, ruby, js, awesome wm.
-Should work in most Linux'es and BSD. Tested on ArchLinux and OpenBSD.
+Should work in most Linux'es, OSX and BSD. Tested on ArchLinux, OSX 10.11 and OpenBSD.
 
 image::.config/screenshot.jpg[Screenshot]
 
@@ -15,6 +15,13 @@ image::.config/screenshot.jpg[Screenshot]
     mv dotfiles/.* .
     rm -rf dotfiles
     mkdir .tmp
+
+Create .zplug/.gitignore with the following (see https://github.com/b4b4r07/zplug/issues/45):
+
+    .cache
+    .gitignore
+    repos
+    zcompdump
 
 == Inspiration sources
 
