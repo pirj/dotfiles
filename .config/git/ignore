@@ -2,3 +2,4 @@ TODO*
 .ruby-version
 .ruby-gemset
 .agignore
+.DS_Store
