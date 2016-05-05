@@ -259,6 +259,20 @@
 	<real>1</real>
 	<key>GlobalKeyMap</key>
 	<dict>
+		<key>0x43-0x120000</key>
+		<dict>
+			<key>Action</key>
+			<integer>25</integer>
+			<key>Text</key>
+			<string>Copy</string>
+		</dict>
+		<key>0x56-0x120000</key>
+		<dict>
+			<key>Action</key>
+			<integer>25</integer>
+			<key>Text</key>
+			<string>Paste</string>
+		</dict>
 		<key>0x63-0x100000</key>
 		<dict>
 			<key>Action</key>
@@ -272,6 +286,13 @@
 			<integer>11</integer>
 			<key>Text</key>
 			<string>0x04</string>
+		</dict>
+		<key>0x65-0x100000</key>
+		<dict>
+			<key>Action</key>
+			<integer>11</integer>
+			<key>Text</key>
+			<string>0x05</string>
 		</dict>
 		<key>0x68-0x100000</key>
 		<dict>
@@ -300,6 +321,27 @@
 			<integer>11</integer>
 			<key>Text</key>
 			<string>0x0c</string>
+		</dict>
+		<key>0x72-0x100000</key>
+		<dict>
+			<key>Action</key>
+			<integer>11</integer>
+			<key>Text</key>
+			<string>0x12</string>
+		</dict>
+		<key>0x75-0x100000</key>
+		<dict>
+			<key>Action</key>
+			<integer>11</integer>
+			<key>Text</key>
+			<string>0x15</string>
+		</dict>
+		<key>0x76-0x100000</key>
+		<dict>
+			<key>Action</key>
+			<integer>11</integer>
+			<key>Text</key>
+			<string>0x16</string>
 		</dict>
 		<key>0x77-0x100000</key>
 		<dict>
@@ -439,7 +481,7 @@
 	<key>MaxVertically</key>
 	<false/>
 	<key>NSFontPanelAttributes</key>
-	<string>1, 6</string>
+	<string>1, 7</string>
 	<key>NSNavLastRootDirectory</key>
 	<string>~</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
@@ -470,11 +512,13 @@
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>163 140 454 331 0 0 1280 777 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>114 292 924 485 0 0 1280 777 </string>
+	<string>53 123 924 485 0 0 1280 800 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>175 250 650 426 0 0 1280 777 </string>
+	<string>7 346 650 426 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>116 374 650 426 0 0 1280 800 </string>
+	<string>116 389 570 401 0 0 1280 800 </string>
+	<key>NSWindow Frame iTerm Window 2</key>
+	<string>173 27 650 426 0 0 1280 777 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1024,11 +1068,11 @@
 			<key>Name</key>
 			<string>Default</string>
 			<key>Non Ascii Font</key>
-			<string>DroidSansMono 13</string>
+			<string>Inconsolata 13</string>
 			<key>Non-ASCII Anti Aliased</key>
 			<true/>
 			<key>Normal Font</key>
-			<string>DroidSansMono 13</string>
+			<string>Inconsolata 13</string>
 			<key>Option Key Sends</key>
 			<integer>0</integer>
 			<key>Prompt Before Closing 2</key>
@@ -1206,7 +1250,7 @@
 	<key>NoSyncTimeOfLastPromo</key>
 	<real>483819568.90955198</real>
 	<key>NoSyncTimeOfLastPromoDownload</key>
-	<real>483819568.91004801</real>
+	<real>484083831.93532801</real>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -1215,6 +1259,8 @@
 	<false/>
 	<key>OpenTmuxWindowsIn</key>
 	<integer>0</integer>
+	<key>PMPrintingExpandedStateForPrint2</key>
+	<false/>
 	<key>PassOnControlClick</key>
 	<false/>
 	<key>PasteFromClipboard</key>
@@ -1269,7 +1315,7 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-05-01T16:49:12Z</date>
+	<date>2016-05-04T16:49:20Z</date>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>ShowBookmarkName</key>
@@ -1301,7 +1347,7 @@
 	<key>UseLionStyleFullscreen</key>
 	<true/>
 	<key>WindowNumber</key>
-	<true/>
+	<false/>
 	<key>WindowStyle</key>
 	<integer>0</integer>
 	<key>WordCharacters</key>
