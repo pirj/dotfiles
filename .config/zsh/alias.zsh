@@ -47,7 +47,8 @@ alias factor='rlwrap factor-vm -run=listener'
 alias tra='transmission-remote-cli'
 
 # Find that fat files
-alias space='du --dereference --max-depth=2 -h . | sort -h -r | head -n 20'
+#alias space='du --dereference --max-depth=2 -h . | sort -h -r | head -n 20'
+alias space='du -d 2 -k -c . | sort -n -r | head -n 20'
 
 # Password generation. Just one. Print and put to clipboard
 alias pwgen='pwgen -1cnsB 12 C'
