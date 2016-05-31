@@ -39,7 +39,7 @@ set encoding=utf-8
 set noshowmode            " Don't show the mode since lightline shows it
 set title                 " Set the title of the window in the terminal to the file
 set laststatus=2
-set cursorline
+set nocursorline
 
 set lazyredraw            " Run macros lightning fast
 set ttyfast               " Indicates a fast terminal connection... characters will be sent to the screen for redrawing, instead of using insert/delete line commands. Improves smoothness of redrawing when there are multiple windows and the terminal does not support a scrolling region.
