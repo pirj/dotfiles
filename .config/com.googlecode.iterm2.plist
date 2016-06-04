@@ -1268,10 +1268,12 @@
 			<string>/Users/pirj</string>
 		</dict>
 	</array>
+	<key>NoSyncNeverRemindPrefsChangesCopy</key>
+	<true/>
 	<key>NoSyncTimeOfLastPromo</key>
 	<real>483819568.90955198</real>
 	<key>NoSyncTimeOfLastPromoDownload</key>
-	<real>486335751.58472502</real>
+	<real>486598323.25371701</real>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -1336,8 +1338,10 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-05-31T18:20:04Z</date>
+	<date>2016-06-03T18:04:10Z</date>
 	<key>SavePasteHistory</key>
+	<false/>
+	<key>Show Toolbelt</key>
 	<false/>
 	<key>ShowBookmarkName</key>
 	<false/>
