@@ -1376,7 +1376,7 @@
 	<key>WindowStyle</key>
 	<integer>0</integer>
 	<key>WordCharacters</key>
-	<string>/-+\~_.@:</string>
+	<string>/-+\~_.@:?=&amp;</string>
 	<key>iTerm Version</key>
 	<string>2.1.4</string>
 </dict>
