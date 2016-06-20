@@ -82,6 +82,9 @@ autoload -U colors && colors
 [[ -s ~/.bin/git-prompt.sh ]] && source ~/.bin/git-prompt.sh
 export GIT_PS1_SHOWDIRTYSTATE=0
 
+# Homebrew github api key
+[[ -s ~/.config/zsh/brew-api-key.sh ]] && source ~/.config/zsh/brew-api-key.sh
+
 # Prompt
 
 # Expand functions in the prompt

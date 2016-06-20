@@ -193,3 +193,4 @@ Public
 .homebrew_analytics_user_uuid
 .bundle/cache
 .tor
+.config/zsh/brew-api-key.sh
