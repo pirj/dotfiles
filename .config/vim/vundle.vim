@@ -120,7 +120,7 @@ Bundle "tpope/vim-commentary"
 " VERSION CONTROL
 " ---------------
 Bundle 'tpope/vim-fugitive'
-Bundle 'mhinz/vim-signify'
+Bundle 'airblade/vim-gitgutter'
 
 " SYNTAX SUPPORT
 " --------------
@@ -179,6 +179,7 @@ Bundle 'teranex/tslime.vim'
 
 " Live editing of HTML, CSS, JS
 "jaxbot/brolink
+"kshenoy/vim-signature display and navigate marks
 
 "vimwiki
 
