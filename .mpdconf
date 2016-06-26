@@ -4,9 +4,3 @@ db_file "~/.mpd/mpd.db"
 log_file           "~/.mpd/log"
 pid_file "~/.mpd/mpd.pid"
 state_file "~/.mpd/mpdstate"
-
-audio_output {
-  type  "alsa"
-  name  "HDA ATI SB"
-  mixer_type "hardware"
-}
