@@ -13,7 +13,8 @@ Bundle 'VundleVim/Vundle.vim'
 
 " NAVIGATION
 " ----------
-Bundle 'tpope/vim-vinegar'
+" Bundle 'tpope/vim-vinegar'
+Bundle 'justinmk/vim-dirvish'
 
 "Bundle 'ZoomWin'
 " This fork is required due to remapping ; to :
