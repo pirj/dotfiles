@@ -24,5 +24,7 @@ export SAVEHIST=10000
 
 export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
 
+export PATH=$PATH:/usr/local/sbin
+
 # Adds Node module (LiveScript, Jasmin) binaries into path
 [[ -s "$HOME/node_modules" ]] && export PATH=$PATH:$HOME/node_modules/.bin:$HOME/node_modules/bin
