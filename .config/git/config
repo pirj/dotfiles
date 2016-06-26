@@ -14,14 +14,8 @@
   autosquash = true
 [merge]
   tool = vimdiff
-[diff]
-  tool = icdiff
-[difftool]
-  prompt = false
-[difftool "icdiff"]
-  cmd = icdiff --highlight --line-numbers --numlines=3 $LOCAL $REMOTE
 [pager]
-  difftool = less
+  diff = diff-so-fancy | less --tabs=4 -RFX
 [color]
   ui = true
 [core]
@@ -37,7 +31,7 @@
 [alias]
   co = checkout
   s = status -sb
-  d = difftool
+  d = diff
   ds = diff --staged
   up = pull
   c = commit
