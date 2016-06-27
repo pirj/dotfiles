@@ -29,15 +29,15 @@
   </item>
 
   <item>
-    <name>Command_L to Command_L</name>
-    <appendix>(+ When you type Command_L only, change Input Source to Russian)</appendix>
-    <identifier>remap.russian_commandL2commandL_russian</identifier>
-    <autogen>__KeyOverlaidModifier__ KeyCode::COMMAND_L, KeyCode::COMMAND_L, KeyCode::VK_CHANGE_INPUTSOURCE_RUSSIAN</autogen>
+    <name>Alt_L to Alt_L</name>
+    <appendix>(+ When you type Alt_L only, change Input Source to Russian)</appendix>
+    <identifier>remap.russian_optionL2optionL_russian</identifier>
+    <autogen>__KeyOverlaidModifier__ KeyCode::OPTION_L, KeyCode::OPTION_L, KeyCode::VK_CHANGE_INPUTSOURCE_RUSSIAN</autogen>
   </item>
   <item>
-    <name>Command_R to Command_R</name>
-    <appendix>(+ When you type Command_R only, change Input Source to English)</appendix>
-    <identifier>remap.russian_commandR2commandR_english</identifier>
-    <autogen>__KeyOverlaidModifier__ KeyCode::COMMAND_R, KeyCode::COMMAND_R, KeyCode::VK_CHANGE_INPUTSOURCE_ENGLISH</autogen>
+    <name>Alt_R to Alt_R</name>
+    <appendix>(+ When you type Alt_R only, change Input Source to English)</appendix>
+    <identifier>remap.russian_optionR2optionR_english</identifier>
+    <autogen>__KeyOverlaidModifier__ KeyCode::OPTION_R, KeyCode::OPTION_R, KeyCode::VK_CHANGE_INPUTSOURCE_ENGLISH</autogen>
   </item>
 </root>
