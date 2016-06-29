@@ -46,3 +46,5 @@
   ll = log --no-merges
   align = !BASE_BRANCH=${1:-develop} && git fetch origin $BASE_BRANCH && git rebase origin/$BASE_BRANCH && :
   edit = "!vim $(git ls-files -m --other --exclude-standard)"
+[rerere]
+  enabled = 1
