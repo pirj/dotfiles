@@ -194,3 +194,4 @@ Public
 .bundle/cache
 .tor
 .config/zsh/brew-api-key.sh
+.aws
