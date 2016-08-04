@@ -47,5 +47,6 @@
   ll = log --no-merges
   align = !BASE_BRANCH=${1:-develop} && git fetch origin $BASE_BRANCH && git rebase origin/$BASE_BRANCH && :
   edit = "!vim $(git ls-files -m --other --exclude-standard)"
+  delete-merged-branches = git branch --merged | grep --invert-match master | xargs git branch -d
 [rerere]
   enabled = 1
