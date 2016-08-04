@@ -29,11 +29,27 @@ I use to browse repositories on GH, and check other people's dotfiles. dotshare.
 
 == Packages
 
-On ArchLinux (pacman):
+=== On ArchLinux (pacman)
+
 Query (-Q) package list without version numbers (-q), only those explicitly installed (-t) and not required directly by other packages (-tt), native (-n) and foreign (-m):
 
     pacman -Qqettn >! .packages.native
     pacman -Qqettm >! .packages.foreign
+
+Install:
+
+    sudo pacman -S $(< .packages.native )
+    aurget -S $(< .packages.foreign )
+
+=== On OSX (homebrew)
+
+Show installed formulae that are not dependencies of another installed formula:
+
+    brew leaves >! .formula
+
+Install:
+
+    brew install $(< .formula )
 
 == TODO
 
