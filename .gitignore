@@ -195,3 +195,4 @@ Public
 .tor
 .config/zsh/brew-api-key.sh
 .aws
+.config/heroku/config.json
