@@ -524,22 +524,33 @@
 		BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU1N0cmluZwGEhAhOU09iamVjdACF
 		hAErATGG
 		</data>
-		<string>302</string>
+		<string>319</string>
 	</array>
 	<key>NSTableView Hidden Columns KeyBingingTable</key>
 	<array/>
 	<key>NSTableView Sort Ordering KeyBingingTable</key>
 	<array/>
+	<key>NSToolbar Configuration Terminal Toolbar</key>
+	<dict>
+		<key>TB Display Mode</key>
+		<integer>1</integer>
+		<key>TB Icon Size Mode</key>
+		<integer>1</integer>
+		<key>TB Is Shown</key>
+		<integer>0</integer>
+		<key>TB Size Mode</key>
+		<integer>1</integer>
+	</dict>
 	<key>NSWindow Frame NSFontPanel</key>
 	<string>163 140 454 331 0 0 1280 777 </string>
 	<key>NSWindow Frame Preferences</key>
-	<string>53 123 924 485 0 0 1280 800 </string>
+	<string>272 192 924 485 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>7 376 570 401 0 0 1280 777 </string>
+	<string>399 301 570 401 0 0 1280 777 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>116 399 570 401 0 0 1280 800 </string>
+	<string>283 100 570 401 0 0 1280 800 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>173 44 570 401 0 0 1280 800 </string>
+	<string>173 44 570 401 0 0 1280 777 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1273,7 +1284,7 @@
 	<key>NoSyncTimeOfLastPromo</key>
 	<real>483819568.90955198</real>
 	<key>NoSyncTimeOfLastPromoDownload</key>
-	<real>486598323.25371701</real>
+	<real>492207348.41062802</real>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -1338,7 +1349,9 @@
 	<key>SUHasLaunchedBefore</key>
 	<true/>
 	<key>SULastCheckTime</key>
-	<date>2016-06-03T18:04:10Z</date>
+	<date>2016-08-06T20:14:56Z</date>
+	<key>SUSkippedVersion</key>
+	<string>3.0.5</string>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
