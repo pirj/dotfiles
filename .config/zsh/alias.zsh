@@ -39,6 +39,7 @@ alias -g H='| head -n'
 alias -g C='| xsel -i && xsel -o'
 alias -g S="| curl -F 'sprunge=<-' http://sprunge.us C"
 alias -r T='tail -f'
+alias -g V='| tee $(rm fifo.tmp; mkfifo fifo.tmp && echo fifo.tmp) &; vim $(< fifo.tmp ) && rm fifo.tmp'
 
 # Factor listener, readline handler wrapped
 alias factor='rlwrap factor-vm -run=listener'
