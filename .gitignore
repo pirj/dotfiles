@@ -196,3 +196,4 @@ Public
 .config/zsh/brew-api-key.sh
 .aws
 .config/heroku/config.json
+.wget-hsts
