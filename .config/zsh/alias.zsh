@@ -1,5 +1,5 @@
 # Platform specific values
-if [ '$PLATFORM' = 'Linux' ]; then
+if [ "$PLATFORM" = "Linux" ]; then
   LS_COLOR='--color'
 fi
 
@@ -36,7 +36,11 @@ alias -g G='| grep -a'
 alias -g P='| $PAGER'
 alias -g W='| wc -l'
 alias -g H='| head -n'
-alias -g C='| xsel -i && xsel -o'
+if [ "$PLATFORM" = "Darwin" ]; then
+  alias -g C='| pbcopy'
+else
+  alias -g C='| xsel -i && xsel -o'
+fi
 alias -g S="| curl -F 'sprunge=<-' http://sprunge.us C"
 alias -r T='tail -f'
 alias -g V='| tee $(rm fifo.tmp; mkfifo fifo.tmp && echo fifo.tmp) &; vim $(< fifo.tmp ) && rm fifo.tmp'
