@@ -25,7 +25,7 @@ alias tls='tmux ls'
 alias tn='tmux new -s'
 
 # Google translate cli, en -> ru
-alias trs='trans'
+alias trs='trans {ru=}'
 alias tru='trans {=ru}'
 
 # Pretty self explaining
