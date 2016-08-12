@@ -17,6 +17,9 @@ alias edit=$EDITOR
 
 # Run tmux in 256 color mode
 alias tmux='tmux -2'
+if [ "$PLATFORM" = "Darwin" ]; then
+  alias tmux='tmux -f ~/.tmux.osx.conf'
+fi
 
 # tmux aliases
 alias ta='tmux at'
