@@ -46,7 +46,7 @@
   f = flow feature
   l = log -p
   ll = log --no-merges
-  align = !BASE_BRANCH=${1:-develop} && git fetch origin $BASE_BRANCH && git rebase origin/$BASE_BRANCH && :
+  align = !BASE_BRANCH=${1:-master} && git fetch origin $BASE_BRANCH && git rebase origin/$BASE_BRANCH && :
   edit = "!vim $(git ls-files -m --other --exclude-standard)"
   delete-merged-branches = git branch --merged | grep --invert-match master | xargs git branch -d
 [rerere]
