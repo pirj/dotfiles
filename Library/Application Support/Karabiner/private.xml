@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <root>
   <item>
-    <identifier>remap.cmdptocmdo</identifier>
+    <identifier>private.cmdptocmdo</identifier>
     <name>Command+P to Command+O</name>
     <autogen>
       __KeyToKey__
@@ -11,7 +11,7 @@
   </item>
 
   <item>
-    <identifier>remap.swapcolonsus</identifier>
+    <identifier>private.swapcolonsus</identifier>
     <name>Swap semicolon and colon in US layout</name>
     <inputsource_not>RUSSIAN</inputsource_not>
     <!-- change shift+; to ; -->
@@ -31,13 +31,73 @@
   <item>
     <name>Alt_L to Alt_L</name>
     <appendix>(+ When you type Alt_L only, change Input Source to Russian)</appendix>
-    <identifier>remap.russian_optionL2optionL_russian</identifier>
+    <identifier>private.russian_optionL2optionL_russian</identifier>
     <autogen>__KeyOverlaidModifier__ KeyCode::OPTION_L, KeyCode::OPTION_L, KeyCode::VK_CHANGE_INPUTSOURCE_RUSSIAN</autogen>
   </item>
   <item>
     <name>Alt_R to Alt_R</name>
     <appendix>(+ When you type Alt_R only, change Input Source to English)</appendix>
-    <identifier>remap.russian_optionR2optionR_english</identifier>
+    <identifier>private.russian_optionR2optionR_english</identifier>
     <autogen>__KeyOverlaidModifier__ KeyCode::OPTION_R, KeyCode::OPTION_R, KeyCode::VK_CHANGE_INPUTSOURCE_ENGLISH</autogen>
+  </item>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_SHELL_mpd_toggle</name>
+    <url type="shell"><![CDATA[ /usr/local/bin/mpc toggle ]]></url>
+  </vkopenurldef>
+
+  <item>
+    <name>Media play to play/pause MPD</name>
+    <identifier>private.media_play</identifier>
+    <autogen>
+      __KeyToKey__
+      ConsumerKeyCode::MUSIC_PLAY,
+      KeyCode::VK_OPEN_URL_SHELL_mpd_toggle,
+    </autogen>
+  </item>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_SHELL_mpd_next</name>
+    <url type="shell"><![CDATA[ /usr/local/bin/mpc next ]]></url>
+  </vkopenurldef>
+
+  <item>
+    <name>Media next to MPD</name>
+    <identifier>private.media_next</identifier>
+    <autogen>
+      __KeyToKey__
+      ConsumerKeyCode::MUSIC_NEXT,
+      KeyCode::VK_OPEN_URL_SHELL_mpd_next,
+    </autogen>
+  </item>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_SHELL_mpd_prev</name>
+    <url type="shell"><![CDATA[ /usr/local/bin/mpc prev ]]></url>
+  </vkopenurldef>
+
+  <item>
+    <name>Media previous to MPD</name>
+    <identifier>private.media_prev</identifier>
+    <autogen>
+      __KeyToKey__
+      ConsumerKeyCode::MUSIC_PREV,
+      KeyCode::VK_OPEN_URL_SHELL_mpd_prev,
+    </autogen>
+  </item>
+
+  <vkopenurldef>
+    <name>KeyCode::VK_OPEN_URL_SHELL_switch_output</name>
+    <url type="shell"><![CDATA[ /usr/local/bin/SwitchAudioSource -n ]]></url>
+  </vkopenurldef>
+
+  <item>
+    <name>Left command + media mute to switch sound output</name>
+    <identifier>private.command_l_media_mute</identifier>
+    <autogen>
+      __KeyToKey__
+      ConsumerKeyCode::VOLUME_MUTE | ModifierFlag::COMMAND_L,
+      KeyCode::VK_OPEN_URL_SHELL_switch_output,
+    </autogen>
   </item>
 </root>
