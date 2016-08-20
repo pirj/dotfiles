@@ -63,6 +63,3 @@ alias pwgen='pwgen -1cnsB 12 C'
 
 # Stupid MySQL treats ^C as ^D
 alias mysql='mysql --sigint-ignore'
-
-# Ignore that Guard is installed user-wide
-alias guard='guard --no-bundler-warning'
