@@ -501,10 +501,8 @@
 	<true/>
 	<key>MaxVertically</key>
 	<false/>
-	<key>NSFontPanelAttributes</key>
-	<string>1, 7</string>
 	<key>NSNavLastRootDirectory</key>
-	<string>~</string>
+	<string>~/.config</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{868, 459}</string>
 	<key>NSQuotedKeystrokeBinding</key>
@@ -512,6 +510,8 @@
 	<key>NSRepeatCountBinding</key>
 	<string></string>
 	<key>NSScrollAnimationEnabled</key>
+	<false/>
+	<key>NSScrollViewShouldScrollUnderTitlebar</key>
 	<false/>
 	<key>NSTableView Columns KeyBingingTable</key>
 	<array>
@@ -524,33 +524,25 @@
 		BAtzdHJlYW10eXBlZIHoA4QBQISEhAhOU1N0cmluZwGEhAhOU09iamVjdACF
 		hAErATGG
 		</data>
-		<string>319</string>
+		<string>322</string>
 	</array>
 	<key>NSTableView Hidden Columns KeyBingingTable</key>
 	<array/>
 	<key>NSTableView Sort Ordering KeyBingingTable</key>
 	<array/>
-	<key>NSToolbar Configuration Terminal Toolbar</key>
+	<key>NSToolbar Configuration com.apple.NSColorPanel</key>
 	<dict>
-		<key>TB Display Mode</key>
-		<integer>1</integer>
-		<key>TB Icon Size Mode</key>
-		<integer>1</integer>
 		<key>TB Is Shown</key>
-		<integer>0</integer>
-		<key>TB Size Mode</key>
 		<integer>1</integer>
 	</dict>
-	<key>NSWindow Frame NSFontPanel</key>
-	<string>163 140 454 331 0 0 1280 777 </string>
-	<key>NSWindow Frame Preferences</key>
-	<string>272 192 924 485 0 0 1280 777 </string>
+	<key>NSWindow Frame SharedPreferences</key>
+	<string>309 561 796 473 0 0 1600 1200 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>399 301 570 401 0 0 1280 777 </string>
+	<string>688 525 570 352 0 0 1600 1177 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>283 100 570 401 0 0 1280 800 </string>
+	<string>200 140 570 352 0 0 1600 1200 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>173 44 570 401 0 0 1280 777 </string>
+	<string>221 109 570 352 0 0 1600 1200 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -710,12 +702,16 @@
 			<true/>
 			<key>Background Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.10980392247438431</real>
+				<real>0.0</real>
+				<key>Color Space</key>
+				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.10980392247438431</real>
+				<real>0.0</real>
 				<key>Red Component</key>
-				<real>0.10980392247438431</real>
+				<real>0.0</real>
 			</dict>
 			<key>Background Image Is Tiled</key>
 			<false/>
@@ -784,12 +780,16 @@
 			<false/>
 			<key>Foreground Color</key>
 			<dict>
+				<key>Alpha Component</key>
+				<real>1</real>
 				<key>Blue Component</key>
-				<real>0.86666667461395264</real>
+				<real>0.99999129772186279</real>
+				<key>Color Space</key>
+				<string>Calibrated</string>
 				<key>Green Component</key>
-				<real>0.93333333730697632</real>
+				<real>0.99997437000274658</real>
 				<key>Red Component</key>
-				<real>0.86666667461395264</real>
+				<real>1</real>
 			</dict>
 			<key>Guid</key>
 			<string>97AEA64F-301E-45B5-854E-4F17457680BA</string>
@@ -1279,12 +1279,14 @@
 			<string>/Users/pirj</string>
 		</dict>
 	</array>
-	<key>NoSyncNeverRemindPrefsChangesCopy</key>
+	<key>NoSyncInstallationId</key>
+	<string>1CB6131A-BBDE-4242-B5B9-AF4E9202206C</string>
+	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
-	<key>NoSyncTimeOfLastPromo</key>
-	<real>483819568.90955198</real>
-	<key>NoSyncTimeOfLastPromoDownload</key>
-	<real>492207348.41062802</real>
+	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
+	<integer>0</integer>
+	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
+	<real>492205276.29143</real>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -1333,7 +1335,7 @@
 		</dict>
 	</dict>
 	<key>PrefsCustomFolder</key>
-	<string>/Users/pirj/.config</string>
+	<string>~/.config/</string>
 	<key>PromptOnQuit</key>
 	<true/>
 	<key>QuitWhenAllWindowsClosed</key>
@@ -1343,15 +1345,15 @@
 	<key>RightOption</key>
 	<integer>3</integer>
 	<key>SUEnableAutomaticChecks</key>
-	<true/>
+	<false/>
+	<key>SUFeedAlternateAppNameKey</key>
+	<string>iTerm</string>
 	<key>SUFeedURL</key>
-	<string>https://iterm2.com/appcasts/final.xml</string>
+	<string>https://iterm2.com/appcasts/final.xml?shard=96</string>
 	<key>SUHasLaunchedBefore</key>
 	<true/>
-	<key>SULastCheckTime</key>
-	<date>2016-08-06T20:14:56Z</date>
-	<key>SUSkippedVersion</key>
-	<string>3.0.5</string>
+	<key>SUSendProfileInfo</key>
+	<false/>
 	<key>SavePasteHistory</key>
 	<false/>
 	<key>Show Toolbelt</key>
@@ -1368,6 +1370,8 @@
 	<integer>4</integer>
 	<key>SwitchWindowModifier</key>
 	<integer>6</integer>
+	<key>TabStyle</key>
+	<integer>3</integer>
 	<key>TabViewType</key>
 	<integer>0</integer>
 	<key>ThreeFingerEmulates</key>
@@ -1391,6 +1395,10 @@
 	<key>WordCharacters</key>
 	<string>/-+\~_.@:?=&amp;</string>
 	<key>iTerm Version</key>
-	<string>2.1.4</string>
+	<string>3.0.5</string>
+	<key>kCPKSelectionViewPreferredModeKey</key>
+	<integer>0</integer>
+	<key>kCPKSelectionViewShowHSBTextFieldsKey</key>
+	<false/>
 </dict>
 </plist>
