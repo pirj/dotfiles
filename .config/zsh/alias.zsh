@@ -1,6 +1,12 @@
 # Platform specific values
-if [ "$PLATFORM" = "Linux" ]; then
+
+if [[ "$OSTYPE" = "linux"* ]]; then
   LS_COLOR='--color'
+fi
+
+if [[ "$OSTYPE" != "darwin"* ]]; then
+  # Start week on Monday
+  alias cal='cal -m'
 fi
 
 alias ls='ls $LS_COLOR'
@@ -8,16 +14,13 @@ alias ll='ls -lh'
 alias la='ls -A'
 alias l='ls -lhA'
 
-# Start week on Monday
-alias cal='cal -m'
-
 # Use editor consistently
 alias view=$EDITOR -R
 alias edit=$EDITOR
 
 # Run tmux in 256 color mode
 alias tmux='tmux -2'
-if [ "$PLATFORM" = "Darwin" ]; then
+if [[ "$OSTYPE" = "darwin"* ]]; then
   alias tmux='tmux -f ~/.tmux.osx.conf'
 fi
 
@@ -39,7 +42,7 @@ alias -g G='| grep -a'
 alias -g P='| $PAGER'
 alias -g W='| wc -l'
 alias -g H='| head -n'
-if [ "$PLATFORM" = "Darwin" ]; then
+if [[ "$OSTYPE" = "darwin"* ]]; then
   alias -g C='| pbcopy'
 else
   alias -g C='| xsel -i && xsel -o'
