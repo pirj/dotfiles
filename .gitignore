@@ -87,6 +87,8 @@ books
 .mpd/mpd.pid
 .mpd/playlists
 .task
+.timewarrior/data
+.timewarrior/extensions
 .rubies
 .config/tox/data
 .keychain
