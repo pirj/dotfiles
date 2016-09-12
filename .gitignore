@@ -86,7 +86,7 @@ books
 .mpd/mpd.db
 .mpd/mpd.pid
 .mpd/playlists
-.task
+.task/*.data
 .timewarrior/data
 .timewarrior/extensions
 .rubies
