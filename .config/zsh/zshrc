@@ -21,13 +21,13 @@ unsetopt nomatch
 # Ignore duplicate history entries
 setopt histignoredups
 
-. ~/.zplug/zplug
-! zplug check && zplug install
-zplug b4b4r07/zplug
+source ~/.zplug/init.zsh
+zplug check || zplug install
+zplug zplug/zplug
 zplug zsh-users/zsh-syntax-highlighting
 zplug zsh-users/zsh-history-substring-search
 zplug djui/alias-tips
-# zplug tarruda/zsh-autosuggestions
+zplug tarruda/zsh-autosuggestions
 zplug load
 
 # Better vi mode (hat tip Doug Black)
