@@ -66,3 +66,6 @@ alias pwgen='pwgen -1cnsB 12 C'
 
 # Stupid MySQL treats ^C as ^D
 alias mysql='mysql --sigint-ignore'
+
+# TLDR cheat sheets
+alias "?"=tldr
