@@ -199,3 +199,4 @@ Public
 .aws
 .config/heroku/config.json
 .wget-hsts
+.factor_history
