@@ -1,4 +1,5 @@
 aalib
+armmbed/formulae/arm-none-eabi-gcc
 awscli
 babl
 blueutil
@@ -42,9 +43,11 @@ ruby
 sipp
 ssh-copy-id
 switchaudio-osx
+task
 terminal-notifier
 the_silver_searcher
 tig
+timewarrior
 tmux
 tor
 translate-shell
