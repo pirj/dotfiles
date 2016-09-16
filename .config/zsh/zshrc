@@ -1,6 +1,3 @@
-# Aliases
-[[ -s ~/.config/zsh/alias.zsh ]] && source ~/.config/zsh/alias.zsh
-
 # Shell prompt always in the bottom of the screen
 tput cup $LINES 0
 
@@ -42,16 +39,16 @@ history-incremental-search-backward-ins () {
   zle -K vicmd
 }
 zle -N history-incremental-search-backward-ins
-bindkey ^r history-incremental-search-backward-ins
-bindkey -a ^r history-incremental-search-backward
+bindkey -M viins ^r history-incremental-search-backward-ins
+bindkey -M vicmd ^r history-incremental-search-backward
 # Accept incremental search for further editing with a single escape
 bindkey -M isearch '\e' accept-search
 bindkey -M isearch kj accept-search
 bindkey -M isearch ^p history-incremental-search-backward
 bindkey -M isearch ^n history-incremental-search-forward
 
-bindkey -a 'H' beginning-of-line
-bindkey -a 'L' end-of-line
+bindkey -M vicmd H beginning-of-line
+bindkey -M vicmd L end-of-line
 
 # Use ^F to complete an autosuggestion
 bindkey -M viins ff forward-char
@@ -75,8 +72,8 @@ fancy-ctrl-z () {
   fi
 }
 zle -N fancy-ctrl-z
-bindkey -v ^Z fancy-ctrl-z
-bindkey -a ^Z fancy-ctrl-z
+bindkey -M viins ^Z fancy-ctrl-z
+bindkey -M vicmd ^Z fancy-ctrl-z
 
 # Edit command in external editor
 autoload -U edit-command-line
@@ -101,6 +98,9 @@ zstyle ':vcs_info:*' unstagedstr '*'
 precmd () { vcs_info }
 
 PS1='%n@%{$fg[blue]%}%m %{$fg[yellow]%}%~ %{$fg[green]%}% (${vcs_info_msg_0_}) %{$reset_color%}% %(!.#.$) '
+
+# Aliases
+[[ -s ~/.config/zsh/alias.zsh ]] && source ~/.config/zsh/alias.zsh
 
 # Homebrew github api key
 [[ -s ~/.config/zsh/brew-api-key.sh ]] && source ~/.config/zsh/brew-api-key.sh
