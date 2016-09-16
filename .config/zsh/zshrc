@@ -35,14 +35,26 @@ zplug load
 
 # Better vi mode (hat tip Doug Black)
 bindkey -v
-bindkey '^r' history-incremental-search-backward
-bindkey -a '^r' history-incremental-search-backward
+
+# Switch to command mode even if in insert mode initially
+history-incremental-search-backward-ins () {
+  zle history-incremental-search-backward
+  zle -K vicmd
+}
+zle -N history-incremental-search-backward-ins
+bindkey ^r history-incremental-search-backward-ins
+bindkey -a ^r history-incremental-search-backward
+# Accept incremental search for further editing with a single escape
+bindkey -M isearch '\e' accept-search
+bindkey -M isearch kj accept-search
+bindkey -M isearch ^p history-incremental-search-backward
+bindkey -M isearch ^n history-incremental-search-forward
 
 bindkey -a 'H' beginning-of-line
 bindkey -a 'L' end-of-line
 
 # Use ^F to complete an autosuggestion
-bindkey '^f' forward-char
+bindkey ^f forward-char
 
 # Better undo/redo
 bindkey -M vicmd u undo
@@ -63,15 +75,15 @@ fancy-ctrl-z () {
   fi
 }
 zle -N fancy-ctrl-z
-bindkey -v '^Z' fancy-ctrl-z
-bindkey -a '^Z' fancy-ctrl-z
+bindkey -v ^Z fancy-ctrl-z
+bindkey -a ^Z fancy-ctrl-z
 
 # Edit command in external editor
 autoload -U edit-command-line
 zle -N edit-command-line
 bindkey -M vicmd v edit-command-line
 
-bindkey -M vicmd 'K' run-help
+bindkey -M vicmd K run-help
 
 # Color scheme
 [[ -s ~/.config/zsh/colors.sh ]] && source ~/.config/zsh/colors.sh
