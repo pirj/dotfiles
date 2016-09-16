@@ -77,19 +77,21 @@ bindkey -M vicmd 'K' run-help
 [[ -s ~/.config/zsh/colors.sh ]] && source ~/.config/zsh/colors.sh
 autoload -U colors && colors
 
-# Git prompt
-[[ -s ~/.bin/git-prompt.sh ]] && source ~/.bin/git-prompt.sh
-export GIT_PS1_SHOWDIRTYSTATE=0
+# Prompt
+
+setopt prompt_subst
+autoload -Uz vcs_info
+zstyle ':vcs_info:*' formats "%b %m%u%c"
+zstyle ':vcs_info:*' actionformats "%b %u%c|%a"
+zstyle ':vcs_info:*' check-for-changes true
+zstyle ':vcs_info:*' stagedstr '+'
+zstyle ':vcs_info:*' unstagedstr '*'
+precmd () { vcs_info }
+
+PS1='%n@%{$fg[blue]%}%m %{$fg[yellow]%}%~ %{$fg[green]%}% (${vcs_info_msg_0_}) %{$reset_color%}% %(!.#.$) '
 
 # Homebrew github api key
 [[ -s ~/.config/zsh/brew-api-key.sh ]] && source ~/.config/zsh/brew-api-key.sh
-
-# Prompt
-
-# Expand functions in the prompt
-setopt prompt_subst
-
-export PS1='%n@%{$fg[blue]%}%m %{$fg[yellow]%}%~ %{$fg[green]%}%$(__git_ps1) %{$reset_color%}% %(!.#.$) '
 
 # Many programs change the terminal state, and often do not restore terminal settings on exiting abnormally. To avoid the need to manually reset the terminal, freeze it:
 ttyctl -f
