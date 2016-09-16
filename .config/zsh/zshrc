@@ -54,7 +54,7 @@ bindkey -a 'H' beginning-of-line
 bindkey -a 'L' end-of-line
 
 # Use ^F to complete an autosuggestion
-bindkey ^f forward-char
+bindkey -M viins ff forward-char
 
 # Better undo/redo
 bindkey -M vicmd u undo
