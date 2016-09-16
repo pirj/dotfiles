@@ -308,6 +308,13 @@
 			<key>Text</key>
 			<string>0x05</string>
 		</dict>
+		<key>0x66-0x100000</key>
+		<dict>
+			<key>Action</key>
+			<integer>11</integer>
+			<key>Text</key>
+			<string>0x06</string>
+		</dict>
 		<key>0x68-0x100000</key>
 		<dict>
 			<key>Action</key>
@@ -502,9 +509,11 @@
 	<key>MaxVertically</key>
 	<false/>
 	<key>NSNavLastRootDirectory</key>
-	<string>~/.config</string>
+	<string>~/Documents</string>
 	<key>NSNavPanelExpandedSizeForOpenMode</key>
 	<string>{868, 459}</string>
+	<key>NSNavPanelExpandedSizeForSaveMode</key>
+	<string>{712, 521}</string>
 	<key>NSQuotedKeystrokeBinding</key>
 	<string></string>
 	<key>NSRepeatCountBinding</key>
@@ -536,13 +545,19 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>309 561 796 473 0 0 1600 1200 </string>
+	<string>309 569 937 465 0 0 1600 1200 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>688 525 570 352 0 0 1600 1177 </string>
+	<string>0 821 570 352 0 0 1600 1177 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>200 140 570 352 0 0 1600 1200 </string>
+	<string>11 844 570 352 0 0 1600 1200 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>221 109 570 352 0 0 1600 1200 </string>
+	<string>799 818 570 352 0 0 1600 1200 </string>
+	<key>NSWindow Frame iTerm Window 3</key>
+	<string>242 86 570 352 0 0 1600 1177 </string>
+	<key>NSWindow Frame iTerm Window 4</key>
+	<string>263 744 570 352 0 0 1600 1177 </string>
+	<key>NSWindow Frame iTerm Window 5</key>
+	<string>284 721 570 352 0 0 1600 1177 </string>
 	<key>New Bookmarks</key>
 	<array>
 		<dict>
@@ -1281,12 +1296,38 @@
 	</array>
 	<key>NoSyncInstallationId</key>
 	<string>1CB6131A-BBDE-4242-B5B9-AF4E9202206C</string>
+	<key>NoSyncLastTipTime</key>
+	<real>495631794.80470198</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
 	<integer>0</integer>
+	<key>NoSyncPermissionToShowTip</key>
+	<true/>
 	<key>NoSyncTimeOfFirstLaunchOfVersionWithTip</key>
 	<real>492205276.29143</real>
+	<key>NoSyncTipsToNotShow</key>
+	<array>
+		<string>000</string>
+		<string>0000</string>
+		<string>0001</string>
+		<string>0002</string>
+		<string>0003</string>
+		<string>0004</string>
+		<string>0005</string>
+		<string>0006</string>
+		<string>0007</string>
+		<string>0008</string>
+		<string>0009</string>
+		<string>0010</string>
+		<string>0011</string>
+		<string>0012</string>
+		<string>0013</string>
+		<string>0014</string>
+		<string>0015</string>
+		<string>0016</string>
+		<string>0017</string>
+	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
 	<key>OpenArrangementAtStartup</key>
@@ -1394,6 +1435,10 @@
 	<integer>0</integer>
 	<key>WordCharacters</key>
 	<string>/-+\~_.@:?=&amp;</string>
+	<key>findIgnoreCase_iTerm</key>
+	<true/>
+	<key>findRegex_iTerm</key>
+	<false/>
 	<key>iTerm Version</key>
 	<string>3.0.5</string>
 	<key>kCPKSelectionViewPreferredModeKey</key>
