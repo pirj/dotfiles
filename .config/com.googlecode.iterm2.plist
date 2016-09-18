@@ -364,6 +364,13 @@
 			<key>Text</key>
 			<string>0x12</string>
 		</dict>
+		<key>0x74-0x100000</key>
+		<dict>
+			<key>Action</key>
+			<integer>26</integer>
+			<key>Text</key>
+			<string>97AEA64F-301E-45B5-854E-4F17457680BA</string>
+		</dict>
 		<key>0x75-0x100000</key>
 		<dict>
 			<key>Action</key>
@@ -499,17 +506,17 @@
 	<key>HighlightTabLabels</key>
 	<true/>
 	<key>HotKeyBookmark</key>
-	<string>97AEA64F-301E-45B5-854E-4F17457680BA</string>
+	<string>1C004E8D-0A63-441C-8859-120F89CA8EA4</string>
 	<key>HotKeyTogglesWindow</key>
 	<false/>
 	<key>Hotkey</key>
-	<false/>
+	<true/>
 	<key>HotkeyChar</key>
-	<integer>0</integer>
+	<integer>13</integer>
 	<key>HotkeyCode</key>
-	<integer>0</integer>
+	<integer>36</integer>
 	<key>HotkeyModifiers</key>
-	<integer>0</integer>
+	<integer>1048840</integer>
 	<key>IRMemory</key>
 	<integer>4</integer>
 	<key>JobName</key>
@@ -559,9 +566,9 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>309 569 796 473 0 0 1600 1200 </string>
+	<string>527 513 796 473 0 0 1600 1200 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 314 1466 859 0 0 1600 1177 </string>
+	<string>0 821 570 352 0 0 1600 1177 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
 	<string>11 844 570 352 0 0 1600 1200 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
@@ -1311,7 +1318,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>1CB6131A-BBDE-4242-B5B9-AF4E9202206C</string>
 	<key>NoSyncLastTipTime</key>
-	<real>495753709.82278299</real>
+	<real>495891281.75304002</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
