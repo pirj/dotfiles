@@ -52,6 +52,7 @@ bindkey -M vicmd L end-of-line
 
 # Use ^F to complete an autosuggestion
 bindkey -M viins ff forward-char
+bindkey -M vicmd ff forward-char
 
 # Better undo/redo
 bindkey -M vicmd u undo
