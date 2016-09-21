@@ -287,6 +287,13 @@
 			<key>Text</key>
 			<string>0x1d</string>
 		</dict>
+		<key>0x61-0x100000</key>
+		<dict>
+			<key>Action</key>
+			<integer>11</integer>
+			<key>Text</key>
+			<string>0x01</string>
+		</dict>
 		<key>0x63-0x100000</key>
 		<dict>
 			<key>Action</key>
@@ -567,6 +574,8 @@
 	</dict>
 	<key>NSWindow Frame SharedPreferences</key>
 	<string>527 513 796 473 0 0 1600 1200 </string>
+	<key>NSWindow Frame UKCrashReporter</key>
+	<string>118 593 592 584 0 0 1600 1177 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
 	<string>0 821 570 352 0 0 1600 1177 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
@@ -1318,7 +1327,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>1CB6131A-BBDE-4242-B5B9-AF4E9202206C</string>
 	<key>NoSyncLastTipTime</key>
-	<real>495891281.75304002</real>
+	<real>496154665.65524399</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -1349,6 +1358,9 @@
 		<string>0016</string>
 		<string>0017</string>
 		<string>0018</string>
+		<string>0019</string>
+		<string>0020</string>
+		<string>0021</string>
 	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
@@ -1445,6 +1457,8 @@
 	<integer>10</integer>
 	<key>TripleClickSelectsFullWrappedLines</key>
 	<false/>
+	<key>UKCrashReporterLastCrashReportDate</key>
+	<real>1474316672</real>
 	<key>URLHandlersByGuid</key>
 	<dict/>
 	<key>UseBorder</key>
