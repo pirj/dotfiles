@@ -16,13 +16,6 @@ image::.config/screenshot.jpg[Screenshot]
     rm -rf dotfiles
     mkdir .tmp
 
-Create .zplug/.gitignore with the following (see https://github.com/b4b4r07/zplug/issues/45):
-
-    .cache
-    .gitignore
-    repos
-    zcompdump
-
 === OSX specific
 
 Tell iTunes [not to grab the keys](http://superuser.com/questions/31925/what-can-i-do-to-stop-the-play-pause-button-from-opening-itunes/827710#827710):
