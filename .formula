@@ -23,10 +23,12 @@ libev
 libksba
 librsvg
 libwmf
+lua
 memcached
 mpc
 mpd
 mtr
+mysql
 nginx
 openvpn
 perl
@@ -36,6 +38,7 @@ privoxy
 pv
 pwgen
 python
+python3
 reattach-to-user-namespace
 redis
 redshift
