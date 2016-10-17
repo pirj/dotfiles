@@ -266,6 +266,13 @@
 			<key>Text</key>
 			<string>Copy</string>
 		</dict>
+		<key>0x4e-0x120000</key>
+		<dict>
+			<key>Action</key>
+			<integer>26</integer>
+			<key>Text</key>
+			<string>97AEA64F-301E-45B5-854E-4F17457680BA</string>
+		</dict>
 		<key>0x56-0x120000</key>
 		<dict>
 			<key>Action</key>
@@ -370,13 +377,6 @@
 			<integer>11</integer>
 			<key>Text</key>
 			<string>0x12</string>
-		</dict>
-		<key>0x74-0x100000</key>
-		<dict>
-			<key>Action</key>
-			<integer>26</integer>
-			<key>Text</key>
-			<string>97AEA64F-301E-45B5-854E-4F17457680BA</string>
 		</dict>
 		<key>0x75-0x100000</key>
 		<dict>
@@ -517,7 +517,7 @@
 	<key>HotKeyTogglesWindow</key>
 	<false/>
 	<key>Hotkey</key>
-	<true/>
+	<false/>
 	<key>HotkeyChar</key>
 	<integer>13</integer>
 	<key>HotkeyCode</key>
@@ -573,17 +573,17 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>527 513 796 473 0 0 1600 1200 </string>
+	<string>216 207 796 473 0 0 1600 1177 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>118 593 592 584 0 0 1600 1177 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>0 821 570 352 0 0 1600 1177 </string>
+	<string>609 594 570 352 0 0 1600 1177 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>11 844 570 352 0 0 1600 1200 </string>
+	<string>11 825 570 352 0 0 1600 1177 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
-	<string>799 818 570 352 0 0 1600 1200 </string>
+	<string>799 841 570 352 0 0 1600 1200 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
-	<string>242 86 570 352 0 0 1600 1177 </string>
+	<string>242 88 570 352 0 0 1600 1177 </string>
 	<key>NSWindow Frame iTerm Window 4</key>
 	<string>263 744 570 352 0 0 1600 1177 </string>
 	<key>NSWindow Frame iTerm Window 5</key>
@@ -1324,10 +1324,14 @@
 			<string>/Users/pirj</string>
 		</dict>
 	</array>
+	<key>NoSyncDoNotWarnBeforeMultilinePaste</key>
+	<false/>
+	<key>NoSyncDoNotWarnBeforeMultilinePaste_selection</key>
+	<integer>1</integer>
 	<key>NoSyncInstallationId</key>
 	<string>1CB6131A-BBDE-4242-B5B9-AF4E9202206C</string>
 	<key>NoSyncLastTipTime</key>
-	<real>496154665.65524399</real>
+	<real>498399587.15810001</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -1361,6 +1365,30 @@
 		<string>0019</string>
 		<string>0020</string>
 		<string>0021</string>
+		<string>0022</string>
+		<string>0023</string>
+		<string>0024</string>
+		<string>0025</string>
+		<string>0026</string>
+		<string>0027</string>
+		<string>0028</string>
+		<string>0029</string>
+		<string>0030</string>
+		<string>0031</string>
+		<string>0032</string>
+		<string>0033</string>
+		<string>0034</string>
+		<string>0035</string>
+		<string>0036</string>
+		<string>0037</string>
+		<string>0038</string>
+		<string>0039</string>
+		<string>0040</string>
+		<string>0041</string>
+		<string>0042</string>
+		<string>0043</string>
+		<string>0044</string>
+		<string>0045</string>
 	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
@@ -1458,7 +1486,7 @@
 	<key>TripleClickSelectsFullWrappedLines</key>
 	<false/>
 	<key>UKCrashReporterLastCrashReportDate</key>
-	<real>1474316672</real>
+	<real>1476727552</real>
 	<key>URLHandlersByGuid</key>
 	<dict/>
 	<key>UseBorder</key>
