@@ -45,6 +45,11 @@ Map Command + P to Command + O (avoid annoying print dialog):
 Swap ~ and ` (if you use ~ more ofter):
     /Applications/Karabiner.app/Contents/Library/bin/karabiner enable remap.programmer.backtick_tilde
 
+Prevent Chrome from emailing the page when mistyping Command+Option+I with Command+Shift+I:
+
+    defaults write com.google.Chrome NSUserKeyEquivalents -dict-add 'Email Page Location' '\0'
+    defaults write com.google.Chrome.canary NSUserKeyEquivalents -dict-add 'Email Page Location' '\0'
+
 == Inspiration sources
 
 I use to browse repositories on GH, and check other people's dotfiles. dotshare.it is another interesting source.
