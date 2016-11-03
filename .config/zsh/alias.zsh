@@ -69,3 +69,15 @@ alias mysql='mysql --sigint-ignore'
 
 # TLDR cheat sheets
 alias "?"=tldr
+
+# Some TimeWarrior shortcuts
+alias sow='timew summary sow - now'
+alias tt='timew track'
+
+# Fuzzy find
+function fn { find . -name "*$1*" }
+
+# Script-it!
+function script-it {
+  echo alias $1=\"$(fc -nl -1)\" >> ~/.config/zsh/alias.zsh
+}
