@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+STATE=bright
+while true; do
+  CLOSED=$(ioreg -r -k AppleClamshellState | grep AppleClamshellState | grep Yes)
+  if [ -z "$CLOSED" ]; then
+    # Only dim when it may be bright
+    if [ "$STATE" = "bright" ]; then
+      STATE=dimmed;
+      sleep 2;
+      /usr/local/bin/brightness -d 1 -v 0
+    fi
+  fi
+  if [ "$CLOSED" ]; then STATE=bright; fi
+  # Don't check for closed lid too often, it feels immediate anyway
+  sleep 2
+done

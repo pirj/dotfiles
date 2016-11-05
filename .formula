@@ -3,6 +3,7 @@ armmbed/formulae/arm-none-eabi-gcc
 awscli
 babl
 blueutil
+brightness
 dbus
 diff-so-fancy
 docutils
@@ -23,6 +24,7 @@ libev
 libksba
 librsvg
 libwmf
+libxml2
 lua
 memcached
 mpc
@@ -56,10 +58,12 @@ tmux
 tor
 translate-shell
 transmission
+unixodbc
 unrar
 vim
 vimpc
 w3m
+watch
 wget
 youtube-dl
 zsh
