@@ -67,6 +67,7 @@ set shiftwidth=2          " Tabs under smart indent
 set autoindent            " Copy indent from current line when starting a new line
 set expandtab             " Tabs are spaces
 set formatoptions=t       " Do not insert new line of comments
+set formatoptions+=j      " Remove extra comment when joining lines
 
 " Searching
 set ignorecase            " Case insensitive search
@@ -81,6 +82,8 @@ set novisualbell
 set t_vb=
 
 set complete=.,w,b,u,U    " Better complete options to speed it up
+set completeopt+=longest  " Insert the longest common text of the matches
+set shortmess+=c          " No match index indication
 
 set timeoutlen=1000       " Those two together
 set ttimeoutlen=50        " are avoiding annoying mode switch lag

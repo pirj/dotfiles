@@ -74,8 +74,9 @@ nnoremap ` '
 " Easier redo
 nnoremap U <C-r>
 
-" Autocomplete on Tab
-imap <Tab> <C-p>
+" Autocomplete on Tab, and accept selection with Tab ~or Enter~
+inoremap <expr> <Tab> pumvisible() ? '<C-y>' : '<C-p>'
+" inoremap <expr> <CR> pumvisible() ? '<C-y>' : '<CR>'
 
 " No highlight search
 "nnoremap <silent> <Leader><Leader> :nohlsearch<CR>:let @/ = ''<CR>
