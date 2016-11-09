@@ -75,7 +75,7 @@ Bundle 'justincampbell/vim-eighties'
 Bundle 'tpope/vim-surround'
 
 " Wisely add 'end' in ruby, endfunction/endif/more in vim script, etc
-Bundle 'tpope/vim-endwise'
+" Bundle 'tpope/vim-endwise'
 
 " Indentation text-objects to give your old Vim some new bytes
 " Bundle 'qstrahl/vim-dentures'
@@ -140,6 +140,11 @@ Bundle 'slim-template/vim-slim'
 Bundle 'sunaku/vim-ruby-minitest'
 " Bundle 'tpope/vim-haml'
 " Bundle 'tpope/vim-rake'
+
+" Bundle 'MarcWeber/vim-addon-mw-utils'
+" Bundle 'tomtom/tlib_vim'
+" Bundle 'garbas/vim-snipmate'
+" Bundle 'honza/vim-snippets'
 
 " CSS color previews
 Bundle 'ap/vim-css-color'

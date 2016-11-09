@@ -399,6 +399,20 @@
 			<key>Text</key>
 			<string>0x17</string>
 		</dict>
+		<key>0x78-0x100000</key>
+		<dict>
+			<key>Action</key>
+			<integer>11</integer>
+			<key>Text</key>
+			<string>0x18</string>
+		</dict>
+		<key>0x79-0x100000</key>
+		<dict>
+			<key>Action</key>
+			<integer>11</integer>
+			<key>Text</key>
+			<string>0x19</string>
+		</dict>
 		<key>0x7a-0x100000</key>
 		<dict>
 			<key>Action</key>
@@ -412,6 +426,13 @@
 			<integer>32</integer>
 			<key>Text</key>
 			<string></string>
+		</dict>
+		<key>0xd-0x20000</key>
+		<dict>
+			<key>Action</key>
+			<integer>12</integer>
+			<key>Text</key>
+			<string>✠</string>
 		</dict>
 		<key>0xf700-0x300000</key>
 		<dict>
@@ -573,13 +594,13 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>216 207 796 473 0 0 1600 1177 </string>
+	<string>552 712 796 473 0 0 1600 1200 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>118 593 592 584 0 0 1600 1177 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>609 594 570 352 0 0 1600 1177 </string>
+	<string>285 539 570 352 0 0 1600 1177 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>11 825 570 352 0 0 1600 1177 </string>
+	<string>11 848 570 352 0 0 1600 1200 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>799 841 570 352 0 0 1600 1200 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
@@ -1331,7 +1352,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>1CB6131A-BBDE-4242-B5B9-AF4E9202206C</string>
 	<key>NoSyncLastTipTime</key>
-	<real>498399587.15810001</real>
+	<real>500336197.26892501</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -1389,6 +1410,25 @@
 		<string>0043</string>
 		<string>0044</string>
 		<string>0045</string>
+		<string>0046</string>
+		<string>0047</string>
+		<string>0048</string>
+		<string>0049</string>
+		<string>0050</string>
+		<string>0051</string>
+		<string>0052</string>
+		<string>0053</string>
+		<string>0054</string>
+		<string>0055</string>
+		<string>0056</string>
+		<string>0057</string>
+		<string>0058</string>
+		<string>0059</string>
+		<string>0060</string>
+		<string>0061</string>
+		<string>0062</string>
+		<string>0063</string>
+		<string>0064</string>
 	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>

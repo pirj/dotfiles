@@ -74,9 +74,9 @@ nnoremap ` '
 " Easier redo
 nnoremap U <C-r>
 
-" Autocomplete on Tab, and accept selection with Tab ~or Enter~
+" Autocomplete on Tab, and accept selection with Tab or Enter
 inoremap <expr> <Tab> pumvisible() ? '<C-y>' : '<C-p>'
-" inoremap <expr> <CR> pumvisible() ? '<C-y>' : '<CR>'
+inoremap <expr> <CR>  pumvisible() ? '<C-y>' : '<CR>'
 
 " No highlight search
 "nnoremap <silent> <Leader><Leader> :nohlsearch<CR>:let @/ = ''<CR>
@@ -105,3 +105,8 @@ nmap <silent> <Leader>s :set spell!<CR>
 " Send to tmux
 vmap <silent> <Leader>c <Plug>SendSelectionToTmux
 nmap <silent> <Leader>c <Plug>NormalModeSendToTmux
+
+" iTerm has (had before iTerm3?) this weird mapping, and doesn't send <S-CR>
+if has("mac")
+  imap ✠ <S-CR>
+endif
