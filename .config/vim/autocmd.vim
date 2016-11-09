@@ -17,9 +17,5 @@ autocmd QuickFixCmdPost [^l]* cwindow
 " Automatically fold comments on Ruby file open
 autocmd FileType ruby set foldmethod=expr | set foldexpr=getline(v:lnum)=~'^\\s*#'
 
-" Simple endwise replacement
-autocmd FileType ruby inoremap <expr> <CR> match(getline('.'), 'if\\|def\\|case\\|do') >= 0 ? '<CR><CR>end<Esc>-cc' : '<CR>'
-" autocmd FileType ruby inoremap <expr> <CR> match(getline('.'), '{') >= 0 ? '<CR><CR>}<Esc>-cc' : '<CR>'
-
 " Redraw after grep
 autocmd ShellCmdPost * redraw!

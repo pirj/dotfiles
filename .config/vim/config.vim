@@ -1,5 +1,7 @@
 set nocompatible          " be iMproved
 
+set rtp+=~/.config/vim
+
 filetype plugin indent on " Automatically detect file types. (must turn on after Vundle)
 
 " Color
