@@ -18,7 +18,7 @@ image::.config/screenshot.jpg[Screenshot]
 
 === OSX specific
 
-Tell iTunes [not to grab the keys](http://superuser.com/questions/31925/what-can-i-do-to-stop-the-play-pause-button-from-opening-itunes/827710#827710):
+Tell iTunes http://superuser.com/questions/31925/what-can-i-do-to-stop-the-play-pause-button-from-opening-itunes/827710#827710[not to grab the keys]:
 
     launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist
 
@@ -56,7 +56,7 @@ Prevent Chrome from emailing the page when mistyping Command+Option+I with Comma
     defaults write com.google.Chrome NSUserKeyEquivalents -dict-add 'Email Page Location' '\0'
     defaults write com.google.Chrome.canary NSUserKeyEquivalents -dict-add 'Email Page Location' '\0'
 
-[No clamshell mode](https://github.com/pirj/noclamshell) and [no backlight trick](https://github.com/pirj/nobacklight):
+https://github.com/pirj/noclamshell[No clamshell mode] and https://github.com/pirj/nobacklight[no backlight trick]:
 
     curl https://raw.githubusercontent.com/pirj/noclamshell/master/noclamshell.plist > ~/Library/LaunchAgents
     curl https://raw.githubusercontent.com/pirj/nobacklight/master/nobacklight.plist > ~/Library/LaunchAgents
