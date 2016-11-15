@@ -71,7 +71,9 @@ alias mysql='mysql --sigint-ignore'
 alias "?"=tldr
 
 # Some TimeWarrior shortcuts
-alias sow='timew summary sow - now'
+function sow {
+  timew summary sow - now $1
+}
 alias tt='timew track'
 
 # Fuzzy find
