@@ -259,6 +259,13 @@
 	<real>1</real>
 	<key>GlobalKeyMap</key>
 	<dict>
+		<key>0x3a-0x120000</key>
+		<dict>
+			<key>Action</key>
+			<integer>13</integer>
+			<key>Text</key>
+			<string></string>
+		</dict>
 		<key>0x43-0x120000</key>
 		<dict>
 			<key>Action</key>
@@ -594,7 +601,7 @@
 		<integer>1</integer>
 	</dict>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>552 712 796 473 0 0 1600 1200 </string>
+	<string>552 720 796 473 0 0 1600 1200 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>118 593 592 584 0 0 1600 1177 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
@@ -1352,7 +1359,7 @@
 	<key>NoSyncInstallationId</key>
 	<string>1CB6131A-BBDE-4242-B5B9-AF4E9202206C</string>
 	<key>NoSyncLastTipTime</key>
-	<real>500336197.26892501</real>
+	<real>500464946.01628298</real>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile</key>
 	<true/>
 	<key>NoSyncNeverRemindPrefsChangesLostForFile_selection</key>
@@ -1429,6 +1436,7 @@
 		<string>0062</string>
 		<string>0063</string>
 		<string>0064</string>
+		<string>0065</string>
 	</array>
 	<key>OnlyWhenMoreTabs</key>
 	<true/>
