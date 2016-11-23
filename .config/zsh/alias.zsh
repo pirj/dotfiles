@@ -48,7 +48,7 @@ else
   alias -g C='| xsel -i && xsel -o'
 fi
 alias -g S="| curl -F 'sprunge=<-' http://sprunge.us C"
-alias -r T='tail -f'
+alias -g F='| less +F'
 alias -g V='| tee $(rm fifo.tmp; mkfifo fifo.tmp && echo fifo.tmp) &; vim $(< fifo.tmp ) && rm fifo.tmp'
 
 # Factor listener, readline handler wrapped
