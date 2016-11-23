@@ -50,6 +50,7 @@ fi
 alias -g S="| curl -F 'sprunge=<-' http://sprunge.us C"
 alias -g F='| less +F'
 alias -g V='| tee $(rm fifo.tmp; mkfifo fifo.tmp && echo fifo.tmp) &; vim $(< fifo.tmp ) && rm fifo.tmp'
+alias -g T='| tee -a '
 
 # Factor listener, readline handler wrapped
 alias factor='rlwrap factor-vm -run=listener'
