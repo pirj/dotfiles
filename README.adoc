@@ -94,6 +94,20 @@ Install:
     brew cask
     brew cask install $(< .casks)
 
+=== Keeping passwords locally
+
+Create a certificate first:
+
+    gpg --gen-key
+
+To keep GPG encrypted passwords locally:
+
+    echo password | gpg --encrypt --recipient $(whoami) > ~/.passwd/server.gpg
+
+And to get the password back:
+
+    gpg --decrypt --use-agent --quiet --batch --no-tty < ~/.passwd/server.gpg
+
 == TODO
 
 * explain what works:

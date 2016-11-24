@@ -201,3 +201,5 @@ Public
 .factor_history
 .tldrc
 .elm
+.gpg-agent-info
+.passwd

@@ -2,6 +2,13 @@
 
 [[ $SSH_AGENT_PID -eq "" ]] && [[ -s $(which keychain) ]] && eval $(keychain --eval --agents ssh,gpg --quiet ~/.ssh/id_*[^pub])
 
+[ -f $HOME/.gpg-agent-info ] && source $HOME/.gpg-agent-info
+if [ -S "${GPG_AGENT_INFO%%:*}" ]; then
+  export GPG_AGENT_INFO
+else
+  eval $(gpg-agent --daemon --write-env-file $HOME/.gpg-agent-info)
+fi
+
 [[ ! -d "$tmp" ]] && export tmp="/tmp/$USER"
 mkdir -p -m 700 "$tmp"
 

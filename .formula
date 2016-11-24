@@ -1,4 +1,5 @@
 aalib
+alot
 armmbed/formulae/arm-none-eabi-gcc
 awscli
 babl
@@ -21,7 +22,6 @@ imagemagick
 homebrew/gui/inkscape
 json-glib
 libev
-libksba
 librsvg
 libwmf
 libxml2
@@ -29,9 +29,11 @@ lua
 memcached
 mpc
 mpd
+msmtp
 mtr
 mysql
 nginx
+offlineimap
 openvpn
 perl
 pigz
