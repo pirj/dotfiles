@@ -203,3 +203,6 @@ Public
 .elm
 .gpg-agent-info
 .passwd
+mail
+.offlineimap
+.bin/*.pyc

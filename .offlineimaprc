@@ -1,0 +1,30 @@
+[general]
+accounts = pirjsuka
+fsync = false
+pythonfile = ~/.bin/offlineimap.py
+
+[Account pirjsuka]
+localrepository = pirjsuka-local
+remoterepository = pirjsuka-server
+synclabels = yes
+labelsheader = X-Keywords
+postsynchook = notmuch new
+status_backend = sqlite
+maxconnections = 3
+autorefresh = 5
+quick = 10
+
+[Repository pirjsuka-server]
+type = Gmail
+remoteuser = pirjsuka
+remotepasseval = get_pass("pirjsuka@gmail.com")
+holdconnectionopen = true
+keepalive = 60
+ssl = yes
+realdelete = no
+folderfilter = lambda folder: folder.startswith('INBOX')
+sslcacertfile = /usr/local/etc/openssl/cert.pem
+
+[Repository pirjsuka-local]
+type = GmailMaildir
+localfolders = ~/mail
