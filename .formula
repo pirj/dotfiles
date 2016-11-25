@@ -8,6 +8,7 @@ brightness
 dbus
 diff-so-fancy
 docutils
+elinks
 git
 git-extras
 git-flow
@@ -26,6 +27,7 @@ librsvg
 libwmf
 libxml2
 lua
+lzo
 memcached
 mpc
 mpd
@@ -34,7 +36,6 @@ mtr
 mysql
 nginx
 offlineimap
-openvpn
 perl
 pigz
 postgresql

@@ -19,7 +19,7 @@ editor_cmd = 'vim -c "set textwidth=72" -c "set wrap" -c "set spell"'
 
 [bindings]
   , = shellescape --refocus=true 'offlineimap -o -f INBOX'; search tag:inbox OR tag:unread OR tag:flagged
-  K = shellescape elinks\ /usr/local/share/doc/alot/index.html
+  K = shellescape w3m\ /usr/local/share/doc/alot/index.html
   g i = 'search tag:inbox'
   g s = 'search tag:flagged'
   g t = 'search tag:sent'
