@@ -1,6 +1,7 @@
 # vim: filetype=desktop
 quit_on_last_bclose = True
 editor_cmd = 'vim -c "set textwidth=72" -c "set wrap" -c "set spell"'
+initial_command = search NOT tag:killed AND ( tag:inbox OR tag:unread AND NOT tag:killed )
 
 [accounts]
   [[pirjsuka]]
@@ -8,8 +9,8 @@ editor_cmd = 'vim -c "set textwidth=72" -c "set wrap" -c "set spell"'
     address = pirjsuka@gmail.com
     alias_regexp = pirjsuka\+.+@gmail.com
     sendmail_command = msmtp --account=pirjsuka -t
-    sent_box = maildir:///Users/pirj/mail/Sent
-    draft_box = maildir:///Users/pirj/mail/Drafts
+    sent_box = maildir:///Users/pirj/mail/sent
+    draft_box = maildir:///Users/pirj/mail/drafts
     [[[abook]]]
       type = shellcommand
       command = "notmuch address --output=recipients date:1Y.."
@@ -18,12 +19,12 @@ editor_cmd = 'vim -c "set textwidth=72" -c "set wrap" -c "set spell"'
       ignorecase = True
 
 [bindings]
-  , = shellescape --refocus=true 'offlineimap -o -f INBOX'; search tag:inbox OR tag:unread OR tag:flagged
+  , = shellescape --refocus=true 'offlineimap -o -f INBOX'; search ( tag:inbox OR tag:unread ) AND NOT tag:killed
   K = shellescape w3m\ /usr/local/share/doc/alot/index.html
-  g i = 'search tag:inbox'
-  g s = 'search tag:flagged'
-  g t = 'search tag:sent'
-  g d = 'search tag:drafts'
+  g i = search NOT tag:killed AND ( tag:inbox OR tag:unread AND NOT tag:killed )
+  g s = search tag:flagged
+  g t = search tag:sent
+  g d = search tag:drafts
   u = bclose
   q = bclose
   d =

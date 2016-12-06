@@ -22,9 +22,28 @@ holdconnectionopen = true
 keepalive = 60
 ssl = yes
 realdelete = no
-folderfilter = lambda folder: folder.startswith('INBOX')
+folderfilter = lambda folder: folder in ['[Gmail]/Drafts',
+                                         '[Gmail]/Starred',
+                                         'INBOX']
 sslcacertfile = /usr/local/etc/openssl/cert.pem
+nametrans: lambda name: {  '[Gmail]/Starred'   : 'starred',
+                           '[Gmail]/Trash'     : 'killed',
+                           '[Gmail]/Spam'      : 'spam',
+                           '[Gmail]/Sent Mail' : 'sent',
+                           '[Gmail]/Drafts'    : 'drafts',
+                           '[Gmail]/All Mail'  : 'archive',
+                           'INBOX'             : 'inbox',
+                      }.get (name, name)
 
 [Repository pirjsuka-local]
 type = GmailMaildir
 localfolders = ~/mail
+nametrans: lambda name: dict((value,key) for key,value in
+                      {  '[Gmail]/Starred'   : 'starred',
+                         '[Gmail]/Trash'     : 'killed',
+                         '[Gmail]/Spam'      : 'spam',
+                         '[Gmail]/Sent Mail' : 'sent',
+                         '[Gmail]/Drafts'    : 'drafts',
+                         '[Gmail]/All Mail'  : 'archive',
+                         'INBOX'             : 'inbox',
+                      }.iteritems()).get (name, name)
