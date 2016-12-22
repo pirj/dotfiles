@@ -600,14 +600,16 @@
 		<key>TB Is Shown</key>
 		<integer>1</integer>
 	</dict>
+	<key>NSWindow Frame NSFontPanel</key>
+	<string>1089 113 445 269 0 0 1600 1200 </string>
 	<key>NSWindow Frame SharedPreferences</key>
-	<string>552 720 796 473 0 0 1600 1200 </string>
+	<string>552 676 918 495 0 0 1600 1200 </string>
 	<key>NSWindow Frame UKCrashReporter</key>
 	<string>118 593 592 584 0 0 1600 1177 </string>
 	<key>NSWindow Frame iTerm Window 0</key>
-	<string>285 539 570 352 0 0 1600 1177 </string>
+	<string>375 363 570 352 0 0 1440 877 </string>
 	<key>NSWindow Frame iTerm Window 1</key>
-	<string>11 848 570 352 0 0 1600 1200 </string>
+	<string>9 548 570 352 0 0 1440 900 </string>
 	<key>NSWindow Frame iTerm Window 2</key>
 	<string>799 841 570 352 0 0 1600 1200 </string>
 	<key>NSWindow Frame iTerm Window 3</key>
@@ -1512,6 +1514,8 @@
 	<key>Show Toolbelt</key>
 	<false/>
 	<key>ShowBookmarkName</key>
+	<false/>
+	<key>ShowFullScreenTabBar</key>
 	<false/>
 	<key>ShowPaneTitles</key>
 	<true/>
