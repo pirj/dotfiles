@@ -1,12 +1,14 @@
 [[ -s $HOME/.profile ]] && source $HOME/.profile
 
 [[ $SSH_AGENT_PID -eq "" ]] && [[ -s $(which keychain) ]] && eval $(keychain --eval --agents ssh,gpg --quiet ~/.ssh/id_*[^pub])
+[[ $SSH_AGENT_PID -eq "" ]] && [[ -s $(which ssh-agent) ]] && eval $(ssh-agent)
 
 [ -f $HOME/.gpg-agent-info ] && source $HOME/.gpg-agent-info
 if [ -S "${GPG_AGENT_INFO%%:*}" ]; then
   export GPG_AGENT_INFO
 else
   eval $(gpg-agent --daemon --write-env-file $HOME/.gpg-agent-info)
+  # but exclude SSH!
 fi
 
 [[ ! -d "$tmp" ]] && export tmp="/tmp/$USER"
