@@ -207,3 +207,4 @@ mail
 .offlineimap
 .bin/*.pyc
 .w3m
+.gdrive
