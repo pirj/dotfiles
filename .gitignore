@@ -208,3 +208,5 @@ mail
 .bin/*.pyc
 .w3m
 .gdrive
+.config/.exercism.json
+exercism
