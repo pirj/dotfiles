@@ -22,35 +22,6 @@ Tell iTunes http://superuser.com/questions/31925/what-can-i-do-to-stop-the-play-
 
     launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist
 
-Tell Karabiner to use custom keyboard mappings:
-
-Left command + mute to switch audio output (from internal speakers/headphones to Bluetooth expernal speaker):
-
-    /Applications/Karabiner.app/Contents/Library/bin/karabiner enable private.command_l_media_mute
-
-Media keys to control MPD instead of iTunes:
-
-    /Applications/Karabiner.app/Contents/Library/bin/karabiner enable private.media_next
-    /Applications/Karabiner.app/Contents/Library/bin/karabiner enable private.media_play
-    /Applications/Karabiner.app/Contents/Library/bin/karabiner enable private.media_prev
-
-Swith to primary keyboard layout with Right Alt, to secondary with Left Alt:
-
-    /Applications/Karabiner.app/Contents/Library/bin/karabiner enable private.russian_optionL2optionL_russian
-    /Applications/Karabiner.app/Contents/Library/bin/karabiner enable private.russian_optionR2optionR_english
-
-Swap colon and semicolon, but only for primary, US layout:
-
-    /Applications/Karabiner.app/Contents/Library/bin/karabiner enable private.swapcolonsus
-
-Map Command + P to Command + O (avoid annoying print dialog):
-
-    /Applications/Karabiner.app/Contents/Library/bin/karabiner enable private.cmdptocmdo
-
-Swap ~ and ` (if you use ~ more ofter):
-
-    /Applications/Karabiner.app/Contents/Library/bin/karabiner enable remap.programmer.backtick_tilde
-
 Prevent Chrome from emailing the page when mistyping Command+Option+I with Command+Shift+I:
 
     defaults write com.google.Chrome NSUserKeyEquivalents -dict-add 'Email Page Location' '\0'
