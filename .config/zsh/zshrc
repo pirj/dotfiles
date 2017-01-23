@@ -98,8 +98,6 @@ zstyle ':vcs_info:*' stagedstr '+'
 zstyle ':vcs_info:*' unstagedstr '*'
 precmd () { vcs_info }
 
-PS1='%n@%{$fg[blue]%}%m %{$fg[yellow]%}%~ %{$fg[green]%}% (${vcs_info_msg_0_}) %{$reset_color%}% %(!.#.$) '
-
 # Aliases
 [[ -s ~/.config/zsh/alias.zsh ]] && source ~/.config/zsh/alias.zsh
 
@@ -108,7 +106,3 @@ PS1='%n@%{$fg[blue]%}%m %{$fg[yellow]%}%~ %{$fg[green]%}% (${vcs_info_msg_0_}) %
 
 # Many programs change the terminal state, and often do not restore terminal settings on exiting abnormally. To avoid the need to manually reset the terminal, freeze it:
 ttyctl -f
-
-# Export tty for gpg
-GPG_TTY=$(tty)
-export GPG_TTY
