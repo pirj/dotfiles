@@ -34,6 +34,10 @@ https://github.com/pirj/noclamshell[No clamshell mode] and https://github.com/pi
     launchctl load ~/Library/LaunchAgents/nobacklight.plist
     launchctl load ~/Library/LaunchAgents/noclamshell.plist
 
+Add the following to .ssh/config:
+
+    UseKeychain yes
+
 == Inspiration sources
 
 I use to browse repositories on GH, and check other people's dotfiles. dotshare.it is another interesting source.
