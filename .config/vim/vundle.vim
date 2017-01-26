@@ -123,6 +123,7 @@ Bundle "tpope/vim-commentary"
 " ---------------
 Bundle 'tpope/vim-fugitive'
 Bundle 'airblade/vim-gitgutter'
+Bundle 'junegunn/gv.vim'
 
 " SYNTAX SUPPORT
 " --------------
