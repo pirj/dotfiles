@@ -80,14 +80,14 @@ inoremap <expr> <CR>  pumvisible() ? '<C-y>' : '<CR>'
 
 " No highlight search
 "nnoremap <silent> <Leader><Leader> :nohlsearch<CR>:let @/ = ''<CR>
-nnoremap <silent> <Leader><Leader> :nohlsearch<CR>
+nnoremap <silent> <Space><Space> :nohlsearch<CR>
 
 " Search files
-nnoremap 'g :silent lgrep<Space>
+nnoremap <Leader>g :silent lgrep<Space>
 nnoremap K :silent lgrep <C-r><C-w><CR>
 
 " Find files
-nnoremap 'f :find<Space>
+nnoremap <Leader>f :find<Space>
 
 " Only use system clipboard when required
 if has("mac")
