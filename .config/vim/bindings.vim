@@ -15,7 +15,7 @@ nnoremap <silent> [b :bprevious<CR>
 nnoremap <silent> ]b :bnext<CR>
 nnoremap <silent> [B :bfirst<CR>
 nnoremap <silent> ]B :blast<CR>
-nnoremap <silent> 'b :ls<CR>
+nnoremap <silent> <Leader>b :ls<CR>
 nnoremap <silent> \b :bd<CR>
 
 " Navigate Location list (lgrep)
@@ -26,7 +26,7 @@ nnoremap <silent> ]F :lnfile<CR>
 nnoremap <silent> \f :lclose<CR>
 
 " Tabs
-nnoremap <silent> 't :tabnew<CR>
+nnoremap <silent> <Leader>t :tabnew<CR>
 
 " Navigate panes
 nnoremap <silent> <C-h> <C-w>h
