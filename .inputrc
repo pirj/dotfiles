@@ -1,8 +1,11 @@
-set editing-mode vi
-set keymap vi-insert
-
 # set show-mode-in-prompt on
-
-"kj": vi-movement-mode
-
 set completion-ignore-case off
+
+set editing-mode vi
+
+set keymap vi-command
+"H": beginning-of-line
+"L": end-of-line
+
+set keymap vi-insert
+"kj": vi-movement-mode
