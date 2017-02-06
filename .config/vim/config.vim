@@ -11,12 +11,11 @@ let g:seoul256_background=234
 " colorscheme jellybeans
 colorscheme seoul256
 
-" Tempfiles
+set writebackup           " Backup file before overwriting
 set backupdir=~/.local/vim/backup
+set swapfile              " Keep all recent changes even without saving
 set directory=~/.local/vim/temp
-set noswapfile
-
-" Persistent Undo
+set undofile              " Persistent Undo
 set undodir=~/.local/vim/undo
 
 set path=.,**             " Paths to find files in
