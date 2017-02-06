@@ -45,11 +45,9 @@
   a = add
   c1 = clone --depth 1 --single-branch
   f = flow feature
-  l = log -p
-  ll = log --no-merges
   align = !BASE_BRANCH=${1:-master} && git fetch origin $BASE_BRANCH && git rebase origin/$BASE_BRANCH && :
   edit = "!vim $(git ls-files -m --other --exclude-standard)"
   delete-merged-branches = git branch --merged | grep --invert-match master | xargs git branch -d
-	ri = !BASE_BRANCH=${1:-master} && git fetch origin $BASE_BRANCH && git rebase -i origin/$BASE_BRANCH && :
+  ri = !BASE_BRANCH=${1:-master} && git fetch origin $BASE_BRANCH && git rebase -i origin/$BASE_BRANCH && :
 [rerere]
   enabled = 1
