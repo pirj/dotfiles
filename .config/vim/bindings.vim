@@ -57,6 +57,10 @@ cmap <Down>  <NOP>
 cmap <Right> <NOP>
 cmap <Left>  <NOP>
 
+" Smart command history completion
+cnoremap <C-n> <Down>
+cnoremap <C-p> <Up>
+
 " Select previously pasted text
 nnoremap gv `[v`]
 
