@@ -76,7 +76,10 @@ nnoremap U <C-r>
 
 " Autocomplete on Tab, and accept selection with Enter
 inoremap <Tab> <C-p>
-inoremap <expr> <CR>  pumvisible() ? '<C-y>' : '<CR>'
+inoremap <silent> <CR> <C-r>=<SID>endwise_compatible_enter()<CR>
+function! s:endwise_compatible_enter()
+  return pumvisible() ? "\<C-y>" : "\<CR>"
+endfunction
 
 " No highlight search
 "nnoremap <silent> <Leader><Leader> :nohlsearch<CR>:let @/ = ''<CR>
