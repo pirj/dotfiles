@@ -13,8 +13,6 @@ cnoremap kj <C-f>
 " Navigate buffers
 nnoremap <silent> [b :bprevious<CR>
 nnoremap <silent> ]b :bnext<CR>
-nnoremap <silent> [B :bfirst<CR>
-nnoremap <silent> ]B :blast<CR>
 nnoremap <silent> <Leader>b :ls<CR>
 nnoremap <silent> \b :bd<CR>
 
