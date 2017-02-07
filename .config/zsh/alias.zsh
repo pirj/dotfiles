@@ -84,5 +84,5 @@ function fn { find . -name "*$1*" }
 function script-it {
   echo alias $1=\"$(fc -nl -1)\" >> ~/.config/zsh/alias.zsh
 }
-alias day="TZ=EST timew summary sod - now"
-alias send-daily-report='day >! tmp/timesheets/$( TZ=EST date +%Y-%m-%d ).txt; gdrive sync upload tmp/timesheets 0Bz9xh1gcOv5FODhpRE9uRnU3VTA'
+alias day="timew summary sod - now"
+# alias send-daily-report='day >! tmp/timesheets/$( TZ=EST date +%Y-%m-%d ).txt; gdrive sync upload tmp/timesheets 0Bz9xh1gcOv5FODhpRE9uRnU3VTA'
