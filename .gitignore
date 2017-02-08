@@ -211,3 +211,4 @@ mail
 .config/.exercism.json
 exercism
 .oracle_jre_usage
+.yarnrc
