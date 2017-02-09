@@ -21,7 +21,7 @@ end
 end
 
 require 'pry'
-require 'pry-doc' rescue LoadError
+require 'pry-doc'
 
 if defined? ::Rails
   include Rails::ConsoleMethods
