@@ -20,18 +20,14 @@ end
   load_gem gem
 end
 
-begin
-  require 'pry'
-  require 'pry-doc' rescue LoadError
+require 'pry'
+require 'pry-doc' rescue LoadError
 
-  if defined? ::Rails
-    include Rails::ConsoleMethods
-    require 'pry-rails'
-    ActiveRecord::Base.logger = Logger.new STDOUT
-  end
-
-  Pry.start
-  exit
-rescue LoadError
-  puts "warning: Pry not available"
+if defined? ::Rails
+  include Rails::ConsoleMethods
+  require 'pry-rails'
+  ActiveRecord::Base.logger = Logger.new STDOUT
 end
+
+Pry.start
+exit
