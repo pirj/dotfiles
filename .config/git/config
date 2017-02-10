@@ -1,6 +1,5 @@
 [user]
-  name = Phil Pirozhkov
-  email = pirjsuka@gmail.com
+  useConfigOnly = true
 [github]
   user = pirj
 [push]
