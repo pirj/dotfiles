@@ -2,7 +2,7 @@
 autocmd BufWritePost *.js silent! :JSHint<CR>
 
 " Re-set format options as plugins may set it on thier own
-autocmd FileType * setlocal formatoptions=t
+autocmd FileType * setlocal formatoptions=tj
 
 " Go to last position of opened files. Taken from :help last-position-jump.
 autocmd BufReadPost * execute "normal! g`\""
