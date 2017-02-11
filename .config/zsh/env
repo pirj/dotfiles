@@ -1,2 +1,2 @@
 PAGER=less
-export LESS=-FgrX
+export LESS='--quit-if-one-screen --hilite-search --raw-control-chars --ignore-case'
