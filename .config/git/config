@@ -48,5 +48,6 @@
   edit = "!vim $(git ls-files -m --other --exclude-standard)"
   delete-merged-branches = git branch --merged | grep --invert-match master | xargs git branch -d
   ri = !BASE_BRANCH=${1:-master} && git rebase -i origin/$BASE_BRANCH && :
+  l = log --reverse origin/master..HEAD
 [rerere]
   enabled = 1
