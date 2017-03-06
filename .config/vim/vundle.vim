@@ -34,6 +34,9 @@ Bundle 'justinmk/vim-dirvish'
 " Allows you to visually select increasingly larger regions of text using the same key combination
 " Bundle 'terryma/vim-expand-region'
 
+" Open files at a given line number/column when provided (README:3:12)
+Bundle 'kopischke/vim-fetch'
+
 " COLLABORATION
 " -------------
 " Bundle 'emgram769/vim-multiuser'
