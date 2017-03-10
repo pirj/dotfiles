@@ -1,2 +1,5 @@
 PAGER=less
-export LESS='--quit-if-one-screen --hilite-search --raw-control-chars --ignore-case'
+export LESS='--quit-if-one-screen --hilite-search --raw-control-chars --ignore-case --no-init'
+
+# peek on SIGQUIT (<ctrl-\>)
+export RUBYOPT='-r pry-rescue/peek/quit'
