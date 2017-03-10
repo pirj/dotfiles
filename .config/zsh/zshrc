@@ -104,5 +104,8 @@ precmd () { vcs_info }
 # Homebrew github api key
 [[ -s ~/.config/zsh/brew-api-key.sh ]] && source ~/.config/zsh/brew-api-key.sh
 
+# Some local settings I don't expose to public
+[[ -s ~/.secret/env ]] && source ~/.secret/env
+
 # Many programs change the terminal state, and often do not restore terminal settings on exiting abnormally. To avoid the need to manually reset the terminal, freeze it:
 ttyctl -f
