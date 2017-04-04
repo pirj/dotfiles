@@ -65,6 +65,9 @@ bindkey -M viins kj vi-cmd-mode
 # Yank to the end of line with Y
 bindkey -M vicmd Y vi-yank-eol
 
+# Unbind annoying named command binding
+bindkey -M vicmd -r ':'
+
 # Switch back to fg %1 on ^Z (hat tip Adam Stankiewicz http://sheerun.net/)
 fancy-ctrl-z () {
   if [[ $#BUFFER -eq 0 ]]; then
