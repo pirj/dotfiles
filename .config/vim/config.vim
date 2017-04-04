@@ -91,13 +91,20 @@ set timeoutlen=1000       " Those two together
 set ttimeoutlen=50        " are avoiding annoying mode switch lag
 
 " Lightline
+function! RelativeFilename()
+  return '' == expand('%t') ? 'NO NAME' : expand('%t')
+endfunction
+
 let g:lightline = {
       \ 'active': {
       \   'left': [ [ 'mode', 'paste' ],
-      \             [ 'fugitive', 'readonly', 'relativepath', 'modified' ] ]
+      \             [ 'fugitive', 'readonly', 'relative-filename', 'modified' ] ]
+      \ },
+      \ 'inactive': {
+      \   'left': [ [ 'readonly', 'filename', 'modified' ] ]
       \ },
       \ 'component': {
-      \   'readonly': '%{&filetype=="help"?"":&readonly?"⚷":""}',
+      \   'readonly': '%{&filetype=="help"?"":&readonly?"🔑":""}',
       \   'modified': '%{&filetype=="help"?"":&modified?"+":&modifiable?"":"-"}',
       \   'fugitive': '%{exists("*fugitive#head")?fugitive#head():""}'
       \ },
@@ -106,9 +113,10 @@ let g:lightline = {
       \   'modified': '(&filetype!="help"&&(&modified||!&modifiable))',
       \   'fugitive': '(exists("*fugitive#head") && ""!=fugitive#head())'
       \ },
-      \ 'separator': { 'left': '', 'right': '' },
-      \ 'subseparator': { 'left': '', 'right': '' }
+      \ 'component_function': {
+      \   'relative-filename': 'RelativeFilename'
       \ }
+      \}
 
 " Splits
 set splitbelow
