@@ -51,8 +51,24 @@ bindkey -M vicmd H beginning-of-line
 bindkey -M vicmd L end-of-line
 
 # Use ^F to complete an autosuggestion
-bindkey -M viins ff forward-char
-bindkey -M vicmd ff forward-char
+autosuggest-accept-if-exists () {
+  local suggestion
+  if [ $#BUFFER -gt 0 ]; then
+    if [ -z "$ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE" -o $#BUFFER -lt "$ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE" ]; then
+      suggestion="$(_zsh_autosuggest_suggestion "$BUFFER")"
+    fi
+  fi
+
+  if [ -n "$suggestion" ]; then
+    zle autosuggest-accept
+  else
+    BUFFER="$BUFFER[0,$CURSOR]ff$BUFFER[$CURSOR+1,#BUFFER]"
+    CURSOR+=2
+  fi
+}
+zle -N autosuggest-accept-if-exists
+bindkey -M viins ff autosuggest-accept-if-exists
+bindkey -M vicmd ff autosuggest-accept
 
 # Better undo/redo
 bindkey -M vicmd u undo
