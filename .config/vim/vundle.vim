@@ -61,7 +61,7 @@ Bundle 'junegunn/seoul256.vim'
 " Automatically resizes splits on switch
 " Bundle 'justincampbell/vim-eighties'
 " Bundle 'zhaocai/GoldenView.Vim'
-Bundle 'roman/golden-ratio'
+" Bundle 'roman/golden-ratio'
 
 " Startup screen
 "mhinz/vim-startify
