@@ -24,7 +24,7 @@ set path=.,**             " Paths to find files in
 set ruler                 " Ruler on
 set norelativenumber      " No relative line numbers
 set nonumber              " And not even current line number under cursor too
-set wrap                  " Line wrapping on
+set nowrap                " Line wrapping off
 set showbreak=..          " Show broken lines
 set showmatch             " Show matching brackets
 set matchtime=2           " How many tenths of a second to blink
