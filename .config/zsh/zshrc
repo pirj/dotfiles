@@ -36,6 +36,8 @@ zplug zsh-users/zsh-syntax-highlighting
 zplug djui/alias-tips
 zplug load
 
+eval "$(direnv hook zsh)"
+
 # Better vi mode (hat tip Doug Black)
 bindkey -v
 

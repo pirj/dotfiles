@@ -23,6 +23,7 @@ alias tmux='tmux -2'
 if [[ "$OSTYPE" = "darwin"* ]]; then
   alias tmux='tmux -f ~/.tmux.osx.conf'
 fi
+alias tmux='direnv exec / tmux'
 
 # tmux aliases
 alias ta='tmux at'
