@@ -21,9 +21,14 @@ setopt histignoredups
 # Cache completions
 autoload -Uz compinit
 
-source ~/.zplug/init.zsh
-zplug check || zplug install
-zplug zplug/zplug
+export ZPLUG_HOME=/usr/local/opt/zplug
+source $ZPLUG_HOME/init.zsh
+if ! zplug check --verbose; then
+  printf "Install? [y/N]: "
+  if read -q; then
+    echo; zplug install
+  fi
+fi
 zplug zsh-users/zsh-syntax-highlighting
 zplug zsh-users/zsh-history-substring-search
 zplug djui/alias-tips

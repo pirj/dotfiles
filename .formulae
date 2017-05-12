@@ -76,4 +76,5 @@ watch
 wget
 yarn
 youtube-dl
+zplug
 zsh
