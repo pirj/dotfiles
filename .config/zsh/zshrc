@@ -21,6 +21,7 @@ setopt histignoredups
 # Cache completions
 autoload -Uz compinit
 
+# Plugins
 export ZPLUG_HOME=/usr/local/opt/zplug
 source $ZPLUG_HOME/init.zsh
 if ! zplug check --verbose; then
@@ -29,11 +30,10 @@ if ! zplug check --verbose; then
     echo; zplug install
   fi
 fi
-zplug zsh-users/zsh-syntax-highlighting
+zplug zsh-users/zsh-autosuggestions
 zplug zsh-users/zsh-history-substring-search
+zplug zsh-users/zsh-syntax-highlighting
 zplug djui/alias-tips
-zplug tarruda/zsh-autosuggestions
-zplug direnv/direnv
 zplug load
 
 # Better vi mode (hat tip Doug Black)
@@ -56,20 +56,15 @@ bindkey -M isearch ^n history-incremental-search-forward
 bindkey -M vicmd H beginning-of-line
 bindkey -M vicmd L end-of-line
 
-# Use ^F to complete an autosuggestion
+# Use ff to complete an autosuggestion
 autosuggest-accept-if-exists () {
-  local suggestion
   if [ $#BUFFER -gt 0 ]; then
-    if [ -z "$ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE" -o $#BUFFER -lt "$ZSH_AUTOSUGGEST_BUFFER_MAX_SIZE" ]; then
-      suggestion="$(_zsh_autosuggest_suggestion "$BUFFER")"
+    if [ -n "$POSTDISPLAY" ]; then
+      zle autosuggest-accept
+    else
+      BUFFER="$BUFFER[0,$CURSOR]ff$BUFFER[$CURSOR+1,#BUFFER]"
+      CURSOR+=2
     fi
-  fi
-
-  if [ -n "$suggestion" ]; then
-    zle autosuggest-accept
-  else
-    BUFFER="$BUFFER[0,$CURSOR]ff$BUFFER[$CURSOR+1,#BUFFER]"
-    CURSOR+=2
   fi
 }
 zle -N autosuggest-accept-if-exists
