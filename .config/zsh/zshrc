@@ -33,6 +33,7 @@ zplug zsh-users/zsh-syntax-highlighting
 zplug zsh-users/zsh-history-substring-search
 zplug djui/alias-tips
 zplug tarruda/zsh-autosuggestions
+zplug direnv/direnv
 zplug load
 
 # Better vi mode (hat tip Doug Black)
