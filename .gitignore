@@ -214,3 +214,4 @@ exercism
 .yarnrc
 .config/direnv
 dosprogs
+.config/exercism.json
