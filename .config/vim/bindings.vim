@@ -62,6 +62,9 @@ cnoremap <C-p> <Up>
 " Select previously pasted text
 nnoremap gv `[v`]
 
+" Edit previous file
+nnoremap gb <C-^>
+
 " Yank to the end of line
 nnoremap Y y$
 
