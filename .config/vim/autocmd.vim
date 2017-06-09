@@ -24,3 +24,24 @@ autocmd ShellCmdPost * redraw!
 let g:project_find_path = '.,' . system("git ls-tree -d HEAD --name-only | tr '\n' : | sed 's/:/**,/g'")
 autocmd VimEnter let &path = g:project_find_path
 autocmd BufReadPost * let &path = g:project_find_path
+
+" make vim-projectionist and vim-rails compatible (see tpope/vim-projectionist#36)
+autocmd BufNewFile,BufRead,BufWrite * call s:copy_projections()
+function! s:copy_projections() abort
+  if !exists('b:projectionist') || !exists('b:rails_root')
+    return
+  endif
+
+  let g:rails_projections = {}
+  let app_projections = deepcopy(b:projectionist[b:rails_root])
+  for projection_group in app_projections
+    for projection in keys(projection_group)
+      if has_key(projection_group[projection], 'type')
+        let projection_group[projection]['command'] = projection_group[projection]['type']
+        call remove(projection_group[projection], 'type')
+      endif
+
+      let g:rails_projections[projection] = projection_group[projection]
+    endfor
+  endfor
+endfunction

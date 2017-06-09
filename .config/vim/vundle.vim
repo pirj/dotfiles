@@ -16,6 +16,8 @@ Bundle 'VundleVim/Vundle.vim'
 " Bundle 'tpope/vim-vinegar'
 Bundle 'justinmk/vim-dirvish'
 
+Bundle 'tpope/vim-projectionist'
+
 "Bundle 'ZoomWin'
 " This fork is required due to remapping ; to :
 "Bundle 'christoomey/vim-space'

@@ -65,6 +65,9 @@ nnoremap gv `[v`]
 " Edit previous file
 nnoremap gb <C-^>
 
+" Edit alternate file (vim-projectionist, vim-rails)
+nnoremap ga :A<CR>
+
 " Yank to the end of line
 nnoremap Y y$
 
