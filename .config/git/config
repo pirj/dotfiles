@@ -34,7 +34,7 @@
   autosetupmerge = true
 [alias]
   co = checkout
-  s = status -sb
+  s = status --short --branch
   d = diff
   ds = diff --staged
   up = pull
