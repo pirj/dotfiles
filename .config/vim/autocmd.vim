@@ -45,3 +45,5 @@ function! s:copy_projections() abort
     endfor
   endfor
 endfunction
+
+autocmd BufReadPost * silent! lcd .

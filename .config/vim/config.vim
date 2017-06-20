@@ -92,7 +92,7 @@ set ttimeoutlen=50        " are avoiding annoying mode switch lag
 
 " Lightline
 function! RelativeFilename()
-  return '' == expand('%t') ? 'NO NAME' : expand('%t')
+  return '' == expand('%') ? 'NO NAME' : expand('%')
 endfunction
 
 let g:lightline = {
