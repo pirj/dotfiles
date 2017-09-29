@@ -1,6 +1,6 @@
 set nocompatible          " be iMproved
 
-set rtp+=~/.config/vim
+let &runtimepath=expand('~/.config/vim').','.&runtimepath
 
 filetype plugin indent on " Automatically detect file types. (must turn on after Vundle)
 
