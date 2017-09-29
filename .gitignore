@@ -215,3 +215,4 @@ exercism
 .config/direnv
 dosprogs
 .config/exercism.json
+.atom
