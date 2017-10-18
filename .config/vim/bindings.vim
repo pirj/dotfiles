@@ -68,8 +68,8 @@ nnoremap gb <C-^>
 " Edit alternate file (vim-projectionist, vim-rails)
 nnoremap ga :A<CR>
 
-" Edit source in a split
-nmap gs <C-w>f
+" Go to definition
+" gs
 
 " Yank to the end of line
 nnoremap Y y$
