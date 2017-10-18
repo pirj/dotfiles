@@ -48,6 +48,7 @@ set ttyfast               " Indicates a fast terminal connection... characters w
 set synmaxcol=512         " Syntax coloring lines that are too long just slows down the world
 
 set shortmess+=I          " No startup message
+let g:netrw_banner = 0    " No Netrw banner
 
 " Behaviors
 syntax enable             " Enable syntax processing

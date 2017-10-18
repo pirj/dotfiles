@@ -14,7 +14,7 @@ Bundle 'VundleVim/Vundle.vim'
 " NAVIGATION
 " ----------
 " Bundle 'tpope/vim-vinegar'
-Bundle 'justinmk/vim-dirvish'
+" Bundle 'justinmk/vim-dirvish'
 
 Bundle 'tpope/vim-projectionist'
 

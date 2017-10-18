@@ -124,3 +124,5 @@ nmap <silent> <Leader>c <Plug>NormalModeSendToTmux
 if has("mac")
   imap ✠ <S-CR>
 endif
+
+nnoremap - :Explore<CR>
