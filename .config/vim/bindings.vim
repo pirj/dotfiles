@@ -23,6 +23,11 @@ nnoremap <silent> [F :lpfile<CR>
 nnoremap <silent> ]F :lnfile<CR>
 nnoremap <silent> \f :lclose<CR>
 
+" Navigate Quickfix list
+nnoremap <silent> [e :cprevious<CR>
+nnoremap <silent> ]e :cnext<CR>
+nnoremap <silent> \e :cclose<CR>
+
 " Tabs
 nnoremap <silent> <Leader>t :tabnew<CR>
 
@@ -126,3 +131,6 @@ if has("mac")
 endif
 
 nnoremap - :Explore<CR>
+
+" FIXME: move to ftp
+nnoremap <Leader>e :AsyncRun rspec --out /dev/null --require quickfix_formatter.rb --format QuickfixFormatter --no-profile #<CR>

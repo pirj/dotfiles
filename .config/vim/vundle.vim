@@ -144,7 +144,10 @@ Bundle 'vim-ruby/vim-ruby'
 Bundle 'tpope/vim-rails'
 Bundle 'slim-template/vim-slim'
 
-Bundle 'sunaku/vim-ruby-minitest'
+Bundle 'joker1007/vim-ruby-heredoc-syntax'
+
+" Bundle 'sunaku/vim-ruby-minitest'
+" Bundle 'thoughtbot/vim-rspec'
 " Bundle 'tpope/vim-haml'
 " Bundle 'tpope/vim-rake'
 
@@ -183,6 +186,10 @@ Bundle 'Shutnik/jshint2.vim'
 
 Bundle 'L9'
 Bundle 'tpope/vim-repeat'
+
+" ASYNC
+" -----
+Bundle 'skywind3000/asyncrun.vim'
 
 " OTHER
 " -----
