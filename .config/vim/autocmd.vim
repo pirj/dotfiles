@@ -47,3 +47,5 @@ function! s:copy_projections() abort
 endfunction
 
 autocmd BufReadPost * silent! lcd .
+
+autocmd BufNewFile,BufRead *.git/{,modules/**/}{PULLREQ_EDIT,COMMIT_EDIT,MERGE_}MSG set ft=gitcommit
