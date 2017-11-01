@@ -32,6 +32,10 @@ alias tn='tmux new -s'
 alias trs='trans {ru=}'
 alias tru='trans {=ru}'
 
+# Rails
+alias r='spring rails'
+alias rails='echo Attempt to use non-spring variation of rails'
+
 # Pretty self explaining
 alias g=git
 
