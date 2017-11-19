@@ -1,0 +1,25 @@
+{
+  "title": "MPD controls with media buttons",
+  "rules": [
+    {
+      "description": "MPD controls with media buttons Fn-⏮ ⏯ ⏭",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": { "key_code": "f8" },
+          "to": [ { "shell_command": "/usr/local/bin/mpc toggle" } ]
+        },
+        {
+          "type": "basic",
+          "from": { "key_code": "f7" },
+          "to": [ { "shell_command": "/usr/local/bin/mpc prev" } ]
+        },
+        {
+          "type": "basic",
+          "from": { "key_code": "f9" },
+          "to": [ { "shell_command": "/usr/local/bin/mpc next" } ]
+        }
+      ]
+    }
+  ]
+}

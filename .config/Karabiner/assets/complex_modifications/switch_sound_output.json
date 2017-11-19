@@ -1,0 +1,15 @@
+{
+  "title": "Switch sound output",
+  "rules": [
+    {
+      "description": "Switch sound output with Fn-🔈",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": { "key_code": "play_or_pause" },
+          "to": [ { "shell_command": "/usr/local/bin/SwitchAudioSource -n" } ]
+        }
+      ]
+    }
+  ]
+}

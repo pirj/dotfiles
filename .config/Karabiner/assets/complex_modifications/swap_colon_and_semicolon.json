@@ -1,0 +1,22 @@
+{
+  "title": "Swap colon and semicolon",
+  "rules": [
+    {
+      "description": "Swap colon : and semicolon ;",
+      "manipulators": [
+        {
+          "type": "basic",
+          "conditions": [ { "type": "input_source_unless", "input_sources": [ { "language": "ru" } ] } ],
+          "from": { "key_code": "semicolon" },
+          "to": [ { "key_code": "semicolon", "modifiers": [ "left_shift" ] } ]
+        },
+        {
+          "type": "basic",
+          "conditions": [ { "type": "input_source_unless", "input_sources": [ { "language": "ru" } ] } ],
+          "from": { "key_code": "semicolon", "modifiers": { "mandatory": [ "shift" ] } },
+          "to": [ { "key_code": "semicolon" } ]
+        }
+      ]
+    }
+  ]
+}

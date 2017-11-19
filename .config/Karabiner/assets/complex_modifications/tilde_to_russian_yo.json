@@ -1,0 +1,16 @@
+{
+  "title": "Change tilde to Russian ё",
+  "rules": [
+    {
+      "description": "Change tilde to Russian ё",
+      "manipulators": [
+        {
+          "type": "basic",
+          "conditions": [ { "type": "input_source_if", "input_sources": [ { "language": "ru" } ] } ],
+          "from": { "key_code": "grave_accent_and_tilde", "modifiers": { "optional": [ "any" ] } },
+          "to": [ { "key_code": "non_us_backslash" } ]
+        }
+      ]
+    }
+  ]
+}

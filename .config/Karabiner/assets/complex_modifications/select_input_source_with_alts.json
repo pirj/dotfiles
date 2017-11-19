@@ -1,0 +1,22 @@
+{
+  "title": "Select input source with Left and Right Alts",
+  "rules": [
+    {
+      "description": "Change input source to U.S. by left_alt, RussianPC by right_alt",
+      "manipulators": [
+        {
+          "type": "basic",
+          "from": { "key_code": "left_alt", "modifiers": { "optional": [ "any" ] } },
+          "to": [ { "key_code": "left_alt" } ],
+          "to_if_alone": [ { "select_input_source": { "input_source_id": "^com\\.apple\\.keylayout\\.US$" } } ]
+        },
+        {
+          "type": "basic",
+          "from": { "key_code": "right_alt", "modifiers": { "optional": [ "any" ] } },
+          "to": [ { "key_code": "right_alt" } ],
+          "to_if_alone": [ { "select_input_source": { "input_source_id": "^com\\.apple\\.keylayout\\.RussianWin$" } } ]
+        }
+      ]
+    }
+  ]
+}

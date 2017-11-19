@@ -20,7 +20,12 @@ image::.config/screenshot.jpg[Screenshot]
 
 Tell iTunes http://superuser.com/questions/31925/what-can-i-do-to-stop-the-play-pause-button-from-opening-itunes/827710#827710[not to grab the keys]:
 
-    launchctl unload -w /System/Library/LaunchAgents/com.apple.rcd.plist
+    sudo su -
+    cd /Applications/iTunes.app/Contents/MacOS
+    mv iTunes iTunes.bak
+    touch iTunes
+    chflags uchg iTunes
+    chflags schg iTunes
 
 Prevent Chrome from emailing the page when mistyping Command+Option+I with Command+Shift+I:
 

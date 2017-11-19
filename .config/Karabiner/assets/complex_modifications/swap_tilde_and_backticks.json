@@ -1,0 +1,22 @@
+{
+  "title": "Swap tilde and backticks",
+  "rules": [
+    {
+      "description": "Swap tilde ~ and backticks `",
+      "manipulators": [
+        {
+          "type": "basic",
+          "conditions": [ { "type": "input_source_unless", "input_sources": [ { "language": "ru" } ] } ],
+          "from": { "key_code": "grave_accent_and_tilde" },
+          "to": [ { "key_code": "grave_accent_and_tilde", "modifiers": [ "left_shift" ] } ]
+        },
+        {
+          "type": "basic",
+          "conditions": [ { "type": "input_source_unless", "input_sources": [ { "language": "ru" } ] } ],
+          "from": { "key_code": "grave_accent_and_tilde", "modifiers": { "mandatory": [ "shift" ] } },
+          "to": [ { "key_code": "grave_accent_and_tilde" } ]
+        }
+      ]
+    }
+  ]
+}
