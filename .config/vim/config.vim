@@ -159,3 +159,22 @@ elseif has("unix")
   let &t_SR = "\<Esc>[4 q"
   let &t_EI = "\<Esc>[2 q"
 endif
+
+" Ruby inline HEREDOC syntax highlighting
+let g:ruby_heredoc_syntax_defaults = {
+  \ "javascript" : {
+  \   "start" : "JS",
+  \},
+  \ "sql" : {
+  \   "start" : "SQL",
+  \},
+  \ "html" : {
+  \   "start" : "HTML",
+  \},
+  \ "ruby" : {
+  \   "start" : "RUBY",
+  \},
+  \ "xml" : {
+  \   "start" : "XML",
+  \},
+\}
