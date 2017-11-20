@@ -124,6 +124,8 @@ Bundle "tpope/vim-commentary"
 "Bundle 'Shougo/neocomplete.vim'
 "valloric/YouCompleteMe
 
+"Bundle 'w0rp/ale'
+
 " VERSION CONTROL
 " ---------------
 Bundle 'tpope/vim-fugitive'
