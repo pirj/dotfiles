@@ -94,57 +94,6 @@
                         ]
                     },
                     {
-                        "description": "Change input source to U.S. by left_alt, RussianPC by right_alt",
-                        "manipulators": [
-                            {
-                                "from": {
-                                    "key_code": "left_alt",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "left_alt"
-                                    }
-                                ],
-                                "to_if_alone": [
-                                    {
-                                        "select_input_source": {
-                                            "input_source_id": "^com\\.apple\\.keylayout\\.US$"
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            },
-                            {
-                                "from": {
-                                    "key_code": "right_alt",
-                                    "modifiers": {
-                                        "optional": [
-                                            "any"
-                                        ]
-                                    }
-                                },
-                                "to": [
-                                    {
-                                        "key_code": "right_alt"
-                                    }
-                                ],
-                                "to_if_alone": [
-                                    {
-                                        "select_input_source": {
-                                            "input_source_id": "^com\\.apple\\.keylayout\\.RussianWin$"
-                                        }
-                                    }
-                                ],
-                                "type": "basic"
-                            }
-                        ]
-                    },
-                    {
                         "description": "Change tilde to Russian ё",
                         "manipulators": [
                             {
@@ -223,6 +172,57 @@
                                 "to": [
                                     {
                                         "shell_command": "/usr/local/bin/SwitchAudioSource -n"
+                                    }
+                                ],
+                                "type": "basic"
+                            }
+                        ]
+                    },
+                    {
+                        "description": "Change input source to U.S. by left_alt, RussianPC by right_alt",
+                        "manipulators": [
+                            {
+                                "from": {
+                                    "key_code": "left_alt",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "left_alt"
+                                    }
+                                ],
+                                "to_if_alone": [
+                                    {
+                                        "select_input_source": {
+                                            "input_source_id": "^com\\.apple\\.keylayout\\.RussianWin$"
+                                        }
+                                    }
+                                ],
+                                "type": "basic"
+                            },
+                            {
+                                "from": {
+                                    "key_code": "right_alt",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
+                                },
+                                "to": [
+                                    {
+                                        "key_code": "right_alt"
+                                    }
+                                ],
+                                "to_if_alone": [
+                                    {
+                                        "select_input_source": {
+                                            "input_source_id": "^com\\.apple\\.keylayout\\.US$"
+                                        }
                                     }
                                 ],
                                 "type": "basic"
