@@ -108,14 +108,11 @@ nnoremap K :silent lgrep <C-r><C-w><CR>
 " Find files
 nnoremap <Leader>f :find<Space>
 
-" Only use system clipboard when required
+" Use system clipboard
 if has("mac")
-  nnoremap <silent> <Leader>p :set paste<CR>:read !pbpaste<CR>:set nopaste<CR>
   nnoremap <silent> <Leader>y :.write !pbcopy<CR><CR>
-  vnoremap <silent> <Leader>p :set paste<CR>:read !pbpaste<CR>:set nopaste<CR>
   vnoremap <silent> <Leader>y :.write !pbcopy<CR><CR>
 elseif has("unix")
-  nnoremap <silent> <Leader>p :set paste<CR>:read !xsel -o<CR>:set nopaste<CR>
 endif
 
 " Toggle spell check

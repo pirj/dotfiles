@@ -216,6 +216,9 @@ Bundle 'teranex/tslime.vim'
 " Handle focus lost inside tmux
 "sjl/vitality.vim
 
+" Better terminal integration
+Bundle 'wincent/terminus'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
