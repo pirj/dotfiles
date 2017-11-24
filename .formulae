@@ -35,7 +35,6 @@ postgresql@9.6
 privoxy
 pv
 pwgen
-reattach-to-user-namespace
 redis
 redshift
 ssh-copy-id
