@@ -32,11 +32,9 @@ Prevent Chrome from emailing the page when mistyping Command+Option+I with Comma
     defaults write com.google.Chrome NSUserKeyEquivalents -dict-add 'Email Page Location' '\0'
     defaults write com.google.Chrome.canary NSUserKeyEquivalents -dict-add 'Email Page Location' '\0'
 
-https://github.com/pirj/noclamshell[No clamshell mode] and https://github.com/pirj/nobacklight[no backlight trick]:
+https://github.com/pirj/noclamshell[No clamshell mode] (installed via brew) and https://github.com/pirj/nobacklight[no backlight trick]:
 
-    curl https://raw.githubusercontent.com/pirj/noclamshell/master/noclamshell.plist > ~/Library/LaunchAgents
     curl https://raw.githubusercontent.com/pirj/nobacklight/master/nobacklight.plist > ~/Library/LaunchAgents
-    launchctl load ~/Library/LaunchAgents/nobacklight.plist
     launchctl load ~/Library/LaunchAgents/noclamshell.plist
 
 Add the following to .ssh/config:
