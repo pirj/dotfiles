@@ -27,3 +27,12 @@ mailboxes               = +INBOX
 
 set mail_check          = 30                     # Check mail once in 30 seconds on inactivity
 set timeout             = 5                      # Consider 5 seconds an inactivity
+
+set sort                = threads                # Sort like GMail does
+set fast_reply                                   # Reply with the same subject and recipient by default
+set forward_format      = "Fwd: %s"              # Add a Fwd to the subject when forwarding
+unset mark_old                                   # Don't mark unread messages as old on quit
+
+# # TODO: GPG to fetch passw https://wiki.archlinux.org/index.php/mutt#Passwords_management
+# # TODO: unbind ALL
+# # TODO: keep all unbound bindings in config for consideration
