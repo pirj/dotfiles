@@ -33,6 +33,9 @@ set fast_reply                                   # Reply with the same subject a
 set forward_format      = "Fwd: %s"              # Add a Fwd to the subject when forwarding
 unset mark_old                                   # Don't mark unread messages as old on quit
 
+set sidebar_visible     = yes                    # Show sidebar
+set sidebar_width       = 20
+
 # Colors
 source ~/.config/mutt/mutt-colors-solarized-dark-256.muttrc
 # # TODO: GPG to fetch passw https://wiki.archlinux.org/index.php/mutt#Passwords_management
