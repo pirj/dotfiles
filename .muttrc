@@ -1,40 +1,39 @@
 # Make sure to man {,neo}muttrc to figure out the options and their meaning
 # https://wiki.archlinux.org/index.php/mutt is an incredible cookbook
 
-set realname            = "Phil Pirozhkov"
-set from                = ************@gmail.com # Kept in .secret/muttrc
+set realname              = "Phil Pirozhkov"
+set from                  = ************@gmail.com # Kept in .secret/muttrc
 
-set folder              = imaps://imap.gmail.com
+set folder                = imaps://imap.gmail.com
 
-# set imap_user         = ************@gmail.com # Kept in .secret/muttrc
-# set imap_pass         = ************           # Kept in .secret/muttrc
+# set imap_user           = ************@gmail.com # Kept in .secret/muttrc
+# set imap_pass           = ************           # Kept in .secret/muttrc
 
-source .secret/muttrc                            # Secrets are kept here
+source .secret/muttrc                              # Secrets are kept here
 
-set ssl_force_tls       = yes                    # Force TLS and encryption
+set ssl_force_tls         = yes                    # Force TLS and encryption
 
-set smtp_url            = smtps://$imap_user:$imap_pass@smtp.gmail.com
-set smtp_authenticators = gssapi:login           # Required to properly authenticate via SMTP
+set smtp_url              = smtps://$imap_user:$imap_pass@smtp.gmail.com
+set smtp_authenticators   = gssapi:login           # Required to properly authenticate via SMTP
 
-set postponed           = +[Gmail]/Drafts        # Specify where to save and/or look for postponed messages
-set trash               = +[Gmail]/Trash
+set postponed             = +[Gmail]/Drafts        # Specify where to save and/or look for postponed messages
+set trash                 = +[Gmail]/Trash
 
-set copy                = no                     # Do not store sent mail as files
-set delete              = yes                    # Purge messages when marked to delete
+set copy                  = no                     # Do not store sent mail as files
+set delete                = yes                    # Purge messages when marked to delete
 
-set spoolfile           = +INBOX
-mailboxes               = +INBOX
+set spoolfile             = +INBOX
+set imap_check_subscribed = yes                    # Get lost of mailboxes from IMAP server
 
-set mail_check          = 30                     # Check mail once in 30 seconds on inactivity
-set timeout             = 5                      # Consider 5 seconds an inactivity
+set mail_check            = 30                     # Check mail once in 30 seconds on inactivity
+set timeout               = 5                      # Consider 5 seconds an inactivity
 
-set sort                = threads                # Sort like GMail does
-set fast_reply                                   # Reply with the same subject and recipient by default
-set forward_format      = "Fwd: %s"              # Add a Fwd to the subject when forwarding
-unset mark_old                                   # Don't mark unread messages as old on quit
+set sort                  = threads                # Sort like GMail does
+set fast_reply                                     # Reply with the same subject and recipient by default
+set forward_format        = "Fwd: %s"              # Add a Fwd to the subject when forwarding
+unset mark_old                                     # Don't mark unread messages as old on quit
 
-set sidebar_visible     = yes                    # Show sidebar
-set sidebar_width       = 20
+set sidebar_visible       = yes                    # Show sidebar
 
 # Colors
 source ~/.config/mutt/mutt-colors-solarized-dark-256.muttrc
