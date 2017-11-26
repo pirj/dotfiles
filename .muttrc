@@ -1,0 +1,29 @@
+# Make sure to man {,neo}muttrc to figure out the options and their meaning
+# https://wiki.archlinux.org/index.php/mutt is an incredible cookbook
+
+set realname            = "Phil Pirozhkov"
+set from                = ************@gmail.com # Kept in .secret/muttrc
+
+set folder              = imaps://imap.gmail.com
+
+# set imap_user         = ************@gmail.com # Kept in .secret/muttrc
+# set imap_pass         = ************           # Kept in .secret/muttrc
+
+source .secret/muttrc                            # Secrets are kept here
+
+set ssl_force_tls       = yes                    # Force TLS and encryption
+
+set smtp_url            = smtps://$imap_user:$imap_pass@smtp.gmail.com
+set smtp_authenticators = gssapi:login           # Required to properly authenticate via SMTP
+
+set postponed           = +[Gmail]/Drafts        # Specify where to save and/or look for postponed messages
+set trash               = +[Gmail]/Trash
+
+set copy                = no                     # Do not store sent mail as files
+set delete              = yes                    # Purge messages when marked to delete
+
+set spoolfile           = +INBOX
+mailboxes               = +INBOX
+
+set mail_check          = 30                     # Check mail once in 30 seconds on inactivity
+set timeout             = 5                      # Consider 5 seconds an inactivity
