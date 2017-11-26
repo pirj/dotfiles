@@ -32,6 +32,7 @@ set sort                  = threads                # Sort like GMail does
 set fast_reply                                     # Reply with the same subject and recipient by default
 set forward_format        = "Fwd: %s"              # Add a Fwd to the subject when forwarding
 unset mark_old                                     # Don't mark unread messages as old on quit
+set send_charset          = "us-ascii:utf-8"       # Please don't use ISO-8859-1
 
 set sidebar_visible       = yes                    # Show sidebar
 
