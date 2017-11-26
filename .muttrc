@@ -33,6 +33,7 @@ set fast_reply                                     # Reply with the same subject
 set forward_format        = "Fwd: %s"              # Add a Fwd to the subject when forwarding
 unset mark_old                                     # Don't mark unread messages as old on quit
 set send_charset          = "us-ascii:utf-8"       # Please don't use ISO-8859-1
+set edit_headers          = yes                    # Edit headers (subject, cc, bcc) in the editor
 
 set sidebar_visible       = yes                    # Show sidebar
 
