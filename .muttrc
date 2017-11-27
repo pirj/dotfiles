@@ -39,6 +39,8 @@ set sidebar_visible       = yes                    # Show sidebar
 
 # Colors
 source ~/.config/mutt/mutt-colors-solarized-dark-256.muttrc
+
+# Key bindings
+source ~/.config/mutt/bindings.muttrc
+
 # # TODO: GPG to fetch passw https://wiki.archlinux.org/index.php/mutt#Passwords_management
-# # TODO: unbind ALL
-# # TODO: keep all unbound bindings in config for consideration

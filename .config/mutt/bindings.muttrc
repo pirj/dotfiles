@@ -1,0 +1,147 @@
+# Unbind every single binding
+source ~/.config/mutt/unbind-default.muttrc
+
+## Legend
+#
+# index: list the emails
+# editor: the input line when you are supposed to enter some text
+# generic: every other mode except pager and editor
+# pager: display e-mail
+# attach: list the parts of MIME attachments
+# compose: set up a new email to be sent out
+# browser: directory listing when searching for folder to change to
+
+## TODO
+#
+# remove generic,index if just generic is enough
+# check all bindings
+# reorder
+# check interesting bindings at the bottom
+
+bind index,pager c  mail
+bind generic     x  tag-entry
+bind index       x  tag-thread
+bind pager       x  tag-message
+bind index,pager s  flag-message
+
+bind index,pager r  group-reply
+bind index,pager d  delete-message
+bind index,pager \# delete-message
+# bind  index D delete-thread
+# ^U                                         undelete-thread                                       undelete all messages in thread
+bind index,pager l  copy-message                               # Label
+bind index,pager v  save-message                               # Move to
+
+macro index,pager I  <set-flag>O "Mark as read"
+macro index,pager U  <clear-flag>O "Mark as unread"
+# macro pager U <set-flag>N "mark as unread"
+# bind  index W      clear-flag
+# bind  index w      set-flag
+# N                                          toggle-new                                            toggle a message's 'new' flag
+bind index,pager,browser,attach  g  noop
+macro index,pager gi <change-folder>=INBOX<enter> "Go to inbox"
+macro index,pager gs <change-folder>=[Gmail]/Starred<enter> "Go to Starred"
+macro index,pager gt <change-folder>=[Gmail]/Sent\ Mail<enter> "Go to Sent messages"
+macro index,pager gd <change-folder>=[Gmail]/Drafts<enter> "Go to Drafts"
+macro index,pager ga <change-folder>=[Gmail]/All\ Mail<enter> "Go to All mail"
+macro index,pager gl <change-folder>\? "Go to Label"
+# bind  index gl change-folder
+macro index,pager +  <save-message>=[Gmail]/Important<enter> "Mark as important"
+macro index,pager !  <save-message>=[Gmail]/Spam<enter> "Report as spam"
+macro index,pager e  <save-message>=[Gmail]/All\ Mail<enter><enter> "Archive conversation"
+
+bind browser j next-entry
+bind browser k previous-entry
+bind browser <Enter> select-entry
+bind browser <Return> select-entry
+
+bind index j next-undeleted
+bind index k previous-undeleted
+# bind index,pager P previous-new-then-unread
+# bind index,pager N next-new-then-unread
+# bind index,pager n next-unread
+bind attach,index,pager \Cd next-page
+bind attach,index,pager \Cu previous-page
+bind pager gg top
+bind pager G bottom
+bind attach,browser,index gg first-entry
+bind attach,browser,index G last-entry
+
+bind generic,index,pager u exit
+bind generic,index,pager q exit
+
+macro index a <tag-pattern>~A<enter> "Select all"
+macro pager a <exit><tag-pattern>~A<enter> "Select all"
+macro index n <untag-pattern>~T<enter> "Deselect all"
+macro pager n <exit><untag-pattern>~T<enter> "Deselect all"
+macro index r <untag-pattern>~T<enter><tag-pattern>~R<enter> "Select read"
+macro pager r <exit><untag-pattern>~T<enter><tag-pattern>~R<enter> "Select read"
+macro index u <untag-pattern>~T<enter><tag-pattern>~U<enter> "Select unread"
+macro pager u <exit><untag-pattern>~T<enter><tag-pattern>~U<enter> "Select unread"
+# bind browser N        select-new
+# bind pager u exit
+
+bind attach <Tab> collapse-parts
+bind editor <Tab> complete-query
+bind index zo collapse-thread
+bind index zc collapse-thread
+bind index zO collapse-all
+bind index zC collapse-all
+bind index,pager ]s sidebar-next
+bind index,pager [s sidebar-prev
+bind index,pager g1 sidebar-open
+
+# bind index,pager ?s sidebar-toggle-visible
+bind index,pager c mail
+bind index,pager m mail
+
+bind generic,index,pager ? help
+bind generic,index,pager $ sync-mailbox
+
+bind generic,index,pager / search
+bind generic,index,pager : enter-command
+
+bind index f forward-message
+
+bind index <Enter> display-message
+bind index <Return> display-message
+
+# Potentionally useful commands
+
+# bind  index @ display-address
+# bind  index u undelete-message
+# bind pager h       display-toggle-weed
+
+# ^N                                         next-thread                                           jump to the next thread
+# ^P                                         previous-thread                                       jump to previous thread
+
+# <Esc>b                                     M <search>~b                                          search in message bodies
+
+# <Esc>e                                     resend-message                                        use the current message as a template for a new one
+
+# F                                          flag-message                                          toggle a message's 'important' flag
+
+# W                                          clear-flag                                            clear a status flag from a message
+# Y                                          edit-label                                            add, change, or delete a message's label
+
+# !                                          shell-escape                                          invoke a command in a subshell
+
+# 1                                          jump                                                  jump to an index number
+# 2                                          jump                                                  jump to an index number
+# ...
+# 9                                          jump                                                  jump to an index number
+
+# :                                          enter-command                                         enter a neomuttrc command
+
+# zz?
+# M                                          middle-page                                           move to the middle of the page
+
+# n                                          search-next                                           search for next match
+# search-opposite                                                                                  search for next match in opposite direction
+
+# modify-tags                                                                                      modify (notmuch/imap) tags
+# modify-tags-then-hide                                                                            modify (notmuch/imap) tags and then hide message
+# modify-labels                                                                                    modify (notmuch/imap) tags
+# modify-labels-then-hide                                                                          modify (notmuch/imap) tags and then hide message
+
+# tag-prefix-cond                                                                                  apply next function ONLY to tagged messages
