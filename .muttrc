@@ -44,6 +44,8 @@ auto_view text/html                                # View HTML automatically
 alternative_order text/plain                       # Prefer plain
 alternative_order text/enriched text/html          # But accept what's given
 
+set header_cache          = ~/.tmp/mutt/headers/cache
+
 # Colors
 source ~/.config/mutt/mutt-colors-solarized-dark-256.muttrc
 
