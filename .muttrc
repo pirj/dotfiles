@@ -34,6 +34,7 @@ set forward_format        = "Fwd: %s"              # Add a Fwd to the subject wh
 unset mark_old                                     # Don't mark unread messages as old on quit
 set send_charset          = "us-ascii:utf-8"       # Please don't use ISO-8859-1
 set edit_headers          = yes                    # Edit headers (subject, cc, bcc) in the editor
+set confirmappend         = no                     # Move to other mailbox no questions asked
 
 set sidebar_visible       = yes                    # Show sidebar
 
