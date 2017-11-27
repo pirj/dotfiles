@@ -38,6 +38,12 @@ set confirmappend         = no                     # Move to other mailbox no qu
 
 set sidebar_visible       = yes                    # Show sidebar
 
+set mailcap_path          = ~/.config/mutt/mailcap # Mail capabilities
+
+auto_view text/html                                # View HTML automatically
+alternative_order text/plain                       # Prefer plain
+alternative_order text/enriched text/html          # But accept what's given
+
 # Colors
 source ~/.config/mutt/mutt-colors-solarized-dark-256.muttrc
 
