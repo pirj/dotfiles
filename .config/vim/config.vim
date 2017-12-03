@@ -161,3 +161,5 @@ let g:ruby_heredoc_syntax_defaults = {
   \   "start" : "XML",
   \},
 \}
+
+let g:TerminusMouse=0     " Disable improved mouse integration
