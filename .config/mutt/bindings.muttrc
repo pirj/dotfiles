@@ -45,7 +45,6 @@ macro index,pager gt <change-folder>=[Gmail]/Sent\ Mail<enter> "Go to Sent messa
 macro index,pager gd <change-folder>=[Gmail]/Drafts<enter> "Go to Drafts"
 macro index,pager ga <change-folder>=[Gmail]/All\ Mail<enter> "Go to All mail"
 macro index,pager gl <change-folder>\? "Go to Label"
-# bind  index gl change-folder
 macro index,pager +  <save-message>=[Gmail]/Important<enter> "Mark as important"
 macro index,pager !  <save-message>=[Gmail]/Spam<enter> "Report as spam"
 macro index,pager e  <save-message>=[Gmail]/All\ Mail<enter><enter> "Archive conversation"
@@ -57,6 +56,8 @@ bind browser <Return> select-entry
 
 bind index j next-undeleted
 bind index k previous-undeleted
+bind index gj next-entry
+bind index gk previous-entry
 # bind index,pager P previous-new-then-unread
 # bind index,pager N next-new-then-unread
 # bind index,pager n next-unread
@@ -87,9 +88,6 @@ bind index zo collapse-thread
 bind index zc collapse-thread
 bind index zO collapse-all
 bind index zC collapse-all
-bind index,pager ]s sidebar-next
-bind index,pager [s sidebar-prev
-bind index,pager g1 sidebar-open
 
 # bind index,pager ?s sidebar-toggle-visible
 bind index,pager c mail
