@@ -10,16 +10,6 @@ if defined?(::Bundler)
   end
 end
 
-def load_gem gem
-  require gem
-rescue LoadError
-  puts "warning: #{gem} not available"
-end
-
-['hirb', 'awesome_print', 'benchmark/ips'].each do |gem|
-  load_gem gem
-end
-
 require 'pry'
 require 'pry-doc'
 
