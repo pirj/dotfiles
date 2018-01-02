@@ -37,6 +37,9 @@ nnoremap <silent> <C-j> <C-w>j
 nnoremap <silent> <C-k> <C-w>k
 nnoremap <silent> <C-l> <C-w>l
 
+" Create a new window in a vertical split
+nnoremap <silent> <C-w>N :vnew<CR>
+
 " Disable some annoying keys
 nnoremap Q <NOP>
 nnoremap K <NOP>
