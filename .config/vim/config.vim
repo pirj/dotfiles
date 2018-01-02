@@ -1,6 +1,7 @@
 set nocompatible          " be iMproved
 
 let &runtimepath=expand('~/.config/vim').','.&runtimepath
+set runtimepath+=/usr/local/opt/fzf
 
 filetype plugin indent on " Automatically detect file types. (must turn on after Vundle)
 
