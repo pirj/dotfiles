@@ -133,6 +133,9 @@ set grepprg=ag\ --nogroup\ --nocolor\ --column\ --vimgrep
 " Switch back to normal only
 set mouse=
 
+" Disable improved mouse integration
+let g:TerminusMouse=0
+
 " Not using folding
 set nofoldenable
 
@@ -161,5 +164,3 @@ let g:ruby_heredoc_syntax_defaults = {
   \   "start" : "XML",
   \},
 \}
-
-let g:TerminusMouse=0     " Disable improved mouse integration
