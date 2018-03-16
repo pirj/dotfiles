@@ -287,13 +287,6 @@
 			<key>Text</key>
 			<string>97AEA64F-301E-45B5-854E-4F17457680BA</string>
 		</dict>
-		<key>0x56-0x120000</key>
-		<dict>
-			<key>Action</key>
-			<integer>25</integer>
-			<key>Text</key>
-			<string>Paste</string>
-		</dict>
 		<key>0x5b-0x100000</key>
 		<dict>
 			<key>Action</key>
@@ -409,9 +402,9 @@
 		<key>0x76-0x100000</key>
 		<dict>
 			<key>Action</key>
-			<integer>11</integer>
+			<integer>25</integer>
 			<key>Text</key>
-			<string>0x16</string>
+			<string>Paste</string>
 		</dict>
 		<key>0x77-0x100000</key>
 		<dict>
