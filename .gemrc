@@ -1,9 +1,9 @@
 ---
-:backtrace: false
-:benchmark: false
-:bulk_threshold: 1000
-:sources:
+backtrace: false
+benchmark: false
+bulk_threshold: 1000
+sources:
 - http://rubygems.org
-:update_sources: true
-:verbose: true
-gem: --no-rdoc --no-document=rdoc --no-user-install
+update_sources: true
+verbose: true
+gem: --no-user-install --no-rdoc --document=yri,yard
