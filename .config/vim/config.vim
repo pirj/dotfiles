@@ -55,7 +55,7 @@ let g:netrw_banner = 0    " No Netrw banner
 syntax enable             " Enable syntax processing
 set autoread              " Automatically reload changes if detected
 set wildmenu              " Display command completion options
-set wildmode=longest,full " Complete till longest common string, display matches
+set wildmode=longest:full,full " Complete till longest common string, display matches
 set hidden                " Change buffer - without saving
 set history=768           " Number of things to remember in history.
 set iskeyword+=$,@        " Add extra characters that are valid parts of variables
