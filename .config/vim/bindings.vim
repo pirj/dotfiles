@@ -108,12 +108,12 @@ nnoremap <silent> <Space><Space> :nohlsearch<CR>
 nnoremap <Leader>g :silent lgrep<Space>
 nnoremap K :silent lgrep <C-r><C-w><CR>
 
-" Find files
-if filereadable("/usr/local/opt/fzf/plugin/fzf.vim")
-  nnoremap <Leader>f :FZF<CR>
-else
+" " Find files
+" if filereadable("/usr/local/opt/fzf/plugin/fzf.vim")
+"   nnoremap <Leader>f :FZF<CR>
+" else
   nnoremap <Leader>f :find<Space>
-endif
+" endif
 
 " Use system clipboard
 if has("mac")
