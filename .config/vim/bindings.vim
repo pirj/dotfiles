@@ -48,7 +48,6 @@ vnoremap vv <C-v>
 nnoremap Q <NOP>
 nnoremap K <NOP>
 map 0 <NOP>
-map _ <NOP>
 map $ <NOP>
 
 " Soft hardmode
@@ -135,3 +134,4 @@ endif
 
 nnoremap - :Explore<CR>
 
+map <Leader>r :call RunNearestSpec()<CR>
