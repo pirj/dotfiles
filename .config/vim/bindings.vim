@@ -40,6 +40,10 @@ nnoremap <silent> <C-l> <C-w>l
 " Create a new window in a vertical split
 nnoremap <silent> <C-w>N :vnew<CR>
 
+" Since C-v is used to paste from system buffer, use vv
+nnoremap vv <C-v>
+vnoremap vv <C-v>
+
 " Disable some annoying keys
 nnoremap Q <NOP>
 nnoremap K <NOP>
