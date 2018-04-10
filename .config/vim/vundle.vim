@@ -99,7 +99,7 @@ Bundle 'tpope/vim-endwise'
 "Bundle 'scratch.vim'
 "Bundle 'mutewinter/GIFL'
 "Bundle 'swaroopch/vim-markdown-preview'
-Bundle 'dagwieers/asciidoc-vim'
+" Bundle 'dagwieers/asciidoc-vim'
 "Bundle 'AndrewRadev/switch.vim'
 "Bundle 'tpope/vim-eunuch'
 "Bundle 'itspriddle/vim-marked'
@@ -128,9 +128,9 @@ Bundle "tpope/vim-commentary"
 
 " VERSION CONTROL
 " ---------------
-Bundle 'tpope/vim-fugitive'
+" Bundle 'tpope/vim-fugitive'
 Bundle 'airblade/vim-gitgutter'
-Bundle 'junegunn/gv.vim'
+" Bundle 'junegunn/gv.vim'
 
 " SYNTAX SUPPORT
 " --------------
@@ -170,7 +170,7 @@ Bundle 'ap/vim-css-color'
 " Bundle 'ninegrid/vim-livescript'
 
 " JavaScript
-Bundle 'Shutnik/jshint2.vim'
+" Bundle 'Shutnik/jshint2.vim'
 
 " RUBY
 " ----
@@ -191,7 +191,7 @@ Bundle 'tpope/vim-repeat'
 
 " ASYNC
 " -----
-Bundle 'skywind3000/asyncrun.vim'
+" Bundle 'skywind3000/asyncrun.vim'
 
 " OTHER
 " -----
@@ -221,4 +221,3 @@ Bundle 'wincent/terminus'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
-filetype plugin indent on    " required

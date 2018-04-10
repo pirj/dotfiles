@@ -135,5 +135,3 @@ endif
 
 nnoremap - :Explore<CR>
 
-" FIXME: move to ftp
-nnoremap <Leader>e :AsyncRun rspec --out /dev/null --require quickfix_formatter.rb --format QuickfixFormatter --no-profile #<CR>
