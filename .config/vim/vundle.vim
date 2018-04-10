@@ -149,7 +149,7 @@ Bundle 'slim-template/vim-slim'
 Bundle 'joker1007/vim-ruby-heredoc-syntax'
 
 " Bundle 'sunaku/vim-ruby-minitest'
-" Bundle 'thoughtbot/vim-rspec'
+Bundle 'thoughtbot/vim-rspec'
 " Bundle 'tpope/vim-haml'
 " Bundle 'tpope/vim-rake'
 
@@ -197,7 +197,7 @@ Bundle 'tpope/vim-repeat'
 " -----
 
 " tmux support
-Bundle 'teranex/tslime.vim'
+Bundle 'jgdavey/tslime.vim'
 
 " Live editing of HTML, CSS, JS
 "jaxbot/brolink

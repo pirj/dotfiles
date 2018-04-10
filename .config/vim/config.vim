@@ -164,3 +164,5 @@ let g:ruby_heredoc_syntax_defaults = {
   \   "start" : "XML",
   \},
 \}
+
+let g:rspec_command = 'call Send_to_Tmux("rspec {spec}\n")'
