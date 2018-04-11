@@ -25,11 +25,10 @@
   trustctime = false
   commentChar = ";"
 [format]
-  pretty = %h %ai %aN %d %s %N
-  graph = true
+  pretty = %h %ad %<(17)%aN%d %s %N
 [log]
   abbrevCommit = true
-  date = iso
+  date = short
 [branch]
   autosetupmerge = true
 [alias]
