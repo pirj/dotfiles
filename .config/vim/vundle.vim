@@ -128,7 +128,7 @@ Bundle "tpope/vim-commentary"
 
 " VERSION CONTROL
 " ---------------
-" Bundle 'tpope/vim-fugitive'
+Bundle 'tpope/vim-fugitive'
 Bundle 'airblade/vim-gitgutter'
 " Bundle 'junegunn/gv.vim'
 
