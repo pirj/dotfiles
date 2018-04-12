@@ -13,7 +13,7 @@ cnoremap kj <C-f>
 " Navigate buffers
 nnoremap <silent> [b :bprevious<CR>
 nnoremap <silent> ]b :bnext<CR>
-nnoremap <silent> <Leader>b :ls<CR>
+" nnoremap <silent> <Leader>b :ls<CR> " Now handled by Command-T
 nnoremap <silent> \b :bd<CR>
 
 " Navigate Location list (lgrep)
@@ -111,7 +111,8 @@ nnoremap <silent> <Space><Space> :nohlsearch<CR>
 nnoremap <Leader>g :silent lgrep<Space>
 nnoremap K :silent lgrep <C-r><C-w><CR>
 
-nnoremap <Leader>f :find<Space>
+" nnoremap <Leader>f :find<Space>
+nnoremap <Leader>f :CommandT .<CR>
 
 " Use system clipboard
 if has("mac")

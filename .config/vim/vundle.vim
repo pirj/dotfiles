@@ -15,6 +15,7 @@ Bundle 'VundleVim/Vundle.vim'
 " ----------
 " Bundle 'tpope/vim-vinegar'
 " Bundle 'justinmk/vim-dirvish'
+Bundle 'wincent/command-t'
 
 Bundle 'tpope/vim-projectionist'
 
