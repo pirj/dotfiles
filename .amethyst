@@ -1,0 +1,15 @@
+{
+    "layouts": [],
+    "mod1": [],
+    "mod2": [],
+    "floating": [],
+    "float-small-windows": false,
+    "mouse-follows-focus": false,
+    "focus-follows-mouse": true,
+    "enables-layout-hud": false,
+    "enables-layout-hud-on-space-change": false,
+    "ignore-menu-bar": false,
+    "use-canary-build": false,
+    "new-windows-to-main": false,
+    "send-crash-reports": false
+}
