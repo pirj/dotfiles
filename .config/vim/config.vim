@@ -126,8 +126,11 @@ set splitright
 " Spell checking
 set spelllang=en,ru
 
-" Grep with ag
-set grepprg=ag\ --nogroup\ --nocolor\ --column\ --vimgrep
+" Grep with rg
+set grepprg=rg\ --vimgrep\ --no-heading\ --smart-case
+
+" Search files with rg as well
+let g:ctrlp_user_command = 'rg --files %s'
 
 " Mouse integration is for all modes by default on some installs
 " Switch back to normal only
