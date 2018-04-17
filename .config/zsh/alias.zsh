@@ -49,7 +49,7 @@ if [[ "$OSTYPE" = "darwin"* ]]; then
 else
   alias -g C='| xsel -i && xsel -o'
 fi
-alias -g S="| curl -F 'sprunge=<-' http://sprunge.us C"
+alias -g S="| curl --silent --form 'f:1=<-' ix.io C"
 alias -g F='| less +F'
 alias -g V='| tee $(rm fifo.tmp; mkfifo fifo.tmp && echo fifo.tmp) &; vim $(< fifo.tmp ) && rm fifo.tmp'
 alias -g T='| tee -a '
