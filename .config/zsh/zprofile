@@ -29,3 +29,5 @@ export PATH=$PATH:/usr/local/sbin
 
 # Adds Node module (LiveScript, Jasmin) binaries into path
 [[ -s "$HOME/node_modules" ]] && export PATH=$PATH:$HOME/node_modules/.bin:$HOME/node_modules/bin
+
+export YSU_MESSAGE_FORMAT="\e[33mUse %alias_type for %command: %alias\e[0m"
