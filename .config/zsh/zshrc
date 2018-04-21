@@ -24,18 +24,18 @@ autoload -Uz compinit
 # Plugins
 export ZPLUG_HOME=/usr/local/opt/zplug
 source $ZPLUG_HOME/init.zsh
-if ! zplug check --verbose; then
-  printf "Install? [y/N]: "
-  if read -q; then
-    echo; zplug install
-  fi
-fi
 zplug zsh-users/zsh-autosuggestions
 zplug zsh-users/zsh-completions
 zplug zsh-users/zsh-history-substring-search
 zplug zsh-users/zsh-syntax-highlighting
 zplug djui/alias-tips
 zplug zdharma/fast-syntax-highlighting
+if ! zplug check --verbose; then
+  printf "Install? [y/N]: "
+  if read -q; then
+    echo; zplug install
+  fi
+fi
 zplug load
 
 eval "$(direnv hook zsh)"
