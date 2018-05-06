@@ -1,1 +1,3 @@
---color --profile 2
+--color
+--profile 2
+--format progress
