@@ -16,6 +16,8 @@
 [merge]
   tool = vimdiff
   conflictstyle = diff3
+[mergetool]
+  prompt = false
 [pager]
   diff = diff-so-fancy | less --tabs=4 -RFX
   show = diff-so-fancy | less --tabs=4 -RFX
