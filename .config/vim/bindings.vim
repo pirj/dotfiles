@@ -71,8 +71,8 @@ cmap <Left>  <NOP>
 cnoremap <C-n> <Down>
 cnoremap <C-p> <Up>
 
-" Select previously pasted text
-nnoremap gv `[v`]
+" Select previously pasted or selected lines
+nnoremap gv `[V`]
 
 " Edit previous file
 nnoremap gb <C-^>
