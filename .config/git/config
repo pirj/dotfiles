@@ -54,3 +54,5 @@
   wip = commit --no-verify --message=wip
 [rerere]
   enabled = 1
+[diff]
+  algorithm = patience
