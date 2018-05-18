@@ -54,6 +54,7 @@
   l = !BASE_BRANCH=${1:-master} && MERGE_BASE=$(git merge-base origin/$BASE_BRANCH HEAD) && git log --reverse $MERGE_BASE..HEAD && :
   fixup = commit --amend --no-edit
   wip = commit --no-verify --message=wip
+  m = log --format='%h %B' -1
 [rerere]
   enabled = 1
 [diff]
