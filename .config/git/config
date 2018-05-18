@@ -59,5 +59,7 @@
   enabled = 1
 [diff]
   algorithm = patience
+[interactive]
+  singlekey = true
 [commit]
   verbose = true
