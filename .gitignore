@@ -54,9 +54,8 @@ VirtualBox VMs/
 miscdocs/
 source/
 torrents/
-
 .vegas
-.psql_history
+.psql_history*
 .pgadmin3
 .pgpass
 .config/inkscape/
@@ -156,12 +155,10 @@ data
 .config/transmission-daemon/dht.dat
 .config/pavucontrol.ini
 .pencil
-LEARN
 .weechat/sec.conf
 .weechat/pipe
 .wings3d
 *.sqlite
-WORK
 .elinks/bookmarks
 .elinks/cookies
 .elinks/globhist
