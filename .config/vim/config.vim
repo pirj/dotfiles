@@ -154,9 +154,6 @@ let g:ruby_heredoc_syntax_defaults = {
   \ "javascript" : {
   \   "start" : "JS",
   \},
-  \ "sql" : {
-  \   "start" : "SQL",
-  \},
   \ "html" : {
   \   "start" : "HTML",
   \},
