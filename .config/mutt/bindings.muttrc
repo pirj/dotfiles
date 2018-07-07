@@ -54,8 +54,8 @@ bind browser k previous-entry
 bind browser <Enter> select-entry
 bind browser <Return> select-entry
 
-bind index j next-undeleted
-bind index k previous-undeleted
+bind index,pager j next-undeleted
+bind index,pager k previous-undeleted
 bind index gj next-entry
 bind index gk previous-entry
 # bind index,pager P previous-new-then-unread
