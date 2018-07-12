@@ -116,10 +116,10 @@ nnoremap K :silent lgrep <C-r><C-w><CR>
 nnoremap <Leader>f :CtrlP .<CR>
 
 " Use system clipboard
-if has("mac")
+if (system('uname') =~ "darwin")
   nnoremap <silent> <Leader>y :.write !pbcopy<CR><CR>
   vnoremap <silent> <Leader>y :.write !pbcopy<CR><CR>
-elseif has("unix")
+else
 endif
 
 " Toggle spell check
