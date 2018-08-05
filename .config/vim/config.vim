@@ -139,6 +139,9 @@ set mouse=
 " Disable improved mouse integration
 let g:TerminusMouse=0
 
+" Disable cursor shape change on mode change
+let g:TerminusCursorShape=0
+
 " Not using folding
 set nofoldenable
 
