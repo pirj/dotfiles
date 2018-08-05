@@ -14,10 +14,14 @@
   autosquash = true
   instructionFormat = %ai %aN %s
 [merge]
-  tool = vimdiff
+  tool = diffconflicts
   conflictstyle = diff3
 [mergetool]
   prompt = false
+  keepBackup = false
+[mergetool "diffconflicts"]
+  cmd = vim -c DiffConflicts \"$MERGED\" \"$BASE\" \"$LOCAL\" \"$REMOTE\"
+  trustExitCode = true
 [pager]
   diff = diff-so-fancy | less --tabs=4 -RFX
   show = diff-so-fancy | less --tabs=4 -RFX

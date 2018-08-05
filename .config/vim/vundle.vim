@@ -132,6 +132,7 @@ Bundle "tpope/vim-commentary"
 Bundle 'tpope/vim-fugitive'
 Bundle 'airblade/vim-gitgutter'
 " Bundle 'junegunn/gv.vim'
+Bundle 'whiteinge/diffconflicts'
 
 " SYNTAX SUPPORT
 " --------------
