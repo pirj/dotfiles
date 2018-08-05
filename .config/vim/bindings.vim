@@ -90,9 +90,9 @@ nnoremap Y y$
 nnoremap H 0
 nnoremap L $
 
-" Swap jumping, ' is closer, so use it to jump to line and column
-nnoremap ' `
-nnoremap ` '
+" Jumplist
+nnoremap ` <C-o>
+nnoremap ~ <C-i>
 
 " Easier redo
 nnoremap U <C-r>
