@@ -214,3 +214,4 @@ dosprogs
 .config/exercism.json
 .atom
 .config/configstore/update-notifier-npm.json
+.config/yarn/
