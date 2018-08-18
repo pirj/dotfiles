@@ -36,6 +36,7 @@
 [log]
   abbrevCommit = true
   date = short
+  follow = true
 [branch]
   autosetupmerge = true
 [alias]
