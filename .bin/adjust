@@ -1,0 +1,22 @@
+#!/usr/bin/env ruby
+
+require 'date'
+require 'time'
+
+def adjust(time_string)
+  t = Time.parse time_string
+  rounded = (((t.day*24*60 + t.hour*60 + t.min)/15.0).ceil)*15
+  day = rounded/24/60
+  hour = rounded/60 - day*24
+  min = min = rounded - day*24*60 - hour*60
+  adjusted = Time.new(t.year, t.month, day, hour, min)
+  adjusted.strftime '%Y%m%dT%H%M%SZ'
+end
+
+date = Date.today.strftime '%Y-%m'
+path = File.expand_path "~/.timewarrior/data/#{date}.data"
+lines = File.readlines path
+last = lines.last.split
+last[3] = adjust last[3]
+lines[-1] = last.join ' '
+File.open(path, 'w') { |file| file.write lines.join }
