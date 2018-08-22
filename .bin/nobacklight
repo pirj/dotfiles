@@ -1,9 +1,0 @@
-#!/usr/bin/env bash
-
-CLAMSHELL=$(ioreg -r -k AppleClamshellState | grep AppleClamshellState | grep Yes)
-EXTERNAL_IS_PRIMARY=$(brightness -l 2&>/dev/null | grep main | grep external)
-if [ -z "$CLAMSHELL" ]; then
-  if [ -z "$EXTERNAL_IS_PRIMARY" ]; then
-    /usr/local/bin/brightness -d 1 -v 0
-  fi
-fi
