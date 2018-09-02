@@ -29,8 +29,8 @@ alias tls='tmux ls'
 alias tn='tmux new -s'
 
 # Google translate cli, en -> ru
-alias trs='trans {ru=}'
-alias tru='trans {=ru}'
+function trs { trans {ru=} "$*" }
+function tru { trans {=ru} "$*" }
 
 # Rails
 alias r='spring rails'
