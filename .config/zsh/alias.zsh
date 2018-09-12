@@ -34,13 +34,13 @@ function tru { trans {=ru} "$*" }
 
 # Rails
 alias r='spring rails'
-alias rails='echo Attempt to use non-spring variation of rails'
+alias rails='echo Attempt to use non-spring variation of rails && $*'
 
 # Pretty self explaining
 alias g=git
 
 # Handy pipes
-alias -g G='| grep -a'
+alias -g G='| rg --smart-case'
 alias -g P='| $PAGER'
 alias -g W='| wc -l'
 alias -g H='| head -n'
