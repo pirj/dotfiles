@@ -34,7 +34,7 @@ function tru { trans {=ru} "$*" }
 
 # Rails
 alias r='spring rails'
-alias rails='echo Attempt to use non-spring variation of rails && $*'
+alias rails='echo Attempt to use non-spring variation of rails && rails $*'
 
 # Pretty self explaining
 alias g=git
