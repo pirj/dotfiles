@@ -216,3 +216,5 @@ dosprogs
 .config/configstore/update-notifier-npm.json
 .config/yarn/
 .zoomus
+.pry.d
+.forever
