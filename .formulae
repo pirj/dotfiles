@@ -20,16 +20,17 @@ git-flow
 git-hooks
 git-imerge
 gpg-agent
-heroku
+heroku/brew/heroku
 htop
 hunspell
-imagemagick
+imagemagick@6
 jq
 libssh2
 libtermkey
 libvorbis
 libvterm
 libxml2
+lynx
 markdown
 memcached
 mkdocs
@@ -42,7 +43,6 @@ pirj/noclamshell/noclamshell
 node@8
 openssl@1.1
 p7zip
-pkg-config
 postgresql
 privoxy
 proctools
