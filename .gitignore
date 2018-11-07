@@ -218,3 +218,5 @@ dosprogs
 .zoomus
 .pry.d
 .forever
+.pyenv
+.python_history
