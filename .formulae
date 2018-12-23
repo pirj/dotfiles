@@ -26,9 +26,6 @@ hunspell
 imagemagick@6
 jq
 libssh2
-libtermkey
-libvorbis
-libvterm
 libxml2
 lynx
 markdown
@@ -37,13 +34,14 @@ mkdocs
 mpc
 mpd
 mtr
+mysql
 neomutt
 nginx
 pirj/noclamshell/noclamshell
 node@8
 openssl@1.1
 p7zip
-postgresql
+postgresql@10
 privoxy
 proctools
 pv
@@ -52,8 +50,8 @@ pyenv
 redis
 redshift
 ripgrep
-ruby
 sdl
+shellcheck
 ssh-copy-id
 switchaudio-osx
 task
@@ -65,8 +63,8 @@ tmux
 tor
 translate-shell
 transmission
-unibilium
 unrar
+vim
 vimpc
 w3m
 watch
