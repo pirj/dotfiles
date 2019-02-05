@@ -4,3 +4,4 @@ TODO*
 .agignore
 .DS_Store
 PASSWD
+.envrc
