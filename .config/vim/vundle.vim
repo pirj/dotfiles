@@ -87,6 +87,12 @@ Bundle 'tpope/vim-endwise'
 " Indentation text-objects to give your old Vim some new bytes
 " Bundle 'qstrahl/vim-dentures'
 
+Bundle 'kana/vim-textobj-user'
+runtime macros/matchit.vim
+
+" Adds ruby block text object
+Bundle 'tek/vim-textobj-ruby'
+
 " COMMANDS
 " --------
 
