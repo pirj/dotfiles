@@ -180,6 +180,10 @@ Bundle 'ap/vim-css-color'
 " JavaScript
 " Bundle 'Shutnik/jshint2.vim'
 
+" Markdown
+
+Bundle 'gabrielelana/vim-markdown'
+
 " RUBY
 " ----
 
@@ -226,6 +230,9 @@ Bundle 'jgdavey/tslime.vim'
 
 " Better terminal integration
 Bundle 'wincent/terminus'
+
+" Writing support
+Bundle 'reedes/vim-pencil'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
