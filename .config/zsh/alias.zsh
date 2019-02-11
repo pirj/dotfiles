@@ -94,3 +94,5 @@ alias toreman="grep --invert-match '#' < Procfile | sed -e 's/^[^:]*: //' | xarg
 function k9 {
   pgrep -f "$1" | xargs kill -9
 }
+
+[[ -s $(which nvim) ]] && alias vim=nvim

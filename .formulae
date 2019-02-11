@@ -36,6 +36,7 @@ mpd
 mtr
 mysql
 neomutt
+neovim
 nginx
 pirj/noclamshell/noclamshell
 node@8
@@ -64,7 +65,6 @@ tor
 translate-shell
 transmission
 unrar
-vim
 vimpc
 w3m
 watch
