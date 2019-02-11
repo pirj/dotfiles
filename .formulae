@@ -3,7 +3,6 @@ awscli
 blueutil
 brightness
 vitorgalvao/tiny-scripts/cask-repair
-chromedriver
 cmake
 coreutils
 ctags
@@ -15,6 +14,7 @@ elasticsearch
 elinks
 exercism
 git
+git-absorb
 git-extras
 git-flow
 git-hooks
@@ -34,7 +34,6 @@ mkdocs
 mpc
 mpd
 mtr
-mysql
 neomutt
 neovim
 nginx
@@ -42,7 +41,7 @@ pirj/noclamshell/noclamshell
 node@8
 openssl@1.1
 p7zip
-postgresql@10
+postgresql
 privoxy
 proctools
 pv
@@ -69,7 +68,6 @@ vimpc
 w3m
 watch
 wget
-yarn
 youtube-dl
 zplug
 zsh
