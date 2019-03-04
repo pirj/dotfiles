@@ -127,7 +127,7 @@ set splitright
 set spelllang=en,ru
 
 " Grep with rg
-set grepprg=rg\ --vimgrep\ --no-heading\ --smart-case
+set grepprg=rg\ --vimgrep\ --no-heading\ --smart-case\ --hidden
 
 " Search files with rg as well
 let g:ctrlp_user_command = 'rg --files %s'
