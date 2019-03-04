@@ -232,7 +232,7 @@ Bundle 'jgdavey/tslime.vim'
 Bundle 'wincent/terminus'
 
 " Writing support
-Bundle 'reedes/vim-pencil'
+" Bundle 'reedes/vim-pencil'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

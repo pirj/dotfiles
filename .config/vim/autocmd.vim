@@ -50,5 +50,5 @@ autocmd BufReadPost * silent! lcd .
 
 autocmd BufNewFile,BufRead *.git/{,modules/**/}{PULLREQ_EDIT,COMMIT_EDIT,MERGE_}MSG set ft=gitcommit
 
-autocmd FileType markdown call pencil#init()
-autocmd FileType text call pencil#init()
+" autocmd FileType markdown call pencil#init()
+" autocmd FileType text call pencil#init()
