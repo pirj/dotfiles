@@ -142,8 +142,8 @@ let g:TerminusMouse=0
 " Disable cursor shape change on mode change
 let g:TerminusCursorShape=0
 
-" Not using folding
-set nofoldenable
+" Use folding
+set foldmethod=indent
 
 let g:indent_guides_default_mapping = 0
 let g:indent_guides_enable_on_vim_startup = 1
