@@ -220,3 +220,4 @@ dosprogs
 .forever
 .pyenv
 .python_history
+.config/gcloud
