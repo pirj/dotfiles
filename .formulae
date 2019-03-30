@@ -27,6 +27,7 @@ imagemagick@6
 jq
 libssh2
 libxml2
+libyaml
 lynx
 markdown
 memcached
