@@ -6,7 +6,6 @@
   default = current
   followTags = true
 [pull]
-  default = tracking
   ff = only
   rebase = true
 [rebase]
