@@ -6,3 +6,4 @@ TODO*
 PASSWD
 .envrc
 .git
+.rspec-local
