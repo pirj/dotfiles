@@ -10,9 +10,8 @@ if [[ "$OSTYPE" != "darwin"* ]]; then
 fi
 
 alias ls='ls $LS_COLOR'
-alias ll='ls -lh'
-alias la='ls -A'
 alias l='ls -lhA'
+[[ -s $(which exa) ]] && alias l='exa -lhaG'
 
 # Use editor consistently
 alias view=$EDITOR -R
@@ -64,6 +63,9 @@ alias tra='transmission-remote-cli'
 #alias space='du --dereference --max-depth=2 -h . | sort -h -r | head -n 20'
 alias space='du -hd2 * | sort -hr H 10'
 
+# Better find
+[[ -s $(which fd) ]] && alias find=fd
+
 # Password generation. Just one. Print and put to clipboard
 alias pwgen='pwgen -1cnsB 12 C'
 
@@ -96,3 +98,4 @@ function k9 {
 }
 
 [[ -s $(which nvim) ]] && alias vim=nvim
+[[ -s $(which exa) ]] && alias ls=exa
