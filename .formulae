@@ -1,8 +1,9 @@
 automake
 awscli
+bat
 blueutil
 brightness
-vitorgalvao/tiny-scripts/cask-repair
+cask-repair
 cmake
 coreutils
 ctags
@@ -20,7 +21,7 @@ git-flow
 git-hooks
 git-imerge
 gpg-agent
-heroku/brew/heroku
+heroku
 htop
 hunspell
 imagemagick@6
