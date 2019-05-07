@@ -144,6 +144,7 @@ let g:TerminusCursorShape=0
 
 " Use folding
 set foldmethod=indent
+set nofoldenable
 
 let g:indent_guides_default_mapping = 0
 let g:indent_guides_enable_on_vim_startup = 1
