@@ -111,7 +111,7 @@ bindkey -M vicmd v edit-command-line
 bindkey -M vicmd K run-help
 
 # Color scheme
-[[ -s ~/.config/zsh/colors.sh ]] && source ~/.config/zsh/colors.sh
+# [[ -s ~/.config/zsh/colors.sh ]] && source ~/.config/zsh/colors.sh
 autoload -U colors && colors
 
 # Prompt
