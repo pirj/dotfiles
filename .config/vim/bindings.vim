@@ -41,6 +41,9 @@ nnoremap <silent> <C-l> <C-w>l
 " Create a new window in a vertical split
 nnoremap <silent> <C-w>N :vnew<CR>
 
+" Zoom pane with C-w z
+nnoremap <C-w>z <C-w><bar><C-w>_
+
 " Since C-v is used to paste from system buffer, use vv
 nnoremap vv <C-v>
 vnoremap vv <C-v>
