@@ -91,8 +91,6 @@ function script-it {
 alias day="timew summary sod - now"
 # alias send-daily-report='day >! tmp/timesheets/$( TZ=EST date +%Y-%m-%d ).txt; gdrive sync upload tmp/timesheets 0Bz9xh1gcOv5FODhpRE9uRnU3VTA'
 
-alias toreman="grep --invert-match '#' < Procfile | sed -e 's/^[^:]*: //' | xargs -I {} tmux split-window -v \; send-keys '[ -s .env ] && source .env; {}' 'C-m' && tmux select-pane -t 1 \; send-keys 'C-d' \; select-layout even-vertical"
-
 function k9 {
   pgrep -f "$1" | xargs kill -9
 }
