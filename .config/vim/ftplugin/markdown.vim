@@ -1,6 +1,10 @@
 setlocal spell
-setlocal textwidth=80
-setlocal wrapmargin=3
+
+setlocal wrap
+setlocal textwidth=0
+setlocal wrapmargin=-1000
+
+setlocal formatoptions=l
 
 setlocal foldmethod=indent
 setlocal foldnestmax=2
