@@ -182,7 +182,7 @@ Bundle 'ap/vim-css-color'
 
 " Markdown
 
-Bundle 'gabrielelana/vim-markdown'
+" Bundle 'gabrielelana/vim-markdown'
 
 " RUBY
 " ----

@@ -6,6 +6,17 @@ setlocal wrapmargin=-1000
 
 setlocal formatoptions=l
 
-setlocal foldmethod=indent
 setlocal foldnestmax=2
-setlocal foldcolumn=3
+setlocal foldlevel=1
+
+function MarkdownLevel()
+  let h = matchstr(getline(v:lnum), '^##\+')
+  if empty(h)
+    return "="
+  else
+    return ">" . len(h)
+  endif
+endfunction
+
+setlocal foldexpr=MarkdownLevel()
+setlocal foldmethod=expr
