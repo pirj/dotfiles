@@ -95,5 +95,10 @@ function k9 {
   pgrep -f "$1" | xargs kill -9
 }
 
+# CPU usage
+# TODO: `pidof` on Linux
+function throttle() { renice -n 19 -p `pgrep $1`; }
+function nothrottle() { renice -n 0 -p `pgrep $1`; }
+
 [[ -s $(which nvim) ]] && alias vim=nvim
 [[ -s $(which exa) ]] && alias ls=exa
