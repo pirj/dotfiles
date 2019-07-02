@@ -221,3 +221,4 @@ dosprogs
 .pyenv
 .python_history
 .config/gcloud
+.config/Karabiner/automatic_backups/
