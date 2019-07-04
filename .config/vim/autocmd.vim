@@ -52,3 +52,5 @@ autocmd BufNewFile,BufRead *.git/{,modules/**/}{PULLREQ_EDIT,COMMIT_EDIT,MERGE_}
 
 " autocmd FileType markdown call pencil#init()
 " autocmd FileType text call pencil#init()
+
+autocmd BufRead,BufNewFile PULLREQ_EDITMSG setlocal filetype=markdown
