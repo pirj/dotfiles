@@ -238,7 +238,12 @@
                         "manipulators": [
                             {
                                 "from": {
-                                    "key_code": "f"
+                                    "key_code": "f",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
                                 },
                                 "to_after_key_up": [
                                     {
@@ -250,8 +255,7 @@
                                 ],
                                 "to_if_alone": [
                                     {
-                                        "key_code": "f",
-                                        "modifiers": []
+                                        "key_code": "f"
                                     }
                                 ],
                                 "to_if_held_down": [
@@ -273,12 +277,16 @@
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "j"
+                                    "key_code": "j",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
                                 },
                                 "to": [
                                     {
-                                        "key_code": "down_arrow",
-                                        "modifiers": []
+                                        "key_code": "down_arrow"
                                     }
                                 ],
                                 "type": "basic"
@@ -292,12 +300,16 @@
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "k"
+                                    "key_code": "k",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
                                 },
                                 "to": [
                                     {
-                                        "key_code": "up_arrow",
-                                        "modifiers": []
+                                        "key_code": "up_arrow"
                                     }
                                 ],
                                 "type": "basic"
@@ -311,12 +323,16 @@
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "h"
+                                    "key_code": "h",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
                                 },
                                 "to": [
                                     {
-                                        "key_code": "left_arrow",
-                                        "modifiers": []
+                                        "key_code": "left_arrow"
                                     }
                                 ],
                                 "type": "basic"
@@ -330,12 +346,16 @@
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "l"
+                                    "key_code": "l",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
                                 },
                                 "to": [
                                     {
-                                        "key_code": "right_arrow",
-                                        "modifiers": []
+                                        "key_code": "right_arrow"
                                     }
                                 ],
                                 "type": "basic"
@@ -349,7 +369,12 @@
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "b"
+                                    "key_code": "b",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
                                 },
                                 "to": [
                                     {
@@ -370,7 +395,12 @@
                                     }
                                 ],
                                 "from": {
-                                    "key_code": "w"
+                                    "key_code": "w",
+                                    "modifiers": {
+                                        "optional": [
+                                            "any"
+                                        ]
+                                    }
                                 },
                                 "to": [
                                     {
