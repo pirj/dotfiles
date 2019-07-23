@@ -6,8 +6,13 @@
       "manipulators": [
         {
           "type": "basic",
+          "parameters": {
+              "basic.to_delayed_action_delay_milliseconds": 100,
+              "basic.to_if_held_down_threshold_milliseconds": 100
+          },
           "from": { "key_code": "f", "modifiers": { "optional": [ "any" ] } },
           "to_if_alone": [ { "key_code": "f" } ],
+          "to_delayed_action": { "to_if_canceled": [ { "key_code": "f" } ] },
           "to_if_held_down": [ { "set_variable": { "name": "vi_mode", "value": 1 } } ],
           "to_after_key_up": [ { "set_variable": { "name": "vi_mode", "value": 0 } } ]
         },
