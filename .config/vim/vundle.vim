@@ -15,6 +15,10 @@ Bundle 'VundleVim/Vundle.vim'
 " ----------
 " Bundle 'tpope/vim-vinegar'
 " Bundle 'justinmk/vim-dirvish'
+
+" c/s/d/x without yanking
+" Bundle 'svermeulen/vim-cutlass'
+
 Bundle 'ctrlpvim/ctrlp.vim'
 
 Bundle 'tpope/vim-projectionist'
