@@ -68,3 +68,5 @@
   singlekey = true
 [commit]
   verbose = true
+[submodule]
+  fetchJobs = 4
