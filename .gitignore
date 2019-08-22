@@ -223,3 +223,4 @@ dosprogs
 .config/gcloud
 .config/Karabiner/automatic_backups/
 .config/borg
+.dictd
