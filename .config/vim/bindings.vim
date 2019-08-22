@@ -97,6 +97,10 @@ nnoremap L $
 nnoremap ` <C-o>
 nnoremap ~ <C-i>
 
+" Marks
+" Go to 'm' mark set by mm, and center screen
+nnoremap M 'mzz
+
 " Easier redo
 nnoremap U <C-r>
 
@@ -138,3 +142,4 @@ endif
 nnoremap - :Explore<CR>
 
 map <Leader>r :call RunNearestSpec()<CR>
+map <Leader>rr :call RunCurrentSpecFile()<CR>
