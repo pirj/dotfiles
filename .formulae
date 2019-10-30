@@ -13,7 +13,6 @@ ddgr
 diff-so-fancy
 direnv
 docbook-xsl
-elasticsearch
 elinks
 exa
 exercism
@@ -25,7 +24,6 @@ git-flow
 git-hooks
 git-imerge
 gpg-agent
-heroku
 htop
 hunspell
 imagemagick@6
@@ -45,11 +43,9 @@ mpc
 mpd
 msgpack
 mtr
-neomutt
+ncdu
 nginx
 pirj/noclamshell/noclamshell
-node@8
-openssl@1.1
 p7zip
 pandoc
 postgresql
@@ -73,7 +69,7 @@ tldr
 tor
 pirj/toreman/toreman
 translate-shell
-transmission
+transmission-cli
 unrar
 vim
 vimpc
