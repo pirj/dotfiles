@@ -7,3 +7,4 @@ PASSWD
 .envrc
 .git
 .rspec-local
+.bundle
