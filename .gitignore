@@ -224,3 +224,4 @@ dosprogs
 .config/Karabiner/automatic_backups/
 .config/borg
 .dictd
+.erlang.cookie
