@@ -8,3 +8,4 @@ PASSWD
 .git
 .rspec-local
 .bundle
+lefthook-local.yml
