@@ -51,12 +51,12 @@
   a = add
   c1 = clone --depth 1 --single-branch
   f = flow feature
-  align = !BASE_BRANCH=${1:-master} && git up origin $BASE_BRANCH && :
-  align-epic = !BASE_BRANCH=${1:-master} && git fetch origin $BASE_BRANCH && MERGE_BASE=$(git merge-base origin/$BASE_BRANCH HEAD) && git rebase $MERGE_BASE && :
+  align = !BASE_BRANCH=${1:-HEAD} && git up origin $BASE_BRANCH && :
+  align-epic = !BASE_BRANCH=${1:-HEAD} && git fetch origin $BASE_BRANCH && MERGE_BASE=$(git merge-base origin/$BASE_BRANCH HEAD) && git rebase $MERGE_BASE && :
   edit = "!vim $(git ls-files -m --other --exclude-standard)"
   delete-merged-branches = git branch --merged | grep --invert-match master | xargs git branch -d
-  ri = !BASE_BRANCH=${1:-master} && MERGE_BASE=$(git merge-base origin/$BASE_BRANCH HEAD) && git rebase -i $MERGE_BASE && :
-  l = !BASE_BRANCH=${1:-master} && MERGE_BASE=$(git merge-base origin/$BASE_BRANCH HEAD) && git log --reverse $MERGE_BASE..HEAD && :
+  ri = !BASE_BRANCH=${1:-HEAD} && MERGE_BASE=$(git merge-base origin/$BASE_BRANCH HEAD) && git rebase -i $MERGE_BASE && :
+  l = !BASE_BRANCH=${1:-HEAD} && MERGE_BASE=$(git merge-base origin/$BASE_BRANCH HEAD) && git log --reverse $MERGE_BASE..HEAD && :
   fixup = commit --amend --no-edit
   wip = commit --no-verify --message=wip
   m = log --format='%h %B' -1
