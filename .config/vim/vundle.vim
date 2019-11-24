@@ -52,6 +52,8 @@ Bundle 'kopischke/vim-fetch'
 " ------------
 Bundle 'nathanaelkane/vim-indent-guides'
 
+" Bundle 'psliwka/vim-smoothie'
+
 "Bundle 'jszakmeister/vim-togglecursor'
 
 " Neat replacement for powerline
