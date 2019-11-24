@@ -173,3 +173,6 @@ let g:rspec_command = 'call Send_to_Tmux("rspec {spec}\n")'
 
 " Work around Vim bug useing background color erase even if the terminfo file does not contain the bce capability
 let &t_ut=''
+
+" Diff opts for git mergetool
+set diffopt=internal,algorithm:patience
