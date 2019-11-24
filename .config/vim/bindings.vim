@@ -63,12 +63,19 @@ imap <Left>  <NOP>
 imap <Down>  <NOP>
 imap <Up>    <NOP>
 imap <Right> <NOP>
+vmap <Left>  <NOP>
+vmap <Down>  <NOP>
+vmap <Up>    <NOP>
+vmap <Right> <NOP>
 
 " Use ^N/^P/^F
 cmap <Up>    <NOP>
 cmap <Down>  <NOP>
 cmap <Right> <NOP>
 cmap <Left>  <NOP>
+
+" Reserve some redundant keys for better use
+nnoremap S :echo 'Use `cc`!'<CR>
 
 " Smart command history completion
 cnoremap <C-n> <Down>
