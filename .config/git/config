@@ -60,6 +60,7 @@
   fixup = commit --amend --no-edit
   wip = commit --no-verify --message=wip
   m = log --format='%h %B' -1
+  lf = log origin/head..head --pretty=full
 [rerere]
   enabled = 1
 [diff]
