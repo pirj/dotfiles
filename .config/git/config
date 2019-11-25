@@ -71,3 +71,5 @@
   verbose = true
 [submodule]
   fetchJobs = 4
+[hub]
+  host = emp-sof-github01.emp.internal.com
