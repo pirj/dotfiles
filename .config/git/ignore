@@ -9,3 +9,4 @@ PASSWD
 .rspec-local
 .bundle
 lefthook-local.yml
+lefthook.yml
