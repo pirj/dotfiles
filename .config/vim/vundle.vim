@@ -19,7 +19,8 @@ Bundle 'VundleVim/Vundle.vim'
 " c/s/d/x without yanking
 " Bundle 'svermeulen/vim-cutlass'
 
-Bundle 'ctrlpvim/ctrlp.vim'
+" Bundle 'ctrlpvim/ctrlp.vim'
+Bundle 'Yggdroot/LeaderF'
 
 Bundle 'tpope/vim-projectionist'
 

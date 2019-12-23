@@ -125,7 +125,8 @@ nnoremap <Leader>g :silent lgrep<Space>
 nnoremap K :silent lgrep <C-r><C-w><CR>
 
 " nnoremap <Leader>f :find<Space>
-nnoremap <Leader>f :CtrlP .<CR>
+noremap <leader>b :<C-U><C-R>=printf("Leaderf --reverse buffer %s", "")<CR><CR>
+noremap <leader>f :<C-U><C-R>=printf("Leaderf --reverse file %s", "")<CR><CR>
 
 " Use system clipboard
 if (system('uname') =~ "darwin")
