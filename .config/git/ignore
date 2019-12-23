@@ -10,3 +10,4 @@ PASSWD
 .bundle
 lefthook-local.yml
 lefthook.yml
+.ignore
