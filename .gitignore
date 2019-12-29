@@ -226,3 +226,4 @@ dosprogs
 .dictd
 .erlang.cookie
 .chromedriver-helper
+.LfCache
