@@ -227,3 +227,5 @@ dosprogs
 .erlang.cookie
 .chromedriver-helper
 .LfCache
+.webdrivers
+.solargraph
