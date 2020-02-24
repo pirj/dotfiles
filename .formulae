@@ -54,6 +54,7 @@ node@10
 p7zip
 pandoc
 postgresql
+postgresql@11
 privoxy
 proctools
 pv
