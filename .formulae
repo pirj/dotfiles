@@ -4,6 +4,7 @@ awscli
 bat
 blueutil
 brightness
+cabextract
 cask-repair
 cmake
 coreutils
@@ -17,9 +18,9 @@ elinks
 exa
 exercism
 fd
-git
 git-absorb
 git-extras
+git-filter-repo
 git-flow
 git-hooks
 git-imerge
@@ -29,6 +30,8 @@ hunspell
 imagemagick@6
 jemalloc
 jq
+keychain
+libsass
 libssh2
 libtermkey
 libuv
@@ -36,6 +39,7 @@ libvterm
 libxml2
 luajit
 lynx
+make
 markdown
 memcached
 mkdocs
@@ -43,9 +47,11 @@ mpc
 mpd
 msgpack
 mtr
+mysql@5.6
 ncdu
 nginx
 pirj/noclamshell/noclamshell
+node@10
 p7zip
 pandoc
 postgresql
@@ -54,6 +60,7 @@ proctools
 pv
 pwgen
 pyenv
+rabbitmq
 redis
 redshift
 ripgrep
@@ -64,6 +71,7 @@ switchaudio-osx
 task
 telnet
 terminal-notifier
+the_silver_searcher
 timewarrior
 tldr
 tor
@@ -77,5 +85,6 @@ w3m
 watch
 wget
 youtube-dl
+zlib
 zplug
 zsh
