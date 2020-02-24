@@ -140,6 +140,8 @@ Bundle "tpope/vim-commentary"
 
 "Bundle 'w0rp/ale'
 
+" Bundle 'zxqfl/tabnine-vim'
+
 " VERSION CONTROL
 " ---------------
 Bundle 'tpope/vim-fugitive'
