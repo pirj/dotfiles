@@ -28,6 +28,7 @@ hunspell
 imagemagick@6
 jemalloc
 jq
+kakoune
 keychain
 libsass
 libssh2
