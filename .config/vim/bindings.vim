@@ -111,9 +111,11 @@ nnoremap M 'mzz
 " Easier redo
 nnoremap U <C-r>
 
-" Autocomplete on Tab, and accept selection with Enter
+" Autocomplete on Tab
 inoremap <Tab> <C-p>
+" Accept selection with Enter
 inoremap <silent> <expr> <CR>  pumvisible() ? "\<C-y>" : "\<CR>"
+" Cancel with Esc
 inoremap <silent> <expr> <Esc> pumvisible() ? "\<C-e>" : "\<Esc>"
 
 " No highlight search
