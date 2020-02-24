@@ -18,26 +18,37 @@ unsetopt nomatch
 # Ignore duplicate history entries
 setopt histignoredups
 
+# Plugins
+source ~/.zinit/bin/zinit.zsh
+
+zinit ice silent wait:1 atload:_zsh_autosuggest_start
+zinit light zsh-users/zsh-autosuggestions
+
+zinit light zsh-users/zsh-history-substring-search
+# zinit light zdharma/history-search-multi-word
+
+zinit light MichaelAquilina/zsh-you-should-use
+
+zinit ice silent wait!1 atload:zpcompinit
+zinit light zdharma/fast-syntax-highlighting
+
+zinit ice blockf; zinit light zsh-users/zsh-completions
+
+# fd, better find
+zinit ice as"command" from"gh-r" mv"fd* -> fd" pick"fd/fd"
+zinit light sharkdp/fd
+
+# exa, replacement for ls
+zinit ice wait"2" lucid from"gh-r" as"program" mv"exa* -> exa"
+zinit light ogham/exa
+
+export _Z_DATA=$XDG_CACHE_HOME/z
+zinit light rupa/z
+
 # Cache completions
 autoload -Uz compinit
 
-# Plugins
-export ZPLUG_HOME=/usr/local/opt/zplug
-source $ZPLUG_HOME/init.zsh
-zplug zsh-users/zsh-autosuggestions
-zplug zsh-users/zsh-completions
-zplug zsh-users/zsh-history-substring-search
-zplug zsh-users/zsh-syntax-highlighting
-zplug MichaelAquilina/zsh-you-should-use
-zplug zdharma/fast-syntax-highlighting
-if ! zplug check --verbose; then
-  printf "Install? [y/N]: "
-  if read -q; then
-    echo; zplug install
-  fi
-fi
-zplug load
-
+# Direnv
 eval "$(direnv hook zsh)"
 
 # Better vi mode (hat tip Doug Black)
@@ -120,11 +131,9 @@ zle -N clear-scrollback-and-screen
 bindkey -v '^L' clear-scrollback-and-screen
 
 # Color scheme
-# [[ -s ~/.config/zsh/colors.sh ]] && source ~/.config/zsh/colors.sh
 autoload -U colors && colors
 
 # Prompt
-
 setopt prompt_subst
 autoload -Uz vcs_info
 zstyle ':vcs_info:*' formats "%b %m%u%c"

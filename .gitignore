@@ -229,3 +229,4 @@ dosprogs
 .LfCache
 .webdrivers
 .solargraph
+.zinit/*
