@@ -14,8 +14,6 @@ export EDITOR=vi
 # Reduce delay after you hit the <ESC> to 0.2 seconds (hat tip Doug Black)
 export KEYTIMEOUT=20
 
-export PS1='%n@%{$fg[blue]%}%m %{$fg[yellow]%}%~ %{$fg[green]%}% (${vcs_info_msg_0_}) %{$reset_color%}% %(!.#.$) '
-
 export HISTFILE=~/.zsh_history
 export HISTSIZE=10000
 export SAVEHIST=10000

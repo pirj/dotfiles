@@ -4,6 +4,12 @@ tput cup $LINES 0
 # Disable annoying flow mode, free up C-S and C-Q
 stty -ixon -ixoff
 
+# Powerlevel10k instant prompt. Code that may require console input (password prompts, [y/n] etc.)
+# must go above this block; everything else may go below.
+if [[ -r "$XDG_CACHE_HOME/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
+  source "$XDG_CACHE_HOME/p10k-instant-prompt-${(%):-%n}.zsh"
+fi
+
 # Prevent overwriting existing files with '> filename', use '>| filename' # (or >!) instead.
 # Hat tip http://ruderich.org/simon/config/zshrc
 setopt noclobber
@@ -21,7 +27,8 @@ setopt histignoredups
 # Plugins
 source ~/.zinit/bin/zinit.zsh
 
-zinit ice silent wait:1 atload:_zsh_autosuggest_start
+zinit ice depth=1; zinit light romkatv/powerlevel10k
+
 zinit light zsh-users/zsh-autosuggestions
 
 zinit light zsh-users/zsh-history-substring-search
@@ -29,7 +36,6 @@ zinit light zsh-users/zsh-history-substring-search
 
 zinit light MichaelAquilina/zsh-you-should-use
 
-zinit ice silent wait!1 atload:zpcompinit
 zinit light zdharma/fast-syntax-highlighting
 
 zinit ice blockf; zinit light zsh-users/zsh-completions
@@ -39,7 +45,7 @@ zinit ice as"command" from"gh-r" mv"fd* -> fd" pick"fd/fd"
 zinit light sharkdp/fd
 
 # exa, replacement for ls
-zinit ice wait"2" lucid from"gh-r" as"program" mv"exa* -> exa"
+zinit ice lucid from"gh-r" as"program" mv"exa* -> exa"
 zinit light ogham/exa
 
 export _Z_DATA=$XDG_CACHE_HOME/z
@@ -133,16 +139,6 @@ bindkey -v '^L' clear-scrollback-and-screen
 # Color scheme
 autoload -U colors && colors
 
-# Prompt
-setopt prompt_subst
-autoload -Uz vcs_info
-zstyle ':vcs_info:*' formats "%b %m%u%c"
-zstyle ':vcs_info:*' actionformats "%b %u%c|%a"
-zstyle ':vcs_info:*' check-for-changes true
-zstyle ':vcs_info:*' stagedstr '+'
-zstyle ':vcs_info:*' unstagedstr '*'
-precmd () { vcs_info }
-
 # Aliases
 [[ -s ~/.config/zsh/alias.zsh ]] && source ~/.config/zsh/alias.zsh
 
@@ -155,3 +151,6 @@ precmd () { vcs_info }
 
 # Many programs change the terminal state, and often do not restore terminal settings on exiting abnormally. To avoid the need to manually reset the terminal, freeze it:
 ttyctl -f
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
