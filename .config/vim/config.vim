@@ -11,6 +11,8 @@ let g:seoul256_background=234
 " colorscheme jellybeans
 colorscheme seoul256
 
+packadd cfilter
+
 set writebackup           " Backup file before overwriting
 set backupdir=~/.local/vim/backup
 set swapfile              " Keep all recent changes even without saving
