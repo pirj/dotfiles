@@ -133,6 +133,8 @@ Bundle "tpope/vim-commentary"
 "Bundle 'Raimondi/delimitMate'
 "Bundle 'scrooloose/syntastic'
 "Bundle 'ervandew/supertab'
+" complete on Tab
+Bundle 'ervandew/supertab'
 "Bundle 'gregsexton/MatchTag'
 
 "Bundle 'Shougo/neocomplete.vim'
