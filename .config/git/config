@@ -30,6 +30,7 @@
   whitespace=fix,-indent-with-non-tab,trailing-space,cr-at-eol
   trustctime = false
   commentChar = ";"
+  hooksPath = /Users/pirj/.config/git/hooks
 [format]
   pretty = %h %ad %<(17)%aN%d %s %N
 [log]

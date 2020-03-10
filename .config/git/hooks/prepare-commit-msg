@@ -1,0 +1,7 @@
+#!/bin/bash
+
+COMMIT_MSG_FILE=$1
+
+if [[ "$PWD" == *"/source/emp/"* ]]; then
+  echo "$(git branch --show-current)$(cat $COMMIT_MSG_FILE)" > "$COMMIT_MSG_FILE"
+fi
