@@ -48,6 +48,9 @@ Bundle 'ervandew/supertab'
 " ai code completion
 " Bundle 'zxqfl/tabnine-vim'
 
+" git conflicts
+Bundle 'whiteinge/diffconflicts'
+
 " mostly for blame
 Bundle 'tpope/vim-fugitive'
 
