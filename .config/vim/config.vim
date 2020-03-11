@@ -8,10 +8,10 @@ filetype plugin indent on " Automatically detect file types. (must turn on after
 set t_Co=256
 let g:jellybeans_background_color_256=234
 let g:seoul256_background=234
-" colorscheme jellybeans
-colorscheme seoul256
+colorscheme jellybeans
+" colorscheme seoul256
 
-packadd cfilter
+packadd cfilter           " Allow filtering in location and quickfix lists
 
 set writebackup           " Backup file before overwriting
 set backupdir=~/.local/vim/backup
@@ -51,6 +51,10 @@ set synmaxcol=512         " Syntax coloring lines that are too long just slows d
 
 set shortmess+=I          " No startup message
 let g:netrw_banner = 0    " No Netrw banner
+
+" No vertical split bar
+highlight VertSplit cterm=NONE
+set fillchars=vert:\ 
 
 " Behaviors
 syntax enable             " Enable syntax processing
