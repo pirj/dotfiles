@@ -79,6 +79,10 @@ Vundle that handles Vim plugins and zinit that handles Zsh plugins are fetched a
 Zinit fetches all configured Zsh plugins on first start.
 In Vim, `:PluginInstall` installs all plugins.
 
+NeoVim requires a specific Python package to run Python plugins:
+
+    python3 -m pip install --user --upgrade pynvim
+
 For Ruby I'm currently using RVM, but it's not in Homebrew, and it has to be installed by hand. It's tempting to switch to rbenv+ruby-build
 
 I really hope the rest of the configuration is self-explanatory.
