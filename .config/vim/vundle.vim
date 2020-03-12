@@ -15,6 +15,7 @@ Bundle 'Yggdroot/LeaderF'
 
 " navigate between alternative files
 Bundle 'tpope/vim-projectionist'
+Bundle 'uptech/vim-open-alternate'
 
 " open files at a given line number/column when provided (README:3:12)
 Bundle 'kopischke/vim-fetch'
