@@ -56,6 +56,7 @@ key_bindings:
   - { key: L, mods: Command, chars: "\x0c" }
   - { key: N, mods: Command, chars: "\x0e" }
   - { key: P, mods: Command, chars: "\x10" }
+  - { key: Q, mods: Command, action: None }
   - { key: R, mods: Command, chars: "\x12" }
   - { key: U, mods: Command, chars: "\x15" }
   - { key: V, mods: Command, action: Paste }
