@@ -29,6 +29,7 @@ source ~/.zinit/bin/zinit.zsh
 
 zinit ice depth=1; zinit light romkatv/powerlevel10k
 
+export ZSH_AUTOSUGGEST_STRATEGY=(completion history)
 zinit light zsh-users/zsh-autosuggestions
 
 zinit light zsh-users/zsh-history-substring-search
@@ -52,7 +53,7 @@ export _Z_DATA=$XDG_CACHE_HOME/z
 zinit light rupa/z
 
 # Cache completions
-autoload -Uz compinit
+autoload -Uz compinit; compinit
 
 # Direnv
 eval "$(direnv hook zsh)"
