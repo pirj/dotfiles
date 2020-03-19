@@ -24,6 +24,9 @@ unsetopt nomatch
 # Ignore duplicate history entries
 setopt histignoredups
 
+# Ignore mistyped commands in history https://superuser.com/a/902508/78160
+zshaddhistory() { whence ${${(z)1}[1]} >| /dev/null || return 1 }
+
 # Plugins
 source ~/.zinit/bin/zinit.zsh
 
