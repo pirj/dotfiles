@@ -29,7 +29,7 @@ source ~/.zinit/bin/zinit.zsh
 
 zinit ice depth=1; zinit light romkatv/powerlevel10k
 
-export ZSH_AUTOSUGGEST_STRATEGY=(completion history)
+export ZSH_AUTOSUGGEST_STRATEGY=(history) # (completion history) is too slow
 zinit light zsh-users/zsh-autosuggestions
 
 zinit light zsh-users/zsh-history-substring-search
