@@ -47,6 +47,8 @@ alias -g G='| rg --smart-case'
 alias -g P='| $PAGER'
 alias -g W='| wc -l'
 alias -g H='| head -n'
+alias -g X='| xargs'
+alias -g X1='| xargs -L1'
 if [[ "$OSTYPE" = "darwin"* ]]; then
   alias -g C='| pbcopy'
 else
