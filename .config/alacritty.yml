@@ -7,7 +7,7 @@ scrolling:
   history: 0
 
 font:
-  size: 13.5
+  size: 16
 
   # Thin stroke font rendering (macOS only)
   #
