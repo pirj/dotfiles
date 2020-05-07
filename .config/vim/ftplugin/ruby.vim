@@ -1,1 +1,1 @@
-nmap <leader>q Orequire 'pry-byebug'; binding.pry<Esc>==
+nmap <leader>q Orequire 'pry'; binding.pry<Esc>==
