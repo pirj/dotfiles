@@ -57,7 +57,9 @@ Query (-Q) package list without version numbers (-q), only those explicitly inst
 Install:
 
     sudo pacman -S $(< .packages.native )
-    aurget -S $(< .packages.foreign )
+    git clone https://aur.archlinux.org/rua.git
+    (cd rua && makepkg -si)
+    rua install $(< .packages.foreign )
 
 === On OSX (homebrew)
 
