@@ -231,3 +231,5 @@ dosprogs
 .solargraph
 .zinit/*
 .yq2
+.cargo
+.config/rua
