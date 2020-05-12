@@ -27,3 +27,8 @@ export PATH=$PATH:~/.bin
 # [[ -s "$HOME/node_modules" ]] && export PATH=$PATH:$HOME/node_modules/.bin:$HOME/node_modules/bin
 
 export YSU_MESSAGE_FORMAT="\e[33mUse %alias_type for %command: %alias\e[0m"
+
+export MOZ_ENABLE_WAYLAND=1
+
+# Start sway on tty1
+[[ $(tty) = '/dev/tty1' ]] && sway
