@@ -94,8 +94,8 @@ set complete=.,w,b,u,U    " Better complete options to speed it up
 set completeopt+=longest  " Insert the longest common text of the matches
 set shortmess+=c          " No match index indication
 
-set timeoutlen=1000       " Those two together
-set ttimeoutlen=50        " are avoiding annoying mode switch lag
+set timeoutlen=200        " Don't wait too long for key sequences
+set ttimeoutlen=50        " Avoid annoying mode switch lag
 
 " Lightline
 function! RelativeFilename()

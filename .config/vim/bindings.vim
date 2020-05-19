@@ -4,6 +4,9 @@ let mapleader = " "
 " No need to switch between layouts to use normal mode https://gist.github.com/sigsergv/5329459
 set langmap=ёйцукенгшщзхъфывапролджэячсмитьбюЁЙЦУКЕНГШЩЗХЪФЫВАПРОЛДЖЭЯЧСМИТЬБЮ;`qwertyuiop[]asdfghjkl:'zxcvbnm\\,.~QWERTYUIOP{}ASDFGHJKL\\;\\"ZXCVBNM<>
 
+" Show leader maps
+nnoremap <silent> <leader> :WhichKey '<Space>'<CR>
+
 " Switch to normal
 inoremap kj <Esc>
 " inoremap ло <Esc>
