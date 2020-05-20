@@ -4,6 +4,9 @@ tput cup $LINES 0
 # Disable annoying flow mode, free up C-S and C-Q
 stty -ixon -ixoff
 
+# Check local mail and open it if any
+mail -e && mail
+
 # Powerlevel10k instant prompt. Code that may require console input (password prompts, [y/n] etc.)
 # must go above this block; everything else may go below.
 if [[ -r "$XDG_CACHE_HOME/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
