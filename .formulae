@@ -2,6 +2,7 @@ asciidoctor
 automake
 awscli
 cask-repair
+clamav
 cmake
 coreutils
 ddgr
@@ -16,6 +17,7 @@ git-filter-repo
 git-flow
 git-hooks
 git-imerge
+go
 htop
 hunspell
 imagemagick@6
@@ -23,7 +25,6 @@ jq
 kakoune
 keychain
 libksba
-libtermkey
 libxml2
 lynx
 make
@@ -33,6 +34,7 @@ mpd
 mtr
 mysql@5.6
 ncdu
+neovim
 nginx
 pirj/noclamshell/noclamshell
 node@10
@@ -47,6 +49,7 @@ pwgen
 pyenv
 redis
 ripgrep
+scdoc
 sdl
 shellcheck
 ssh-copy-id
@@ -61,6 +64,7 @@ pirj/toreman/toreman
 translate-shell
 transmission-cli
 unrar
+vale
 vim
 vimpc
 w3m
