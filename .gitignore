@@ -233,3 +233,4 @@ dosprogs
 .yq2
 .cargo
 .config/rua
+.var
