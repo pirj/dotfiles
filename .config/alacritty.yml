@@ -36,7 +36,7 @@ selection:
 # Send ESC (\x1b) before characters when alt is pressed.
 alt_send_esc: false
 
-visual_bell:
+bell:
   # Specifying a `duration` of `0` will disable the visual bell.
   duration: 0
 
