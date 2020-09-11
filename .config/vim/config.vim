@@ -94,7 +94,7 @@ set complete=.,w,b,u,U    " Better complete options to speed it up
 set completeopt+=longest  " Insert the longest common text of the matches
 set shortmess+=c          " No match index indication
 
-set timeoutlen=300        " Don't wait too long for key sequences
+set timeoutlen=500        " Don't wait too long for key sequences
 set ttimeoutlen=50        " Avoid annoying mode switch lag
 
 " Lightline
