@@ -1,0 +1,14 @@
+#!/bin/bash
+
+all() {
+  (
+    cd $2
+    cd ..
+    echo $(bash -c "$1" 1>/dev/null 2>&1 && echo "[+]" || echo "[ ]") $(pwd)
+  )
+}
+export -f all
+
+echo "$*" for all repos
+export COMMAND="$*"
+find . -maxdepth 2 -type d -name '.git' | xargs -P 10 -L1 -I{} bash -c 'all "$COMMAND" "{}"'
