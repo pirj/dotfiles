@@ -50,10 +50,12 @@ zinit ice blockf; zinit light zsh-users/zsh-completions
 # fd, better find
 zinit ice as"command" from"gh-r" mv"fd* -> fd" pick"fd/fd"
 zinit light sharkdp/fd
+zinit load sharkdp/fd
 
 # exa, replacement for ls
 zinit ice lucid from"gh-r" as"program" mv"exa* -> exa"
 zinit light ogham/exa
+zinit load ogham/exa
 
 export _Z_DATA=$XDG_CACHE_HOME/z
 zinit light rupa/z
