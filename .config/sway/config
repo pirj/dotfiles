@@ -221,3 +221,9 @@ bar {
 }
 
 include /etc/sway/config.d/*
+
+# Take a screenshot with all output and save it into screenshots
+bindsym Print exec grim ~/Desktop/screenshots/$(date +%Y-%m-%d_%H-%M-%S).png
+
+# Take a Screenshot with the region select
+bindsym $mod+Print exec grim -g "$(slurp)" ~/Desktop/screenshots/$(date +%Y-%m-%d_%H-%M-%S).png

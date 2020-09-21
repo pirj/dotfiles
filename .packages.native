@@ -19,6 +19,7 @@ fakeroot
 firefox
 gcc
 gimp
+grim
 grub
 highlight
 htop
@@ -60,6 +61,7 @@ redis
 redshift
 ripgrep
 rlwrap
+slurp
 sudo
 sway
 tcpdump
