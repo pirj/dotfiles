@@ -59,6 +59,7 @@ mpc
 mpd
 mtr
 nano
+ncdu
 neovim
 netbrake
 netctl
@@ -66,11 +67,13 @@ networkmanager
 nginx
 nmap
 ntop
+ntp
 openbsd-netcat
 opendoas
 p7zip
 pamixer
 patch
+perl-term-readkey
 pkgconf
 postgresql
 pulseaudio-alsa
