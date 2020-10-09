@@ -52,7 +52,7 @@ alias -g X1='| xargs -L1'
 if [[ "$OSTYPE" = "darwin"* ]]; then
   alias -g C='| pbcopy'
 elif [[ -v WAYLAND_DISPLAY ]]; then
-  alias -g C='| wl-copy --primary'
+  alias -g C='| wl-copy'
 else
   alias -g C='| xsel -i && xsel -o'
 fi
