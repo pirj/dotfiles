@@ -229,5 +229,7 @@ bindsym Print exec grim ~/Desktop/screenshots/$(date +%Y-%m-%d_%H-%M-%S).png
 bindsym $mod+Print exec grim -g "$(slurp)" ~/Desktop/screenshots/$(date +%Y-%m-%d_%H-%M-%S).png
 
 bindsym Pause exec systemctl hybrid-sleep
+bindsym $mod+Pause exec systemctl suspend
+
 
 exec mako
