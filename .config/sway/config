@@ -231,5 +231,10 @@ bindsym $mod+Print exec grim -g "$(slurp)" ~/Desktop/screenshots/$(date +%Y-%m-%
 bindsym Pause exec systemctl hybrid-sleep
 bindsym $mod+Pause exec systemctl suspend
 
+input "type:keyboard" {
+    xkb_layout us,ru
+    xkb_options grp:lctrl_lshift_toggle
+}
+
 
 exec mako
