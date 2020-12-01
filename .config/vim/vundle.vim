@@ -82,5 +82,8 @@ Bundle 'jgdavey/tslime.vim'
 " better terminal integration
 Bundle 'wincent/terminus'
 
+" Writing
+Bundle 'junegunn/goyo.vim'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required

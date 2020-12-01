@@ -54,3 +54,20 @@ autocmd BufNewFile,BufRead *.git/{,modules/**/}{PULLREQ_EDIT,COMMIT_EDIT,MERGE_}
 " autocmd FileType text call pencil#init()
 
 autocmd BufRead,BufNewFile PULLREQ_EDITMSG setlocal filetype=markdown
+
+function! s:goyo_enter()
+  setlocal noshowcmd
+  setlocal wrap
+  setlocal scrolloff=15
+  colorscheme seoul256-light
+endfunction
+
+function! s:goyo_leave()
+  setlocal showcmd
+  setlocal nowrap
+  setlocal scrolloff=5
+  colorscheme jellybeans
+endfunction
+
+autocmd! User GoyoEnter nested call <SID>goyo_enter()
+autocmd! User GoyoLeave nested call <SID>goyo_leave()
