@@ -8,9 +8,10 @@ set rtp+=~/.config/vim/bundle/Vundle.vim
 call vundle#begin('~/.config/vim/bundle')
 
 " Show key bindings in a popup after a short delay
-Bundle 'leoatchina/vim-which-key'
+" Bundle 'leoatchina/vim-which-key'
+
 " Easier key binding definitions
-Bundle 'AlexVKO/vim-mapping-manager'
+" Bundle 'AlexVKO/vim-mapping-manager'
 
 " let Vundle manage Vundle, required
 Bundle 'VundleVim/Vundle.vim'
