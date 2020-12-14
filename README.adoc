@@ -66,7 +66,7 @@ Install:
 Show installed formulae that are not dependencies of another installed formula:
 
     brew leaves >! .formulae
-    brew cask list >! .casks
+    brew list --casks >! .casks
 
 Install:
 
