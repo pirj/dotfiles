@@ -234,3 +234,4 @@ dosprogs
 .cargo
 .config/rua
 .var
+.config/.bombadillo.ini
