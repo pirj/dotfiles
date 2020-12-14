@@ -136,15 +136,6 @@ bindkey -M vicmd v edit-command-line
 
 bindkey -M vicmd K run-help
 
-clear-scrollback-and-screen () {
-  zle clear-screen
-  tmux clear-history
-  tput cup $LINES 0
-  zle redisplay
-}
-zle -N clear-scrollback-and-screen
-bindkey -v '^L' clear-scrollback-and-screen
-
 # Color scheme
 autoload -U colors && colors
 
