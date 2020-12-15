@@ -29,6 +29,7 @@ imagemagick@6
 jq
 kakoune
 keychain
+khal
 libksba
 libtermkey
 libuv
@@ -42,7 +43,6 @@ mpc
 mpd
 msgpack
 mtr
-mysql
 mysql-client
 ncdu
 nginx
