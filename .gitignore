@@ -235,3 +235,4 @@ dosprogs
 .config/rua
 .var
 .config/.bombadillo.ini
+.zcompcache
