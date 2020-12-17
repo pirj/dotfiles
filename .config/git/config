@@ -42,6 +42,7 @@
 [alias]
   co = checkout
   s = status --short --branch
+  ss = show --stat
   d = diff
   ds = diff --staged
   up = pull
