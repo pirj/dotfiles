@@ -92,3 +92,12 @@ function k9 {
 # TODO: `pidof` on Linux
 function throttle() { renice -n 19 -p `pgrep $1`; }
 function nothrottle() { renice -n 0 -p `pgrep $1`; }
+
+# j for fast directry jump
+function j {
+  if [[ -n "$1" ]]; then
+    z $1
+  else
+    cd
+  fi
+}
