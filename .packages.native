@@ -16,8 +16,10 @@ avr-libc
 avrdude
 awesome
 base
+bind
 bison
 bluez-utils
+chromium
 cpulimit
 cpupower
 dfu-programmer
@@ -45,6 +47,7 @@ iotop
 jnettop
 keychain
 libpqxx
+libva-mesa-driver
 linux
 linux-firmware
 logrotate
@@ -54,6 +57,8 @@ man-db
 man-pages
 mariadb
 memcached
+mesa-demos
+mesa-vdpau
 mosh
 mpc
 mpd
@@ -66,7 +71,7 @@ netctl
 networkmanager
 nginx
 nmap
-ntop
+npm
 ntp
 openbsd-netcat
 opendoas
@@ -106,6 +111,7 @@ vkd3d
 vlc
 vulkan-mesa-layers
 vulkan-radeon
+vulkan-tools
 w3m
 weechat
 wget
@@ -115,6 +121,7 @@ winetricks
 wl-clipboard
 xcape
 xdg-user-dirs
+xf86-video-amdgpu
 xorg-server
 xorg-xinit
 xsel
