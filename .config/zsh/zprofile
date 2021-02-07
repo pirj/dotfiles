@@ -33,3 +33,4 @@ export MOZ_ENABLE_WAYLAND=1
 
 # Start sway on tty1
 [[ $(tty) = '/dev/tty1' ]] && sway
+[[ $(tty) = '/dev/tty2' ]] && startx
