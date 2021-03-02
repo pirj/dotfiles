@@ -44,6 +44,7 @@ alias r=rails
 
 # Hub PR checkout
 alias pr='hub pr checkout'
+alias myprs="hub pr list --format '%I %au %U %t %n' G $(whoami)"
 
 # Handy pipes
 alias -g G='| rg --smart-case'
