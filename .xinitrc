@@ -65,3 +65,4 @@ urxvtd &
 # jackd -v -dalsa -D -Phw:1 &disown
 
 awesome
+# exec gnome-session
