@@ -32,5 +32,5 @@ export YSU_MESSAGE_FORMAT="\e[33mUse %alias_type for %command: %alias\e[0m"
 export MOZ_ENABLE_WAYLAND=1
 
 # Start sway on tty1
-[[ $(tty) = '/dev/tty1' ]] && sway
+[[ $(tty) = '/dev/tty1' ]] && export XDG_CURRENT_DESKTOP=sway && sway
 [[ $(tty) = '/dev/tty2' ]] && startx
