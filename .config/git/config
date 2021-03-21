@@ -19,7 +19,7 @@
   prompt = false
   keepBackup = false
 [mergetool "diffconflicts"]
-  cmd = vim -c DiffConflictsWithHistory \"$MERGED\" \"$BASE\" \"$LOCAL\" \"$REMOTE\"
+  cmd = nvim -c DiffConflictsWithHistory \"$MERGED\" \"$BASE\" \"$LOCAL\" \"$REMOTE\"
   trustExitCode = true
 [pager]
   diff = diff-so-fancy | less --tabs=4 -RFX
@@ -78,3 +78,5 @@
   host = emp-sof-github01.emp.internal.com
 [absorb]
   maxStack = 20
+[init]
+  defaultBranch = main
