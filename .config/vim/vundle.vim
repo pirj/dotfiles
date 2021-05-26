@@ -87,7 +87,7 @@ Bundle 'wincent/terminus'
 Bundle 'junegunn/goyo.vim'
 
 " FireFox integration
-Bundle 'glacambre/firenvim'
+" Bundle 'glacambre/firenvim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
