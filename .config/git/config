@@ -19,7 +19,7 @@
   prompt = false
   keepBackup = false
 [mergetool "diffconflicts"]
-  cmd = nvim -c DiffConflictsWithHistory \"$MERGED\" \"$BASE\" \"$LOCAL\" \"$REMOTE\"
+  cmd = $EDITOR -c DiffConflictsWithHistory \"$MERGED\" \"$BASE\" \"$LOCAL\" \"$REMOTE\"
   trustExitCode = true
 [pager]
   diff = diff-so-fancy | less --tabs=4 -RFX
