@@ -242,3 +242,4 @@ dosprogs
 .minecraft
 .config/Autodesk/
 .irb_history
+.config/aerc/accounts.conf
