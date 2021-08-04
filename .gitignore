@@ -247,3 +247,5 @@ dosprogs
 .config/mimeapps.list
 .config/totem
 .config/transmission
+.config/evolution
+.config/dleyna-renderer-service.conf
