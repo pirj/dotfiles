@@ -40,6 +40,31 @@ Add the following to .ssh/config:
 
     UseKeychain yes
 
+== Archlinux-specific
+
+When bootstrapping the system with `pacstrap`, add `base-devel`, `git`, `neovim` and `iwd` to the list of packages to install.
+
+=== Network connection
+
+```
+systemctl enable iwd
+systemctl start iwd
+```
+
+Create `/etc/iwd/main.conf`:
+```
+[Scan]
+DisablePeriodicScan=true
+[General]
+EnableNetworkConfiguration=true
+```
+
+And run `iwctl`:
+```
+station wlan0 scan
+station wlan0 connect <hotspot>
+```
+
 == Inspiration sources
 
 I use to browse repositories on Github, and check other people's dotfiles.
@@ -57,9 +82,9 @@ Query (-Q) package list without version numbers (-q), only those explicitly inst
 Install:
 
     sudo pacman -S $(< .packages.native )
-    git clone https://aur.archlinux.org/rua.git
-    (cd rua && makepkg -si)
-    rua install $(< .packages.foreign )
+    git clone https://aur.archlinux.org/aurget.git
+    (cd aurget && makepkg -si)
+    aurget -S $(< .packages.foreign )
 
 === On OSX (homebrew)
 
