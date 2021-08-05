@@ -87,19 +87,8 @@ bindkey -M vicmd H beginning-of-line
 bindkey -M vicmd L end-of-line
 
 # Use ff to complete an autosuggestion
-autosuggest-accept-if-exists () {
-  if [ $#BUFFER -gt 0 ]; then
-    if [ -n "$POSTDISPLAY" ]; then
-      zle autosuggest-accept
-    else
-      BUFFER="$BUFFER[0,$CURSOR]ff$BUFFER[$CURSOR+1,#BUFFER]"
-      CURSOR+=2
-    fi
-  fi
-}
-zle -N autosuggest-accept-if-exists
-bindkey -M viins ff autosuggest-accept-if-exists
-bindkey -M vicmd ff autosuggest-accept
+bindkey -M viins ff end-of-line
+bindkey -M vicmd ff end-of-line
 
 # Better undo/redo
 bindkey -M vicmd u undo
