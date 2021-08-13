@@ -3,7 +3,6 @@ alsa-firmware
 alsa-oss
 alsa-utils
 amd-ucode
-amdvlk
 arch-wiki-lite
 arm-none-eabi-gcc
 arm-none-eabi-newlib
@@ -17,12 +16,10 @@ avrdude
 awesome
 aws-cli
 base
-bemenu-wayland
 bind
 bison
 blueberry
 bluez-utils
-chromium
 cpulimit
 cpupower
 dfu-programmer
@@ -38,7 +35,6 @@ epiphany
 fakeroot
 file-roller
 firefox
-flatpak
 flex
 gcc
 gdm
@@ -76,15 +72,18 @@ htop
 hub
 iftop
 iotop
+iwd
 jnettop
 keychain
+lib32-libva-mesa-driver
+lib32-mesa-vdpau
 libpqxx
 libva-mesa-driver
 linux
 linux-firmware
 logrotate
-lsof
 macchanger
+make
 mako
 man-db
 man-pages
@@ -130,6 +129,7 @@ s-tui
 sdl2_mixer
 simple-scan
 slurp
+steam
 sudo
 sushi
 sway
@@ -148,7 +148,6 @@ vino
 vkd3d
 vlc
 vulkan-mesa-layers
-vulkan-radeon
 vulkan-tools
 w3m
 weechat
