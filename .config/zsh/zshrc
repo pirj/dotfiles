@@ -94,7 +94,7 @@ bindkey -M vicmd ff end-of-line
 bindkey -M vicmd u undo
 bindkey -M vicmd U redo
 
-# Switch to command mode. jk or kk or jj are to slow to work with 0.1s timeout
+# Switch to command mode. For me, jk or kk or jj are too slow to type with 0.1s timeout
 # kjk<CR> to repeat last command
 bindkey -M viins kj vi-cmd-mode
 
