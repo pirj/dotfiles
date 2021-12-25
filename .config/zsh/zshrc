@@ -31,34 +31,37 @@ setopt histignoredups
 zshaddhistory() { whence ${${(z)1}[1]} >| /dev/null || return 1 }
 
 # Plugins
-source ~/.zinit/bin/zinit.zsh
+source ~/.zi/bin/zi.zsh
 
-zinit ice depth=1; zinit light romkatv/powerlevel10k
+autoload -Uz _zi
+(( ${+_comps} )) && _comps[zi]=_zi
+
+zi ice depth=1; zi light romkatv/powerlevel10k
 
 export ZSH_AUTOSUGGEST_STRATEGY=(history) # (completion history) is too slow
-zinit light zsh-users/zsh-autosuggestions
+zi light zsh-users/zsh-autosuggestions
 
-zinit light zsh-users/zsh-history-substring-search
-# zinit light zdharma/history-search-multi-word
+zi light zsh-users/zsh-history-substring-search
+# zi light z-shell/history-search-multi-word
 
-zinit light MichaelAquilina/zsh-you-should-use
+zi light MichaelAquilina/zsh-you-should-use
 
-zinit light zdharma/fast-syntax-highlighting
+zi light z-shell/fast-syntax-highlighting
 
-zinit ice blockf; zinit light zsh-users/zsh-completions
+zi ice blockf; zi light zsh-users/zsh-completions
 
 # fd, better find
-zinit ice as"command" from"gh-r" mv"fd* -> fd" pick"fd/fd"
-zinit light sharkdp/fd
-zinit load sharkdp/fd
+zi ice as"command" from"gh-r" mv"fd* -> fd" pick"fd/fd"
+zi light sharkdp/fd
+zi load sharkdp/fd
 
 # exa, replacement for ls
-zinit ice lucid from"gh-r" as"program" mv"exa* -> exa"
-zinit light ogham/exa
-zinit load ogham/exa
+zi ice lucid from"gh-r" as"program" mv"exa* -> exa"
+zi light ogham/exa
+zi load ogham/exa
 
 export _Z_DATA=$XDG_CACHE_HOME/z
-zinit light agkozak/zsh-z
+zi light agkozak/zsh-z
 
 # Cache completions
 autoload -Uz compinit; compinit

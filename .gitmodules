@@ -1,6 +1,6 @@
 [submodule ".config/vim/bundle/Vundle.vim"]
   path = .config/vim/bundle/Vundle.vim
   url = https://github.com/VundleVim/Vundle.vim.git
-[submodule ".zinit/bin"]
-  path = .zinit/bin
-  url = https://github.com/zdharma/zinit.git
+[submodule ".zi/bin"]
+	path = .zi/bin
+	url = git@github.com:z-shell/zi.git
