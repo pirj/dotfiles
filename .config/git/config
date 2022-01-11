@@ -46,7 +46,7 @@
   ss = show --stat
   d = diff
   ds = diff --staged
-  up = pull
+  up = pull --rebase
   c = commit
   ca = commit --amend
   p = push
