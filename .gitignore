@@ -250,3 +250,4 @@ dosprogs
 .config/evolution
 .config/dleyna-renderer-service.conf
 .config/enchant
+.terminfo
