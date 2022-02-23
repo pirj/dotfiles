@@ -251,3 +251,6 @@ dosprogs
 .config/dleyna-renderer-service.conf
 .config/enchant
 .terminfo
+.config/autostart
+.config/gnome-boxes
+.config/libvirt
