@@ -254,3 +254,4 @@ dosprogs
 .config/autostart
 .config/gnome-boxes
 .config/libvirt
+.cdk
