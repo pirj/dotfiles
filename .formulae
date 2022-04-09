@@ -31,7 +31,6 @@ kakoune
 keychain
 khal
 libksba
-libxml2
 luajit
 lynx
 markdown
@@ -46,7 +45,7 @@ p7zip
 pinentry
 pirj/noclamshell/noclamshell
 pirj/toreman/toreman
-postgresql
+postgis
 proctools
 pth
 pv
