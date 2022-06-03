@@ -1,14 +1,13 @@
 #!/bin/bash
 
-all() {
+_all() {
   (
-    cd $2
-    cd ..
+    cd $(dirname $2)
     echo $(bash -c "$1" 1>/dev/null 2>&1 && echo "[+]" || echo "[ ]") $(pwd)
   )
 }
-export -f all
+export -f _all
 
 echo "$*" for all repos
 export COMMAND="$*"
-find . -maxdepth 2 -type d -name '.git' | xargs -P 10 -L1 -I{} bash -c 'all "$COMMAND" "{}"'
+fd --hidden --no-ignore --maxdepth 2 '.git$' | xargs -P 10 -L1 -I{} bash -c '_all "$COMMAND" "{}"'
