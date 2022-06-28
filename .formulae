@@ -20,6 +20,7 @@ git-flow
 git-hooks-go
 git-imerge
 go
+helix-editor/helix/helix
 heroku/brew/heroku
 hr
 htop
@@ -59,6 +60,7 @@ redis
 ripgrep
 scdoc
 shellcheck
+solargraph
 ssh-copy-id
 telnet
 terminal-notifier
