@@ -255,3 +255,5 @@ dosprogs
 .config/gnome-boxes
 .config/libvirt
 .cdk
+.BitwigStudio
+Bitwig Studio
