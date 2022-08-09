@@ -152,3 +152,7 @@ export PATH="$PATH:$HOME/.rvm/bin"
 
 # Add JDK for JRuby
 export PATH="/usr/local/opt/openjdk/bin:$PATH"
+
+export HISTSIZE=1000
+export SAVEHIST=1000
+export HISTFILE=~/.zsh_history
