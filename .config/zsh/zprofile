@@ -11,7 +11,7 @@ export XDG_CACHE_HOME=$HOME/.cache
 export EDITOR=vi
 [[ -s $(which vim) ]] && export EDITOR=vim
 [[ -s $(which nvim) ]] && export EDITOR=nvim
-[[ -s $(which hx)]] && export EDITOR=hx
+[[ -s $(which hx) ]] && export EDITOR=hx
 
 # Reduce delay after you hit the <ESC> to 0.2 seconds (hat tip Doug Black)
 export KEYTIMEOUT=20
