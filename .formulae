@@ -6,6 +6,7 @@ bombadillo
 brightness
 cmake
 coreutils
+curl
 ddgr
 diff-so-fancy
 direnv
@@ -13,6 +14,7 @@ docbook
 dosbox
 elinks
 exercism
+git
 git-absorb
 git-extras
 git-filter-repo
@@ -20,7 +22,7 @@ git-flow
 git-hooks-go
 git-imerge
 go
-helix-editor/helix/helix
+helix
 heroku/brew/heroku
 hr
 htop
@@ -31,7 +33,6 @@ jq
 kakoune
 keychain
 khal
-libksba
 luajit
 lynx
 markdown
@@ -42,11 +43,12 @@ mysql
 mysql-client
 ncdu
 nginx
+node
 p7zip
 pinentry
 pirj/noclamshell/noclamshell
 pirj/toreman/toreman
-postgis
+postgresql@15
 proctools
 pth
 pv
@@ -79,6 +81,5 @@ watch
 wget
 yarn
 youtube-dl
-zlib
 zplug
 zsh

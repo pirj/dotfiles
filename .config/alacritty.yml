@@ -9,6 +9,9 @@ scrolling:
 font:
   size: 14
 
+  normal:
+    family: Oxygen mono
+
   # Thin stroke font rendering (macOS only)
   #
   # Thin strokes are suitable for retina displays, but for non-retina screens
