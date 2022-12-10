@@ -10,9 +10,7 @@ curl
 ddgr
 diff-so-fancy
 direnv
-docbook
 dosbox
-elinks
 exercism
 git
 git-absorb
@@ -24,7 +22,6 @@ git-imerge
 go
 helix
 heroku/brew/heroku
-hr
 htop
 hub
 hunspell
@@ -33,7 +30,6 @@ jq
 kakoune
 keychain
 khal
-luajit
 lynx
 markdown
 mpc
@@ -50,7 +46,6 @@ pirj/noclamshell/noclamshell
 pirj/toreman/toreman
 postgresql@15
 proctools
-pth
 pv
 pwgen
 pyenv
@@ -72,7 +67,6 @@ tldr
 translate-shell
 transmission-cli
 tree
-unrar
 vale
 vim
 vimpc
