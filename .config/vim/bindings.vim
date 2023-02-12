@@ -32,6 +32,16 @@ nnoremap <silent> [e :cprevious<CR>
 nnoremap <silent> ]e :cnext<CR>
 nnoremap <silent> \e :cclose<CR>
 
+" Navigate AI completion list
+let g:codeium_disable_bindings = 1
+
+inoremap <C-\> <Cmd>call codeium#Complete()<CR>
+inoremap <S-Tab> <Cmd>call codeium#Complete()<CR>
+inoremap <C-f> <Cmd>call codeium#Accept()<CR>
+inoremap <C-d> <Cmd>call codeium#CycleCompletions(1)<CR>
+inoremap <C-s> <Cmd>call codeium#CycleCompletions(-1)<CR>
+inoremap <C-/> <Cmd>call codeium#Clear()<CR>
+
 " Tabs
 nnoremap <silent> <Leader>t :tabnew<CR>
 

@@ -54,6 +54,7 @@ Bundle 'ervandew/supertab'
 
 " ai code completion
 " Bundle 'zxqfl/tabnine-vim'
+" Bundle 'Exafunction/codeium.vim'
 
 " git conflicts
 Bundle 'whiteinge/diffconflicts'
