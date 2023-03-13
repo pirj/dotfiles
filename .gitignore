@@ -229,7 +229,7 @@ dosprogs
 .LfCache
 .webdrivers
 .solargraph
-.zi/*
+.zinit/*
 .yq2
 .cargo
 .config/rua
