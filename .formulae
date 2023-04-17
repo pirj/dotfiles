@@ -19,6 +19,7 @@ git-filter-repo
 git-flow
 git-hooks-go
 git-imerge
+gnupg
 go
 helix
 heroku/brew/heroku
@@ -41,7 +42,6 @@ ncdu
 nginx
 node
 p7zip
-pinentry
 pirj/noclamshell/noclamshell
 pirj/toreman/toreman
 postgresql@15
