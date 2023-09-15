@@ -78,15 +78,15 @@ history-incremental-search-backward-ins () {
   zle -K vicmd
 }
 zle -N history-incremental-search-backward-ins
-bindkey -M viins ^r history-incremental-search-backward-ins
-bindkey -M vicmd ^r history-incremental-search-backward
+bindkey -M viins "^r" history-incremental-search-backward-ins
+bindkey -M vicmd "^r" history-incremental-search-backward
 # Accept incremental search for further editing with a single escape
 bindkey -M isearch '\e' accept-search
 bindkey -M isearch kj accept-search
-bindkey -M isearch ^p history-incremental-search-backward
-bindkey -M isearch ^n history-incremental-search-forward
+bindkey -M isearch "^p" history-incremental-search-backward
+bindkey -M isearch "^n" history-incremental-search-forward
 
-bindkey -M vicmd H beginning-of-line
+bindkey -M vicmd "H" beginning-of-line
 bindkey -M vicmd L end-of-line
 
 # Use ff to complete an autosuggestion
@@ -118,8 +118,8 @@ fancy-ctrl-z () {
   fi
 }
 zle -N fancy-ctrl-z
-bindkey -M viins ^Z fancy-ctrl-z
-bindkey -M vicmd ^Z fancy-ctrl-z
+bindkey -M viins "^Z" fancy-ctrl-z
+bindkey -M vicmd "^Z" fancy-ctrl-z
 
 # Edit command in external editor
 autoload -U edit-command-line
