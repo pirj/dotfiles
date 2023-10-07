@@ -78,8 +78,6 @@
 [submodule]
   fetchJobs = 4
   recurse = true
-[hub]
-  host = emp-sof-github01.emp.internal.com
 [absorb]
   maxStack = 20
 [init]
