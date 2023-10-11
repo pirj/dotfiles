@@ -31,37 +31,18 @@ setopt histignoredups
 zshaddhistory() { whence ${${(z)1}[1]} >| /dev/null || return 1 }
 
 # Plugins
-source ~/.zinit/zinit.zsh
-
-autoload -Uz _zinit
-(( ${+_comps} )) && _comps[zinit]=_zinit
-
-zinit ice depth=1; zinit light romkatv/powerlevel10k
+# # Lazy-load antidote and generate the static load file only when needed
+zsh_plugins=${ZDOTDIR:-$HOME}/.zsh_plugins
+if [[ ! $zsh_plugins.zsh -nt $zsh_plugins.txt ]]; then
+  (
+    source ~/.antidote/antidote.zsh
+  antidote bundle < $zsh_plugins.txt >! $zsh_plugins.zsh
+  )
+fi
+source ${zsh_plugins}.zsh
 
 export ZSH_AUTOSUGGEST_STRATEGY=(history) # (completion history) is too slow
-zinit light zsh-users/zsh-autosuggestions
-
-zinit light zsh-users/zsh-history-substring-search
-# zinit light zdharma-continuum/history-search-multi-word
-
-zinit light MichaelAquilina/zsh-you-should-use
-
-zinit light zdharma-continuum/fast-syntax-highlighting
-
-zinit ice blockf; zinit light zsh-users/zsh-completions
-
-# fd, better find
-zinit ice as"command" from"gh-r" mv"fd* -> fd" pick"fd/fd"
-zinit light sharkdp/fd
-zinit load sharkdp/fd
-
-# exa, replacement for ls
-zinit ice lucid from"gh-r" as"program" mv"exa* -> exa"
-zinit light ogham/exa
-zinit load ogham/exa
-
 export _Z_DATA=$XDG_CACHE_HOME/z
-zinit light agkozak/zsh-z
 
 # Cache completions
 autoload -Uz compinit; compinit

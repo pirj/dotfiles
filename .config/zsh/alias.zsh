@@ -12,7 +12,7 @@ fi
 # Better ls
 alias ls='ls $LS_COLOR'
 alias l='ls -lhA'
-[[ -s $(which exa) ]] && alias l='exa -lhaG' && alias ls=exa
+[[ -s $(which eza) ]] && alias l='eza -lhaG' && alias ls=eza
 
 # Better find
 [[ -s $(which fd) ]] && alias find=fd

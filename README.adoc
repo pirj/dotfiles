@@ -102,8 +102,8 @@ Install:
 
 == How it works
 
-Vundle that handles Vim plugins and zinit that handles Zsh plugins are fetched as submodules.
-Zinit fetches all configured Zsh plugins on first start.
+Vundle that handles Vim plugins and Antidote that handles Zsh plugins are fetched as submodules.
+Antidote fetches all configured Zsh plugins on first start.
 In Vim, `:PluginInstall` installs all plugins.
 
 NeoVim requires a specific Python package to run Python plugins:

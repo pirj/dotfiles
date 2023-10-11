@@ -1,0 +1,10 @@
+romkatv/powerlevel10k
+zsh-users/zsh-autosuggestions kind:defer
+zsh-users/zsh-history-substring-search kind:defer
+# zdharma-continuum/history-search-multi-word
+MichaelAquilina/zsh-you-should-use
+zdharma-continuum/fast-syntax-highlighting kind:defer
+zsh-users/zsh-completions
+agkozak/zsh-z
+
+
