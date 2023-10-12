@@ -15,6 +15,7 @@
   autostash = true
   autosquash = true
   instructionFormat = %ai %aN %s
+  updateRefs = true
 [merge]
   tool = diffconflicts
   conflictstyle = diff3
