@@ -38,6 +38,7 @@ brew "mpc"
 brew "mpd", restart_service: true
 brew "mtr"
 brew "ncdu"
+brew "neovim"
 brew "nginx"
 brew "node"
 brew "p7zip"
