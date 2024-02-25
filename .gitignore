@@ -270,3 +270,4 @@ Screenshots
 .config/transmission-daemon/bandwidth-groups.json
 .config/xdg-terminals.list
 .config/nvim/lazy-lock.json
+.ollama

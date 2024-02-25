@@ -45,6 +45,7 @@ brew "ncdu"
 brew "neovim"
 brew "nginx"
 brew "node"
+brew "ollama", restart_service: true
 brew "p7zip"
 brew "postgresql@15", restart_service: true, link: true
 brew "proctools"
