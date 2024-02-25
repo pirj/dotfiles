@@ -21,4 +21,9 @@ lazy.setup({
       vim.keymap.set('n', '<leader>b', builtin.buffers, {})
     end
   },
+  {
+    'hrsh7th/nvim-cmp',
+    dependencies = { 'hrsh7th/cmp-buffer', 'hrsh7th/cmp-path', 'hrsh7th/cmp-cmdline' },
+    config = require('config.cmp').setup
+  },
 })
