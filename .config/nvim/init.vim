@@ -8,7 +8,9 @@ lua <<EOF
   end
   vim.opt.rtp:prepend(lazypath)
 
-  vim.g.mapleader = " " -- Make sure to set `mapleader` before lazy so your mappings are correct
+  --  NOTE: Must happen before plugins are required (otherwise wrong leader will be used)
+  vim.g.mapleader = ' '
+  vim.g.maplocalleader = ' '
 
   require("config.lazy")
 EOF
