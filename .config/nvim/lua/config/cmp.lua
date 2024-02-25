@@ -25,6 +25,7 @@ local function setup()
     sources = cmp.config.sources({
       { name = 'buffer' },
     }, {
+      { name = 'cmp_ai' },
     })
   })
 

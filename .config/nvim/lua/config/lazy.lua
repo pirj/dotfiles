@@ -22,8 +22,13 @@ lazy.setup({
     end
   },
   {
+    'tzachar/cmp-ai',
+    dependencies = 'nvim-lua/plenary.nvim',
+    config = require('config.cmp-ai').setup
+  },
+  {
     'hrsh7th/nvim-cmp',
-    dependencies = { 'hrsh7th/cmp-buffer', 'hrsh7th/cmp-path', 'hrsh7th/cmp-cmdline' },
+    dependencies = { 'hrsh7th/cmp-buffer', 'hrsh7th/cmp-path', 'hrsh7th/cmp-cmdline', 'tzachar/cmp-ai' },
     config = require('config.cmp').setup
   },
 })
