@@ -88,3 +88,5 @@
   detachedHead = false
 [checkout]
   defaultRemote = origin
+[blame]
+	ignoreRevsFile = .git-blame-ignore-revs
