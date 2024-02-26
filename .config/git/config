@@ -71,7 +71,7 @@
 [rerere]
   enabled = 1
 [diff]
-  algorithm = patience
+  algorithm = histogram
   noprefix = true
 [interactive]
   singlekey = true
