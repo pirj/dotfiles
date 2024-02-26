@@ -18,7 +18,7 @@
   updateRefs = true
 [merge]
   tool = diffconflicts
-  conflictstyle = diff3
+  conflictStyle = zdiff3
 [mergetool]
   prompt = false
   keepBackup = false
