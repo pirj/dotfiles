@@ -68,7 +68,7 @@ bindkey -M isearch "^p" history-incremental-search-backward
 bindkey -M isearch "^n" history-incremental-search-forward
 
 bindkey -M vicmd "H" beginning-of-line
-bindkey -M vicmd L end-of-line
+bindkey -M vicmd "L" end-of-line
 
 # Use ff to complete an autosuggestion
 bindkey -M viins ff end-of-line
