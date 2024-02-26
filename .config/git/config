@@ -43,6 +43,7 @@
   follow = true
 [branch]
   autosetupmerge = true
+  sort = -committerdate
 [alias]
   co = checkout
   s = status --short --branch
