@@ -1,4 +1,4 @@
-local function setup()
+return function()
   local cmp = require('cmp')
   cmp.setup({
     window = {
@@ -47,5 +47,3 @@ local function setup()
     })
   })
 end
-
-return { setup = setup }

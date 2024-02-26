@@ -1,4 +1,4 @@
-local function setup()
+return function()
   local cmp_ai = require('cmp_ai.config')
 
   cmp_ai:setup({
@@ -16,5 +16,3 @@ local function setup()
     },
   })
 end
-
-return { setup = setup }

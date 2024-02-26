@@ -1,12 +1,10 @@
-local function setup()
+return function()
   vim.o.timeout = true
   vim.o.timeoutlen = 500
 
   local which_key = require('which-key')
   which_key.setup()
 end
-
-return { setup = setup }
 
 -- https://github.com/SmiteshP/Dotfiles/blob/master/.config/nvim/lua/config/which-key.lua
 

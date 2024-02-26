@@ -4,7 +4,7 @@ lazy.setup({
   {
     "folke/which-key.nvim",
     event = "VeryLazy",
-    config = require('config.which-key').setup
+    config = require('config.which-key')
   },
   {
     'nvim-telescope/telescope.nvim',
@@ -19,11 +19,11 @@ lazy.setup({
   {
     'tzachar/cmp-ai',
     dependencies = 'nvim-lua/plenary.nvim',
-    config = require('config.cmp-ai').setup
+    config = require('config.cmp-ai')
   },
   {
     'hrsh7th/nvim-cmp',
     dependencies = { 'hrsh7th/cmp-buffer', 'hrsh7th/cmp-path', 'hrsh7th/cmp-cmdline', 'tzachar/cmp-ai' },
-    config = require('config.cmp').setup
+    config = require('config.cmp')
   },
 })
