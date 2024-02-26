@@ -26,8 +26,7 @@
   cmd = $EDITOR -c DiffConflictsWithHistory \"$MERGED\" \"$BASE\" \"$LOCAL\" \"$REMOTE\"
   trustExitCode = true
 [pager]
-  diff = diff-so-fancy | less --tabs=4 -RFX
-  show = diff-so-fancy | less --tabs=4 -RFX
+  difftool = true
 [color]
   ui = true
 [core]
@@ -74,6 +73,11 @@
 [diff]
   algorithm = histogram
   noprefix = true
+  tool = difftastic
+[difftool]
+  prompt = false
+[difftool "difftastic"]
+  cmd = difft "$LOCAL" "$REMOTE"
 [interactive]
   singlekey = true
 [commit]
