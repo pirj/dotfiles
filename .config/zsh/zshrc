@@ -137,3 +137,6 @@ export PATH="/usr/local/opt/openjdk/bin:$PATH"
 export HISTSIZE=1000
 export SAVEHIST=1000
 export HISTFILE=~/.zsh_history
+
+# Machine-specific config
+[[ -s ~/.config/zsh/local.zsh ]] && source ~/.config/zsh/local.zsh
