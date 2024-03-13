@@ -271,3 +271,9 @@ Screenshots
 .config/xdg-terminals.list
 .config/nvim/lazy-lock.json
 .ollama
+.nvm
+.kube
+.docker
+.config/caddy
+.asdfrc
+.config/zsh/local.zsh
