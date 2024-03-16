@@ -26,4 +26,7 @@ lazy.setup({
     dependencies = { 'hrsh7th/cmp-buffer', 'hrsh7th/cmp-path', 'hrsh7th/cmp-cmdline', 'tzachar/cmp-ai' },
     config = require('config.cmp')
   },
+  {
+    'tpope/vim-commentary'
+  }
 })
