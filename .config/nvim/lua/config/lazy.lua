@@ -27,6 +27,7 @@ lazy.setup({
     config = require('config.cmp')
   },
   {
-    'tpope/vim-commentary'
+    'numToStr/Comment.nvim',
+    lazy = false
   }
 })
