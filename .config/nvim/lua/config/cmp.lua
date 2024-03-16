@@ -7,14 +7,10 @@ return function()
     },
     mapping = cmp.mapping.preset.insert({
       ["<Tab>"] = cmp.mapping(function(fallback)
-        if cmp.visible() then
-          cmp.select_next_item()
-        end
+        if cmp.visible() then cmp.select_next_item() end
       end, { "i", "s", "c" }),
       ["<S-Tab>"] = cmp.mapping(function(fallback)
-        if cmp.visible() then
-          cmp.select_prev_item()
-        end
+        if cmp.visible() then cmp.select_prev_item() end
       end, { "i", "s", "c" }),
       -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
       ['<CR>'] = cmp.mapping.confirm({ select = true }),
