@@ -19,8 +19,6 @@ return function()
       -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
       ['<CR>'] = cmp.mapping.confirm({ select = true }),
       ['ff'] = cmp.mapping.confirm({ select = true }),
-      ['<Esc>'] = cmp.mapping.abort(),
-      ['kj'] = cmp.mapping.abort(),
     }),
     sources = cmp.config.sources({
       { name = 'buffer' },
