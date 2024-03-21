@@ -47,9 +47,6 @@ export _Z_DATA=$XDG_CACHE_HOME/z
 # Cache completions
 autoload -Uz compinit; compinit
 
-# Direnv
-eval "$(direnv hook zsh)"
-
 # Better vi mode (hat tip Doug Black)
 bindkey -v
 
@@ -140,3 +137,6 @@ export HISTFILE=~/.zsh_history
 
 # Machine-specific config
 [[ -s ~/.config/zsh/local.zsh ]] && source ~/.config/zsh/local.zsh
+
+# Direnv
+eval "$(direnv hook zsh)"
