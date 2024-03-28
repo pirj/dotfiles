@@ -29,5 +29,8 @@ lazy.setup({
   {
     'numToStr/Comment.nvim',
     lazy = false
-  }
+  },
+  'whiteinge/diffconflicts',
+  'tpope/vim-fugitive', -- mostly for blame
+  'airblade/vim-gitgutter', -- show git changes
 })
