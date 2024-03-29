@@ -16,7 +16,7 @@ return function()
         if cmp.visible() then cmp.select_prev_item() end
       end, { "i", "s", "c" }),
       -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
-      ['ff'] = cmp.mapping.confirm({ select = true }),
+      ['ff'] = cmp.mapping.confirm({ select = false }),
     }),
     sources = cmp.config.sources({
       { name = 'buffer' },
