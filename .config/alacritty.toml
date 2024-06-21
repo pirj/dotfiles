@@ -1,0 +1,147 @@
+[bell]
+duration = 0
+
+[colors.normal]
+black = "#000000"
+blue = "#0d73cc"
+cyan = "#0dcdcd"
+green = "#b9ca4a"
+magenta = "#cb1ed1"
+red = "#cc0403"
+white = "#eaeaea"
+yellow = "#cecb00"
+
+[font]
+size = 13
+
+[font.normal]
+family = "Oxygen mono"
+
+[[keyboard.bindings]]
+chars = "\u001B"
+key = "LBracket"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u001C"
+key = "Backslash"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u001D"
+key = "RBracket"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u001E"
+key = "Numpad6"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0001"
+key = "A"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0003"
+key = "C"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0004"
+key = "D"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0005"
+key = "E"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0006"
+key = "F"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\b"
+key = "H"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = """
+
+"""
+key = "J"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u000B"
+key = "K"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\f"
+key = "L"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u000E"
+key = "N"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0010"
+key = "P"
+mods = "Command"
+
+[[keyboard.bindings]]
+action = "None"
+key = "Q"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0012"
+key = "R"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0015"
+key = "U"
+mods = "Command"
+
+[[keyboard.bindings]]
+action = "Paste"
+key = "V"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0017"
+key = "W"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0018"
+key = "X"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u0019"
+key = "Y"
+mods = "Command"
+
+[[keyboard.bindings]]
+chars = "\u001A"
+key = "Z"
+mods = "Command"
+
+[[keyboard.bindings]]
+action = "Paste"
+key = "V"
+mods = "Control"
+
+[scrolling]
+history = 0
+
+[selection]
+save_to_clipboard = true
+semantic_escape_chars = ",│`|\"' ()[]{}<>\t"
