@@ -28,4 +28,8 @@ lazy.setup({
   'whiteinge/diffconflicts',
   'tpope/vim-fugitive', -- mostly for blame
   'airblade/vim-gitgutter', -- show git changes
+  {
+    'David-Kunz/gen.nvim', -- Ollama local LLM gen AI
+    config = require('config.gen')
+  },
 })
