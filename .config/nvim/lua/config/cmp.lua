@@ -5,16 +5,15 @@ return function()
       ghost_text = true
     },
     window = {
-      completion = cmp.config.window.bordered(),
       documentation = cmp.config.window.bordered(),
     },
     mapping = cmp.mapping.preset.insert({
       ["<Tab>"] = cmp.mapping(function(fallback)
         if cmp.visible() then cmp.select_next_item() end
-      end, { "i", "s", "c" }),
+      end, { "i", "s" }),
       ["<S-Tab>"] = cmp.mapping(function(fallback)
         if cmp.visible() then cmp.select_prev_item() end
-      end, { "i", "s", "c" }),
+      end, { "i", "s" }),
       -- Accept currently selected item. Set `select` to `false` to only confirm explicitly selected items.
       ['ff'] = cmp.mapping.confirm({ select = false }),
     }),
@@ -22,24 +21,6 @@ return function()
       { name = 'buffer' },
     }, {
       -- { name = 'cmp_ai' },
-    })
-  })
-
-  -- Use buffer source for `/` and `?` (if you enabled `native_menu`, this won't work anymore).
-  cmp.setup.cmdline({ '/', '?' }, {
-    mapping = cmp.mapping.preset.cmdline(),
-    sources = {
-      { name = 'buffer' }
-    }
-  })
-
-  -- Use cmdline & path source for ':' (if you enabled `native_menu`, this won't work anymore).
-  cmp.setup.cmdline(':', {
-    mapping = cmp.mapping.preset.cmdline(),
-    sources = cmp.config.sources({
-      { name = 'path' }
-    }, {
-      { name = 'cmdline' }
     })
   })
 end
