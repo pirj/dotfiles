@@ -21,7 +21,7 @@ return function()
     sources = cmp.config.sources({
       { name = 'buffer' },
     }, {
-      { name = 'cmp_ai' },
+      -- { name = 'cmp_ai' },
     })
   })
 
