@@ -3,6 +3,6 @@ return function()
 
   local gen = require('gen')
   gen.setup({
-    model = "codestral"
+    model = "mistral-nemo"
   })
 end
