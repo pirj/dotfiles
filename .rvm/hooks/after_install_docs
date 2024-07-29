@@ -1,6 +1,0 @@
-(
-  echo "Installing ri docs for $rvm_ruby_string"
-  rvm use $rvm_ruby_string
-  rvm docs generate-ri
-  echo "DONE"
-)

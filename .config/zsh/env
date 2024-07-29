@@ -1,3 +1,2 @@
 PAGER=less
 export LESS='--quit-if-one-screen --hilite-search --raw-control-chars --ignore-case --no-init'
-export DIRENV_LOG_FORMAT=

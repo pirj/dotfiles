@@ -1,6 +1,0 @@
-(
-  echo "Installing global gems to $rvm_ruby_string"
-  rvm use $rvm_ruby_string
-  rvm @global do gem install pry pry-doc pry-rescue pry-byebug pry-rails benchmark-ips
-  echo "DONE"
-)

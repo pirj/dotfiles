@@ -4,7 +4,7 @@ TODO*
 .agignore
 .DS_Store
 PASSWD
-.envrc
+.mise.toml
 .git
 .rspec-local
 .bundle

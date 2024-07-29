@@ -27,9 +27,6 @@ alias edit=$EDITOR
 # Run tmux in 256 color mode
 alias tmux='tmux -2'
 
-# Make direnv and tmux friends
-alias tmux='direnv exec / tmux'
-
 # tmux aliases
 alias ta='tmux at'
 alias tn='tmux new -s'
