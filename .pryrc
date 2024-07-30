@@ -15,10 +15,3 @@ if defined? PG
     original_handler.call output, exception, _pry_
   end
 end
-
-global_gemset = ENV['GEM_PATH'].split(':').grep(/ruby.*@global/).first
-all_global_gem_paths = Dir.glob("#{global_gemset}/gems/*")
-all_global_gem_paths.each do |p|
-  gem_path = "#{p}/lib"
-  $LOAD_PATH << gem_path
-end
