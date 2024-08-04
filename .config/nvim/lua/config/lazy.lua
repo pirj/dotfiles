@@ -15,6 +15,21 @@ lazy.setup({
     end
   },
   { 'hrsh7th/nvim-cmp', dependencies = { 'hrsh7th/cmp-buffer' }, config = require('config.cmp') },
+
+  { 'nvim-treesitter/nvim-treesitter',
+    build = ':TSUpdate',
+    config = function ()
+      local configs = require('nvim-treesitter.configs')
+
+      configs.setup({
+        ensure_installed = { "lua", "vimdoc", "ruby", "javascript", "html", "css" },
+        sync_install = false,
+        highlight = { enable = true },
+        indent = { enable = true },
+      })
+    end
+  },
+
   { 'numToStr/Comment.nvim', lazy = false }, -- comment and uncomment
   'whiteinge/diffconflicts', -- git conflicts
   'tpope/vim-fugitive', -- mostly for blame
