@@ -17,7 +17,9 @@ cnoremap kj <C-f>
 nnoremap <silent> [b :bprevious<CR>
 nnoremap <silent> ]b :bnext<CR>
 " nnoremap <silent> <Leader>b :ls<CR>
-nnoremap <silent> <Leader>b :CtrlPBuffer<CR>
+if exists(':CtrlPBuffer')
+  nnoremap <silent> <Leader>b :CtrlPBuffer<CR>
+endif
 nnoremap <silent> \b :bd<CR>
 
 " Navigate Location list (lgrep)
@@ -125,8 +127,10 @@ nnoremap <Leader>g :silent lgrep<Space>
 nnoremap K :silent lgrep <C-r><C-w><CR>
 
 " nnoremap <Leader>f :find<Space>
-noremap <leader>b :<C-U><C-R>=printf("Leaderf --reverse buffer %s", "")<CR><CR>
-noremap <leader>f :<C-U><C-R>=printf("Leaderf --reverse file %s", "")<CR><CR>
+if exists(':Leaderf')
+  noremap <leader>b :<C-U><C-R>=printf("Leaderf --reverse buffer %s", "")<CR><CR>
+  noremap <leader>f :<C-U><C-R>=printf("Leaderf --reverse file %s", "")<CR><CR>
+endif
 
 " Use system clipboard
 if (system('uname') =~ "darwin")
