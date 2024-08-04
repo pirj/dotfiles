@@ -18,7 +18,8 @@ lazy.setup({
   { 'numToStr/Comment.nvim', lazy = false }, -- comment and uncomment
   'whiteinge/diffconflicts', -- git conflicts
   'tpope/vim-fugitive', -- mostly for blame
-  'airblade/vim-gitgutter', -- show git changes
+  { 'lewis6991/gitsigns.nvim', config = require('config.gitsigns') },
+
   { 'David-Kunz/gen.nvim', config = require('config.gen') }, -- Ollama local LLM gen AI
 
   'tpope/vim-projectionist',
