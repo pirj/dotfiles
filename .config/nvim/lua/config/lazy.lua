@@ -29,7 +29,8 @@ lazy.setup({
   'nanotech/jellybeans.vim',
   'junegunn/seoul256.vim',
 
-  'tpope/vim-surround',
+  { 'kylechui/nvim-surround', event = "VeryLazy", config = function() require("nvim-surround").setup({ }) end },
+
   'ervandew/supertab',
 
   'ap/vim-css-color', -- CSS color previews
