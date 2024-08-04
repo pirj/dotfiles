@@ -1,3 +1,5 @@
+source ~/.config/vim/bindings.vim " All hotkeys, not depedant on plugins, are bound here.
+
 lua <<EOF
   local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
   if not vim.loop.fs_stat(lazypath) then
@@ -14,5 +16,4 @@ lua <<EOF
 EOF
 
 source ~/.config/vim/config.vim " All of the Vim configuration.
-source ~/.config/vim/bindings.vim " All hotkeys, not depedant on plugins, are bound here.
 source ~/.config/vim/autocmd.vim " Autocommands
