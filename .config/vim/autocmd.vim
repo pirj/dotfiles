@@ -1,6 +1,3 @@
-" Auto JSHint on write
-autocmd BufWritePost *.js silent! :JSHint<CR>
-
 " Re-set format options as plugins may set it on thier own
 autocmd FileType * setlocal formatoptions=tj
 
@@ -13,12 +10,6 @@ autocmd BufReadPost COMMIT_EDITMSG normal! gg
 " Open QuickFix/Location lists on search
 autocmd QuickFixCmdPost l* lwindow
 autocmd QuickFixCmdPost [^l]* cwindow
-
-" Automatically fold comments on Ruby file open
-" autocmd FileType ruby set foldmethod=expr | set foldexpr=getline(v:lnum)=~'^\\s*#'
-
-" Redraw after grep
-autocmd ShellCmdPost * redraw!
 
 " Reduce path to only find files in non-ignored directories
 let g:project_find_path = '.,' . system("git ls-tree -d HEAD --name-only | tr '\n' : | sed 's/:/**,/g'")
@@ -50,24 +41,4 @@ autocmd BufReadPost * silent! lcd .
 
 autocmd BufNewFile,BufRead *.git/{,modules/**/}{PULLREQ_EDIT,COMMIT_EDIT,MERGE_}MSG set ft=gitcommit
 
-" autocmd FileType markdown call pencil#init()
-" autocmd FileType text call pencil#init()
-
 autocmd BufRead,BufNewFile PULLREQ_EDITMSG setlocal filetype=markdown
-
-function! s:goyo_enter()
-  setlocal noshowcmd
-  setlocal wrap
-  setlocal scrolloff=15
-  colorscheme seoul256-light
-endfunction
-
-function! s:goyo_leave()
-  setlocal showcmd
-  setlocal nowrap
-  setlocal scrolloff=5
-  colorscheme jellybeans
-endfunction
-
-autocmd! User GoyoEnter nested call <SID>goyo_enter()
-autocmd! User GoyoLeave nested call <SID>goyo_leave()

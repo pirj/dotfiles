@@ -135,9 +135,6 @@ set spelllang=en,ru
 " Grep with rg
 set grepprg=rg\ --vimgrep\ --no-heading\ --smart-case\ --hidden
 
-" Search files with rg as well
-let g:ctrlp_user_command = 'rg --files %s'
-
 " Mouse integration is for all modes by default on some installs
 " Switch back to normal only
 set mouse=

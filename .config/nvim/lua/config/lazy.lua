@@ -40,13 +40,10 @@ lazy.setup({
   'tpope/vim-projectionist',
   'uptech/vim-open-alternate',
   'kopischke/vim-fetch',
-  'nathanaelkane/vim-indent-guides',
   'nanotech/jellybeans.vim',
   'junegunn/seoul256.vim',
 
   { 'kylechui/nvim-surround', event = "VeryLazy", config = function() require("nvim-surround").setup({ }) end },
-
-  'ervandew/supertab',
 
   'ap/vim-css-color', -- CSS color previews
 
