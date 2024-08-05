@@ -18,7 +18,7 @@ lazy.setup({
 
   { 'nvim-treesitter/nvim-treesitter',
     build = ':TSUpdate',
-    config = function ()
+    config = function()
       local configs = require('nvim-treesitter.configs')
 
       configs.setup({
@@ -26,6 +26,22 @@ lazy.setup({
         sync_install = false,
         highlight = { enable = true },
         indent = { enable = true },
+      })
+    end
+  },
+  { 'nvim-treesitter/nvim-treesitter-textobjects',
+    config = function()
+      require('nvim-treesitter.configs').setup({
+        textobjects = {
+          select = {
+            enable = true,
+            lookahead = true, -- Automatically jump forward to textobj, similar to targets.vim
+            keymaps = {
+              ["ir"] = "@block.inner",
+              ["ar"] = "@block.outer",
+            }
+          }
+        }
       })
     end
   },
