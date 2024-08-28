@@ -1,19 +1,2 @@
 [env]
-# This overwrites the PATH in some cases, and failes when installing new rubies
-# But it's not that bad, since it's the only issue
-PATH = "./bin"
-
-# This won't work because bin is added as relative to the root conf
-# [env]
-# _.path = [
-#     # adds a path relative to the .mise.toml, not PWD
-#     "./bin"
-# ]
-
-# Same issue
-# [env]
-#PATH = "{{config_root}}/bin"
-
-# This is causing panic sometimes, and sometimes plain doesn't work
-# PATH = "./bin:{{ get_env(name='PATH') }}"
-# PATH = "./bin:{{ get_env(name='PATH', default='') }}"
+PATH = "./bin:{{ get_env(name='PATH') }}"
