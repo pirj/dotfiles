@@ -17,7 +17,7 @@ call vundle#begin('~/.config/vim/bundle')
 Bundle 'VundleVim/Vundle.vim'
 
 " leader-f fuzzy file finder
-Bundle 'Yggdroot/LeaderF'
+" Bundle 'Yggdroot/LeaderF'
 
 " navigate between alternative files
 Bundle 'tpope/vim-projectionist'

@@ -177,4 +177,4 @@ let g:rspec_command = 'call Send_to_Tmux("rspec {spec}\n")'
 let &t_ut=''
 
 " Diff opts for git mergetool
-set diffopt=internal,algorithm:patience
+" set diffopt=internal,algorithm:patience
