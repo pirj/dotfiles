@@ -1,3 +1,2 @@
 [env]
-# There's still a problem, see https://github.com/jdx/mise/issues/2442
-# PATH = "./bin:{{env.PATH}}"
+_.path = ["{{cwd}}/bin"]
