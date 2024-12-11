@@ -133,7 +133,7 @@ if exists(':Leaderf')
 endif
 
 " Use system clipboard
-if (system('uname') =~ "darwin")
+if has("mac")
   nnoremap <silent> <Leader>y :.write !pbcopy<CR><CR>
   vnoremap <silent> <Leader>y :.write !pbcopy<CR><CR>
 else
