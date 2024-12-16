@@ -279,3 +279,4 @@ Screenshots
 .config/zsh/local.zsh
 .config/nautilus
 .zsh_sessions
+.streamlit/credentials.toml
