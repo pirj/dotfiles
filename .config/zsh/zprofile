@@ -41,8 +41,8 @@ fi
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-[[ -s $(which keychain) ]] && eval $(keychain --eval --agents ssh,gpg --quiet ~/.ssh/id_*[^pub])
-# [[ "$SSH_AUTH_SOCK" = "" ]] && [[ -s $(which ssh-agent) ]] && eval $(ssh-agent)
+# [[ -s $(which keychain) ]] && eval $(keychain --eval --agents ssh,gpg --quiet ~/.ssh/id_*[^pub])
+[[ "$SSH_AUTH_SOCK" = "" ]] && [[ -s $(which ssh-agent) ]] && eval $(ssh-agent)
 
 # Activate mise-en-place (polyglot version manager and env manager var)
 eval "$(mise activate zsh)"
