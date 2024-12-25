@@ -5,6 +5,7 @@
 .DS_Store
 PASSWD
 .mise.toml
+mise.toml
 .git
 .rspec-local
 .bundle
