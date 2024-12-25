@@ -1,0 +1,41 @@
+#!/usr/bin/env sh
+
+# Credit: https://smith.langchain.com/hub/rlm/matt-shumer-writing
+#
+# I (Phil Pirozhkov) edited the original prompt in the following ways:
+#   - removed duplication, it had the same phrases written twice, with slight differences
+#   - removed the "three drafts and the final" recommendation: sometimes it worked, sometimes inferrence abruptly ended after the first draft
+#   - made the prompt's language more concise and clear
+#
+# For additional convenience, I've implemented loading of the context from text files, e.g. "The text is direct and concise".
+#
+# This script will write the text back to facilitate diff'ing. Please mind checking the file to version control before asking the-editor to edit it for you.
+
+# Exit with an error if the file has dirty changes in git. Otherwise, they will be overwritten.
+git diff --quiet --exit-code -- "$1" || { echo "The file contains uncommitted changes. The-Editor overwrites the file, and your changes will be lost." ; exit 1 ; }
+
+ollama run llama3.1 << OLLAMA-TEXT > "$1"
+Given some context, and text, make the text clearer.
+
+Do not rewrite the text entirely. Just make it clearer and more readable.
+
+Take care to emulate the original text's tone, style, and meaning.
+
+Approach the task like an editor - not a rewriter.
+
+To keep the original, intended meaning, and don't stray away from it while editing, first, write a quick summary of the key points that the original text conveys.
+
+Write a draft, evaluate it, and then reflect on how it could be further improved.
+
+CONTEXT:
+---
+$( cat ~/.the-editor-context )
+
+$( cat .the-editor-context )
+---
+
+TEXT:
+---
+$( cat "$1" )
+---
+OLLAMA-TEXT
