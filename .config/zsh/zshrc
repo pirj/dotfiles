@@ -131,6 +131,9 @@ export PATH="/usr/local/opt/openjdk/bin:$PATH"
 # Use Ruby from Homebrew
 export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 
+# Use Python from Homebrew
+export PATH="/opt/homebrew/opt/python@3.13/libexec/bin:$PATH"
+
 export HISTSIZE=1000
 export SAVEHIST=1000
 export HISTFILE=~/.zsh_history
