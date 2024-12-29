@@ -142,3 +142,6 @@ export HISTFILE=~/.zsh_history
 
 # Machine-specific config
 [[ -s ~/.config/zsh/local.zsh ]] && source ~/.config/zsh/local.zsh
+
+# Activate mise-en-place (polyglot version manager and env manager var)
+eval "$(mise activate zsh)"
