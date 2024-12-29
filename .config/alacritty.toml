@@ -15,7 +15,7 @@ yellow = "#cecb00"
 size = 13
 
 [font.normal]
-family = "Oxygen mono"
+family = "Departure Mono"
 
 [[keyboard.bindings]]
 chars = "\u001B"
