@@ -12,7 +12,7 @@ white = "#eaeaea"
 yellow = "#cecb00"
 
 [font]
-size = 13
+size = 14
 
 [font.normal]
 family = "Departure Mono"
