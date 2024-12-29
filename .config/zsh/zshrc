@@ -44,6 +44,7 @@ source ${zsh_plugins}.zsh
 export ZSH_AUTOSUGGEST_STRATEGY=(history) # (completion history) is too slow
 
 export ZSHZ_DATA=$XDG_CACHE_HOME/z
+export ZSHZ_NO_RESOLVE_SYMLINKS=1 # prevent symlink resolution
 
 # Cache completions
 autoload -Uz compinit; compinit
