@@ -7,7 +7,7 @@ setlocal wrapmargin=-1000
 setlocal formatoptions=l
 
 setlocal foldnestmax=2
-setlocal foldlevel=1
+setlocal foldlevel=3
 
 function MarkdownLevel()
   let h = matchstr(getline(v:lnum), '^##\+')
