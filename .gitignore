@@ -280,3 +280,6 @@ Screenshots
 .config/nautilus
 .zsh_sessions
 .streamlit/credentials.toml
+.ipynb_checkpoints
+.ipython
+.jupyter
