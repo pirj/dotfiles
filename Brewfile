@@ -45,13 +45,13 @@ brew "make"
 brew "markdown"
 brew "mise"
 brew "mpc"
-brew "mpd", restart_service: true
+brew "mpd", restart_service: :changed
 brew "mtr"
 brew "ncdu"
 brew "neovim"
 brew "nginx"
 brew "node"
-brew "ollama", restart_service: true
+brew "ollama", restart_service: :changed
 brew "openjdk"
 brew "p7zip"
 brew "postgresql@15", link: true
@@ -59,7 +59,7 @@ brew "proctools"
 brew "pv"
 brew "pwgen"
 brew "pyenv"
-brew "redis", restart_service: true
+brew "redis", restart_service: :changed
 brew "ripgrep"
 brew "rlwrap"
 brew "ruby-build"
