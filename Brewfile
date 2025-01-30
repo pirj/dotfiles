@@ -76,6 +76,7 @@ brew "translate-shell"
 brew "transmission-cli"
 brew "tree"
 brew "vale"
+brew "victoriametrics", restart_service: :changed
 brew "vimpc"
 brew "w3m"
 brew "watch"
