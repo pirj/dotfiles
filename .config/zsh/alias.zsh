@@ -39,10 +39,6 @@ function tru { trans {=ru} "$*" }
 alias g=git
 alias r=rails
 
-# Hub PR checkout
-alias pr='hub pr checkout'
-alias myprs="hub pr list --format='%I %au %U %t %n' G $(whoami)"
-
 # Handy pipes
 alias -g G='| rg --smart-case'
 alias -g P='| $PAGER'
