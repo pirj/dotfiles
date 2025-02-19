@@ -1,3 +1,5 @@
+theme = "seoul256-dark-hard"
+
 [editor]
 mouse = false
 
