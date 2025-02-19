@@ -57,7 +57,7 @@ brew "nginx"
 brew "ollama", restart_service: :changed
 brew "openjdk"
 brew "p7zip"
-brew "postgresql@15", link: true
+brew "postgresql@17", restart_service: :changed, link: true
 brew "proctools"
 brew "pv"
 brew "pwgen"
