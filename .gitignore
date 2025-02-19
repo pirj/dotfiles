@@ -286,3 +286,5 @@ Screenshots
 .config/colima/_lima/
 .config/colima/default/daemon/
 .config/colima/ssh_config
+.config/zed/conversations
+.config/zed/prompts
