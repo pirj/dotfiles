@@ -69,11 +69,15 @@
   lf = log origin/head..head --pretty=full
   mt = mergetool
 [rerere]
-  enabled = 1
+  enabled = true
+  autoupdate = true
 [diff]
   algorithm = histogram
   noprefix = true
   tool = difftastic
+  colorMoved = plain
+  mnemonicPrefix = true
+  renames = true
 [difftool]
   prompt = false
 [difftool "difftastic"]
@@ -93,3 +97,9 @@
   detachedHead = false
 [checkout]
   defaultRemote = origin
+[column]
+  ui = auto
+[fetch]
+  prune = true
+  pruneTags = true
+  all = true
