@@ -289,3 +289,4 @@ Screenshots
 .config/zed/conversations
 .config/zed/prompts
 .diffusionbee
+.cursor/argv.json
