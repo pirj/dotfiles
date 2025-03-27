@@ -26,17 +26,20 @@ MODEL=$( cat $XDG_CONFIG_HOME/the-editor/model )
 [[ -z $MODEL ]] && { echo "Add the model name to use to $XDG_CONFIG_HOME/the-editor/model, e.g.: 'echo deepseek-r1:14b > $XDG_CONFIG_HOME/the-editor/model'" ; exit 1 ; }
 
 ollama run $MODEL << OLLAMA-TEXT > "$1"
-Given some context, and text, make the text clearer.
+Given some TEXT and CONTEXT, improve the text.
 
-Do not rewrite the text entirely. Just make it clearer and more readable.
+Do not rewrite the text entirely. Make some changes to make it better.
 
-Take care to emulate the original text's tone, style, and meaning.
+Emulate the original text's tone, style, and meaning.
 
 Approach the task like an editor - not a rewriter.
 
-To keep the original, intended meaning, and don't stray away from it while editing, first, write a quick summary of the key points that the original text conveys.
+Keep the original, intended meaning.
+Don't stray away from the original while editing.
 
-Write a draft, evaluate it, and then reflect on how it could be further improved.
+First, write a quick summary of the key points that the original text conveys.
+
+Evaluate the result, and then reflect on how the text can be further improved.
 
 CONTEXT:
 ---
