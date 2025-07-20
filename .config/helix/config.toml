@@ -11,11 +11,18 @@ normal = "block"
 [editor.file-picker]
 hidden = false
 
-[keys.insert]
-k = { j = "normal_mode" } # Maps `kj` to exit insert mode
+[keys.insert.k]
+# Maps `kj` to exit insert mode
+# Not as straightforward as just:
+# k = { j = "normal_mode" }
+# see https://github.com/helix-editor/helix/issues/2612
+j = "normal_mode"
+k = { j = [ "move_char_left", ":append-output /bin/echo -n k", "move_char_right", "normal_mode" ] } 
 
 [keys.normal]
 C-h = "jump_view_left"
 C-j = "jump_view_down"
 C-k = "jump_view_up"
 C-l = "jump_view_right"
+
+# x = "no_op" - hard to get used to just "d"
