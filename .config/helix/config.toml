@@ -25,4 +25,6 @@ C-j = "jump_view_down"
 C-k = "jump_view_up"
 C-l = "jump_view_right"
 
+[keys.normal.space]
+q = { q = ":quit", w = ":write-quit" }
 # x = "no_op" - hard to get used to just "d"
