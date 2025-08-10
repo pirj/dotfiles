@@ -1,2 +1,5 @@
 [env]
 _.path = ["{{cwd}}/bin"]
+
+[tools]
+python = "latest"

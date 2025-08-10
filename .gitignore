@@ -295,3 +295,7 @@ Screenshots
 .sheepshaver_prefs
 .config/swiftpm/
 .macpine
+.claude
+.claude.json
+.claude.json.backup
+.claude-code-router/.claude-code-router.pid

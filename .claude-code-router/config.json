@@ -1,0 +1,17 @@
+{ "Providers": [
+    { "name": "mlx-lm",
+      "api_base_url": "http://localhost:8080/v1/chat/completions",
+      "api_key": "",
+      "models": ["GLM-4.5-Air", "SmolLM3-3B-3bit"]
+    },
+    { "name": "ollama",
+      "api_base_url": "http://localhost:11434/v1/chat/completions",
+      "api_key": "ollama",
+      "models": ["devstral:latest", "qwen3:30b-a3b"]
+    }
+  ],
+  "Router": {
+    "default": ["mlx-lm,SmolLM3-3B-3bit"],
+    "background": ["ollama,devstral:latest"]
+  }
+}
