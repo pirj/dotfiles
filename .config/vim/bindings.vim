@@ -159,3 +159,8 @@ map <Leader>rr :call RunCurrentSpecFile()<CR>
 " Git stage hunk
 nmap <silent> <Leader>a :GitGutterStageHunk<CR>
 vmap <silent> <Leader>a :GitGutterStageHunk<CR>
+
+" Helix-like
+nnoremap <silent> <Leader>qw :wq<CR>
+nnoremap gh ^
+nnoremap gl $
