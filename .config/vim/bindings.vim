@@ -164,3 +164,5 @@ vmap <silent> <Leader>a :GitGutterStageHunk<CR>
 nnoremap <silent> <Leader>qw :wq<CR>
 nnoremap gh ^
 nnoremap gl $
+nnoremap <silent> gq :q<CR>
+nnoremap <silent> gw :wq<CR>
