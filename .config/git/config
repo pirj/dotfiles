@@ -44,7 +44,7 @@
   autosetupmerge = true
   sort = -committerdate
 [alias]
-  co = checkout
+  sw = switch
   s = status --short --branch
   ss = show --stat
   d = diff
