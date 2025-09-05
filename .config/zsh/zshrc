@@ -136,8 +136,8 @@ export PATH="/opt/homebrew/opt/ruby/bin:$PATH"
 # Use Python from Homebrew
 export PATH="/opt/homebrew/opt/python@3.13/libexec/bin:$PATH"
 
-export HISTSIZE=1000
-export SAVEHIST=1000
+export HISTSIZE=100000
+export SAVEHIST=100000
 export HISTFILE=~/.zsh_history
 
 # Machine-specific config
