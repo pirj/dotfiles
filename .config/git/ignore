@@ -12,5 +12,6 @@ mise.toml
 lefthook-local.yml
 lefthook.yml
 .ignore
+.worktrees
 
 **/.claude/settings.local.json
