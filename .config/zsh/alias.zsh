@@ -14,9 +14,6 @@ alias ls='ls $LS_COLOR'
 alias l='ls -lhA'
 [[ -s $(which eza) ]] && alias l='eza -lhaG' && alias ls=eza
 
-# Better find
-[[ -s $(which fd) ]] && alias find=fd
-
 # Better vim
 [[ -s $(which nvim) ]] && alias vim=nvim
 
