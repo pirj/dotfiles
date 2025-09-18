@@ -49,6 +49,11 @@ export ZSHZ_NO_RESOLVE_SYMLINKS=1 # prevent symlink resolution
 # Cache completions
 autoload -Uz compinit; compinit
 
+function _carapace_lazy {
+  source <(carapace $words[1] zsh)
+}
+compdef _carapace_lazy aws base32 base64 basename bash brew cal chgrp chmod chown cp curl cut diff diff3 dig find gh git git-abort git-alias git-archive-file git-authors git-browse git-browse-ci git-clang-format git-clear git-clear-soft git-coauthor git-extras git-info git-standup git-unlock git-utimes gpg head just kill ln ls mkdir mv nc ps rg rm sed sort split ssh ssh-copy-id ssh-keygen tail tar tmux yt-dlp
+
 # Better vi mode (hat tip Doug Black)
 bindkey -v
 
