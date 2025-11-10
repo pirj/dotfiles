@@ -1,0 +1,8 @@
+# Swap : and ;
+0x29 | shift - 0x29
+shift - 0x29 | 0x29
+
+# Map the useless § and ± keys to useful ` ~ ones
+# Also to match the physical US layout
+0x0a | 0x32
+shift - 0x0a | shift - 0x32
