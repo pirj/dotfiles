@@ -12,3 +12,12 @@ shift - 0x29 | 0x29
 # Also to match the physical US layout
 0x0a | 0x32
 shift - 0x0a | shift - 0x32
+
+# It is possible to treat the Fn button both as a modifier and
+# as a single-tap with different codes. You just need to map Caps to Fn in
+# MacOS "Customize modifier keys" settings.
+# See https://github.com/koekeishiya/skhd/issues/1#issuecomment-2538579486
+#   0xb3 | escape
+#   fn - c | ctrl - c
+# However, I find it more useful to just map Caps to Ctrl.
+# For Vim, I got used to kj for Esc.
