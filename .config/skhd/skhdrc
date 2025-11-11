@@ -1,3 +1,9 @@
+# Since there's no input source / layout switching support,
+# hack-in a parallel tracking of the current input source.
+:: cyrillic
+alt - space ; cyrillic : input-method-select com.apple.keylayout.RussianWin
+cyrillic < alt - space ; default : input-method-select com.apple.keylayout.ABC
+
 # Swap : and ;
 0x29 | shift - 0x29
 shift - 0x29 | 0x29
