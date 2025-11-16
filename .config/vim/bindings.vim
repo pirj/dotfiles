@@ -43,8 +43,11 @@ nnoremap <silent> <C-j> <C-w>j
 nnoremap <silent> <C-k> <C-w>k
 nnoremap <silent> <C-l> <C-w>l
 
+" Windows
+nnoremap <silent> <Leader>w <C-w>
 " Create a new window in a vertical split
-nnoremap <silent> <C-w>N :vnew<CR>
+nnoremap <silent> <Leader>wn :vnew<CR>
+" nnoremap <silent> <C-w>N :vnew<CR>
 
 " Zoom pane with C-w z
 nnoremap <C-w>z <C-w><bar><C-w>_
