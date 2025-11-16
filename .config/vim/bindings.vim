@@ -159,10 +159,6 @@ nnoremap - :Explore<CR>
 map <Leader>r :call RunNearestSpec()<CR>
 map <Leader>rr :call RunCurrentSpecFile()<CR>
 
-" Git stage hunk
-nmap <silent> <Leader>a :GitGutterStageHunk<CR>
-vmap <silent> <Leader>a :GitGutterStageHunk<CR>
-
 " Helix-inspired
 nnoremap <silent> <Leader>qw :wq<CR>
 nnoremap gh ^
