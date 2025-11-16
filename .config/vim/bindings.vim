@@ -163,9 +163,10 @@ map <Leader>rr :call RunCurrentSpecFile()<CR>
 nmap <silent> <Leader>a :GitGutterStageHunk<CR>
 vmap <silent> <Leader>a :GitGutterStageHunk<CR>
 
-" Helix-like
+" Helix-inspired
 nnoremap <silent> <Leader>qw :wq<CR>
 nnoremap gh ^
 nnoremap gl $
 nnoremap <silent> gq :q<CR>
+nnoremap <silent> gQ :q!<CR>
 nnoremap <silent> gw :wq<CR>
