@@ -299,3 +299,4 @@ Screenshots
 .claude.json
 .claude.json.backup
 .claude-code-router/.claude-code-router.pid
+.rustup
