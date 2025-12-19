@@ -1,0 +1,37 @@
+{
+  "default_profile": "claude_cli",
+  "model_providers": {
+    "ollama": {
+      "name": "Ollama",
+      "base_url": "http://127.0.0.1:11434/v1",
+      "env_key": "OLLAMA_API_KEY",
+      "api_key": null,
+      "local": true,
+      "mode": "http"
+    },
+    "claude_cli": {
+      "name": "Claude Code CLI",
+      "base_url": "cli://claude",
+      "env_key": "CLAUDE_CLI_API_KEY",
+      "api_key": null,
+      "local": true,
+      "mode": "cli",
+      "cli": {
+        "engine": "claude",
+        "binary": "claude"
+      }
+    }
+  },
+  "profiles": {
+    "ollama": {
+      "model_provider": "ollama",
+      "model": "llama3.1"
+    },
+    "claude_cli": {
+      "model_provider": "claude_cli",
+      "model": "claude-haiku-4-5"
+    }
+  },
+  "include_history": false,
+  "copy_first_command": false
+}
