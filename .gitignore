@@ -300,3 +300,5 @@ Screenshots
 .claude.json.backup
 .claude-code-router/.claude-code-router.pid
 .rustup
+.config/litecli/history
+.config/litecli/log
