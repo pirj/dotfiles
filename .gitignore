@@ -302,3 +302,4 @@ Screenshots
 .rustup
 .config/litecli/history
 .config/litecli/log
+.claude.json.backup.*
