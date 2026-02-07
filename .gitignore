@@ -303,3 +303,4 @@ Screenshots
 .config/litecli/history
 .config/litecli/log
 .claude.json.backup.*
+.tdlib
