@@ -304,3 +304,4 @@ Screenshots
 .config/litecli/log
 .claude.json.backup.*
 .tdlib
+.bin/aq
