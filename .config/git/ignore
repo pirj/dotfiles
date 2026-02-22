@@ -13,5 +13,6 @@ lefthook-local.yml
 lefthook.yml
 .ignore
 .worktrees
+.gems
 
 **/.claude/settings.local.json

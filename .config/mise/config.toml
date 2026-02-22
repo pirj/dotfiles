@@ -1,2 +1,5 @@
 [env]
 _.path = ["{{cwd}}/bin"]
+
+GEM_HOME = "{{cwd}}/.gems"
+GEM_PATH = "{{cwd}}/.gems"
