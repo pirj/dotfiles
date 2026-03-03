@@ -98,9 +98,9 @@ Install:
 
 == How it works
 
-Vundle that handles Vim plugins and Antidote that handles Zsh plugins are fetched as submodules.
+lazy.nvim handles Vim plugins and Antidote that handles Zsh plugins are fetched as submodules.
 Antidote fetches all configured Zsh plugins on first start.
-In Vim, `:PluginInstall` installs all plugins.
+In Vim, `:Lazy install` installs all plugins.
 
 NeoVim requires a specific Python package to run Python plugins:
 

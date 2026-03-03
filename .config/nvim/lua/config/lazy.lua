@@ -54,7 +54,7 @@ lazy.setup({
   { 'David-Kunz/gen.nvim', config = require('config.gen') }, -- Ollama local LLM gen AI
 
   'tpope/vim-projectionist',
-  'uptech/vim-open-alternate',
+  'ton/vim-alternate',
   'kopischke/vim-fetch',
   'nanotech/jellybeans.vim',
   'junegunn/seoul256.vim',

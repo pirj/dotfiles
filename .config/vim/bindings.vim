@@ -98,7 +98,7 @@ nnoremap gb <C-^>
 " Edit alternate file (vim-projectionist, vim-rails)
 " nnoremap ga :A<CR>
 " Edit alternate file (vim-open-alternate)
-nnoremap ga :OpenAlternate<CR>
+nnoremap <silent> ga :Alternate<CR>
 
 " Go to definition
 " gs
