@@ -305,3 +305,4 @@ Screenshots
 .claude.json.backup.*
 .tdlib
 .bin/aq
+.wasmer
