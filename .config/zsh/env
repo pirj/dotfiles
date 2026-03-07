@@ -1,2 +1,2 @@
 PAGER=less
-export LESS='--quit-if-one-screen --hilite-search --raw-control-chars --ignore-case --no-init'
+export LESS='--quit-if-one-screen --hilite-search --RAW-CONTROL-CHARS --ignore-case'
