@@ -25,6 +25,9 @@
 [mergetool "diffconflicts"]
   cmd = $EDITOR -c DiffConflictsWithHistory \"$MERGED\" \"$BASE\" \"$LOCAL\" \"$REMOTE\"
   trustExitCode = true
+[merge "weave"]
+  driver = weave-driver %O %A %B %L %P
+  name = Entity-level semantic merge
 [pager]
   difftool = true
 [color]
