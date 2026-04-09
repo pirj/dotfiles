@@ -1,0 +1,20 @@
+{
+  "$schema": "https://www.schemastore.org/claude-code-keybindings.json",
+  "$docs": "https://code.claude.com/docs/en/keybindings",
+  "bindings": [
+    {
+      "context": "Confirmation",
+      "bindings": {
+        "ctrl+e": null,
+        "ctrl+i": "confirm:toggleExplanation"
+      }
+    },
+    {
+      "context": "Transcript",
+      "bindings": {
+        "ctrl+e": null,
+        "ctrl+i": "transcript:toggleShowAll"
+      }
+    }
+  ]
+}
