@@ -3,6 +3,12 @@
   "$docs": "https://code.claude.com/docs/en/keybindings",
   "bindings": [
     {
+      "context": "Chat",
+      "bindings": {
+        "shift+enter": "chat:newline"
+      }
+    },
+    {
       "context": "Confirmation",
       "bindings": {
         "ctrl+e": null,
