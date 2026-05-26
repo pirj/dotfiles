@@ -142,7 +142,7 @@ mods = "Control"
 [[keyboard.bindings]]
 key = "Return"
 mods = "Shift"
-chars = "\u001b[13;2u"
+chars = "\u000a"
 
 [scrolling]
 history = 0
