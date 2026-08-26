@@ -16,3 +16,5 @@ lefthook.yml
 .gems
 
 **/.claude/settings.local.json
+
+**/.claude/.cc-writes/
