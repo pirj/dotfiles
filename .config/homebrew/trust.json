@@ -1,5 +1,8 @@
 {
   "trustedformulae": [
     "daipeihust/tap/im-select"
+  ],
+  "trustedcasks": [
+    "jackielii/tap/skhd-zig"
   ]
 }

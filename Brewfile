@@ -230,8 +230,6 @@ brew "yt-dlp"
 brew "zsh"
 # Switch your input method through terminal
 brew "daipeihust/tap/im-select", trusted: true
-# Simple hotkey daemon for macOS, written in Zig
-brew "jackielii/tap/skhd-zig"
 # GPU-accelerated terminal emulator
 cask "alacritty"
 # Distribution of the Python and R programming languages for scientific computing
@@ -267,6 +265,8 @@ cask "openclaw"
 cask "osaurus"
 # Playdate Lua and C APIs, docs and Simulator for local development
 cask "playdate-simulator"
+# Simple hotkey daemon written in Zig
+cask "jackielii/tap/skhd-zig", trusted: true
 # Messaging app with a focus on speed and security
 cask "telegram"
 # Multimedia player
