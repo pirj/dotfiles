@@ -17,32 +17,24 @@ lazy.setup({
   { 'hrsh7th/nvim-cmp', dependencies = { 'hrsh7th/cmp-buffer' }, config = require('config.cmp') },
 
   { 'nvim-treesitter/nvim-treesitter',
+    lazy = false, -- the `main` branch does not support lazy-loading
     build = ':TSUpdate',
     config = function()
-      local configs = require('nvim-treesitter.configs')
-
-      configs.setup({
-        ensure_installed = { "lua", "vimdoc", "ruby", "javascript", "html", "css" },
-        sync_install = false,
-        highlight = { enable = true },
-        indent = { enable = true },
-      })
+      require("nvim-treesitter").install({ "lua", "vimdoc", "ruby", "javascript", "html", "css" })
     end
   },
   { 'nvim-treesitter/nvim-treesitter-textobjects',
+    dependencies = { 'nvim-treesitter/nvim-treesitter' },
     config = function()
-      require('nvim-treesitter.configs').setup({
-        textobjects = {
-          select = {
-            enable = true,
-            lookahead = true, -- Automatically jump forward to textobj, similar to targets.vim
-            keymaps = {
-              ["ir"] = "@block.inner",
-              ["ar"] = "@block.outer",
-            }
-          }
+      require("nvim-treesitter-textobjects").setup({
+        select = {
+          lookahead = true, -- Automatically jump forward to textobj, similar to targets.vim
         }
       })
+
+      local select = require("nvim-treesitter-textobjects.select")
+      vim.keymap.set({ "x", "o" }, "ir", function() select.select_textobject("@block.inner", "textobjects") end)
+      vim.keymap.set({ "x", "o" }, "ar", function() select.select_textobject("@block.outer", "textobjects") end)
     end
   },
 
