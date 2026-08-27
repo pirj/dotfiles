@@ -47,7 +47,7 @@ lazy.setup({
 
   'tpope/vim-projectionist',
   'ton/vim-alternate',
-  'kopischke/vim-fetch',
+  'wsdjeg/vim-fetch',
   'nanotech/jellybeans.vim',
   'junegunn/seoul256.vim',
 
