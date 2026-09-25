@@ -318,3 +318,4 @@ Developer
 .config/stripe/telemetry_id
 MLXModels/
 .osaurus
+.config/browser-harness/

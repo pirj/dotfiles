@@ -278,3 +278,5 @@ cask "whisky"
 # Video communication and virtual meeting platform
 cask "zoom"
 go "github.com/raviqqe/gherkin2markdown"
+uv "browser-use"
+npm "agent-browser"
