@@ -1,0 +1,92 @@
+# [font]
+font-family = Departure Mono
+font-size = 13.5
+
+# [colors]
+background = #1d1f21
+foreground = #c5c8c6
+
+palette = 0=#000000
+palette = 1=#cc0403
+palette = 2=#b9ca4a
+palette = 3=#cecb00
+palette = 4=#0d73cc
+palette = 5=#cb1ed1
+palette = 6=#0dcdcd
+palette = 7=#eaeaea
+
+# [terminal]
+scrollback-limit = 0
+copy-on-select = clipboard
+selection-word-chars = ",│`|\"' ()[]{}<>\t"
+bell-features = no-system,no-audio,no-attention,no-title,no-border
+
+# [keybindings]
+# Two trigger forms appear below, and the difference is load-bearing:
+#
+#   cmd+d      codepoint form, matches the character the key produces.
+#              Every Ghostty default uses this form, and a default can
+#              only be removed by the same trigger that set it -- hence
+#              all the unbinds are written this way.
+#   cmd+key_d  physical form (W3C key code), matches the key by position
+#              and so survives a Russian layout. Used for everything
+#              actively bound.
+#
+#   unbind     drop the binding; the key falls through to the shell
+#   ignore     swallow the key; nothing is sent anywhere
+
+# Default dropped here, real binding further down.
+keybind = cmd+a=unbind
+keybind = cmd+c=unbind
+keybind = cmd+d=unbind
+keybind = cmd+e=unbind
+keybind = cmd+f=unbind
+keybind = cmd+j=unbind
+keybind = cmd+k=unbind
+keybind = cmd+n=unbind
+keybind = cmd+q=unbind
+keybind = cmd+w=unbind
+keybind = cmd+z=unbind
+keybind = cmd+[=unbind
+keybind = cmd+]=unbind
+
+# unbind - tabs and splits are tmux's job
+keybind = cmd+t=unbind
+keybind = cmd+shift+d=unbind
+
+# cmd+<key> sends ctrl-<key>
+keybind = cmd+key_a=text:\x01
+keybind = cmd+key_c=text:\x03
+keybind = cmd+key_d=text:\x04
+keybind = cmd+key_e=text:\x05
+keybind = cmd+key_f=text:\x06
+keybind = cmd+key_h=text:\x08
+keybind = cmd+key_j=text:\x0a
+keybind = cmd+key_k=text:\x0b
+keybind = cmd+key_l=text:\x0c
+keybind = cmd+key_n=text:\x0e
+keybind = cmd+key_p=text:\x10
+keybind = cmd+key_r=text:\x12
+keybind = cmd+key_u=text:\x15
+keybind = cmd+key_w=text:\x17
+keybind = cmd+key_x=text:\x18
+keybind = cmd+key_y=text:\x19
+keybind = cmd+key_z=text:\x1a
+
+keybind = cmd+bracket_left=text:\x1b
+keybind = cmd+backslash=text:\x1c
+keybind = cmd+bracket_right=text:\x1d
+keybind = cmd+numpad_6=text:\x1e
+
+# cmd+q must not quit, and must not leak a stray keystroke either.
+keybind = cmd+key_q=ignore
+
+# [paste]
+keybind = cmd+key_v=paste_from_clipboard
+keybind = ctrl+key_v=paste_from_clipboard
+
+# --- newline instead of submit ------------------------------------------
+# Bare LF (Ctrl-J), which Claude Code maps to chat:newline.
+# fn+Return emits keypad Enter on macOS, hence the second binding.
+keybind = shift+enter=text:\x0a
+keybind = numpad_enter=text:\x0a

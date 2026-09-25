@@ -249,6 +249,8 @@ cask "firefox"
 cask "font-departure-mono"
 # Set of tools to manage resources and applications hosted on Google Cloud
 cask "gcloud-cli"
+# Terminal emulator that uses platform-native UI and GPU acceleration
+cask "ghostty"
 # Web browser
 cask "google-chrome"
 # Open-source desktop AI agent
