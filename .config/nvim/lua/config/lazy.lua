@@ -67,5 +67,13 @@ lazy.setup({
   'jgdavey/tslime.vim', -- tmux support
   'wincent/terminus', -- better terminal integration
 
-  { 'jinh0/eyeliner.nvim', config = function() require('eyeliner').setup({ highlight_on_key = true }) end },
+  {
+    'jinh0/eyeliner.nvim',
+    config = function()
+      require('eyeliner').setup({
+        highlight_on_key = true,
+        disabled_filetypes = { 'gitrebase' }
+      })
+    end
+  },
 })
