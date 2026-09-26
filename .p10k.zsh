@@ -125,10 +125,15 @@
   # Disable async loading indicator to make directories that aren't Git repositories
   # indistinguishable from large Git repositories without known state.
   typeset -g POWERLEVEL9K_VCS_LOADING_TEXT=
+  # While gitstatus is still computing, show nothing instead of the last known state.
+  # The last-known-state lookup walks up parent directories and, since ~ is itself a Git
+  # repository, a first visit to any repository under ~ would otherwise briefly show the
+  # dotfiles repository's status (e.g. a stray '*' or '⇡').
+  typeset -g POWERLEVEL9K_VCS_LOADING_CONTENT_EXPANSION=
 
-  # Don't wait for Git status even for a millisecond, so that prompt always updates
-  # asynchronously when Git state changes.
-  typeset -g POWERLEVEL9K_VCS_MAX_SYNC_LATENCY_SECONDS=0
+  # Wait up to 50ms for Git status so that small and medium repositories render with the
+  # correct status right away; slower ones fall back to async and get remembered as slow.
+  typeset -g POWERLEVEL9K_VCS_MAX_SYNC_LATENCY_SECONDS=0.05
 
   # Cyan ahead/behind arrows.
   typeset -g POWERLEVEL9K_VCS_{INCOMING,OUTGOING}_CHANGESFORMAT_FOREGROUND=$cyan
