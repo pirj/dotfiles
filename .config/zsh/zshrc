@@ -68,6 +68,7 @@ bindkey -M vicmd "^r" history-incremental-search-backward
 # Accept incremental search for further editing with a single escape
 bindkey -M isearch '\e' accept-search
 bindkey -M isearch kj accept-search
+bindkey -M isearch ло accept-search
 bindkey -M isearch "^p" history-incremental-search-backward
 bindkey -M isearch "^n" history-incremental-search-forward
 
@@ -85,6 +86,8 @@ bindkey -M vicmd U redo
 # Switch to command mode. For me, jk or kk or jj are too slow to type with 0.1s timeout
 # kjk<CR> to repeat last command
 bindkey -M viins kj vi-cmd-mode
+# ...same on the Cyrillic layout (kj -> ло); the rest of the vi keys are mirrored below
+bindkey -M viins ло vi-cmd-mode
 
 # Yank to the end of line with Y
 bindkey -M vicmd Y vi-yank-eol
@@ -112,6 +115,60 @@ zle -N edit-command-line
 bindkey -M vicmd v edit-command-line
 
 bindkey -M vicmd K run-help
+
+# Support Cyrillic vi keys
+#   h j k l -> р о л д   w e b -> ц у и   d c -> в с
+#   i a -> ш ф   x u r s -> ч г к ы   v -> м   g -> п
+# motions
+bindkey -M vicmd р vi-backward-char
+bindkey -M vicmd о down-line-or-history
+bindkey -M vicmd л up-line-or-history
+bindkey -M vicmd д vi-forward-char
+bindkey -M vicmd ц vi-forward-word
+bindkey -M vicmd у vi-forward-word-end
+bindkey -M vicmd и vi-backward-word
+bindkey -M vicmd Ц vi-forward-blank-word
+bindkey -M vicmd У vi-forward-blank-word-end
+bindkey -M vicmd И vi-backward-blank-word
+bindkey -M vicmd Р beginning-of-line
+bindkey -M vicmd Д end-of-line
+bindkey -M vicmd П vi-fetch-history
+bindkey -M vicmd пп beginning-of-buffer-or-history
+bindkey -M vicmd пу vi-backward-word-end
+bindkey -M vicmd пУ vi-backward-blank-word-end
+# operators
+bindkey -M vicmd в vi-delete
+bindkey -M vicmd с vi-change
+bindkey -M vicmd В vi-kill-eol
+bindkey -M vicmd С vi-change-eol
+
+bindkey -M vicmd пг vi-down-case
+bindkey -M vicmd пГ vi-up-case
+bindkey -M vicmd -s пгг пгпг
+bindkey -M vicmd -s пГГ пГпГ
+
+# insert / replace / put / undo / search / misc
+bindkey -M vicmd ш vi-insert
+bindkey -M vicmd ф vi-add-next
+bindkey -M vicmd Ш vi-insert-bol
+bindkey -M vicmd Ф vi-add-eol
+
+bindkey -M vicmd к vi-replace-chars
+bindkey -M vicmd К vi-replace
+bindkey -M vicmd ы vi-substitute
+bindkey -M vicmd Ы vi-change-whole-line
+bindkey -M vicmd ч vi-delete-char
+bindkey -M vicmd Ч vi-backward-delete-char
+
+bindkey -M vicmd г undo
+bindkey -M vicmd Г redo
+
+bindkey -M vicmd О vi-join
+bindkey -M vicmd м edit-command-line
+
+# ff -> аа (accept autosuggestion / jump to end of line)
+bindkey -M viins аа end-of-line
+bindkey -M vicmd аа end-of-line
 
 # Color scheme
 autoload -U colors && colors
