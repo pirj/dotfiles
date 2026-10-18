@@ -108,6 +108,8 @@ brew "luarocks"
 brew "make"
 # Text-to-HTML conversion tool
 brew "markdown"
+# Index and search local agent conversation history
+brew "memex"
 # Polyglot runtime manager (asdf rust clone)
 brew "mise"
 # Command-line music player client for mpd

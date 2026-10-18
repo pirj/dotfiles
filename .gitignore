@@ -320,3 +320,5 @@ MLXModels/
 .osaurus
 .config/browser-harness/
 .hermes.zero
+.memex
+..memex.ingest.lock
