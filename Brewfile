@@ -264,6 +264,8 @@ cask "google-chrome"
 cask "hermes-desktop"
 # Terminal emulator as alternative to Apple's Terminal app
 cask "iterm2"
+# Sandbox construction video game
+cask "minecraft"
 # Virtual analog synthesizer
 cask "ob-xf"
 # Knowledge base that works on top of a local folder of plain text Markdown files
