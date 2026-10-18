@@ -322,3 +322,4 @@ MLXModels/
 .hermes.zero
 .memex
 ..memex.ingest.lock
+.task/taskchampion.sqlite3

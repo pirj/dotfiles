@@ -179,6 +179,8 @@ brew "sshpass"
 brew "stripe-cli"
 # Mock HTTP server that responds like the real Stripe API
 brew "stripe-mock"
+# Feature-rich console based todo list manager
+brew "task"
 # Cross-platform library for building Telegram clients
 brew "tdlib"
 # User interface to the TELNET protocol
