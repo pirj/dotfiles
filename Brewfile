@@ -203,6 +203,8 @@ brew "translate-shell"
 brew "transmission-cli"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
+# Code review TUI with vim keybindings
+brew "tuicr"
 # Extremely fast Python package installer and resolver, written in Rust
 brew "uv"
 # Syntax-aware linter for prose
