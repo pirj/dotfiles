@@ -2,6 +2,7 @@ tap "daipeihust/tap"
 tap "homebrew/bundle"
 tap "homebrew/services"
 tap "jackielii/tap"
+tap "skatkov/tap"
 # Plugin manager for zsh, inspired by antigen and antibody
 brew "antidote"
 # Text processor and publishing toolchain for AsciiDoc
@@ -269,6 +270,8 @@ cask "openclaw"
 cask "osaurus"
 # Playdate Lua and C APIs, docs and Simulator for local development
 cask "playdate-simulator"
+# Terminal based documentation browser for Ruby developers
+cask "skatkov/tap/poshtui", trusted: true
 # Simple hotkey daemon written in Zig
 cask "jackielii/tap/skhd-zig", trusted: true
 # Messaging app with a focus on speed and security

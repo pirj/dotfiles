@@ -3,6 +3,7 @@
     "daipeihust/tap/im-select"
   ],
   "trustedcasks": [
-    "jackielii/tap/skhd-zig"
+    "jackielii/tap/skhd-zig",
+    "skatkov/tap/poshtui"
   ]
 }
