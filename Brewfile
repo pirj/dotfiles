@@ -272,6 +272,8 @@ cask "ob-xf"
 cask "obsidian"
 # Personal AI assistant
 cask "openclaw"
+# Replacement for Docker Desktop
+cask "orbstack"
 # LLM server built on MLX
 cask "osaurus"
 # Playdate Lua and C APIs, docs and Simulator for local development
