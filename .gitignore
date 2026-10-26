@@ -323,3 +323,5 @@ MLXModels/
 .memex
 ..memex.ingest.lock
 .task/taskchampion.sqlite3
+.orbstack
+OrbStack

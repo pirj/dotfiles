@@ -43,3 +43,7 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # [[ -s $(which keychain) ]] && eval $(keychain --eval --agents ssh,gpg --quiet ~/.ssh/id_*[^pub])
 [[ "$SSH_AUTH_SOCK" = "" ]] && [[ -s $(which ssh-agent) ]] && eval $(ssh-agent)
+
+# Added by OrbStack: command-line tools and integration
+# This won't be added again if you remove it.
+source ~/.orbstack/shell/init.zsh 2>/dev/null || :
