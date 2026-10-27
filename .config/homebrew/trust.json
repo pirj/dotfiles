@@ -1,6 +1,7 @@
 {
   "trustedformulae": [
-    "daipeihust/tap/im-select"
+    "daipeihust/tap/im-select",
+    "pirj/tap/taskwarrior-squire"
   ],
   "trustedcasks": [
     "jackielii/tap/skhd-zig",
