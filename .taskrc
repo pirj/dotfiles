@@ -8,3 +8,4 @@
 search.case.sensitive=no
 dateformat=d.M.Y
 dateformat.report=d.M.Y
+news.version=3.5.0
